@@ -1,0 +1,21 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: preface
+chapters:
+- file: introduction
+- file: background
+- file: product-overview
+- file: project-aims
+- file: scope
+- file: metrics-of-success
+- file: funding-bid
+- file: project-timeline
+- file: housing-data-flow
+- file: lbth-hdt-mvp
+- file: user-testing
+- file: forecasting
+- file: future-scope
+- file: prop-tech-r4-final
+
