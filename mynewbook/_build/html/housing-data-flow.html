@@ -668,6 +668,104 @@ The completion of the site is shared with the CIL officer through weekly updates
 <p><em>CIL Forecasting Process and Outcome Data</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
+
+<span class="c1"># HTML code for zoomable image with dynamic zoom in/out</span>
+<span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;style&gt;</span>
+<span class="s2">/* Styling for the zoomable container */</span>
+<span class="s2">.zoomable {</span>
+<span class="s2">    display: inline-block;</span>
+<span class="s2">    cursor: zoom-in;</span>
+<span class="s2">    transition: transform 0.2s ease;</span>
+<span class="s2">    text-align: center;</span>
+<span class="s2">}</span>
+
+<span class="s2">/* Styling for the image */</span>
+<span class="s2">.zoomable img {</span>
+<span class="s2">    max-width: 500px; /* Initial width */</span>
+<span class="s2">    transition: transform 0.2s ease-in-out;</span>
+<span class="s2">}</span>
+
+<span class="s2">/* Class for zoomed-in image */</span>
+<span class="s2">.zoomable img.zoomed {</span>
+<span class="s2">    transform: scale(2); /* Zoom factor */</span>
+<span class="s2">    cursor: zoom-out;</span>
+<span class="s2">}</span>
+<span class="s2">&lt;/style&gt;</span>
+
+<span class="s2">&lt;!-- Centered Zoomable Image --&gt;</span>
+<span class="s2">&lt;div style=&#39;text-align:center;&#39;&gt;</span>
+<span class="s2">    &lt;div class=&quot;zoomable&quot;&gt;</span>
+<span class="s2">        &lt;img src=&#39;Images/CIL5.png&#39; alt=&#39;CIL Forecasting Workflow&#39;&gt;</span>
+<span class="s2">    &lt;/div&gt;</span>
+<span class="s2">&lt;/div&gt;</span>
+
+<span class="s2">&lt;!-- Caption below the image --&gt;</span>
+<span class="s2">&lt;p style=&#39;text-align:center; font-size:14px;&#39;&gt;&lt;i&gt;Figure : CIL Forecasting overall workflow&lt;/i&gt;&lt;/p&gt;</span>
+
+<span class="s2">&lt;script&gt;</span>
+<span class="s2">/* JavaScript to toggle zoom-in and zoom-out */</span>
+<span class="s2">document.querySelector(&#39;.zoomable img&#39;).addEventListener(&#39;click&#39;, function() {</span>
+<span class="s2">    if (this.classList.contains(&#39;zoomed&#39;)) {</span>
+<span class="s2">        this.classList.remove(&#39;zoomed&#39;); /* Remove zoom */</span>
+<span class="s2">    } else {</span>
+<span class="s2">        this.classList.add(&#39;zoomed&#39;); /* Add zoom */</span>
+<span class="s2">    }</span>
+<span class="s2">});</span>
+<span class="s2">&lt;/script&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<style>
+/* Styling for the zoomable container */
+.zoomable {
+    display: inline-block;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+/* Styling for the image */
+.zoomable img {
+    max-width: 500px; /* Initial width */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Class for zoomed-in image */
+.zoomable img.zoomed {
+    transform: scale(2); /* Zoom factor */
+    cursor: zoom-out;
+}
+</style>
+
+<!-- Centered Zoomable Image -->
+<div style='text-align:center;'>
+    <div class="zoomable">
+        <img src='Images/CIL5.png' alt='CIL Forecasting Workflow'>
+    </div>
+</div>
+
+<!-- Caption below the image -->
+<p style='text-align:center; font-size:14px;'><i>Figure : CIL Forecasting overall workflow</i></p>
+
+<script>
+/* JavaScript to toggle zoom-in and zoom-out */
+document.querySelector('.zoomable img').addEventListener('click', function() {
+    if (this.classList.contains('zoomed')) {
+        this.classList.remove('zoomed'); /* Remove zoom */
+    } else {
+        this.classList.add('zoomed'); /* Add zoom */
+    }
+});
+</script>
+</div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">display</span><span class="p">,</span> <span class="n">HTML</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;div style=&#39;text-align:center;&#39;&gt;&lt;img src=&#39;Images/CIL5.png&#39;&gt;&lt;/div&gt;&quot;</span><span class="p">))</span>
 <span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;p style=&#39;text-align:center; font-size:14px;&#39;&gt;&lt;i&gt;Figure : CIL Forecasting overall workflow&lt;/i&gt;&lt;/p&gt;&quot;</span><span class="p">))</span>
