@@ -10,7 +10,7 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
     
 Check out the content pages bundled with this sample book to see more.
 
-# Table of Content
+### Table of Content
 
 - [Introduction](/mynewbook/introduction.md)
 - [Background](/mynewbook/background.md)
