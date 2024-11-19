@@ -10,4 +10,19 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
     
 Check out the content pages bundled with this sample book to see more.
 
-[Table of Content](mynewbook/_toc.yml)
+# Table of Content
+
+- [Introduction](/mynewbook/introduction.md)
+- [Background](/mynewbook/background.md)
+- [Product-overview](/mynewbook/product-overview.md)
+- [Project-aims](/mynewbook/project-aims.md)
+- [Scope](/mynewbook/scope.md)
+- [Metrics-of-Success](/mynewbook/metrics-of-success.md)
+- [Funding-bid](/mynewbook/funding-bid.md)
+- [Project-timeline](/mynewbook/project-timeline.md)
+- [Housing-Data-flow](/mynewbook/housing-data-flow.ipynb)
+- [LBTH-HDT-MVP](/mynewbook/lbth-hdt-mvp.md)
+- [User-Testing](/mynewbook/user-testing.md)
+- [Forecasting](/mynewbook/forecasting.md)
+- [Future-Scope](/mynewbook/future-scope.md)
+- [Prop-Tech-R4-Final](/mynewbook/prop-tech-r4-final.md)
