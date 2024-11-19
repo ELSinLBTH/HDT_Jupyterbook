@@ -10,4 +10,4 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
     
 Check out the content pages bundled with this sample book to see more.
 
-[Table of Content](_toc.yml)
+[Table of Content](/Users/areumhan/Documents/GitHub/HDT_Jupyterbook/mynewbook/_toc.yml)
