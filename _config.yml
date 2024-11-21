@@ -28,6 +28,7 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
+  baseurl: "/HDT_Jupterbook"
   use_thebe: true
   theme:
     name: "sphinx_book_theme"
