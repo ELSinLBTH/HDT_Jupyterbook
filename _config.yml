@@ -37,6 +37,7 @@ html:
       navigation_depth: 2
       show_navbar_depth: 1
       show_toc_level: 2
+      use_download_button: False
   use_issues_button: true
   use_repository_button: true
 
