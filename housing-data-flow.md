@@ -70,21 +70,32 @@ The process can be divided into 3 stages: Early Engagement, Regulation 18, and R
 
 Strategic Planning overall workflow
 
+<p align="center">
+  <img src="Images/SP1.png" alt="Strategic Planning overall workflow" />
+</p>
 
-```{figure} Images/SP2.png
-:name: Strategic Planning Early Engagement workflow
-:align: center
+<p align="center">
+  <em>Strategic Planning overall workflow</em>
+</p>
 
-Strategic Planning Early Engagement workflow
+<p align="center">
+  <img src="Images/SP2.png" alt="Strategic Planning Early Engagement workflow" style="width: 500px;" />
+</p>
+
+<p align="center">
+  <em>Strategic Planning Early Engagement workflow</em>
+</p>
 
 **Early Engagement**<br>
 This stage involves gathering data and understanding the demands of stakeholders. It includes conducting consultations and carrying out land studies and site exercises. The outcome of this stage is the reports of studies and GIS layer for Site Allocation. The team receives Call for Site Forms from the public, which includes Site Identification, Land Ownership, Development Opportunities and Constraints, and Delivery Time Frame. 
 
 <p align="center">
-  <img src="Images/SP3.png" alt="Strategic Planning Regulation 18 & 19 workflow" />
+  <img src="Images/SP3.png" alt="Strategic Planning Regulation 18 & 19 workflow" style="width: 500px;" />
 </p>
 
-*Strategic Planning Regulation 18 & 19 workflow*
+<p align="center">
+  <em>Strategic Planning Regulation 18 & 19 workflow</em>
+</p>
 
 **Regulation 18**<br>
 In this phase, the First Iteration of the Local Plan is drafted and released in accordance with the National Planning Policy Framework (NPPF) and the London Plan. The draft includes GIS layered information about Strategic and Local Industrial Locations, Area Growth Strategy, Tall Buildings Zone, Flood Zone, Conservation Area, Waste management Site et cetera. 
