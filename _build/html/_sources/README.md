@@ -20,7 +20,7 @@ Check out the content pages bundled with this sample book to see more.
 - [Metrics-of-Success](metrics-of-success.md)
 - [Funding-bid](funding-bid.md)
 - [Project-timeline](project-timeline.md)
-- [Housing-Data-Flow](housing-data-flow.ipynb)
+- [Housing-Data-Flow](housing-data-flow.md)
 - [LBTH-HDT-MVP](lbth-hdt-mvp.md)
 - [User-Testing](user-testing.md)
 - [Forecasting](forecasting.md)
