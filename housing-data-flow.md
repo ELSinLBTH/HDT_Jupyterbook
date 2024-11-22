@@ -80,12 +80,11 @@ Strategic Planning Early Engagement workflow
 **Early Engagement**<br>
 This stage involves gathering data and understanding the demands of stakeholders. It includes conducting consultations and carrying out land studies and site exercises. The outcome of this stage is the reports of studies and GIS layer for Site Allocation. The team receives Call for Site Forms from the public, which includes Site Identification, Land Ownership, Development Opportunities and Constraints, and Delivery Time Frame. 
 
+<p align="center">
+  <img src="Images/SP3.png" alt="Strategic Planning Regulation 18 & 19 workflow" />
+</p>
 
-```{figure} Images/SP3.png
-:name: Strategic Planning Regulation 18 & 19 workflow
-:align: center
-
-Strategic Planning Regulation 18 & 19 workflow
+*Strategic Planning Regulation 18 & 19 workflow*
 
 **Regulation 18**<br>
 In this phase, the First Iteration of the Local Plan is drafted and released in accordance with the National Planning Policy Framework (NPPF) and the London Plan. The draft includes GIS layered information about Strategic and Local Industrial Locations, Area Growth Strategy, Tall Buildings Zone, Flood Zone, Conservation Area, Waste management Site et cetera. 
