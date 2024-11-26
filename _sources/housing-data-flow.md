@@ -84,7 +84,7 @@ The process can be divided into 3 stages: Early Engagement, Regulation 18, and R
 This stage involves gathering data and understanding the demands of stakeholders. It includes conducting consultations and carrying out land studies and site exercises. The outcome of this stage is the reports of studies and GIS layer for Site Allocation. The team receives Call for Site Forms from the public, which includes Site Identification, Land Ownership, Development Opportunities and Constraints, and Delivery Time Frame. 
 
 <p align="center">
-  <img src="/_static/FlowImages/SP3.png" alt="Strategic Planning Regulation 18 & 19 workflow" />
+  <img src="./_static/FlowImages/SP3.png" alt="Strategic Planning Regulation 18 & 19 workflow" />
 </p>
 
 <p align="center">
@@ -99,7 +99,7 @@ During this phase, the Infrastructure Delivery Plan is published, and the team c
 
 
 <p align="center">
-  <img src="/_static/FlowImages/SP4.png" alt="Strategic Planning Post-Regulation workflow" />
+  <img src="./_static/FlowImages/SP4.png" alt="Strategic Planning Post-Regulation workflow" />
 </p>
 
 <p align="center">
@@ -111,7 +111,7 @@ After submission, a designated planning inspector reviews the draft. Once approv
 
 
 <p align="center">
-  <img src="/_static/FlowImages/SP5.png" alt="Strategic Planning AMR workflow" />
+  <img src="./_static/FlowImages/SP5.png" alt="Strategic Planning AMR workflow" />
 </p>
 
 <p align="center">
@@ -164,7 +164,7 @@ The Development Management (DM) Team takes over a case once the DS Team complete
 
 
 <p align="center">
-  <img src="/_static/FlowImages/image.png" alt="The entire workflow of the DM Team" />
+  <img src="./_static/FlowImages/image.png" alt="The entire workflow of the DM Team" />
 </p>
 
 <p align="center">
@@ -184,7 +184,7 @@ The Development Management (DM) Team takes over a case once the DS Team complete
 
 
 <p align="center">
-  <img src="/_static/FlowImages/IMAGE.png" alt="Step 1 for DM workflow process" />
+  <img src="./_static/FlowImages/IMAGE.png" alt="Step 1 for DM workflow process" />
 </p>
 
 <p align="center">
@@ -217,7 +217,7 @@ CIL is a charge levied by the local council on new developments that meet the cr
 
 
 <p align="center">
-  <img src="/_static/FlowImages/CIL1.png" alt="CIL overall workflow" />
+  <img src="./_static/FlowImages/CIL1.png" alt="CIL overall workflow" />
 </p>
 
 <p align="center">
@@ -226,7 +226,7 @@ CIL is a charge levied by the local council on new developments that meet the cr
 
 
 <p align="center">
-  <img src="/_static/FlowImages/CIL2.png" alt="CIL Pre-commencement workflow" />
+  <img src="./_static/FlowImages/CIL2.png" alt="CIL Pre-commencement workflow" />
 </p>
 
 <p align="center">
@@ -238,7 +238,7 @@ Once a CIL liable application is submitted, Acolaid sends updates to notify CIL 
 
 
 <p align="center">
-  <img src="/_static/FlowImages/CIL3.png" alt="CIL Commencement workflow" />
+  <img src="./_static/FlowImages/CIL3.png" alt="CIL Commencement workflow" />
 </p>
 
 <p align="center">
@@ -251,7 +251,7 @@ Once the payment is made within the 60 days window, the payment information will
 
 
 <p align="center">
-  <img src="/_static/FlowImages/CIL4.png" alt="CIL Completion workflow" />
+  <img src="./_static/FlowImages/CIL4.png" alt="CIL Completion workflow" />
 </p>
 
 <p align="center">
@@ -266,7 +266,7 @@ The completion of the site is shared with the CIL officer through weekly updates
 *CIL Forecasting Process and Outcome Data*
 
 <p align="center">
-  <img src="/_static/FlowImages/CIL5.png" alt="CIL Forecasting overall workflow" />
+  <img src="./_static/FlowImages/CIL5.png" alt="CIL Forecasting overall workflow" />
 </p>
 
 <p align="center">
@@ -277,7 +277,7 @@ The CIL forecasting team’s responsibilities can be divided into two main tasks
 
 
 <p align="center">
-  <img src="/_static/FlowImages/CIL6.png" alt="CIL IDP workflow" />
+  <img src="./_static/FlowImages/CIL6.png" alt="CIL IDP workflow" />
 </p>
 
 <p align="center">
@@ -300,7 +300,7 @@ S106 Agreement is a planning obligation set through negotiations between the dev
 
 
 <p align="center">
-  <img src="/_static/FlowImages/S1061.png" alt="S106 overall workflow" />
+  <img src="./_static/FlowImages/S1061.png" alt="S106 overall workflow" />
 </p>
 
 <p align="center">
@@ -309,7 +309,7 @@ S106 Agreement is a planning obligation set through negotiations between the dev
 
 
 <p align="center">
-  <img src="/_static/FlowImages/S1062.png" alt="S106 Pre-commencement workflow" />
+  <img src="./_static/FlowImages/S1062.png" alt="S106 Pre-commencement workflow" />
 </p>
 
 <p align="center">
@@ -323,7 +323,7 @@ While drafting the agreement, a signed copy of the Rent and Nomination Agreement
 
 
 <p align="center">
-  <img src="/_static/FlowImages/S1063.png" alt="S106 Commencement workflow" />
+  <img src="./_static/FlowImages/S1063.png" alt="S106 Commencement workflow" />
 </p>
 
 <p align="center">
@@ -335,7 +335,7 @@ Developers are required to inform the council about the S106’s commencement, a
 
 
 <p align="center">
-  <img src="/_static/FlowImages/S1064.png" alt="S106 Completion workflow" />
+  <img src="./_static/FlowImages/S1064.png" alt="S106 Completion workflow" />
 </p>
 
 <p align="center">
@@ -352,7 +352,7 @@ Development Coordination has been introduced to expedite the development process
 *Process and Outcome Data*
 
 <p align="center">
-  <img src="/_static/FlowImages/DC1.png" alt="Development Coordination overall workflow" />
+  <img src="./_static/FlowImages/DC1.png" alt="Development Coordination overall workflow" />
 </p>
 
 <p align="center">
@@ -361,7 +361,7 @@ Development Coordination has been introduced to expedite the development process
 
 
 <p align="center">
-  <img src="/_static/FlowImages/DC2.png" alt="Development Coordination Pre-commencement workflow" />
+  <img src="./_static/FlowImages/DC2.png" alt="Development Coordination Pre-commencement workflow" />
 </p>
 
 <p align="center">
@@ -373,7 +373,7 @@ The Construction Management Plan (CMP) service oversees the compliance of CMP an
 
 
 <p align="center">
-  <img src="/_static/FlowImages/DC3.png" alt="Development Coordination Post-commencement workflow" />
+  <img src="./_static/FlowImages/DC3.png" alt="Development Coordination Post-commencement workflow" />
 </p>
 
 <p align="center">
@@ -392,7 +392,7 @@ Building Control is a process that ensures construction works comply with buildi
 *Process and Outcome Data*
 
 <p align="center">
-  <img src="/_static/FlowImages/BC1.png" alt="Building Control overall workflow" />
+  <img src="./_static/FlowImages/BC1.png" alt="Building Control overall workflow" />
 </p>
 
 <p align="center">
@@ -401,7 +401,7 @@ Building Control is a process that ensures construction works comply with buildi
 
 
 <p align="center">
-  <img src="/_static/FlowImages/BC2.png" alt="Building Control Pre-commencement workflow" />
+  <img src="./_static/FlowImages/BC2.png" alt="Building Control Pre-commencement workflow" />
 </p>
 
 <p align="center">
@@ -414,7 +414,7 @@ When Developers submit Building Control applications through the Building Contro
 Once the application is approved, the developer should notify the BC team by submitting commencement notice at least 48 hours prior to starting work. When the application is granted with conditions, the developers will be asked to provide more information. Once the BC officer sufficiently gathered the relevant information, the developer can begin the construction process. If the application is refused, the developer will need to start the approval process from the beginning to commence the construction.
 
 <p align="center">
-  <img src="/_static/FlowImages/BC3.png" alt="Building Control Post-commencement workflow" />
+  <img src="./_static/FlowImages/BC3.png" alt="Building Control Post-commencement workflow" />
 </p>
 
 <p align="center">
@@ -428,7 +428,7 @@ Once the entire site is completed, the BC officer will review the planning appli
 
 
 <p align="center">
-  <img src="/_static/FlowImages/BC4.png" alt="Building Control Approved Inspector workflow" />
+  <img src="./_static/FlowImages/BC4.png" alt="Building Control Approved Inspector workflow" />
 </p>
 
 <p align="center">
@@ -450,7 +450,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 
 
 <p align="center">
-  <img src="/_static/FlowImages/SNN1.png" alt="Street Naming and Numbering overall workflow" />
+  <img src="./_static/FlowImages/SNN1.png" alt="Street Naming and Numbering overall workflow" />
 </p>
 
 <p align="center">
@@ -465,7 +465,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 </ul>
 
 <p align="center">
-  <img src="/_static/FlowImages/SNN2.png" alt="Step 1 for SNN process" />
+  <img src="./_static/FlowImages/SNN2.png" alt="Step 1 for SNN process" />
 </p>
 
 <p align="center">
@@ -484,7 +484,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 </ul>
 
 <p align="center">
-  <img src="/_static/FlowImages/SNN3.png" alt="Step 2 for SNN process" />
+  <img src="./_static/FlowImages/SNN3.png" alt="Step 2 for SNN process" />
 </p>
 
 <p align="center">
@@ -509,7 +509,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 </ul>
 
 <p align="center">
-  <img src="/_static/FlowImages/SNN4.png" alt="Step 3 for SNN process" />
+  <img src="./_static/FlowImages/SNN4.png" alt="Step 3 for SNN process" />
 </p>
 
 <p align="center">
@@ -522,7 +522,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 The Local Land and Property Gazetteer (LLPG), interchangeably called LPG, is an address database maintained by the local authority for properties and land within the borough. The team is responsible for managing the addresses using Unique Property Reference Number (UPRN) as a key identifier.
 
 <p align="center">
-  <img src="/_static/FlowImages/LPG1.png" alt="Land and Property Gazetteer overall workflow" />
+  <img src="./_static/FlowImages/LPG1.png" alt="Land and Property Gazetteer overall workflow" />
 </p>
 
 <p align="center">
@@ -549,7 +549,7 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 </ul>
 
 <p align="center">
-  <img src="/_static/FlowImages/HS1.png" alt="Part 1 for HS process" />
+  <img src="./_static/FlowImages/HS1.png" alt="Part 1 for HS process" />
 </p>
 
 <p align="center">
@@ -565,7 +565,7 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 </ul>
 
 <p align="center">
-  <img src="/_static/FlowImages/HS2.png" alt="Part 2 for HS process" />
+  <img src="./_static/FlowImages/HS2.png" alt="Part 2 for HS process" />
 </p>
 
 <p align="center">
