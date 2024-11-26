@@ -65,7 +65,7 @@ The Strategic Planning team consists of two teams: Place Shaping and Plan Making
 The process can be divided into 3 stages: Early Engagement, Regulation 18, and Regulation 19. 
 
 <p align="center">
-  <img src="/_static/FlowImages/SP1.png" alt="Strategic Planning overall workflow" />
+  <img src="./_static/FlowImages/SP1.png" alt="Strategic Planning overall workflow" />
 </p>
 
 <p align="center">
@@ -73,7 +73,7 @@ The process can be divided into 3 stages: Early Engagement, Regulation 18, and R
 </p>
 
 <p align="center">
-  <img src="/_static/FlowImages/SP2.png" alt="Strategic Planning Early Engagement workflow" />
+  <img src="./_static/FlowImages/SP2.png" alt="Strategic Planning Early Engagement workflow" />
 </p>
 
 <p align="center">
