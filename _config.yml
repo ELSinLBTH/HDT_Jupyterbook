@@ -47,7 +47,3 @@ sphinx:
   config: 
     html_theme_options: 
       use_download_button: false
-
-# Jupyterbook Setting
-jupyter:
-  hide_input: true
