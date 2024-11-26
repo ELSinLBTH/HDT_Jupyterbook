@@ -2,8 +2,9 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: HDT Report
-author: TH DDCI
-logo: Images/THlogo.png
+author: TH DDC&IUS
+copyright: "2024"
+logo: _static/FlowImages/THlogo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -46,3 +47,7 @@ sphinx:
   config: 
     html_theme_options: 
       use_download_button: false
+
+# Jupyterbook Setting
+jupyter:
+  hide_input: true
