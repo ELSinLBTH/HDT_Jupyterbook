@@ -1,6 +1,15 @@
 a:link {
-    color: blue; /* Set unvisited link color */
+    color: #0000FF;  /* Blue color for unvisited links */
 }
+
 a:visited {
-    color: blue; /* Set visited link color to be the same */
+    color: #0000FF !important;  /* Force visited links to be blue as well */
+}
+
+a:hover {
+    color: #0000FF;  /* Optional: Blue on hover */
+}
+
+a:active {
+    color: #0000FF;  /* Optional: Blue when clicked */
 }
