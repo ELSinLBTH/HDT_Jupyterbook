@@ -30,8 +30,8 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   baseurl: "/HDT_Jupterbook"
-  extra_css: 
-    - _static/custom.css
+  extra_js:
+    - _static/reset_links.js 
   use_thebe: true
   theme:
     name: "sphinx_book_theme"
