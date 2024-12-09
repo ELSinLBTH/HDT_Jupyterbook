@@ -509,295 +509,295 @@
 </pre></div>
 </div>
 <p>Collecting bert-extractive-summarizer</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  Downloading bert_extractive_summarizer-0.10.1-py3-none-any.whl (25 kB)
-Collecting transformers
-  Downloading transformers-4.46.3-py3-none-any.whl (10.0 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.0/10.0 MB[0m [31m2.1 MB/s[0m eta [36m0:00:00[0m00:01[0m0:01[0m0m
-[?25hRequirement already satisfied: scikit-learn in /opt/conda/lib/python3.10/site-packages (from bert-extractive-summarizer) (1.1.1)
-Requirement already satisfied: spacy in /opt/conda/lib/python3.10/site-packages (from bert-extractive-summarizer) (3.4.1)
-Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.1.0)
-Requirement already satisfied: numpy&gt;=1.17.3 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.23.3)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (3.1.0)
-Requirement already satisfied: scipy&gt;=1.3.2 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.9.1)
-Requirement already satisfied: pydantic!=1.8,!=1.8.1,&lt;1.10.0,&gt;=1.7.4 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.9.2)
-Requirement already satisfied: preshed&lt;3.1.0,&gt;=3.0.2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.0.8)
-Requirement already satisfied: requests&lt;3.0.0,&gt;=2.13.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.28.1)
-Requirement already satisfied: srsly&lt;3.0.0,&gt;=2.4.3 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.4.4)
-Requirement already satisfied: langcodes&lt;4.0.0,&gt;=3.2.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.3.0)
-Requirement already satisfied: setuptools in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (63.2.0)
-Requirement already satisfied: packaging&gt;=20.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (21.3)
-Requirement already satisfied: cymem&lt;2.1.0,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.0.7)
-Requirement already satisfied: pathy&gt;=0.3.5 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.6.2)
-Requirement already satisfied: spacy-legacy&lt;3.1.0,&gt;=3.0.9 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.0.10)
-Requirement already satisfied: jinja2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.1.2)
-Requirement already satisfied: typer&lt;0.5.0,&gt;=0.3.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.4.2)
-Requirement already satisfied: wasabi&lt;1.1.0,&gt;=0.9.1 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.10.0)
-Requirement already satisfied: tqdm&lt;5.0.0,&gt;=4.38.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (4.64.0)
-Requirement already satisfied: spacy-loggers&lt;2.0.0,&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.0.3)
-Requirement already satisfied: murmurhash&lt;1.1.0,&gt;=0.28.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.0.9)
-Requirement already satisfied: thinc&lt;8.2.0,&gt;=8.1.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (8.1.3)
-Requirement already satisfied: catalogue&lt;2.1.0,&gt;=2.0.6 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.0.8)
-Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers-&gt;bert-extractive-summarizer) (2022.9.13)
-Collecting tokenizers&lt;0.21,&gt;=0.20
-  Downloading tokenizers-0.20.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.0/3.0 MB[0m [31m5.8 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from transformers-&gt;bert-extractive-summarizer) (6.0)
-Collecting safetensors&gt;=0.4.1
-  Downloading safetensors-0.4.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (435 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m435.0/435.0 kB[0m [31m7.1 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hCollecting filelock
-  Downloading filelock-3.16.1-py3-none-any.whl (16 kB)
-Collecting huggingface-hub&lt;1.0,&gt;=0.23.2
-  Downloading huggingface_hub-0.26.2-py3-none-any.whl (447 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m447.5/447.5 kB[0m [31m6.5 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&lt;1.0,&gt;=0.23.2-&gt;transformers-&gt;bert-extractive-summarizer) (3.10.0.2)
-Collecting fsspec&gt;=2023.5.0
-  Downloading fsspec-2024.10.0-py3-none-any.whl (179 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m179.6/179.6 kB[0m [31m10.4 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.0-&gt;spacy-&gt;bert-extractive-summarizer) (3.0.9)
-Requirement already satisfied: smart-open&lt;6.0.0,&gt;=5.2.1 in /opt/conda/lib/python3.10/site-packages (from pathy&gt;=0.3.5-&gt;spacy-&gt;bert-extractive-summarizer) (5.2.1)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (3.3)
-Requirement already satisfied: charset-normalizer&lt;3,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (2.1.0)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (1.26.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (2022.6.15)
-Requirement already satisfied: blis&lt;0.8.0,&gt;=0.7.8 in /opt/conda/lib/python3.10/site-packages (from thinc&lt;8.2.0,&gt;=8.1.0-&gt;spacy-&gt;bert-extractive-summarizer) (0.7.8)
-Requirement already satisfied: confection&lt;1.0.0,&gt;=0.0.1 in /opt/conda/lib/python3.10/site-packages (from thinc&lt;8.2.0,&gt;=8.1.0-&gt;spacy-&gt;bert-extractive-summarizer) (0.0.3)
-Requirement already satisfied: click&lt;9.0.0,&gt;=7.1.1 in /opt/conda/lib/python3.10/site-packages (from typer&lt;0.5.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer) (8.1.3)
-Requirement already satisfied: MarkupSafe&gt;=2.0 in /opt/conda/lib/python3.10/site-packages (from jinja2-&gt;spacy-&gt;bert-extractive-summarizer) (2.1.1)
-Installing collected packages: safetensors, fsspec, filelock, huggingface-hub, tokenizers, transformers, bert-extractive-summarizer
-  Attempting uninstall: fsspec
-    Found existing installation: fsspec 2022.5.0
-    Uninstalling fsspec-2022.5.0:
-      Successfully uninstalled fsspec-2022.5.0
-Successfully installed bert-extractive-summarizer-0.10.1 filelock-3.16.1 fsspec-2024.10.0 huggingface-hub-0.26.2 safetensors-0.4.5 tokenizers-0.20.3 transformers-4.46.3
-Collecting python-docx
-  Downloading python_docx-1.1.2-py3-none-any.whl (244 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m244.3/244.3 kB[0m [31m8.2 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting typing-extensions&gt;=4.9.0
-  Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
-Requirement already satisfied: lxml&gt;=3.1.0 in /opt/conda/lib/python3.10/site-packages (from python-docx) (4.9.1)
-Installing collected packages: typing-extensions, python-docx
-  Attempting uninstall: typing-extensions
-    Found existing installation: typing-extensions 3.10.0.2
-    Uninstalling typing-extensions-3.10.0.2:
-      Successfully uninstalled typing-extensions-3.10.0.2
-[31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-arviz 0.11.1 requires typing-extensions&lt;4,&gt;=3.7.4.3, but you have typing-extensions 4.12.2 which is incompatible.[0m[31m
-[0mSuccessfully installed python-docx-1.1.2 typing-extensions-4.12.2
-Collecting datasets
-  Downloading datasets-3.1.0-py3-none-any.whl (480 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m480.6/480.6 kB[0m [31m7.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: dill&lt;0.3.9,&gt;=0.3.0 in /opt/conda/lib/python3.10/site-packages (from datasets) (0.3.5.1)
-Collecting multiprocess&lt;0.70.17
-  Downloading multiprocess-0.70.16-py310-none-any.whl (134 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m134.8/134.8 kB[0m [31m9.7 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: pandas in /opt/conda/lib/python3.10/site-packages (from datasets) (1.4.3)
-Collecting tqdm&gt;=4.66.3
-  Downloading tqdm-4.67.0-py3-none-any.whl (78 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m78.6/78.6 kB[0m [31m11.4 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from datasets) (6.0)
-Collecting aiohttp
-  Downloading aiohttp-3.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.6/1.6 MB[0m [31m6.0 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: packaging in /opt/conda/lib/python3.10/site-packages (from datasets) (21.3)
-Collecting xxhash
-  Downloading xxhash-3.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (194 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m194.1/194.1 kB[0m [31m4.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hCollecting fsspec[http]&lt;=2024.9.0,&gt;=2023.1.0
-  Downloading fsspec-2024.9.0-py3-none-any.whl (179 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m179.3/179.3 kB[0m [31m5.7 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from datasets) (3.16.1)
-Requirement already satisfied: numpy&gt;=1.17 in /opt/conda/lib/python3.10/site-packages (from datasets) (1.23.3)
-Collecting requests&gt;=2.32.2
-  Downloading requests-2.32.3-py3-none-any.whl (64 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m64.9/64.9 kB[0m [31m9.8 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: huggingface-hub&gt;=0.23.0 in /opt/conda/lib/python3.10/site-packages (from datasets) (0.26.2)
-Collecting pyarrow&gt;=15.0.0
-  Downloading pyarrow-18.0.0-cp310-cp310-manylinux_2_28_x86_64.whl (40.0 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m40.0/40.0 MB[0m [31m6.8 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
-[?25hRequirement already satisfied: attrs&gt;=17.3.0 in /opt/conda/lib/python3.10/site-packages (from aiohttp-&gt;datasets) (21.4.0)
-Collecting frozenlist&gt;=1.1.1
-  Downloading frozenlist-1.5.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (241 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m241.9/241.9 kB[0m [31m8.6 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting async-timeout&lt;6.0,&gt;=4.0
-  Downloading async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
-Collecting aiosignal&gt;=1.1.2
-  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
-Collecting aiohappyeyeballs&gt;=2.3.0
-  Downloading aiohappyeyeballs-2.4.3-py3-none-any.whl (14 kB)
-Collecting multidict&lt;7.0,&gt;=4.5
-  Downloading multidict-6.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (124 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m124.6/124.6 kB[0m [31m12.4 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting propcache&gt;=0.2.0
-  Downloading propcache-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (208 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m208.9/208.9 kB[0m [31m8.7 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting yarl&lt;2.0,&gt;=1.17.0
-  Downloading yarl-1.17.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (319 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m319.2/319.2 kB[0m [31m6.4 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.23.0-&gt;datasets) (4.12.2)
-Collecting dill&lt;0.3.9,&gt;=0.3.0
-  Downloading dill-0.3.8-py3-none-any.whl (116 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m116.3/116.3 kB[0m [31m9.2 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging-&gt;datasets) (3.0.9)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (3.3)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (2022.6.15)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (2.1.0)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (1.26.10)
-Requirement already satisfied: python-dateutil&gt;=2.8.1 in /opt/conda/lib/python3.10/site-packages (from pandas-&gt;datasets) (2.8.2)
-Requirement already satisfied: pytz&gt;=2020.1 in /opt/conda/lib/python3.10/site-packages (from pandas-&gt;datasets) (2022.1)
-Requirement already satisfied: six&gt;=1.5 in /opt/conda/lib/python3.10/site-packages (from python-dateutil&gt;=2.8.1-&gt;pandas-&gt;datasets) (1.16.0)
-Installing collected packages: xxhash, tqdm, requests, pyarrow, propcache, multidict, fsspec, frozenlist, dill, async-timeout, aiohappyeyeballs, yarl, multiprocess, aiosignal, aiohttp, datasets
-  Attempting uninstall: tqdm
-    Found existing installation: tqdm 4.64.0
-    Uninstalling tqdm-4.64.0:
-      Successfully uninstalled tqdm-4.64.0
-  Attempting uninstall: requests
-    Found existing installation: requests 2.28.1
-    Uninstalling requests-2.28.1:
-      Successfully uninstalled requests-2.28.1
-  Attempting uninstall: pyarrow
-    Found existing installation: pyarrow 9.0.0
-    Uninstalling pyarrow-9.0.0:
-      Successfully uninstalled pyarrow-9.0.0
-  Attempting uninstall: fsspec
-    Found existing installation: fsspec 2024.10.0
-    Uninstalling fsspec-2024.10.0:
-      Successfully uninstalled fsspec-2024.10.0
-  Attempting uninstall: dill
-    Found existing installation: dill 0.3.5.1
-    Uninstalling dill-0.3.5.1:
-      Successfully uninstalled dill-0.3.5.1
-[31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-pandas-profiling 3.3.0 requires requests&lt;2.29,&gt;=2.24.0, but you have requests 2.32.3 which is incompatible.
-pandas-profiling 3.3.0 requires tqdm&lt;4.65,&gt;=4.48.2, but you have tqdm 4.67.0 which is incompatible.[0m[31m
-[0mSuccessfully installed aiohappyeyeballs-2.4.3 aiohttp-3.11.4 aiosignal-1.3.1 async-timeout-5.0.1 datasets-3.1.0 dill-0.3.8 frozenlist-1.5.0 fsspec-2024.9.0 multidict-6.1.0 multiprocess-0.70.16 propcache-0.2.0 pyarrow-18.0.0 requests-2.32.3 tqdm-4.67.0 xxhash-3.5.0 yarl-1.17.2
-Collecting sentencepiece
-  Downloading sentencepiece-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.3/1.3 MB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
-[?25hInstalling collected packages: sentencepiece
-Successfully installed sentencepiece-0.2.0
-Collecting Rouge
-  Downloading rouge-1.0.1-py3-none-any.whl (13 kB)
-Requirement already satisfied: six in /opt/conda/lib/python3.10/site-packages (from Rouge) (1.16.0)
-Installing collected packages: Rouge
-Successfully installed Rouge-1.0.1
-Collecting sentence-transformers
-  Downloading sentence_transformers-3.3.1-py3-none-any.whl (268 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m268.8/268.8 kB[0m [31m6.6 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: huggingface-hub&gt;=0.20.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (0.26.2)
-Requirement already satisfied: torch&gt;=1.11.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.12.1)
-Requirement already satisfied: scipy in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.9.1)
-Requirement already satisfied: Pillow in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (9.2.0)
-Requirement already satisfied: scikit-learn in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.1.1)
-Requirement already satisfied: transformers&lt;5.0.0,&gt;=4.41.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (4.46.3)
-Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (4.67.0)
-Requirement already satisfied: requests in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2.32.3)
-Requirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (6.0)
-Requirement already satisfied: packaging&gt;=20.9 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (21.3)
-Requirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (4.12.2)
-Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.16.1)
-Requirement already satisfied: fsspec&gt;=2023.5.0 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2024.9.0)
-Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (2022.9.13)
-Requirement already satisfied: numpy&gt;=1.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (1.23.3)
-Requirement already satisfied: tokenizers&lt;0.21,&gt;=0.20 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (0.20.3)
-Requirement already satisfied: safetensors&gt;=0.4.1 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (0.4.5)
-Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;sentence-transformers) (1.1.0)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;sentence-transformers) (3.1.0)
-Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.9-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.0.9)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (1.26.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2022.6.15)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2.1.0)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.3)
-Installing collected packages: sentence-transformers
-Successfully installed sentence-transformers-3.3.1
-Requirement already satisfied: typing-extensions in /opt/conda/lib/python3.10/site-packages (4.12.2)
-Collecting yake
-  Downloading yake-0.4.8-py2.py3-none-any.whl (60 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m60.2/60.2 kB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: networkx in /opt/conda/lib/python3.10/site-packages (from yake) (2.8.7)
-Requirement already satisfied: numpy in /opt/conda/lib/python3.10/site-packages (from yake) (1.23.3)
-Requirement already satisfied: click&gt;=6.0 in /opt/conda/lib/python3.10/site-packages (from yake) (8.1.3)
-Requirement already satisfied: tabulate in /opt/conda/lib/python3.10/site-packages (from yake) (0.9.0)
-Collecting jellyfish
-  Downloading jellyfish-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (335 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m336.0/336.0 kB[0m [31m6.7 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hCollecting segtok
-  Downloading segtok-1.5.11-py3-none-any.whl (24 kB)
-Requirement already satisfied: regex in /opt/conda/lib/python3.10/site-packages (from segtok-&gt;yake) (2022.9.13)
-Installing collected packages: segtok, jellyfish, yake
-Successfully installed jellyfish-1.1.0 segtok-1.5.11 yake-0.4.8
-Collecting rake-nltk
-  Downloading rake_nltk-1.0.6-py3-none-any.whl (9.1 kB)
-Requirement already satisfied: nltk&lt;4.0.0,&gt;=3.6.2 in /opt/conda/lib/python3.10/site-packages (from rake-nltk) (3.6.7)
-Requirement already satisfied: click in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (8.1.3)
-Requirement already satisfied: regex&gt;=2021.8.3 in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (2022.9.13)
-Requirement already satisfied: joblib in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (1.1.0)
-Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (4.67.0)
-Installing collected packages: rake-nltk
-Successfully installed rake-nltk-1.0.6
-Collecting keybert
-  Downloading keybert-0.8.5-py3-none-any.whl (37 kB)
-Collecting rich&gt;=10.4.0
-  Downloading rich-13.9.4-py3-none-any.whl (242 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m242.4/242.4 kB[0m [31m3.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: numpy&gt;=1.18.5 in /opt/conda/lib/python3.10/site-packages (from keybert) (1.23.3)
-Requirement already satisfied: scikit-learn&gt;=0.22.2 in /opt/conda/lib/python3.10/site-packages (from keybert) (1.1.1)
-Requirement already satisfied: sentence-transformers&gt;=0.3.8 in /opt/conda/lib/python3.10/site-packages (from keybert) (3.3.1)
-Requirement already satisfied: typing-extensions&lt;5.0,&gt;=4.0.0 in /opt/conda/lib/python3.10/site-packages (from rich&gt;=10.4.0-&gt;keybert) (4.12.2)
-Collecting markdown-it-py&gt;=2.2.0
-  Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m87.5/87.5 kB[0m [31m16.9 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting pygments&lt;3.0.0,&gt;=2.13.0
-  Downloading pygments-2.18.0-py3-none-any.whl (1.2 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (3.1.0)
-Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (1.1.0)
-Requirement already satisfied: scipy&gt;=1.3.2 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (1.9.1)
-Requirement already satisfied: transformers&lt;5.0.0,&gt;=4.41.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (4.46.3)
-Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (4.67.0)
-Requirement already satisfied: Pillow in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (9.2.0)
-Requirement already satisfied: torch&gt;=1.11.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (1.12.1)
-Requirement already satisfied: huggingface-hub&gt;=0.20.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (0.26.2)
-Requirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (6.0)
-Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.16.1)
-Requirement already satisfied: packaging&gt;=20.9 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (21.3)
-Requirement already satisfied: fsspec&gt;=2023.5.0 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2024.9.0)
-Requirement already satisfied: requests in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2.32.3)
-Requirement already satisfied: mdurl~=0.1 in /opt/conda/lib/python3.10/site-packages (from markdown-it-py&gt;=2.2.0-&gt;rich&gt;=10.4.0-&gt;keybert) (0.1.2)
-Requirement already satisfied: tokenizers&lt;0.21,&gt;=0.20 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (0.20.3)
-Requirement already satisfied: safetensors&gt;=0.4.1 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (0.4.5)
-Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2022.9.13)
-Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.9-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.0.9)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (1.26.10)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.3)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2022.6.15)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2.1.0)
-Installing collected packages: pygments, markdown-it-py, rich, keybert
-  Attempting uninstall: pygments
-    Found existing installation: Pygments 2.12.0
-    Uninstalling Pygments-2.12.0:
-      Successfully uninstalled Pygments-2.12.0
-  Attempting uninstall: markdown-it-py
-    Found existing installation: markdown-it-py 2.1.0
-    Uninstalling markdown-it-py-2.1.0:
-      Successfully uninstalled markdown-it-py-2.1.0
-[31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-mdit-py-plugins 0.3.1 requires markdown-it-py&lt;3.0.0,&gt;=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
-jupytext 1.14.1 requires markdown-it-py&lt;3.0.0,&gt;=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.[0m[31m
-[0mSuccessfully installed keybert-0.8.5 markdown-it-py-3.0.0 pygments-2.18.0 rich-13.9.4
-Collecting summa
-  Downloading summa-1.2.0.tar.gz (54 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m54.9/54.9 kB[0m [31m9.2 MB/s[0m eta [36m0:00:00[0m
-[?25h  Preparing metadata (setup.py) ... [?25ldone
-[?25hRequirement already satisfied: scipy&gt;=0.19 in /opt/conda/lib/python3.10/site-packages (from summa) (1.9.1)
-Requirement already satisfied: numpy&lt;1.25.0,&gt;=1.18.5 in /opt/conda/lib/python3.10/site-packages (from scipy&gt;=0.19-&gt;summa) (1.23.3)
-Building wheels for collected packages: summa
-  Building wheel for summa (setup.py) ... [?25ldone
-[?25h  Created wheel for summa: filename=summa-1.2.0-py3-none-any.whl size=54390 sha256=fbcd1f4b1f9449389b57337c40923340aadd4171993a0ec3468d31b5e2eb11df
-  Stored in directory: /home/jovyan/.cache/pip/wheels/98/76/c7/9bba0baff81fee6694bf15e71d0323d37231c9cf811cd1ade7
-Successfully built summa
-Installing collected packages: summa
-Successfully installed summa-1.2.0
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>      Downloading bert_extractive_summarizer-0.10.1-py3-none-any.whl (25 kB)
+    Collecting transformers
+      Downloading transformers-4.46.3-py3-none-any.whl (10.0 MB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.0/10.0 MB[0m [31m2.1 MB/s[0m eta [36m0:00:00[0m00:01[0m0:01[0m0m
+    [?25hRequirement already satisfied: scikit-learn in /opt/conda/lib/python3.10/site-packages (from bert-extractive-summarizer) (1.1.1)
+    Requirement already satisfied: spacy in /opt/conda/lib/python3.10/site-packages (from bert-extractive-summarizer) (3.4.1)
+    Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.1.0)
+    Requirement already satisfied: numpy&gt;=1.17.3 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.23.3)
+    Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (3.1.0)
+    Requirement already satisfied: scipy&gt;=1.3.2 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.9.1)
+    Requirement already satisfied: pydantic!=1.8,!=1.8.1,&lt;1.10.0,&gt;=1.7.4 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.9.2)
+    Requirement already satisfied: preshed&lt;3.1.0,&gt;=3.0.2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.0.8)
+    Requirement already satisfied: requests&lt;3.0.0,&gt;=2.13.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.28.1)
+    Requirement already satisfied: srsly&lt;3.0.0,&gt;=2.4.3 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.4.4)
+    Requirement already satisfied: langcodes&lt;4.0.0,&gt;=3.2.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.3.0)
+    Requirement already satisfied: setuptools in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (63.2.0)
+    Requirement already satisfied: packaging&gt;=20.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (21.3)
+    Requirement already satisfied: cymem&lt;2.1.0,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.0.7)
+    Requirement already satisfied: pathy&gt;=0.3.5 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.6.2)
+    Requirement already satisfied: spacy-legacy&lt;3.1.0,&gt;=3.0.9 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.0.10)
+    Requirement already satisfied: jinja2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.1.2)
+    Requirement already satisfied: typer&lt;0.5.0,&gt;=0.3.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.4.2)
+    Requirement already satisfied: wasabi&lt;1.1.0,&gt;=0.9.1 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.10.0)
+    Requirement already satisfied: tqdm&lt;5.0.0,&gt;=4.38.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (4.64.0)
+    Requirement already satisfied: spacy-loggers&lt;2.0.0,&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.0.3)
+    Requirement already satisfied: murmurhash&lt;1.1.0,&gt;=0.28.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.0.9)
+    Requirement already satisfied: thinc&lt;8.2.0,&gt;=8.1.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (8.1.3)
+    Requirement already satisfied: catalogue&lt;2.1.0,&gt;=2.0.6 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.0.8)
+    Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers-&gt;bert-extractive-summarizer) (2022.9.13)
+    Collecting tokenizers&lt;0.21,&gt;=0.20
+      Downloading tokenizers-0.20.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.0/3.0 MB[0m [31m5.8 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from transformers-&gt;bert-extractive-summarizer) (6.0)
+    Collecting safetensors&gt;=0.4.1
+      Downloading safetensors-0.4.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (435 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m435.0/435.0 kB[0m [31m7.1 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hCollecting filelock
+      Downloading filelock-3.16.1-py3-none-any.whl (16 kB)
+    Collecting huggingface-hub&lt;1.0,&gt;=0.23.2
+      Downloading huggingface_hub-0.26.2-py3-none-any.whl (447 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m447.5/447.5 kB[0m [31m6.5 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&lt;1.0,&gt;=0.23.2-&gt;transformers-&gt;bert-extractive-summarizer) (3.10.0.2)
+    Collecting fsspec&gt;=2023.5.0
+      Downloading fsspec-2024.10.0-py3-none-any.whl (179 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m179.6/179.6 kB[0m [31m10.4 MB/s[0m eta [36m0:00:00[0m
+    [?25hRequirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.0-&gt;spacy-&gt;bert-extractive-summarizer) (3.0.9)
+    Requirement already satisfied: smart-open&lt;6.0.0,&gt;=5.2.1 in /opt/conda/lib/python3.10/site-packages (from pathy&gt;=0.3.5-&gt;spacy-&gt;bert-extractive-summarizer) (5.2.1)
+    Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (3.3)
+    Requirement already satisfied: charset-normalizer&lt;3,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (2.1.0)
+    Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (1.26.10)
+    Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (2022.6.15)
+    Requirement already satisfied: blis&lt;0.8.0,&gt;=0.7.8 in /opt/conda/lib/python3.10/site-packages (from thinc&lt;8.2.0,&gt;=8.1.0-&gt;spacy-&gt;bert-extractive-summarizer) (0.7.8)
+    Requirement already satisfied: confection&lt;1.0.0,&gt;=0.0.1 in /opt/conda/lib/python3.10/site-packages (from thinc&lt;8.2.0,&gt;=8.1.0-&gt;spacy-&gt;bert-extractive-summarizer) (0.0.3)
+    Requirement already satisfied: click&lt;9.0.0,&gt;=7.1.1 in /opt/conda/lib/python3.10/site-packages (from typer&lt;0.5.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer) (8.1.3)
+    Requirement already satisfied: MarkupSafe&gt;=2.0 in /opt/conda/lib/python3.10/site-packages (from jinja2-&gt;spacy-&gt;bert-extractive-summarizer) (2.1.1)
+    Installing collected packages: safetensors, fsspec, filelock, huggingface-hub, tokenizers, transformers, bert-extractive-summarizer
+      Attempting uninstall: fsspec
+        Found existing installation: fsspec 2022.5.0
+        Uninstalling fsspec-2022.5.0:
+          Successfully uninstalled fsspec-2022.5.0
+    Successfully installed bert-extractive-summarizer-0.10.1 filelock-3.16.1 fsspec-2024.10.0 huggingface-hub-0.26.2 safetensors-0.4.5 tokenizers-0.20.3 transformers-4.46.3
+    Collecting python-docx
+      Downloading python_docx-1.1.2-py3-none-any.whl (244 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m244.3/244.3 kB[0m [31m8.2 MB/s[0m eta [36m0:00:00[0m
+    [?25hCollecting typing-extensions&gt;=4.9.0
+      Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
+    Requirement already satisfied: lxml&gt;=3.1.0 in /opt/conda/lib/python3.10/site-packages (from python-docx) (4.9.1)
+    Installing collected packages: typing-extensions, python-docx
+      Attempting uninstall: typing-extensions
+        Found existing installation: typing-extensions 3.10.0.2
+        Uninstalling typing-extensions-3.10.0.2:
+          Successfully uninstalled typing-extensions-3.10.0.2
+    [31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+    arviz 0.11.1 requires typing-extensions&lt;4,&gt;=3.7.4.3, but you have typing-extensions 4.12.2 which is incompatible.[0m[31m
+    [0mSuccessfully installed python-docx-1.1.2 typing-extensions-4.12.2
+    Collecting datasets
+      Downloading datasets-3.1.0-py3-none-any.whl (480 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m480.6/480.6 kB[0m [31m7.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: dill&lt;0.3.9,&gt;=0.3.0 in /opt/conda/lib/python3.10/site-packages (from datasets) (0.3.5.1)
+    Collecting multiprocess&lt;0.70.17
+      Downloading multiprocess-0.70.16-py310-none-any.whl (134 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m134.8/134.8 kB[0m [31m9.7 MB/s[0m eta [36m0:00:00[0m
+    [?25hRequirement already satisfied: pandas in /opt/conda/lib/python3.10/site-packages (from datasets) (1.4.3)
+    Collecting tqdm&gt;=4.66.3
+      Downloading tqdm-4.67.0-py3-none-any.whl (78 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m78.6/78.6 kB[0m [31m11.4 MB/s[0m eta [36m0:00:00[0m
+    [?25hRequirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from datasets) (6.0)
+    Collecting aiohttp
+      Downloading aiohttp-3.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.6/1.6 MB[0m [31m6.0 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: packaging in /opt/conda/lib/python3.10/site-packages (from datasets) (21.3)
+    Collecting xxhash
+      Downloading xxhash-3.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (194 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m194.1/194.1 kB[0m [31m4.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hCollecting fsspec[http]&lt;=2024.9.0,&gt;=2023.1.0
+      Downloading fsspec-2024.9.0-py3-none-any.whl (179 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m179.3/179.3 kB[0m [31m5.7 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from datasets) (3.16.1)
+    Requirement already satisfied: numpy&gt;=1.17 in /opt/conda/lib/python3.10/site-packages (from datasets) (1.23.3)
+    Collecting requests&gt;=2.32.2
+      Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m64.9/64.9 kB[0m [31m9.8 MB/s[0m eta [36m0:00:00[0m
+    [?25hRequirement already satisfied: huggingface-hub&gt;=0.23.0 in /opt/conda/lib/python3.10/site-packages (from datasets) (0.26.2)
+    Collecting pyarrow&gt;=15.0.0
+      Downloading pyarrow-18.0.0-cp310-cp310-manylinux_2_28_x86_64.whl (40.0 MB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m40.0/40.0 MB[0m [31m6.8 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
+    [?25hRequirement already satisfied: attrs&gt;=17.3.0 in /opt/conda/lib/python3.10/site-packages (from aiohttp-&gt;datasets) (21.4.0)
+    Collecting frozenlist&gt;=1.1.1
+      Downloading frozenlist-1.5.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (241 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m241.9/241.9 kB[0m [31m8.6 MB/s[0m eta [36m0:00:00[0m
+    [?25hCollecting async-timeout&lt;6.0,&gt;=4.0
+      Downloading async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+    Collecting aiosignal&gt;=1.1.2
+      Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
+    Collecting aiohappyeyeballs&gt;=2.3.0
+      Downloading aiohappyeyeballs-2.4.3-py3-none-any.whl (14 kB)
+    Collecting multidict&lt;7.0,&gt;=4.5
+      Downloading multidict-6.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (124 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m124.6/124.6 kB[0m [31m12.4 MB/s[0m eta [36m0:00:00[0m
+    [?25hCollecting propcache&gt;=0.2.0
+      Downloading propcache-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (208 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m208.9/208.9 kB[0m [31m8.7 MB/s[0m eta [36m0:00:00[0m
+    [?25hCollecting yarl&lt;2.0,&gt;=1.17.0
+      Downloading yarl-1.17.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (319 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m319.2/319.2 kB[0m [31m6.4 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.23.0-&gt;datasets) (4.12.2)
+    Collecting dill&lt;0.3.9,&gt;=0.3.0
+      Downloading dill-0.3.8-py3-none-any.whl (116 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m116.3/116.3 kB[0m [31m9.2 MB/s[0m eta [36m0:00:00[0m
+    [?25hRequirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging-&gt;datasets) (3.0.9)
+    Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (3.3)
+    Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (2022.6.15)
+    Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (2.1.0)
+    Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (1.26.10)
+    Requirement already satisfied: python-dateutil&gt;=2.8.1 in /opt/conda/lib/python3.10/site-packages (from pandas-&gt;datasets) (2.8.2)
+    Requirement already satisfied: pytz&gt;=2020.1 in /opt/conda/lib/python3.10/site-packages (from pandas-&gt;datasets) (2022.1)
+    Requirement already satisfied: six&gt;=1.5 in /opt/conda/lib/python3.10/site-packages (from python-dateutil&gt;=2.8.1-&gt;pandas-&gt;datasets) (1.16.0)
+    Installing collected packages: xxhash, tqdm, requests, pyarrow, propcache, multidict, fsspec, frozenlist, dill, async-timeout, aiohappyeyeballs, yarl, multiprocess, aiosignal, aiohttp, datasets
+      Attempting uninstall: tqdm
+        Found existing installation: tqdm 4.64.0
+        Uninstalling tqdm-4.64.0:
+          Successfully uninstalled tqdm-4.64.0
+      Attempting uninstall: requests
+        Found existing installation: requests 2.28.1
+        Uninstalling requests-2.28.1:
+          Successfully uninstalled requests-2.28.1
+      Attempting uninstall: pyarrow
+        Found existing installation: pyarrow 9.0.0
+        Uninstalling pyarrow-9.0.0:
+          Successfully uninstalled pyarrow-9.0.0
+      Attempting uninstall: fsspec
+        Found existing installation: fsspec 2024.10.0
+        Uninstalling fsspec-2024.10.0:
+          Successfully uninstalled fsspec-2024.10.0
+      Attempting uninstall: dill
+        Found existing installation: dill 0.3.5.1
+        Uninstalling dill-0.3.5.1:
+          Successfully uninstalled dill-0.3.5.1
+    [31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+    pandas-profiling 3.3.0 requires requests&lt;2.29,&gt;=2.24.0, but you have requests 2.32.3 which is incompatible.
+    pandas-profiling 3.3.0 requires tqdm&lt;4.65,&gt;=4.48.2, but you have tqdm 4.67.0 which is incompatible.[0m[31m
+    [0mSuccessfully installed aiohappyeyeballs-2.4.3 aiohttp-3.11.4 aiosignal-1.3.1 async-timeout-5.0.1 datasets-3.1.0 dill-0.3.8 frozenlist-1.5.0 fsspec-2024.9.0 multidict-6.1.0 multiprocess-0.70.16 propcache-0.2.0 pyarrow-18.0.0 requests-2.32.3 tqdm-4.67.0 xxhash-3.5.0 yarl-1.17.2
+    Collecting sentencepiece
+      Downloading sentencepiece-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.3/1.3 MB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
+    [?25hInstalling collected packages: sentencepiece
+    Successfully installed sentencepiece-0.2.0
+    Collecting Rouge
+      Downloading rouge-1.0.1-py3-none-any.whl (13 kB)
+    Requirement already satisfied: six in /opt/conda/lib/python3.10/site-packages (from Rouge) (1.16.0)
+    Installing collected packages: Rouge
+    Successfully installed Rouge-1.0.1
+    Collecting sentence-transformers
+      Downloading sentence_transformers-3.3.1-py3-none-any.whl (268 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m268.8/268.8 kB[0m [31m6.6 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: huggingface-hub&gt;=0.20.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (0.26.2)
+    Requirement already satisfied: torch&gt;=1.11.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.12.1)
+    Requirement already satisfied: scipy in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.9.1)
+    Requirement already satisfied: Pillow in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (9.2.0)
+    Requirement already satisfied: scikit-learn in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.1.1)
+    Requirement already satisfied: transformers&lt;5.0.0,&gt;=4.41.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (4.46.3)
+    Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (4.67.0)
+    Requirement already satisfied: requests in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2.32.3)
+    Requirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (6.0)
+    Requirement already satisfied: packaging&gt;=20.9 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (21.3)
+    Requirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (4.12.2)
+    Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.16.1)
+    Requirement already satisfied: fsspec&gt;=2023.5.0 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2024.9.0)
+    Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (2022.9.13)
+    Requirement already satisfied: numpy&gt;=1.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (1.23.3)
+    Requirement already satisfied: tokenizers&lt;0.21,&gt;=0.20 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (0.20.3)
+    Requirement already satisfied: safetensors&gt;=0.4.1 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (0.4.5)
+    Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;sentence-transformers) (1.1.0)
+    Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;sentence-transformers) (3.1.0)
+    Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.9-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.0.9)
+    Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (1.26.10)
+    Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2022.6.15)
+    Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2.1.0)
+    Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.3)
+    Installing collected packages: sentence-transformers
+    Successfully installed sentence-transformers-3.3.1
+    Requirement already satisfied: typing-extensions in /opt/conda/lib/python3.10/site-packages (4.12.2)
+    Collecting yake
+      Downloading yake-0.4.8-py2.py3-none-any.whl (60 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m60.2/60.2 kB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0m
+    [?25hRequirement already satisfied: networkx in /opt/conda/lib/python3.10/site-packages (from yake) (2.8.7)
+    Requirement already satisfied: numpy in /opt/conda/lib/python3.10/site-packages (from yake) (1.23.3)
+    Requirement already satisfied: click&gt;=6.0 in /opt/conda/lib/python3.10/site-packages (from yake) (8.1.3)
+    Requirement already satisfied: tabulate in /opt/conda/lib/python3.10/site-packages (from yake) (0.9.0)
+    Collecting jellyfish
+      Downloading jellyfish-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (335 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m336.0/336.0 kB[0m [31m6.7 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hCollecting segtok
+      Downloading segtok-1.5.11-py3-none-any.whl (24 kB)
+    Requirement already satisfied: regex in /opt/conda/lib/python3.10/site-packages (from segtok-&gt;yake) (2022.9.13)
+    Installing collected packages: segtok, jellyfish, yake
+    Successfully installed jellyfish-1.1.0 segtok-1.5.11 yake-0.4.8
+    Collecting rake-nltk
+      Downloading rake_nltk-1.0.6-py3-none-any.whl (9.1 kB)
+    Requirement already satisfied: nltk&lt;4.0.0,&gt;=3.6.2 in /opt/conda/lib/python3.10/site-packages (from rake-nltk) (3.6.7)
+    Requirement already satisfied: click in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (8.1.3)
+    Requirement already satisfied: regex&gt;=2021.8.3 in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (2022.9.13)
+    Requirement already satisfied: joblib in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (1.1.0)
+    Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (4.67.0)
+    Installing collected packages: rake-nltk
+    Successfully installed rake-nltk-1.0.6
+    Collecting keybert
+      Downloading keybert-0.8.5-py3-none-any.whl (37 kB)
+    Collecting rich&gt;=10.4.0
+      Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m242.4/242.4 kB[0m [31m3.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: numpy&gt;=1.18.5 in /opt/conda/lib/python3.10/site-packages (from keybert) (1.23.3)
+    Requirement already satisfied: scikit-learn&gt;=0.22.2 in /opt/conda/lib/python3.10/site-packages (from keybert) (1.1.1)
+    Requirement already satisfied: sentence-transformers&gt;=0.3.8 in /opt/conda/lib/python3.10/site-packages (from keybert) (3.3.1)
+    Requirement already satisfied: typing-extensions&lt;5.0,&gt;=4.0.0 in /opt/conda/lib/python3.10/site-packages (from rich&gt;=10.4.0-&gt;keybert) (4.12.2)
+    Collecting markdown-it-py&gt;=2.2.0
+      Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m87.5/87.5 kB[0m [31m16.9 MB/s[0m eta [36m0:00:00[0m
+    [?25hCollecting pygments&lt;3.0.0,&gt;=2.13.0
+      Downloading pygments-2.18.0-py3-none-any.whl (1.2 MB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
+    [?25hRequirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (3.1.0)
+    Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (1.1.0)
+    Requirement already satisfied: scipy&gt;=1.3.2 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (1.9.1)
+    Requirement already satisfied: transformers&lt;5.0.0,&gt;=4.41.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (4.46.3)
+    Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (4.67.0)
+    Requirement already satisfied: Pillow in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (9.2.0)
+    Requirement already satisfied: torch&gt;=1.11.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (1.12.1)
+    Requirement already satisfied: huggingface-hub&gt;=0.20.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (0.26.2)
+    Requirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (6.0)
+    Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.16.1)
+    Requirement already satisfied: packaging&gt;=20.9 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (21.3)
+    Requirement already satisfied: fsspec&gt;=2023.5.0 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2024.9.0)
+    Requirement already satisfied: requests in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2.32.3)
+    Requirement already satisfied: mdurl~=0.1 in /opt/conda/lib/python3.10/site-packages (from markdown-it-py&gt;=2.2.0-&gt;rich&gt;=10.4.0-&gt;keybert) (0.1.2)
+    Requirement already satisfied: tokenizers&lt;0.21,&gt;=0.20 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (0.20.3)
+    Requirement already satisfied: safetensors&gt;=0.4.1 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (0.4.5)
+    Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2022.9.13)
+    Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.9-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.0.9)
+    Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (1.26.10)
+    Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.3)
+    Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2022.6.15)
+    Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2.1.0)
+    Installing collected packages: pygments, markdown-it-py, rich, keybert
+      Attempting uninstall: pygments
+        Found existing installation: Pygments 2.12.0
+        Uninstalling Pygments-2.12.0:
+          Successfully uninstalled Pygments-2.12.0
+      Attempting uninstall: markdown-it-py
+        Found existing installation: markdown-it-py 2.1.0
+        Uninstalling markdown-it-py-2.1.0:
+          Successfully uninstalled markdown-it-py-2.1.0
+    [31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+    mdit-py-plugins 0.3.1 requires markdown-it-py&lt;3.0.0,&gt;=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
+    jupytext 1.14.1 requires markdown-it-py&lt;3.0.0,&gt;=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.[0m[31m
+    [0mSuccessfully installed keybert-0.8.5 markdown-it-py-3.0.0 pygments-2.18.0 rich-13.9.4
+    Collecting summa
+      Downloading summa-1.2.0.tar.gz (54 kB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m54.9/54.9 kB[0m [31m9.2 MB/s[0m eta [36m0:00:00[0m
+    [?25h  Preparing metadata (setup.py) ... [?25ldone
+    [?25hRequirement already satisfied: scipy&gt;=0.19 in /opt/conda/lib/python3.10/site-packages (from summa) (1.9.1)
+    Requirement already satisfied: numpy&lt;1.25.0,&gt;=1.18.5 in /opt/conda/lib/python3.10/site-packages (from scipy&gt;=0.19-&gt;summa) (1.23.3)
+    Building wheels for collected packages: summa
+      Building wheel for summa (setup.py) ... [?25ldone
+    [?25h  Created wheel for summa: filename=summa-1.2.0-py3-none-any.whl size=54390 sha256=fbcd1f4b1f9449389b57337c40923340aadd4171993a0ec3468d31b5e2eb11df
+      Stored in directory: /home/jovyan/.cache/pip/wheels/98/76/c7/9bba0baff81fee6694bf15e71d0323d37231c9cf811cd1ade7
+    Successfully built summa
+    Installing collected packages: summa
+    Successfully installed summa-1.2.0
 </pre></div>
 </div>
 </section>
