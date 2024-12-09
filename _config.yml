@@ -30,6 +30,8 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   baseurl: "/HDT_Jupterbook"
+  extra_css: 
+    - _static/custom.css
   use_thebe: true
   theme:
     name: "sphinx_book_theme"
@@ -41,6 +43,7 @@ html:
       use_download_button: False
   use_issues_button: true
   use_repository_button: true
+
 
 # Remove download button
 sphinx: 
