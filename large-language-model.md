@@ -501,27 +501,13 @@ BART = ''.join(result)
 print(BART)
 ```
 
+config.json:   0%|          | 0.00/571 [00:00<?, ?B/s]
+model.safetensors:   0%|          | 0.00/1.34G [00:00<?, ?B/s]
+tokenizer_config.json:   0%|          | 0.00/48.0 [00:00<?, ?B/s]
+vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]
+tokenizer.json:   0%|          | 0.00/466k [00:00<?, ?B/s]
 
-    config.json:   0%|          | 0.00/571 [00:00<?, ?B/s]
-
-
-
-    model.safetensors:   0%|          | 0.00/1.34G [00:00<?, ?B/s]
-
-
-
-    tokenizer_config.json:   0%|          | 0.00/48.0 [00:00<?, ?B/s]
-
-
-
-    vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]
-
-
-
-    tokenizer.json:   0%|          | 0.00/466k [00:00<?, ?B/s]
-
-
-    We use housing data at different trigger points, maybe it's the place to start so all the way from maybe we want to know when something is in pre-app, in an application, it's got a decision, so both if it's got a resolution to grant through planning committee and if it's got a final decision with the section 106. With different size, different types of units as well and we've done that off of reality rather than using planning policies because planning policy doesn't always get adhered to. And so, we've kind of had to prioritise where we put our time and energy. This tool really if you're if you're trying to forecast housing completions over the next three years, well, you only need stuff that's in the planning system. I was going to say certainly on some things we've done, we've had to kind of do something that works for most and then like I said, we've taken off the little ones and just put them in one windfall like, similarly, we've had to be a bit bespoke for some of the really big ones as well, and so something as complex as Lemon road or Wood Wharf.
+We use housing data at different trigger points, maybe it's the place to start so all the way from maybe we want to know when something is in pre-app, in an application, it's got a decision, so both if it's got a resolution to grant through planning committee and if it's got a final decision with the section 106. With different size, different types of units as well and we've done that off of reality rather than using planning policies because planning policy doesn't always get adhered to. And so, we've kind of had to prioritise where we put our time and energy. This tool really if you're if you're trying to forecast housing completions over the next three years, well, you only need stuff that's in the planning system. I was going to say certainly on some things we've done, we've had to kind of do something that works for most and then like I said, we've taken off the little ones and just put them in one windfall like, similarly, we've had to be a bit bespoke for some of the really big ones as well, and so something as complex as Lemon road or Wood Wharf.
     
 
 Ref:https://github.com/dmmiller612/bert-extractive-summarizer
@@ -536,31 +522,13 @@ t5 = ', '.join(str(item) for item in T5)
 T5
 ```
 
+config.json:   0%|          | 0.00/1.21k [00:00<?, ?B/s]
+model.safetensors:   0%|          | 0.00/2.95G [00:00<?, ?B/s]
+generation_config.json:   0%|          | 0.00/147 [00:00<?, ?B/s]
+spiece.model:   0%|          | 0.00/792k [00:00<?, ?B/s]
+tokenizer.json:   0%|          | 0.00/1.39M [00:00<?, ?B/s]
 
-    config.json:   0%|          | 0.00/1.21k [00:00<?, ?B/s]
-
-
-
-    model.safetensors:   0%|          | 0.00/2.95G [00:00<?, ?B/s]
-
-
-
-    generation_config.json:   0%|          | 0.00/147 [00:00<?, ?B/s]
-
-
-
-    spiece.model:   0%|          | 0.00/792k [00:00<?, ?B/s]
-
-
-
-    tokenizer.json:   0%|          | 0.00/1.39M [00:00<?, ?B/s]
-
-
-
-
-
-    [{'summary_text': "if you're trying to forecast housing completions over the next three years, it's going to be a bit more complicated . we've got a lot of assumptions that we use, but they're not necessarily based on huge amounts of data . it would be useful to have that information in a system that's searchable and can be fed into other models . if we can do that, then we'll be able to do a better job of forecasting. I think we're"}]
-
+[{'summary_text': "if you're trying to forecast housing completions over the next three years, it's going to be a bit more complicated . we've got a lot of assumptions that we use, but they're not necessarily based on huge amounts of data . it would be useful to have that information in a system that's searchable and can be fed into other models . if we can do that, then we'll be able to do a better job of forecasting. I think we're"}]
 
 
 ##### **Pegasus**
@@ -582,36 +550,16 @@ PEGASUS = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
 print(PEGASUS)
 ```
 
+tokenizer_config.json:   0%|          | 0.00/88.0 [00:00<?, ?B/s]
+spiece.model:   0%|          | 0.00/1.91M [00:00<?, ?B/s]
+special_tokens_map.json:   0%|          | 0.00/65.0 [00:00<?, ?B/s]
+config.json:   0%|          | 0.00/1.12k [00:00<?, ?B/s]
+pytorch_model.bin:   0%|          | 0.00/2.28G [00:00<?, ?B/s]
 
-    tokenizer_config.json:   0%|          | 0.00/88.0 [00:00<?, ?B/s]
-
-
-
-    spiece.model:   0%|          | 0.00/1.91M [00:00<?, ?B/s]
-
-
-
-    special_tokens_map.json:   0%|          | 0.00/65.0 [00:00<?, ?B/s]
-
-
-
-    config.json:   0%|          | 0.00/1.12k [00:00<?, ?B/s]
-
-
-
-    pytorch_model.bin:   0%|          | 0.00/2.28G [00:00<?, ?B/s]
-
-
-    Some weights of PegasusForConditionalGeneration were not initialized from the model checkpoint at google/pegasus-cnn_dailymail and are newly initialized: ['model.decoder.embed_positions.weight', 'model.encoder.embed_positions.weight']
-    You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-    
-
-
-    generation_config.json:   0%|          | 0.00/280 [00:00<?, ?B/s]
-
-
-    We use housing data at different trigger points, maybe it's the place to start .<n>We layer in assumptions about when things might get permission .<n>We tend to layer in assumptions on how long it would take to build something that's under 200 units .<n>There's definitely a hole in our data for our CIL forecasting when it comes to commercial .<n>But we haven't got anything anywhere near as sophisticated as we've got for this holes in our housing approach .
-    
+Some weights of PegasusForConditionalGeneration were not initialized from the model checkpoint at google/pegasus-cnn_dailymail and are newly initialized: ['model.decoder.embed_positions.weight', 'model.encoder.embed_positions.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+generation_config.json:   0%|          | 0.00/280 [00:00<?, ?B/s]
+We use housing data at different trigger points, maybe it's the place to start .<n>We layer in assumptions about when things might get permission .<n>We tend to layer in assumptions on how long it would take to build something that's under 200 units .<n>There's definitely a hole in our data for our CIL forecasting when it comes to commercial .<n>But we haven't got anything anywhere near as sophisticated as we've got for this holes in our housing approach .
 
 Ref: https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouTube-Channel/blob/master/NLP/Text_Summarization_%20BART%20_T5_Pegasus.ipynb
 
@@ -808,32 +756,14 @@ print(f"Similarity between Reference and Summary C: {similarity1.item()}")
 print(f"Similarity between Reference and Summary L: {similarity2.item()}")
 ```
 
-
-    tokenizer_config.json:   0%|          | 0.00/363 [00:00<?, ?B/s]
-
-
-
-    vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]
-
-
-
-    tokenizer.json:   0%|          | 0.00/466k [00:00<?, ?B/s]
-
-
-
-    special_tokens_map.json:   0%|          | 0.00/239 [00:00<?, ?B/s]
-
-
-
-    config.json:   0%|          | 0.00/571 [00:00<?, ?B/s]
-
-
-
-    model.safetensors:   0%|          | 0.00/438M [00:00<?, ?B/s]
-
-
-    Similarity between Reference and Summary C: 0.7885517477989197
-    Similarity between Reference and Summary L: 0.7846035361289978
+tokenizer_config.json:   0%|          | 0.00/363 [00:00<?, ?B/s]
+vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]
+tokenizer.json:   0%|          | 0.00/466k [00:00<?, ?B/s]
+special_tokens_map.json:   0%|          | 0.00/239 [00:00<?, ?B/s]
+config.json:   0%|          | 0.00/571 [00:00<?, ?B/s]
+model.safetensors:   0%|          | 0.00/438M [00:00<?, ?B/s]
+Similarity between Reference and Summary C: 0.7885517477989197
+Similarity between Reference and Summary L: 0.7846035361289978
     
 
 |    Model Name    |    SemScore    |
@@ -1070,49 +1000,17 @@ for keyword, score in keywords:
 keybert_list = [keyword for keyword, score in keywords]
 ```
 
-
-    modules.json:   0%|          | 0.00/349 [00:00<?, ?B/s]
-
-
-
-    config_sentence_transformers.json:   0%|          | 0.00/116 [00:00<?, ?B/s]
-
-
-
-    README.md:   0%|          | 0.00/10.7k [00:00<?, ?B/s]
-
-
-
-    sentence_bert_config.json:   0%|          | 0.00/53.0 [00:00<?, ?B/s]
-
-
-
-    config.json:   0%|          | 0.00/612 [00:00<?, ?B/s]
-
-
-
-    model.safetensors:   0%|          | 0.00/90.9M [00:00<?, ?B/s]
-
-
-
-    tokenizer_config.json:   0%|          | 0.00/350 [00:00<?, ?B/s]
-
-
-
-    vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]
-
-
-
-    tokenizer.json:   0%|          | 0.00/466k [00:00<?, ?B/s]
-
-
-
-    special_tokens_map.json:   0%|          | 0.00/112 [00:00<?, ?B/s]
-
-
-
-    1_Pooling/config.json:   0%|          | 0.00/190 [00:00<?, ?B/s]
-
+modules.json:   0%|          | 0.00/349 [00:00<?, ?B/s]
+config_sentence_transformers.json:   0%|          | 0.00/116 [00:00<?, ?B/s]
+README.md:   0%|          | 0.00/10.7k [00:00<?, ?B/s]
+sentence_bert_config.json:   0%|          | 0.00/53.0 [00:00<?, ?B/s]
+config.json:   0%|          | 0.00/612 [00:00<?, ?B/s]
+model.safetensors:   0%|          | 0.00/90.9M [00:00<?, ?B/s]
+tokenizer_config.json:   0%|          | 0.00/350 [00:00<?, ?B/s]
+vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]
+tokenizer.json:   0%|          | 0.00/466k [00:00<?, ?B/s]
+special_tokens_map.json:   0%|          | 0.00/112 [00:00<?, ?B/s]
+1_Pooling/config.json:   0%|          | 0.00/190 [00:00<?, ?B/s]
 
     commencement: 0.4556
     planning: 0.4397
