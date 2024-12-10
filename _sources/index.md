@@ -19,4 +19,3 @@ This is index of the report.
 - [Forecasting](forecasting.md)
 - [Future-Scope](future-scope.md)
 - [Prop-Tech-R4-Final](prop-tech-r4-final.md)
-- [Large-Language-Model](large-language-model.md)
