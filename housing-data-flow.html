@@ -325,34 +325,24 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-overview-bau-process-diagram">Results overview - BAU process diagram</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-overview-bau-data-diagram">Results overview - BAU data diagram</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llm-result">LLM result</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#llm-processing-and-results">LLM Processing and Results</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#bart"><strong>BART</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#t5"><strong>T5</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#pegasus"><strong>Pegasus</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#llm-processing">LLM Processing</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#document-processing">Document Processing</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#bart">BART</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#t5">T5</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#pegasus">Pegasus</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results"><strong>Results</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-rouge"><strong>Evaluation with Rouge</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-result-bart"><strong>Extractive Summarisation Result - BART</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results">Results</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-rouge">Evaluation with Rouge</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-result-bart">Extractive Summarisation Result - BART</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation">Abstractive Summarisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Model Comparison</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-result">Abstractive Summarisation Result</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation">Abstractive Summarisation</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Model Comparison</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#llama-3-2-output"><strong>Llama 3.2 output</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#copilot-output"><strong>Copilot output</strong></a></li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-semscore"><strong>Evaluation with SemScore</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#llama-3-2-general-output"><strong>Llama 3.2 General Output</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#copilot-general-output"><strong>Copilot General Output</strong></a></li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-result"><strong>Abstractive Summarisation Result</strong></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-vs-abstractive-summarisation">Extractive Summarisation VS Abstractive Summarisation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#insight">Insight</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Model Comparison</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-stop-words"><strong>Set Stop Words</strong></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#yake"><strong>Yake</strong></a></li>
@@ -362,14 +352,12 @@
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Evaluation with Rouge</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#achievement">Achievement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehensive-insights">Comprehensive insights</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#future-directions-for-language-processing-technology">Future directions for language processing technology</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#achievement">Achievement</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehensive-insights">Comprehensive insights</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#future-directions-for-language-processing-technology">Future directions for language processing technology</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-research-results-2">User Research Results 2</a><ul class="nav section-nav flex-column">
@@ -865,10 +853,11 @@ Successfully installed summa-1.2.0
 </section>
 <section id="llm-result">
 <h3>LLM result<a class="headerlink" href="#llm-result" title="Link to this heading">#</a></h3>
-<section id="llm-processing-and-results">
-<h4>LLM Processing and Results<a class="headerlink" href="#llm-processing-and-results" title="Link to this heading">#</a></h4>
+<section id="llm-processing">
+<h4>LLM Processing<a class="headerlink" href="#llm-processing" title="Link to this heading">#</a></h4>
 <p><strong>Code Tab</strong></p>
-<p><strong>Doc Processing</strong></p>
+<section id="document-processing">
+<h5>Document Processing<a class="headerlink" href="#document-processing" title="Link to this heading">#</a></h5>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_text_from_docx</span><span class="p">(</span><span class="n">docx_file</span><span class="p">):</span>
     <span class="n">doc</span> <span class="o">=</span> <span class="n">Document</span><span class="p">(</span><span class="n">docx_file</span><span class="p">)</span>
     <span class="n">full_text</span> <span class="o">=</span> <span class="p">[]</span>
@@ -959,8 +948,9 @@ Hello. Yeah. So, we&#39;re coming from, I guess like a housing and regional clie
 </pre></div>
 </div>
 </div>
+</section>
 <section id="bart">
-<h5><strong>BART</strong><a class="headerlink" href="#bart" title="Link to this heading">#</a></h5>
+<h5>BART<a class="headerlink" href="#bart" title="Link to this heading">#</a></h5>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Summarizer</span><span class="p">()</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">matthew_pullen_content</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">num_sentences</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">BART</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
@@ -976,22 +966,22 @@ tokenizer.json:   0%|          | 0.00/466k [00:00&lt;?, ?B/s]</p>
 <p>Ref:<a class="github reference external" href="https://github.com/dmmiller612/bert-extractive-summarizer">dmmiller612/bert-extractive-summarizer</a></p>
 </section>
 <section id="t5">
-<h5><strong>T5</strong><a class="headerlink" href="#t5" title="Link to this heading">#</a></h5>
+<h5>T5<a class="headerlink" href="#t5" title="Link to this heading">#</a></h5>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pipe</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span><span class="s1">&#39;summarization&#39;</span><span class="p">,</span> <span class="n">model</span> <span class="o">=</span> <span class="s1">&#39;t5-large&#39;</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">T5</span> <span class="o">=</span> <span class="n">pipe</span><span class="p">(</span><span class="n">matthew_pullen_content</span><span class="p">)</span>
 <span class="n">t5</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">T5</span><span class="p">)</span>
 <span class="n">T5</span>
 </pre></div>
 </div>
-<p>config.json:   0%|          | 0.00/1.21k [00:00&lt;?, ?B/s]
-model.safetensors:   0%|          | 0.00/2.95G [00:00&lt;?, ?B/s]
-generation_config.json:   0%|          | 0.00/147 [00:00&lt;?, ?B/s]
-spiece.model:   0%|          | 0.00/792k [00:00&lt;?, ?B/s]
+<p>config.json:   0%|          | 0.00/1.21k [00:00&lt;?, ?B/s]<br>
+model.safetensors:   0%|          | 0.00/2.95G [00:00&lt;?, ?B/s]<br>
+generation_config.json:   0%|          | 0.00/147 [00:00&lt;?, ?B/s]<br>
+spiece.model:   0%|          | 0.00/792k [00:00&lt;?, ?B/s]<br>
 tokenizer.json:   0%|          | 0.00/1.39M [00:00&lt;?, ?B/s]</p>
 <p>[{‘summary_text’: “if you’re trying to forecast housing completions over the next three years, it’s going to be a bit more complicated . we’ve got a lot of assumptions that we use, but they’re not necessarily based on huge amounts of data . it would be useful to have that information in a system that’s searchable and can be fed into other models . if we can do that, then we’ll be able to do a better job of forecasting. I think we’re”}]</p>
 </section>
 <section id="pegasus">
-<h5><strong>Pegasus</strong><a class="headerlink" href="#pegasus" title="Link to this heading">#</a></h5>
+<h5>Pegasus<a class="headerlink" href="#pegasus" title="Link to this heading">#</a></h5>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pegasus model and SentencePiece tokenizer</span>
 <span class="n">tokenizer</span> <span class="o">=</span> <span class="n">PegasusTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;google/pegasus-cnn_dailymail&quot;</span><span class="p">)</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">PegasusForConditionalGeneration</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;google/pegasus-cnn_dailymail&quot;</span><span class="p">)</span>
@@ -1020,7 +1010,7 @@ We use housing data at different trigger points, maybe it’s the place to start
 </section>
 </section>
 <section id="results">
-<h4><strong>Results</strong><a class="headerlink" href="#results" title="Link to this heading">#</a></h4>
+<h4>Results<a class="headerlink" href="#results" title="Link to this heading">#</a></h4>
 <p><strong>BART identified the following as the five most important sentences from Matthew’s speech:</strong></p>
 <p><em>“We use housing data at different trigger points, maybe it’s the place to start so all the way from maybe we want to know when something is in pre-app, in an application, it’s got a decision, so both if it’s got a resolution to grant through planning committee and if it’s got a final decision with the section 106. With different size, different types of units as well and we’ve done that off of reality rather than using planning policies because planning policy doesn’t always get adhered to. And so, we’ve kind of had to prioritise where we put our time and energy. This tool really if you’re if you’re trying to forecast housing completions over the next three years, well, you only need stuff that’s in the planning system. I was going to say certainly on some things we’ve done, we’ve had to kind of do something that works for most and then like I said, we’ve taken off the little ones and just put them in one windfall like, similarly, we’ve had to be a bit bespoke for some of the really big ones as well, and so something as complex as Lemon road or Wood Wharf.”</em></p>
 <p><strong>T5 identified the following as the five most important sentences from Matthew’s speech:</strong></p>
@@ -1029,7 +1019,7 @@ We use housing data at different trigger points, maybe it’s the place to start
 <p><em>“We use housing data at different trigger points, maybe it’s the place to start .<n>We layer in assumptions about when things might get permission .<n>We tend to layer in assumptions on how long it would take to build something that’s under 200 units .<n>There’s definitely a hole in our data for our CIL forecasting when it comes to commercial .<n>But we haven’t got anything anywhere near as sophisticated as we’ve got for this holes in our housing approach.”</em></p>
 </section>
 <section id="evaluation-with-rouge">
-<h4><strong>Evaluation with Rouge</strong><a class="headerlink" href="#evaluation-with-rouge" title="Link to this heading">#</a></h4>
+<h4>Evaluation with Rouge<a class="headerlink" href="#evaluation-with-rouge" title="Link to this heading">#</a></h4>
 <p>To verify the quality of the results, this report employs the <strong>Rouge</strong> metric for evaluation. Rouge is used to assess text summarisation tasks. The scores obtained through Rouge range from 0 to 1, with a score of 1 indicating high quality, representing a high degree of similarity between the model-generated summary and the reference summary (manually generated).</p>
 <p>For the Rouge evaluation, a reference summary is necessary. This report has set the following five sentences as the reference summary, each representing one of the five critical aspects of the overall requirements of the Housing Data Flow project.</p>
 <ol class="arabic simple">
@@ -1146,7 +1136,7 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 <p>The results indicate that <strong>BART</strong> performed exceptionally well across all metrics. Consequently, this paper will now use the BART model to perform Extractive Summarisation on the dialogue content of the 12 participants, highlighting the key five points for each members.</p>
 </section>
 <section id="extractive-summarisation-result-bart">
-<h4><strong>Extractive Summarisation Result - BART</strong><a class="headerlink" href="#extractive-summarisation-result-bart" title="Link to this heading">#</a></h4>
+<h4>Extractive Summarisation Result - BART<a class="headerlink" href="#extractive-summarisation-result-bart" title="Link to this heading">#</a></h4>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Speaker</p></th>
@@ -1194,9 +1184,8 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 </table>
 </div>
 </section>
-</section>
 <section id="abstractive-summarisation">
-<h3>Abstractive Summarisation<a class="headerlink" href="#abstractive-summarisation" title="Link to this heading">#</a></h3>
+<h4>Abstractive Summarisation<a class="headerlink" href="#abstractive-summarisation" title="Link to this heading">#</a></h4>
 <p>Models for abstractive summarisation are diverse. This report experiments with and compares Llama 3.2 and Copilot which are the two most popular LLM model. Brief introductions to the two models are as follows:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1229,19 +1218,13 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 <p><a class="reference external" href="https://medium.com/&#64;rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685">https://medium.com/&#64;rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685</a></p>
 <p>The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.</p>
 <section id="id1">
-<h4><strong>Model Comparison</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<h5>Model Comparison<a class="headerlink" href="#id1" title="Link to this heading">#</a></h5>
 <p>This paper continues to use Matthew Pullen’s dialogue to test the two models. The prompt used for testing is <em>“Summarise the following content into a five-sentence paragraph: …”</em>. The output results are as follows:</p>
-<section id="llama-3-2-output">
-<h5><strong>Llama 3.2 output</strong><a class="headerlink" href="#llama-3-2-output" title="Link to this heading">#</a></h5>
+<p><strong>Llama 3.2 output</strong></p>
 <p><em>“Matthew Pullen expressed concerns about the usefulness of population projections for urban planning and development. They questioned the accuracy and reliability of existing models, citing a lack of consideration for overcrowding and assumptions based solely on policy. The speaker suggested that incorporating solid housing forecast data into these models could improve their accuracy. However, they noted that developing new systems to support population projections can be complex and time-consuming, requiring significant resources and effort. Despite the challenges, the speaker believes that having digital versions of planning documents and data, such as those provided by Exocom’s system for section 106 agreements, can help streamline urban planning processes and improve decision-making.”</em></p>
-</section>
-<section id="copilot-output">
-<h5><strong>Copilot output</strong><a class="headerlink" href="#copilot-output" title="Link to this heading">#</a></h5>
+<p><strong>Copilot output</strong></p>
 <p><em>“Matthew Pullen discussed the various ways housing data is used at different stages in the development process, from the pre-application stage to the final decision, including planning committee resolutions and section 106 agreements. He highlighted the importance of different commencement points, which vary depending on the context, such as building control, planning, CIL, and section 106. Matthew also explained that housing data is crucial for forecasting housing completions, CIL income, and section 106 income, which supports various teams’ jobs. Additionally, he emphasized the need for a comprehensive system that includes both residential and non-residential data, and considers different types of housing, such as student housing and co-living. Finally, he discussed the challenges of identifying site boundaries and capturing data for sites not yet in the planning system.”</em></p>
-</section>
-</section>
-<section id="evaluation-with-semscore">
-<h4><strong>Evaluation with SemScore</strong><a class="headerlink" href="#evaluation-with-semscore" title="Link to this heading">#</a></h4>
+<p><strong>Evaluation with SemScore</strong></p>
 <p>Considering that abstractive summarisation reconstructs sentences and generates entirely new text for summaries, the previously used ROUGE metric, which only detects identical words, is not suitable for evaluating abstractive summaries. In contrast, <strong>SemScore</strong> is more appropriate for scenarios involving abstractive summaries.</p>
 <p>SemScore is a method used to measure the similarity between a model-generated summary and a reference summary. It focuses on the semantic content of a model’s output using embeddings. This approach <u>converts text into mathematical vectors to represent its semantics</u>. Then, by comparing the similarity between these embedding vectors—typically using cosine similarity—SemScore can assess how closely the semantic content of the model’s output aligns with the reference content. The results range from 0 to 1, with scores closer to 1 indicating greater similarity to the reference summary. This paper employs SemScore to test and compare the summaries produced by Copilot and Llama 3.2.</p>
 <p><a class="reference external" href="https://medium.com/&#64;geronimo7/semscore-evaluating-llms-with-semantic-similarity-2abf5c2fadb9">https://medium.com/&#64;geronimo7/semscore-evaluating-llms-with-semantic-similarity-2abf5c2fadb9</a></p>
@@ -1317,8 +1300,7 @@ Similarity between Reference and Summary L: 0.7846035361289978</p>
 </div>
 <p><strong>Copilot</strong> scored <strong>0.7886</strong>, while <strong>Llama 3.2</strong> scored <strong>0.7846</strong>. This indicates that both Copilot and Llama 3.2 perform exceptionally well in summarising meeting records, with Copilot having a slight advantage. It is important to note that although Copilot and Llama 3.2 exhibit similar performance under the same prompt, reducing the restrictions of the prompt, such as changing it to ‘Summarise Following Content,’ would result in different focus points in their summaries. See the following results:</p>
 <p>When the prompt used for testing is ‘Summarise Following Content: …’, the results are as follows:</p>
-<section id="llama-3-2-general-output">
-<h5><strong>Llama 3.2 General Output</strong><a class="headerlink" href="#llama-3-2-general-output" title="Link to this heading">#</a></h5>
+<p><strong>Llama 3.2 General Output</strong></p>
 <p>This appears to be a transcript of a meeting between Ambrey (likely an employee or representative from the Greater London Authority) and other individuals discussing infrastructure planning in London, specifically regarding population projections, development, and the use of technology to improve processes.</p>
 <p>Some key points mentioned include:</p>
 <ol class="arabic simple">
@@ -1334,17 +1316,14 @@ Similarity between Reference and Summary L: 0.7846035361289978</p>
 <li><p>Comparing London’s infrastructure planning process to that of Lewisham, where they had a more comprehensive and effective system in place.</p></li>
 </ol>
 <p>Overall, the conversation highlights the challenges and complexities involved in infrastructure planning, as well as the need for innovative solutions and improved data management to support informed decision-making.</p>
-</section>
-<section id="copilot-general-output">
-<h5><strong>Copilot General Output</strong><a class="headerlink" href="#copilot-general-output" title="Link to this heading">#</a></h5>
+<p><strong>Copilot General Output</strong></p>
 <p>Matthew Pullen discussed the various ways housing data is used at different trigger points in the development process. He mentioned that housing data is used from the pre-application stage through to the final decision, including the resolution to grant through planning committee and the final decision with section 106. He highlighted the importance of different commencement points, which vary depending on the context, such as building control, planning, CIL, and section 106.</p>
 <p>Matthew also explained that housing data is used for forecasting housing completions and CIL income, as well as section 106 income, which supports various teams’ jobs. He mentioned that this data is crucial for forecasting workload and planning services.</p>
 <p>Additionally, Matthew emphasized the importance of having a comprehensive system that includes both residential and non-residential data, as well as the need to consider different types of housing, such as student housing and co-living. He also discussed the challenges of identifying site boundaries and capturing data for sites that are not yet in the planning system.</p>
 <p>Besides producing more text due to the absence of a sentence count limitation, it can also be observed that the two models focus on different summary points once the ‘Paragraph’ prompt restriction is removed. Copilot emphasizes a macro-level summary, attempting to cover broad topics extensively, while Llama 3.2 focuses on the micro-elements of the text, striving to delve into the categorization and significance of key content. This variation may relate to the differences in their training corpora and the fundamental principles of the models. In future work, either Copilot or Llama 3.2 can be chosen for Abstractive Summarisation based on specific job requirements.</p>
 </section>
-</section>
 <section id="abstractive-summarisation-result">
-<h4><strong>Abstractive Summarisation Result</strong><a class="headerlink" href="#abstractive-summarisation-result" title="Link to this heading">#</a></h4>
+<h5>Abstractive Summarisation Result<a class="headerlink" href="#abstractive-summarisation-result" title="Link to this heading">#</a></h5>
 <p>Below are the output results from both models when the prompt used is ‘Summarise the following content into a five-sentence paragraph: …’ for all speakers:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1407,6 +1386,7 @@ Similarity between Reference and Summary L: 0.7846035361289978</p>
 </div>
 <p>It is important to note that due to inevitable errors in speech-to-text transcription, the model outputs can be affected. For instance, in Llama 3.2’s output for Matthew Pullen’s text, it incorrectly mentions an “Ambrey” employee, which was not a focal point of the meeting, nor was any speaker named “Ambrey”. In this regard, Copilot demonstrates better robustness.</p>
 </section>
+</section>
 <section id="extractive-summarisation-vs-abstractive-summarisation">
 <h4>Extractive Summarisation VS Abstractive Summarisation<a class="headerlink" href="#extractive-summarisation-vs-abstractive-summarisation" title="Link to this heading">#</a></h4>
 <p>Comparing the two summaries, they have the following characteristics, points to note, applicable scenarios, advantages and disadvantages:</p>
@@ -1452,9 +1432,8 @@ Similarity between Reference and Summary L: 0.7846035361289978</p>
 <li><p>Data Updates: There are currently inconsistencies in data due to a <u>lack of synchronised updates</u> between different departments or teams. Member suggested the necessity of establishing a centralised and reliable data source.</p></li>
 </ol>
 </section>
-</section>
 <section id="keywords">
-<h3>Keywords<a class="headerlink" href="#keywords" title="Link to this heading">#</a></h3>
+<h4>Keywords<a class="headerlink" href="#keywords" title="Link to this heading">#</a></h4>
 <p>In addition to summarisation, this paper also compares different models for extracting keywords for meetings. Keywords help people know the essential themes. Particularly for User Research Meetings, extracting keywords enables quick understand people’s areas of interest and expected improvements in their work. This information can guide the future digital produces. Meanwhile, using familiar keywords as titles or focal points on websites can enhance content accessibility, allowing individuals with reading disabilities to more easily find and use information.</p>
 <p>This paper considers experimenting with six language processing models for keyword extraction: <strong>YAKE, KeyBERT, Summa, TF-IDF, Copilot, and Llama 3.2</strong>. YAKE, KeyBERT, Summa, and TF-IDF are tools specifically designed for keyword extraction, employing methods tailored for this purpose, usually <u>based on rule-based, statistical, or embedding-driven techniques</u>. In contrast, Copilot and Llama 3.2 perform keyword extraction within <u>a broader range of language processing tasks using their general language understanding capabilities</u>, benefiting from their ability to integrate multiple data sources and user-specific contexts.</p>
 <p>Excluding Copilot and Llama 3.2, whose operating principles are not disclosed due to intellectual property and trade secrets, the principles, features, and unique aspects of the other four LLM models are as follows:</p>
@@ -1490,6 +1469,7 @@ Similarity between Reference and Summary L: 0.7846035361289978</p>
 </tbody>
 </table>
 </div>
+</section>
 <section id="id2">
 <h4>Model Comparison<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <p>The outputs of the ten keywords from Matthew Pullen’s text by the six models are as follows:</p>
@@ -2141,13 +2121,12 @@ commencement: 0.0831125290206423
 </ol>
 <p>These results are helpful in determining the direction of future work to address the areas of concern identified by participants.</p>
 </section>
-</section>
-</section>
 <section id="conclusion">
-<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<h4>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h4>
 <p><strong>This report explores the potential of integrating language processing technologies into work practices, highlighting several significant point:</strong></p>
+</section>
 <section id="achievement">
-<h3>Achievement<a class="headerlink" href="#achievement" title="Link to this heading">#</a></h3>
+<h4>Achievement<a class="headerlink" href="#achievement" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p><strong>Performance of BART</strong>: The BART model excels in extractive summarisation. For future work, the BART model can be directly employed to extract key sentences from texts, permitting easy viewing and referencing of the main original content.</p></li>
 <li><p><strong>Capabilities of Copilot and Llama 3.2</strong>: Both models are efficient at abstractive summarisation, with Copilot scoring highest for macro-level summaries. It also requires shorter prompts to complete summaries, facilitating quick comprehension of the entire text’s gist. Llama 3.2 shows good summarisation abilities for specific examples. The choice of model can be tailored to specific work requirements.</p></li>
@@ -2155,7 +2134,7 @@ commencement: 0.0831125290206423
 </ol>
 </section>
 <section id="comprehensive-insights">
-<h3>Comprehensive insights<a class="headerlink" href="#comprehensive-insights" title="Link to this heading">#</a></h3>
+<h4>Comprehensive insights<a class="headerlink" href="#comprehensive-insights" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p><strong>Data Quality</strong>: Attendees consistently valued the <u>coherence, real-time nature, reliability, and centralisation</u> of housing data. These factors are crucial for enhancing work efficiency and the accuracy of urban and regional planning decisions.</p></li>
 <li><p><strong>Automation in Housing Digital Products</strong>: There is a strong interest in future housing digital products having automated data collection and management features.</p></li>
@@ -2163,12 +2142,13 @@ commencement: 0.0831125290206423
 </ol>
 </section>
 <section id="future-directions-for-language-processing-technology">
-<h3>Future directions for language processing technology<a class="headerlink" href="#future-directions-for-language-processing-technology" title="Link to this heading">#</a></h3>
+<h4>Future directions for language processing technology<a class="headerlink" href="#future-directions-for-language-processing-technology" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p><strong>Innovation in Copilot and Llama 3.2</strong>: These models, which continually evolve and integrate comprehensive language processing technologies (such as image-language processing), particularly Copilot, are expanding with diversity. As more applications incorporate Copilot, it may facilitate a <u>”Internet of Application”</u>, enhancing user experience with seamless and convenient integration. This is worth exploring for potential uses in housing and planning digital products.</p></li>
 <li><p><strong>Validation with Rouge and SemScore</strong>: The current validation results are based on reference summaries or keywords drafted by one individual. For greater accuracy, conducting future Rouge tests based on reference summaries and keywords provided by multiple individuals is necessary.</p></li>
 <li><p><strong>Text Processing Considerations</strong>: The texts used in this study were processed by collating statements from the same individual before evaluating them into the model, which might cause discrepancies between the model’s understanding of context and the actual context. Although no significant impact on abstractive summarisation has been observed to date, this requires attention in subsequent tests.</p></li>
 </ol>
+</section>
 </section>
 </section>
 <section id="user-research-results-2">
@@ -2785,34 +2765,24 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-overview-bau-process-diagram">Results overview - BAU process diagram</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#results-overview-bau-data-diagram">Results overview - BAU data diagram</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llm-result">LLM result</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#llm-processing-and-results">LLM Processing and Results</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#bart"><strong>BART</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#t5"><strong>T5</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#pegasus"><strong>Pegasus</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#llm-processing">LLM Processing</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#document-processing">Document Processing</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#bart">BART</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#t5">T5</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#pegasus">Pegasus</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results"><strong>Results</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-rouge"><strong>Evaluation with Rouge</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-result-bart"><strong>Extractive Summarisation Result - BART</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results">Results</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-rouge">Evaluation with Rouge</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-result-bart">Extractive Summarisation Result - BART</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation">Abstractive Summarisation</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Model Comparison</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-result">Abstractive Summarisation Result</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation">Abstractive Summarisation</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>Model Comparison</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#llama-3-2-output"><strong>Llama 3.2 output</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#copilot-output"><strong>Copilot output</strong></a></li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-semscore"><strong>Evaluation with SemScore</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#llama-3-2-general-output"><strong>Llama 3.2 General Output</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#copilot-general-output"><strong>Copilot General Output</strong></a></li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-result"><strong>Abstractive Summarisation Result</strong></a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-vs-abstractive-summarisation">Extractive Summarisation VS Abstractive Summarisation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#insight">Insight</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Model Comparison</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#set-stop-words"><strong>Set Stop Words</strong></a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#yake"><strong>Yake</strong></a></li>
@@ -2822,14 +2792,12 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Evaluation with Rouge</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#achievement">Achievement</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehensive-insights">Comprehensive insights</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#future-directions-for-language-processing-technology">Future directions for language processing technology</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#achievement">Achievement</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehensive-insights">Comprehensive insights</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#future-directions-for-language-processing-technology">Future directions for language processing technology</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#user-research-results-2">User Research Results 2</a><ul class="nav section-nav flex-column">

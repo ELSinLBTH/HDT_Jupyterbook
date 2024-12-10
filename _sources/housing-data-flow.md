@@ -443,12 +443,11 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 
 ### LLM result
 
-#### LLM Processing and Results
+#### LLM Processing
 
 **Code Tab**
 
-**Doc Processing**
-
+##### Document Processing
 
 ```python
 def extract_text_from_docx(docx_file):
@@ -541,7 +540,7 @@ if __name__ == "__main__":
 ```
     
 
-##### **BART**
+##### BART
 
 
 ```python
@@ -562,8 +561,7 @@ We use housing data at different trigger points, maybe it's the place to start s
 
 Ref:https://github.com/dmmiller612/bert-extractive-summarizer
 
-##### **T5**
-
+##### T5
 
 ```python
 pipe = pipeline('summarization', model = 't5-large', min_length=100)
@@ -572,17 +570,16 @@ t5 = ', '.join(str(item) for item in T5)
 T5
 ```
 
-config.json:   0%|          | 0.00/1.21k [00:00<?, ?B/s]
-model.safetensors:   0%|          | 0.00/2.95G [00:00<?, ?B/s]
-generation_config.json:   0%|          | 0.00/147 [00:00<?, ?B/s]
-spiece.model:   0%|          | 0.00/792k [00:00<?, ?B/s]
+config.json:   0%|          | 0.00/1.21k [00:00<?, ?B/s]<br>
+model.safetensors:   0%|          | 0.00/2.95G [00:00<?, ?B/s]<br>
+generation_config.json:   0%|          | 0.00/147 [00:00<?, ?B/s]<br>
+spiece.model:   0%|          | 0.00/792k [00:00<?, ?B/s]<br>
 tokenizer.json:   0%|          | 0.00/1.39M [00:00<?, ?B/s]
 
 [{'summary_text': "if you're trying to forecast housing completions over the next three years, it's going to be a bit more complicated . we've got a lot of assumptions that we use, but they're not necessarily based on huge amounts of data . it would be useful to have that information in a system that's searchable and can be fed into other models . if we can do that, then we'll be able to do a better job of forecasting. I think we're"}]
 
 
-##### **Pegasus**
-
+##### Pegasus
 
 ```python
 # Pegasus model and SentencePiece tokenizer
@@ -613,7 +610,7 @@ We use housing data at different trigger points, maybe it's the place to start .
 
 Ref: https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouTube-Channel/blob/master/NLP/Text_Summarization_%20BART%20_T5_Pegasus.ipynb
 
-#### **Results**
+#### Results
 
 **BART identified the following as the five most important sentences from Matthew's speech:**
 
@@ -627,7 +624,7 @@ Ref: https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouT
 
 *"We use housing data at different trigger points, maybe it's the place to start .<n>We layer in assumptions about when things might get permission .<n>We tend to layer in assumptions on how long it would take to build something that's under 200 units .<n>There's definitely a hole in our data for our CIL forecasting when it comes to commercial .<n>But we haven't got anything anywhere near as sophisticated as we've got for this holes in our housing approach."*
 
-#### **Evaluation with Rouge**
+#### Evaluation with Rouge
 
 To verify the quality of the results, this report employs the **Rouge** metric for evaluation. Rouge is used to assess text summarisation tasks. The scores obtained through Rouge range from 0 to 1, with a score of 1 indicating high quality, representing a high degree of similarity between the model-generated summary and the reference summary (manually generated).
 
@@ -699,7 +696,7 @@ _______________
 
 The results indicate that **BART** performed exceptionally well across all metrics. Consequently, this paper will now use the BART model to perform Extractive Summarisation on the dialogue content of the 12 participants, highlighting the key five points for each members.
 
-#### **Extractive Summarisation Result - BART**
+#### Extractive Summarisation Result - BART
 
 | Speaker            | Contribution |
 |---------------------|--------------|
@@ -717,7 +714,7 @@ The results indicate that **BART** performed exceptionally well across all metri
 | **Paul Buckenham**  | - My name's Paul Buckenham and I'm head of development management.<br>- This is quite interesting to me because I think traditionally my service wouldn't necessarily get involved so much with the housing data side of things.<br>- So, we know what's completed now, how do we work out on the sites where there's still under construction?<br>- So I think I think actually there's probably a whole host of different development department management kind of activities that it would that it could potentially feed into probably like one of those ones that we don't necessarily quite understand all the implications until you actually see it work and start to use it and then you pick up on ideas for how you could you know.<br>- And the enforcement side of things as well, compliance to ensure that what's actually been built is what should have been built so. |
 
 
-### Abstractive Summarisation
+#### Abstractive Summarisation
 
 Models for abstractive summarisation are diverse. This report experiments with and compares Llama 3.2 and Copilot which are the two most popular LLM model. Brief introductions to the two models are as follows:
 
@@ -734,19 +731,19 @@ https://medium.com/@rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-com
 
 The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.
 
-#### **Model Comparison**
+##### Model Comparison
 
 This paper continues to use Matthew Pullen's dialogue to test the two models. The prompt used for testing is *"Summarise the following content into a five-sentence paragraph: ..."*. The output results are as follows:
 
-##### **Llama 3.2 output**
+**Llama 3.2 output**
 
 *"Matthew Pullen expressed concerns about the usefulness of population projections for urban planning and development. They questioned the accuracy and reliability of existing models, citing a lack of consideration for overcrowding and assumptions based solely on policy. The speaker suggested that incorporating solid housing forecast data into these models could improve their accuracy. However, they noted that developing new systems to support population projections can be complex and time-consuming, requiring significant resources and effort. Despite the challenges, the speaker believes that having digital versions of planning documents and data, such as those provided by Exocom's system for section 106 agreements, can help streamline urban planning processes and improve decision-making."*
 
-##### **Copilot output**
+**Copilot output**
 
 *"Matthew Pullen discussed the various ways housing data is used at different stages in the development process, from the pre-application stage to the final decision, including planning committee resolutions and section 106 agreements. He highlighted the importance of different commencement points, which vary depending on the context, such as building control, planning, CIL, and section 106. Matthew also explained that housing data is crucial for forecasting housing completions, CIL income, and section 106 income, which supports various teams' jobs. Additionally, he emphasized the need for a comprehensive system that includes both residential and non-residential data, and considers different types of housing, such as student housing and co-living. Finally, he discussed the challenges of identifying site boundaries and capturing data for sites not yet in the planning system."*
 
-#### **Evaluation with SemScore**
+**Evaluation with SemScore**
 
 Considering that abstractive summarisation reconstructs sentences and generates entirely new text for summaries, the previously used ROUGE metric, which only detects identical words, is not suitable for evaluating abstractive summaries. In contrast, **SemScore** is more appropriate for scenarios involving abstractive summaries.
 
@@ -825,7 +822,7 @@ Similarity between Reference and Summary L: 0.7846035361289978
 
 When the prompt used for testing is 'Summarise Following Content: ...', the results are as follows:
 
-##### **Llama 3.2 General Output**
+**Llama 3.2 General Output**
 
 This appears to be a transcript of a meeting between Ambrey (likely an employee or representative from the Greater London Authority) and other individuals discussing infrastructure planning in London, specifically regarding population projections, development, and the use of technology to improve processes.
 
@@ -842,7 +839,7 @@ Some specific examples and ideas mentioned include:
 
 Overall, the conversation highlights the challenges and complexities involved in infrastructure planning, as well as the need for innovative solutions and improved data management to support informed decision-making.
 
-##### **Copilot General Output**
+**Copilot General Output**
 
 Matthew Pullen discussed the various ways housing data is used at different trigger points in the development process. He mentioned that housing data is used from the pre-application stage through to the final decision, including the resolution to grant through planning committee and the final decision with section 106. He highlighted the importance of different commencement points, which vary depending on the context, such as building control, planning, CIL, and section 106.
 
@@ -852,7 +849,7 @@ Additionally, Matthew emphasized the importance of having a comprehensive system
 
 Besides producing more text due to the absence of a sentence count limitation, it can also be observed that the two models focus on different summary points once the 'Paragraph' prompt restriction is removed. Copilot emphasizes a macro-level summary, attempting to cover broad topics extensively, while Llama 3.2 focuses on the micro-elements of the text, striving to delve into the categorization and significance of key content. This variation may relate to the differences in their training corpora and the fundamental principles of the models. In future work, either Copilot or Llama 3.2 can be chosen for Abstractive Summarisation based on specific job requirements.
 
-#### **Abstractive Summarisation Result**
+##### Abstractive Summarisation Result
 
 Below are the output results from both models when the prompt used is 'Summarise the following content into a five-sentence paragraph: ...' for all speakers:
 
@@ -900,7 +897,7 @@ Whether in the results of extractive summarisation or abstractive summarisation,
 3. Data Requirements: Some participants mentioned what the data should include, such as <u>types of housing, stages of construction, and affordable housing</u>.
 4. Data Updates: There are currently inconsistencies in data due to a <u>lack of synchronised updates</u> between different departments or teams. Member suggested the necessity of establishing a centralised and reliable data source.
 
-### Keywords
+#### Keywords
 
 In addition to summarisation, this paper also compares different models for extracting keywords for meetings. Keywords help people know the essential themes. Particularly for User Research Meetings, extracting keywords enables quick understand people's areas of interest and expected improvements in their work. This information can guide the future digital produces. Meanwhile, using familiar keywords as titles or focal points on websites can enhance content accessibility, allowing individuals with reading disabilities to more easily find and use information.
 
@@ -1426,21 +1423,21 @@ The keywords generated by the TF-IDF model and Copilot highlight several focal p
 
 These results are helpful in determining the direction of future work to address the areas of concern identified by participants.
 
-## Conclusion
+#### Conclusion
 
 **This report explores the potential of integrating language processing technologies into work practices, highlighting several significant point:**
 
-### Achievement
+#### Achievement
 1. **Performance of BART**: The BART model excels in extractive summarisation. For future work, the BART model can be directly employed to extract key sentences from texts, permitting easy viewing and referencing of the main original content.
 2. **Capabilities of Copilot and Llama 3.2**: Both models are efficient at abstractive summarisation, with Copilot scoring highest for macro-level summaries. It also requires shorter prompts to complete summaries, facilitating quick comprehension of the entire text's gist. Llama 3.2 shows good summarisation abilities for specific examples. The choice of model can be tailored to specific work requirements.
 3. **Keyword Extraction**: TF-IDF performs well with uni-gram words, while Copilot performs well in multi-gram words.
 
-### Comprehensive insights
+#### Comprehensive insights
 1. **Data Quality**: Attendees consistently valued the <u>coherence, real-time nature, reliability, and centralisation</u> of housing data. These factors are crucial for enhancing work efficiency and the accuracy of urban and regional planning decisions.
 2. **Automation in Housing Digital Products**: There is a strong interest in future housing digital products having automated data collection and management features.
 3. **Data Visualisation Platforms**: Data visualisation platforms represent a part of viable trend for the future digitalisation of housing.
 
-### Future directions for language processing technology
+#### Future directions for language processing technology
 1. **Innovation in Copilot and Llama 3.2**: These models, which continually evolve and integrate comprehensive language processing technologies (such as image-language processing), particularly Copilot, are expanding with diversity. As more applications incorporate Copilot, it may facilitate a <u>"Internet of Application"</u>, enhancing user experience with seamless and convenient integration. This is worth exploring for potential uses in housing and planning digital products.
 2. **Validation with Rouge and SemScore**: The current validation results are based on reference summaries or keywords drafted by one individual. For greater accuracy, conducting future Rouge tests based on reference summaries and keywords provided by multiple individuals is necessary.
 3. **Text Processing Considerations**: The texts used in this study were processed by collating statements from the same individual before evaluating them into the model, which might cause discrepancies between the model’s understanding of context and the actual context. Although no significant impact on abstractive summarisation has been observed to date, this requires attention in subsequent tests.
