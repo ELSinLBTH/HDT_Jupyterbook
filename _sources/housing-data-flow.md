@@ -148,6 +148,17 @@ The DS team's workflow includes three main validation processes:
 
 
 <p align="center">
+  <a href="./_static/FlowImages/DS1.png" target="_blank">
+    <img src="./_static/FlowImages/DS1.png" alt="The entire workflow of the DS Team" />
+  </a>
+</p>
+
+<p align="center">
+  <em>Figure 6: The entire workflow of the DS Team</em>
+</p>
+
+
+<p align="center">
   <img src="./_static/FlowImages/DS1.png" alt="The entire workflow of the DS Team" />
 </p>
 
