@@ -383,6 +383,17 @@ CIL is a charge levied by the local council on new developments that meet the cr
 
 
 <p align="center">
+  <a href="./_static/FlowImages/CIL1.png" target="_blank">
+    <img src="./_static/FlowImages/CIL1.png" alt="CIL overall workflow" />
+  </a>
+</p>
+
+<p align="center">
+  <em>Figure 18: CIL overall workflow</em>
+</p>
+
+
+<p align="center">
   <img src="./_static/FlowImages/CIL1.png" alt="CIL overall workflow" />
 </p>
 
