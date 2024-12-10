@@ -50,6 +50,16 @@ This report is compiled after meeting with 12 members of council staff belonging
 
 ADD TABLE HERE (llm excel)
 
+| **Type** | **Extractive**                                                         | **Abstractive**    |
+| ---------| ---------------------------------------------------------------------- | ------------------ |
+| **Name** | Pegasus | BART | T5| GPT-4 | Yake | KeyBERT | Summa (TextRank) | TF-IDF| Copilot | Llama3.2 | 
+| -------- | ------------------------------------------------------------------------------------------- |
+| **Description** | A text summarisation model designed by Google | A text model developed by Facebook | A versatile language model developed by Google | An advanced language model developed by OpenAI | A lightweight and unsuperised automatic keyword extraction algorithm | A BERT tech based keyword extraction | A text  processing tool that can extract keywords | A statistical measure used to extract keywords | An AI powered model developed by Github and OpenAI | An advanced language model developed by Meta | 
+| **Question** | Summary in 5 points   | Cancel (Data Security) | Keywords | Abstractive and Keywords | 
+
+
+
+
 ##### Software
 
 In order to run various models, **Python** is the computer language used in this report. Python's built-in features and packages developed by contributors permit us to run the LLM models with simple lines of code. Before using the code and modules, we prepare initial steps such as download all the required packages and import them onto the Python platform.
