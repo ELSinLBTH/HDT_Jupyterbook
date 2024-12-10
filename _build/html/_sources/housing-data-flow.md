@@ -71,7 +71,7 @@ The process can be divided into 3 stages: Early Engagement, Regulation 18, and R
 </p>
 
 <p align="center">
-  <img src="./_static/FlowImages/SP2.png" alt="Strategic Planning Early Engagement workflow" />
+  <img src="./_static/FlowImages/SP2.png" alt="Strategic Planning Early Engagement workflow" style="width: 500px; height: auto;" />
 </p>
 
 <p align="center">
@@ -127,7 +127,7 @@ Both Place Shaping and Plan Making teams participate in consulting planning appl
 *Introduction*
 
 
-*Team Structure*
+*Team Structure*<br>
 The team is organised into four main sub-teams:
 <ul>
     <li>Planning Support Sub-team(DM Validation)</li>
@@ -137,21 +137,148 @@ The team is organised into four main sub-teams:
 </ul>
 
 
-
 *Process Overview*
 
 The DS team's workflow includes three main validation processes:
-<ol>
+<ul>
     <li>Development Management (DM) Application Validation</li>
     <li>Building Control (BC) Application Validation</li>
     <li>Street Name and Number (SNN) Application Validation</li>
-</ol>
+</ul>
 
-(Image)
+
+<p align="center">
+  <img src="./_static/FlowImages/DS1.png" alt="The entire workflow of the DS Team" />
+</p>
+
+<p align="center">
+  <em>Figure 6: The entire workflow of the DS Team</em>
+</p>
+
+
+**Development Management (DM) Validation**
 
 *Setp 1: Application Submission and Initial Processing*
 
-List and Image to be inserted 
+<ul>
+  <li>Applications are submitted through the Planning Portal, which stores planning applications and cases.</li>
+  <li>Upon payment of the application fee as specified in the Guide, the application is received by the London Borough of Tower Hamlets (LBTH) and the Greater London Authority (GLA). DS Team is tasked with registering and validating the case.</li>
+</ul>
+
+<p align="center">
+  <img src="./_static/FlowImages/DS2.png" alt="Step 1 for DM process" style="width: 500px; height: auto;"/>
+</p>
+
+<p align="center">
+  <em>Figure 7: Step 1 for DM process</em>
+</p>
+
+
+*Setp 2: Initial Registration*
+
+<ul>
+  <li>A registration on IDOX (a software designed to enhance compliance and efficiency of planning application) is completed. The officer creates a new folder, inputs site information, and links the location to the BLPU function on the IDOX platform Acolaid DMS. A site boundary polygon captured and stored in the webGIS function under Acolaid DMS.</li>
+  <li>After entering the application type on Acolaid DMS, it finishes registration and moves to the fee validation step. If the DM team invalidates the application, the process stops.</li>
+</ul>
+
+<p align="center">
+  <img src="./_static/FlowImages/DS3.png" alt="Step 2 for DM process" />
+</p>
+
+<p align="center">
+  <em>Figure 8: Step 2 for DM process</em>
+</p>
+
+*Setp 3: Initial Registration*
+
+<ul>
+  <li>In this step, the focus is on validation, which begins with the validation of fee payments. The DS team validates the fees and logs the details in the Acolaid DMS, including the fee history, fee required and statutory class and statutory expiry date.</li>
+  <li>Following this, the DS Team moves to planning validation. If an application is a major development, it is redirected to the DM Team, otherwise, the application continues through the DS Team’s validation process.</li>
+  <li>The planning application validation consists of two main components: </li>
+  <li>Once these elements are verified, the DS Team records the decision in the Acolaid DMS, within the Validation Code tab, marking the completion of the DM validation step.</li>
+</ul>
+
+<p align="center">
+  <img src="./_static/FlowImages/DS4.png" alt="Step 3 for DM process" style="width: 500px; height: auto;"/>
+</p>
+
+<p align="center">
+  <em>Figure 9: Step 3 for DM process</em>
+</p>
+
+
+**Building Control (BC) Validation**
+
+*Step 1: Registration*
+
+<ul>
+  <li>Once approved for the validation process, the DS team registers the case in IDOX, adds the site location address linked to the Local Land and Property Gazetteer (LLPG is the central corporate database for all addressing used in an authority), captures the boundary polygon with GIS, and registers on Acolaid DMS.</li>
+  <li>The Acolaid DMS registration includes details such as the proposed description, responsible area team, planning officer name, leader name, and administrative officer details.</li>
+  <li>If a DC application is present, the BC case reference number is linked to the DC case reference number to ensure continuity of case information. The site is also marked if it is a new dwelling.</li>
+</ul>
+
+<p align="center">
+  <img src="./_static/FlowImages/DS5.png" alt="Step 1 for BC process" style="width: 500px; height: auto;"/>
+</p>
+
+<p align="center">
+  <em>Figure 10: Step 1 for BC process</em>
+</p>
+
+
+*Step 2: Validation*
+
+<ul>
+  <li>Acolaid DMS stores details including existing use, proposed use, plot number, work category, postcode, and use category of the site. A snapshot will also be stored by Laserfiche for record.</li>
+  <li>TS or Manager creates and stores acknowledge letters and receipts with Acolaid DMS to prove payment made by the Developer to LBTH. This marks the final step of the BC validation process by the DS Team.</li>
+  <li>The case is then passed to the Building Control Team for further processing.</li>
+</ul>
+
+<p align="center">
+  <img src="./_static/FlowImages/DS6.png" alt="Step 2 for BC process" />
+</p>
+
+<p align="center">
+  <em>Figure 11: Step 2 for BC process</em>
+</p>
+
+
+**Street Name and Number (SNN) Application Validation **
+
+*Step1: Validation*
+
+<ul>
+  <li>Once applicant submit and pay the application, the DS Team begins the SNN validation process by conducting an initial review of submitted documents. This review checks if all required documents are submitted, including the Site Location Plan, External Plan, the Internal Plan and the Developers Information Spreadsheet.</li>
+  <li>A decision is made based on the initial review. If the application is approved, it moves to the next process. If any documents are missing or incomplete, the DS Team contacts the developer to request the missing information to ensure completeness before mobbing forward. </li>
+</ul>
+
+
+<p align="center">
+  <img src="./_static/FlowImages/DS7.png" alt="Step 1 for SNN process" style="width: 500px; height: auto;"/>
+</p>
+
+<p align="center">
+  <em>Figure 12: Step 1 for SNN process</em>
+</p>
+
+*Step 2: Record*
+
+<ul>
+  <li>DS Team creates an SNN case in Acolaid DMS for the site.</li>
+  <li>The SNN case is then linked to the relevant DC and BC application reference number to maintain coherent case records across the Acolaid DMS.</li>
+  <li>After matching the plot between SNN and DC and BC case, the site boundary polygon is captured and stored in the Acolaid DMS.</li>
+  <li>This marks the final step of the SNN validation process by the DS Team.</li>
+  <li>The case is then passed to the Street Name and Number Team for further processing.</li>
+</ul>
+
+<p align="center">
+  <img src="./_static/FlowImages/DS8.png" alt="Step 2 for SNN process" style="width: 500px; height: auto;"/>
+</p>
+
+<p align="center">
+  <em>Figure 13: Step 2 for SNN process</em>
+</p>
+
 
 
 ### Development Management
@@ -160,46 +287,77 @@ List and Image to be inserted
 The DM team is dedicated to evaluating development cases according to current policies and ensuring that housing construction meets certain conditions and compliance. According to the responsibilities of team members, the DM team can be divided into three groups: Area Planning West Group, Area Planning East Group and Planning Compliance Group. West and East Group handle the case from west and east of Tower Hamlets, while Planning Compliance Group mainly deals with those application that were made without planning permission or in breach of conditions.<br>
 The Development Management (DM) Team takes over a case once the DS Team completes the DM validation process. From this point, the DM Team handles the application, conducts reviews, and makes decisions on whether the development constructure is approved, refused, or approved with conditions.
 
-
 <p align="center">
-  <img src="./_static/FlowImages/image.png" alt="The entire workflow of the DM Team" />
+  <img src="./_static/FlowImages/DM1.png" alt="The entire workflow of the DM Team" />
 </p>
 
 <p align="center">
-  <em>Figure 6:  The entire workflow of the DM Team</em>
+  <em>Figure 14: The entire workflow of the DM Team</em>
 </p>
 
-<!-- #region -->
+
 *Process Overview*<br>
 **Step 1: Handover and Initial Checking**
-<ol>
+<ul>
     <li>After the DS Team completes the DM validation, the DM Team receives the case, including the application number, supporting documents, and the application form. Depending on the geographical location (East or West), the case is assigned to either the East Team or the West Team. Once the team receives the case, it is assigned to a planner for further review.</li>
     <li>The planner will decide if the case needs to send to a committee to further review and discuss before the initial checking.</li>
     <li>If the scheme is a major development, then the planning will do the validation for this scheme.</li>
     <li>If the planner decides not to send the case to a committee, then the planner will start the work of checking. The checking includes reviewing the application documents, studying any prior decisions related to the site, and initiating any necessary negotiations with the developer.</li>
     <li>Consultations with other teams and departments are also conducted. These consultations may involve the Strategy Planning Team, Housing Team, Community by All Diversity Team, Highway Team, and Environment Team, among others.</li>
-</ol>
-
+</ul>
 
 <p align="center">
-  <img src="./_static/FlowImages/IMAGE.png" alt="Step 1 for DM workflow process" />
+  <img src="./_static/FlowImages/DM2.png" alt="Step 1 for DM workflow process" />
 </p>
 
 <p align="center">
-  <em>Figure 7:  Step 1 for DM workflow process</em>
+  <em>Figure 15:  Step 1 for DM workflow process</em>
 </p>
 
-<!-- #endregion -->
 
-**step 2: Decision-Making Process**
+**step 2: Decision-Making Process**<br>
 
+<ul>
+  <li>After consultations, the case moves into the decision-making phase.</li>
+  <li>There are three possible outcomes:</li>
+    <ul>
+      <li>Approval – The application is approved as submitted.</li>
+      <li>Refusal – The application is rejected, and the applicant is informed.</li>
+      <li>Approval on Conditions – The application is approved, but specific conditions must be met.</li>
+    </ul>
+</ul>
+
+<p align="center">
+  <img src="./_static/FlowImages/DM3.png" alt="Step 2 for DM workflow process" style="width: 500px; height: auto;" />
+</p>
+
+<p align="center">
+  <em>Figure 16:  Step 2 for DM workflow process</em>
+</p>
 
 
 **Additional step: Appeal and Committee Review**
 
+<ul>
+  <li>If a planner refuses the application but receives over 20 supports, or if a planner approves it but it gets over 20 objections during consultation, the application will be sent to a committee for the final decision.</li>
+</ul>
 
 
 **Step 3: Documentation and Notification**
+
+<ul>
+  <li>The decision notice and reports are stored in Acolaid DMS and IDOX Cloud.</li>
+  <li>The Decision Notice includes decision date and decision type. The Officers/ Delegated/ Committee Report usually includes accommodation schedule, planning description and conditions, etc.</li>
+  <li>The decision notice is then sent to the developer, consultees, and relevant teams, such as the Infrastructure Team and Legal Teams, by email.</li>
+</ul>
+
+<p align="center">
+  <img src="./_static/FlowImages/DM4.png" alt="Step 3 for DM workflow process" style="width= 500px; height: auto;" />
+</p>
+
+<p align="center">
+  <em>Figure 17: Step 3 for DM workflow process</em>
+</p>
 
 
 
@@ -213,13 +371,12 @@ CIL is a charge levied by the local council on new developments that meet the cr
 *CIL Process and Outcome Data*
 
 
-
 <p align="center">
   <img src="./_static/FlowImages/CIL1.png" alt="CIL overall workflow" />
 </p>
 
 <p align="center">
-  <em>Figure n: CIL overall workflow</em>
+  <em>Figure 18: CIL overall workflow</em>
 </p>
 
 
@@ -228,7 +385,7 @@ CIL is a charge levied by the local council on new developments that meet the cr
 </p>
 
 <p align="center">
-  <em>Figure n: CIL Pre-commencement workflow</em>
+  <em>Figure 19: CIL Pre-commencement workflow</em>
 </p>
 
 **Pre-commencement**<br>
@@ -240,7 +397,7 @@ Once a CIL liable application is submitted, Acolaid sends updates to notify CIL 
 </p>
 
 <p align="center">
-  <em>Figure n: CIL Commencement workflow</em>
+  <em>Figure 20: CIL Commencement workflow</em>
 </p>
 
 **Commencement**<br>
@@ -253,13 +410,11 @@ Once the payment is made within the 60 days window, the payment information will
 </p>
 
 <p align="center">
-  <em>Figure n: CIL Completion workflow</em>
+  <em>Figure 21: CIL Completion workflow</em>
 </p>
 
 **Completion**<br>
-The completion of the site is shared with the CIL officer through weekly updates from Acolaid. CIL officers or consultants monitor the development for various reasons. The officers check for any breaches of S106 Agreement for the specified duration. As developers receive Social Housing Relief, the officers are responsible for ensuring that the residence remains in social housing for 7 years. If developers sell the social housing on the market before the period ends, they become disqualified from the relief, which should then be withdrawn. Otherwise, the relief remains in place. If the scheme is not implemented or expires, the CIL charge has to be removed, as well as any relief granted.
-
-<br>
+The completion of the site is shared with the CIL officer through weekly updates from Acolaid. CIL officers or consultants monitor the development for various reasons. The officers check for any breaches of S106 Agreement for the specified duration. As developers receive Social Housing Relief, the officers are responsible for ensuring that the residence remains in social housing for 7 years. If developers sell the social housing on the market before the period ends, they become disqualified from the relief, which should then be withdrawn. Otherwise, the relief remains in place. If the scheme is not implemented or expires, the CIL charge has to be removed, as well as any relief granted.<br>
 
 *CIL Forecasting Process and Outcome Data*
 
@@ -268,7 +423,7 @@ The completion of the site is shared with the CIL officer through weekly updates
 </p>
 
 <p align="center">
-  <em>Figure n: CIL Forecasting overall workflow</em>
+  <em>Figure 22: CIL Forecasting overall workflow</em>
 </p>
 
 The CIL forecasting team’s responsibilities can be divided into two main tasks: the Infrastructure Delivery Plan (IDP) and CIL projection.  
@@ -279,7 +434,7 @@ The CIL forecasting team’s responsibilities can be divided into two main tasks
 </p>
 
 <p align="center">
-  <em>Figure n: CIL IDP workflow</em>
+  <em>Figure 23: CIL IDP workflow</em>
 </p>
 
 **Infrastructure Delivery Plan (IDP)**<br>
@@ -296,13 +451,12 @@ S106 Agreement is a planning obligation set through negotiations between the dev
 
 *Process and Outcome Data*
 
-
 <p align="center">
   <img src="./_static/FlowImages/S1061.png" alt="S106 overall workflow" />
 </p>
 
 <p align="center">
-  <em>Figure n: S106 overall workflow</em>
+  <em>Figure 24: S106 overall workflow</em>
 </p>
 
 
@@ -311,7 +465,7 @@ S106 Agreement is a planning obligation set through negotiations between the dev
 </p>
 
 <p align="center">
-  <em>Figure n: S106 Pre-commencement workflow</em>
+  <em>Figure 25: S106 Pre-commencement workflow</em>
 </p>
 
 **Pre-commencement**<br>
@@ -325,7 +479,7 @@ While drafting the agreement, a signed copy of the Rent and Nomination Agreement
 </p>
 
 <p align="center">
-  <em>Figure n: S106 Commencement workflow</em>
+  <em>Figure 26: S106 Commencement workflow</em>
 </p>
 
 **Commencement**<br>
@@ -337,11 +491,12 @@ Developers are required to inform the council about the S106’s commencement, a
 </p>
 
 <p align="center">
-  <em>Figure n: S106 Completion workflow</em>
+  <em>Figure 27: S106 Completion workflow</em>
 </p>
 
 **Completion**<br>
 Once the construction is completed, the site is handed over from the Housing Supply team to the Registered Provider. The S106 officer will conduct checks to ensure the perpetuity of the social housing, Biodiversity Net Gain (BNG), and Travel (Transportation) over the specified period for each purpose.  If the final certificate for the site has not been issued upon completion, the S106 officer will consult with the Council Tax team or SNN team to verify the development status and will follow the usual completion procedures.
+
 
 #### Development Coordination
 *Introduction*<br>
@@ -354,7 +509,7 @@ Development Coordination has been introduced to expedite the development process
 </p>
 
 <p align="center">
-  <em>Figure n: Development Coordination overall workflow</em>
+  <em>Figure 28: Development Coordination overall workflow</em>
 </p>
 
 
@@ -363,7 +518,7 @@ Development Coordination has been introduced to expedite the development process
 </p>
 
 <p align="center">
-  <em>Figure n: Development Coordination Pre-commencement workflow</em>
+  <em>Figure 29: Development Coordination Pre-commencement workflow</em>
 </p>
 
 **Pre-commencement**<br>
@@ -375,7 +530,7 @@ The Construction Management Plan (CMP) service oversees the compliance of CMP an
 </p>
 
 <p align="center">
-  <em>Figure n: Development Coordination Post-commencement workflow</em>
+  <em>Figure 30: Development Coordination Post-commencement workflow</em>
 </p>
 
 **Post-Commencement**<br>
@@ -394,7 +549,7 @@ Building Control is a process that ensures construction works comply with buildi
 </p>
 
 <p align="center">
-  <em>Figure n: Building Control overall workflow</em>
+  <em>Figure 31: Building Control overall workflow</em>
 </p>
 
 
@@ -403,7 +558,7 @@ Building Control is a process that ensures construction works comply with buildi
 </p>
 
 <p align="center">
-  <em>Figure n: Building Control Pre-commencement workflow</em>
+  <em>Figure 32: Building Control Pre-commencement workflow</em>
 </p>
 
 **Building Control Pre-commencement**<br>
@@ -416,7 +571,7 @@ Once the application is approved, the developer should notify the BC team by sub
 </p>
 
 <p align="center">
-  <em>Figure n: Building Control Post-commencement workflow</em>
+  <em>Figure 33: Building Control Post-commencement workflow</em>
 </p>
 
 **Building Control Post-commencement**<br>
@@ -430,7 +585,7 @@ Once the entire site is completed, the BC officer will review the planning appli
 </p>
 
 <p align="center">
-  <em>Figure n: Building Control Approved Inspector workflow</em>
+  <em>Figure 34: Building Control Approved Inspector workflow</em>
 </p>
 
 **Approved Inspector**<br>
@@ -452,7 +607,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 </p>
 
 <p align="center">
-  <em>Figure n: Street Naming and Numbering overall workflow</em>
+  <em>Figure 35: Street Naming and Numbering overall workflow</em>
 </p>
 
 *Process Overview*<br>
@@ -467,7 +622,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 </p>
 
 <p align="center">
-  <em>Figure n: Step 1 for SNN process</em>
+  <em>Figure 36: Step 1 for SNN process</em>
 </p>
 
 
@@ -486,7 +641,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 </p>
 
 <p align="center">
-  <em>Figure n: Step 2 for SNN process</em>
+  <em>Figure 37: Step 2 for SNN process</em>
 </p>
 
 
@@ -511,7 +666,7 @@ The Street Name and Number (SNN) Team manages the official naming and numbering 
 </p>
 
 <p align="center">
-  <em>Figure n: Step 3 for SNN process</em>
+  <em>Figure 38: Step 3 for SNN process</em>
 </p>
 
 
@@ -524,7 +679,7 @@ The Local Land and Property Gazetteer (LLPG), interchangeably called LPG, is an 
 </p>
 
 <p align="center">
-  <em>Figure n: Land and Property Gazetteer overall workflow</em>
+  <em>Figure 39: Land and Property Gazetteer overall workflow</em>
 </p>
 
 *Process and Outcome Data*<br>
@@ -551,7 +706,7 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 </p>
 
 <p align="center">
-  <em>Figure n: Part 1 for HS process</em>
+  <em>Figure 40: Part 1 for HS process</em>
 </p>
 
 
@@ -567,7 +722,7 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 </p>
 
 <p align="center">
-  <em>Figure n: Part 2 for HS process</em>
+  <em>Figure 41: Part 2 for HS process</em>
 </p>
 
 
