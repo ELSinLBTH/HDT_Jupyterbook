@@ -55,22 +55,35 @@ ADD TABLE HERE (llm excel)
   <thead>
     <tr>
       <th>Type</th>
-      <th>colspan="8">Extractive</td>
-      <th>colspan="2">Abstractive</td>
-      <!-- <td rowspan="4">L1 Name</td>
-      <td>L3 Name A</td>
-      <th>colspan="8">&nbsp;</td>
-      <th>Type</th>
-      <th>Extractive</th>
-      <th>Abstractive</th> -->
+      <th>colspan="8">Extractive</th>
+      <th>colspan="2">Abstractive</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Name</td>
+      <td>Pegasus</td>
+      <td>BART</td>
+      <td>T5</td>
+      <td>GPT-4</td>
+      <td>Yake</td>
+      <td>KeyBert</td>
+      <td>Summa (TextRank)</td>
+      <td>TF-IDF</td>
+      <td>Copilot</td>
+      <td>Llama3.2</td>
+    </tr>
+    </tbody>
+</table>
 
+<!-- 
 | **Type** | **Extractive**                                                         | **Abstractive**    |
 | ---------| ---------------------------------------------------------------------- | ------------------ |
 | **Name** | Pegasus | BART | T5| GPT-4 | Yake | KeyBERT | Summa (TextRank) | TF-IDF| Copilot | Llama3.2 | 
 | **Description** | A text summarisation model designed by Google | A text model developed by Facebook | A versatile language model developed by Google | An advanced language model developed by OpenAI | A lightweight and unsuperised automatic keyword extraction algorithm | A BERT tech based keyword extraction | A text  processing tool that can extract keywords | A statistical measure used to extract keywords | An AI powered model developed by Github and OpenAI | An advanced language model developed by Meta | 
 | **Question** | Summary in 5 points   | Cancel (Data Security) | Keywords | Abstractive and Keywords | 
 
-
+ -->
 
 
 ##### Software
