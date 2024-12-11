@@ -169,6 +169,58 @@ This report is compiled after meeting with 12 members of council staff belonging
         <td>20%</td>
         <td>20%</td>
       </tr>
+      <tr>
+        <td><strong>Inference2</strong></td>
+        <td>5% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td>25% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td>3% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><strong>ROUGE-L (2 dp)</strong></td>
+        <td>20%</td>
+        <td>42%</td>
+        <td>19%</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><strong>SemScore</strong></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>79%</td>
+        <td>78%</td>
+      </tr>
+      <tr>
+        <td><strong>Inference4</strong></td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>79% similarity between generated summary and reference summary</td>
+        <td>78% similarity between generated summary and reference summary</td>
+      </tr>
     </tbody>
   </table>
 </div>
