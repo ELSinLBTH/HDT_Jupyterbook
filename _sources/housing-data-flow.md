@@ -55,13 +55,13 @@ ADD TABLE HERE (llm excel)
   <thead>
     <tr>
       <th>Type</th>
-      <th>colspan="8">Extractive</th>
-      <th>colspan="2">Abstractive</th>
+      <th colspan="8">Extractive</th>
+      <th colspan="2">Abstractive</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Name</td>
+      <td>**Name**</td>
       <td>Pegasus</td>
       <td>BART</td>
       <td>T5</td>
@@ -73,17 +73,28 @@ ADD TABLE HERE (llm excel)
       <td>Copilot</td>
       <td>Llama3.2</td>
     </tr>
-    </tbody>
+    <tr>
+      <td>**Description**</td>
+      <td>A text summarisation model designed by Google</td>
+      <td>A text model developed by Facebook</td>
+      <td>A versatile language model developed by Google</td>
+      <td>An advanced language model developed by OpenAI</td>
+      <td>A lightweight and unsuperised automatic keyword extraction algorithm</td>
+      <td>A BERT tech based keyword extraction</td>
+      <td>A text  processing tool that can extract keywords</td>
+      <td>A statistical measure used to extract keywords</td>
+      <td>An AI powered model developed by Github and OpenAI</td>
+      <td>An advanced language model developed by Meta</td>
+    </tr>
+    <tr>
+      <td>**Question**</td>
+      <td colspan="3">Summary in 5 points</td>
+      <td>Cancel (Data Security)</td>
+      <td colspan="4">Keywords</td>
+      <td colspan="2">Abstractive and Keywords</td>
+    </tr>
+  </tbody>
 </table>
-
-<!-- 
-| **Type** | **Extractive**                                                         | **Abstractive**    |
-| ---------| ---------------------------------------------------------------------- | ------------------ |
-| **Name** | Pegasus | BART | T5| GPT-4 | Yake | KeyBERT | Summa (TextRank) | TF-IDF| Copilot | Llama3.2 | 
-| **Description** | A text summarisation model designed by Google | A text model developed by Facebook | A versatile language model developed by Google | An advanced language model developed by OpenAI | A lightweight and unsuperised automatic keyword extraction algorithm | A BERT tech based keyword extraction | A text  processing tool that can extract keywords | A statistical measure used to extract keywords | An AI powered model developed by Github and OpenAI | An advanced language model developed by Meta | 
-| **Question** | Summary in 5 points   | Cancel (Data Security) | Keywords | Abstractive and Keywords | 
-
- -->
 
 
 ##### Software
