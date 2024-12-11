@@ -50,7 +50,7 @@ This report is compiled after meeting with 12 members of council staff belonging
 
 ADD TABLE HERE (llm excel)
 
-<div style="margin-top: 20px;">
+<div style="overflow-x: auto;">
   <table border="1">
    <thead>
       <tr>
@@ -172,7 +172,7 @@ ADD TABLE HERE (llm excel)
       </tr>
     </tbody>
   </table>
-
+</div>
 
 
 ##### Software
