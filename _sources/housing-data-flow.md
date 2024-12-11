@@ -50,6 +50,20 @@ This report is compiled after meeting with 12 members of council staff belonging
 
 ADD TABLE HERE (llm excel)
 
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>colspan="8">Extractive</td>
+      <th>colspan="2">Abstractive</td>
+      <!-- <td rowspan="4">L1 Name</td>
+      <td>L3 Name A</td>
+      <th>colspan="8">&nbsp;</td>
+      <th>Type</th>
+      <th>Extractive</th>
+      <th>Abstractive</th> -->
+
 | **Type** | **Extractive**                                                         | **Abstractive**    |
 | ---------| ---------------------------------------------------------------------- | ------------------ |
 | **Name** | Pegasus | BART | T5| GPT-4 | Yake | KeyBERT | Summa (TextRank) | TF-IDF| Copilot | Llama3.2 | 
