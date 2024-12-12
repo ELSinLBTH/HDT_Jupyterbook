@@ -74,113 +74,113 @@ This report is compiled after meeting with 12 members of council staff belonging
       </tr>
       <tr>
         <td><strong>Description</strong></td>
-        <td>A text summarisation model designed by Google</td>
-        <td>A text model developed by Facebook</td>
-        <td>A versatile language model developed by Google</td>
-        <td>An advanced language model developed by OpenAI</td>
-        <td>A lightweight and unsupervised automatic keyword extraction algorithm</td>
-        <td>A BERT tech based keyword extraction</td>
-        <td>A text  processing tool that can extract keywords</td>
-        <td>A statistical measure used to extract keywords</td>
-        <td>An AI powered model developed by Github and OpenAI</td>
-        <td>An advanced language model developed by Meta</td>
+        <td style="background-color:#DBF2FF;">A text summarisation model designed by Google</td>
+        <td style="background-color:#DBF2FF;">A text model developed by Facebook</td>
+        <td style="background-color:#DBF2FF;">A versatile language model developed by Google</td>
+        <td style="background-color:#D5DBDE;">An advanced language model developed by OpenAI</td>
+        <td style="background-color:#DBF2FF;">A lightweight and unsupervised automatic keyword extraction algorithm</td>
+        <td style="background-color:#DBF2FF;">A BERT tech based keyword extraction</td>
+        <td style="background-color:#DBF2FF;">A text  processing tool that can extract keywords</td>
+        <td style="background-color:#DBF2FF;">A statistical measure used to extract keywords</td>
+        <td style="background-color:#DBF2FF;">An AI powered model developed by Github and OpenAI</td>
+        <td style="background-color:#DBF2FF;">An advanced language model developed by Meta</td>
       </tr>
       <tr>
         <td><strong>Question</strong></td>
-        <td colspan="3">Summary in 5 points</td>
-        <td>Cancel (Data Security)</td>
-        <td colspan="4">Keywords</td>
-        <td colspan="2">Abstractive and Keywords</td>
+        <td colspan="3" style="background-color:#DBF2FF;">Summary in 5 points</td>
+        <td style="background-color:#D5DBDE;">Cancel (Data Security)</td>
+        <td colspan="4" style="background-color:#DBF2FF;">Keywords</td>
+        <td colspan="2" style="background-color:#DBF2FF;">Abstractive and Keywords</td>
       </tr>
       <tr>
         <td><strong>Pre-training with</strong></td>
-        <td>Enhances summary quality by training on key sentences removed from texts</td>
-        <td>Token Masking, Token Deletin and Text Infilling Tech</td>
-        <td>Text-to-text tasks and corrupted tokens </td>
-        <td>Unsupervised Learning</td>
-        <td>N/A (unsupervised algorithm)</td>
-        <td>N/A (based on BERT pre-train result)</td>
-        <td>N/A (unsupervised algorithm)</td>
-        <td>N/A (statistical measure)</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td style="background-color:#DBF2FF;">Enhances summary quality by training on key sentences removed from texts</td>
+        <td style="background-color:#DBF2FF;">Token Masking, Token Deletin and Text Infilling Tech</td>
+        <td style="background-color:#DBF2FF;">Text-to-text tasks and corrupted tokens </td>
+        <td style="background-color:#D5DBDE;">Unsupervised Learning</td>
+        <td style="background-color:#DBF2FF;">N/A (unsupervised algorithm)</td>
+        <td style="background-color:#DBF2FF;">N/A (based on BERT pre-train result)</td>
+        <td style="background-color:#DBF2FF;">N/A (unsupervised algorithm)</td>
+        <td style="background-color:#DBF2FF;">N/A (statistical measure)</td>
+        <td style="background-color:#D5DBDE;">&nbsp;</td>
+        <td style="background-color:#D5DBDE;">&nbsp;</td>
       </tr>
       <tr>
         <td><strong>Text Corpus</strong></td>
-        <td>Article from BBC, CNN/DailyMail and NEWSROOM dataset etc.</td>
-        <td>WikiNews articles</td>
-        <td>Colossal Clean Crawled Corpus (C4) dataset</td>
-        <td>Vast amounts of diverse text data</td>
-        <td>N/A (unsupervised algorithm)</td>
-        <td>Wikipedia and BookCorpus</td>
-        <td>Web page and academic papers</td>
-        <td>N/A (statistical measure)</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td style="background-color:#DBF2FF;">Article from BBC, CNN/DailyMail and NEWSROOM dataset etc.</td>
+        <td style="background-color:#DBF2FF;">WikiNews articles</td>
+        <td style="background-color:#DBF2FF;">Colossal Clean Crawled Corpus (C4) dataset</td>
+        <td style="background-color:#D5DBDE;">Vast amounts of diverse text data</td>
+        <td style="background-color:#DBF2FF;">N/A (unsupervised algorithm)</td>
+        <td style="background-color:#DBF2FF;">Wikipedia and BookCorpus</td>
+        <td style="background-color:#DBF2FF;">Web page and academic papers</td>
+        <td style="background-color:#DBF2FF;">N/A (statistical measure)</td>
+        <td style="background-color:#D5DBDE;">&nbsp;</td>
+        <td style="background-color:#D5DBDE;">&nbsp;</td>
       </tr>
       <tr>
         <td><strong>Advantage</strong></td>
-        <td>Specifically designed for summarisation</td>
-        <td>BART has shown promising results on text-to-text generation tasks such as summarisation</td>
-        <td>Extremely flexible for different LLM tasks, including summarisation</td>
-        <td>Handles open-domain and complex texts well</td>
-        <td>Easy to deploy</td>
-        <td>Captures the meaning behind words and phrases</td>
-        <td>Highly efficient </td>
-        <td>Highly efficient </td>
-        <td>Seamless integration with Microsoft Teams enhances productivity</td>
-        <td>Generates detailed, context-aware summaries adaptable to various styles</td>
+        <td style="background-color:#DBF2FF;">Specifically designed for summarisation</td>
+        <td style="background-color:#DBF2FF;">BART has shown promising results on text-to-text generation tasks such as summarisation</td>
+        <td style="background-color:#DBF2FF;">Extremely flexible for different LLM tasks, including summarisation</td>
+        <td style="background-color:#D5DBDE;">Handles open-domain and complex texts well</td>
+        <td style="background-color:#DBF2FF;">Easy to deploy</td>
+        <td style="background-color:#DBF2FF;">Captures the meaning behind words and phrases</td>
+        <td style="background-color:#DBF2FF;">Highly efficient </td>
+        <td style="background-color:#DBF2FF;">Highly efficient </td>
+        <td style="background-color:#DBF2FF;">Seamless integration with Microsoft Teams enhances productivity</td>
+        <td style="background-color:#DBF2FF;">Generates detailed, context-aware summaries adaptable to various styles</td>
       </tr>
       <tr>
         <td><strong>Disadvantage</strong></td>
-        <td>Less flexible</td>
-        <td>Summary may lack coherence occasionally</td>
-        <td>May not perform well on jargons and esoteric words</td>
-        <td>Data protection issues as it cannot run locally or run under IT monitoring</td>
-        <td>Unfamiliar with complex effective and specialised vocabulary</td>
-        <td>Computationally intensive</td>
-        <td>May Struggle with context sensitivity</td>
-        <td>Limited to capture semantic relationships between words</td>
-        <td>Limited to summarising content within Microsoft Teams</td>
-        <td>Potential bias in summary as the training data is undisclosed</td>
+        <td style="background-color:#DBF2FF;">Less flexible</td>
+        <td style="background-color:#DBF2FF;">Summary may lack coherence occasionally</td>
+        <td style="background-color:#DBF2FF;">May not perform well on jargons and esoteric words</td>
+        <td style="background-color:#D5DBDE;">Data protection issues as it cannot run locally or run under IT monitoring</td>
+        <td style="background-color:#DBF2FF;">Unfamiliar with complex effective and specialised vocabulary</td>
+        <td style="background-color:#DBF2FF;">Computationally intensive</td>
+        <td style="background-color:#DBF2FF;">May Struggle with context sensitivity</td>
+        <td style="background-color:#DBF2FF;">Limited to capture semantic relationships between words</td>
+        <td style="background-color:#DBF2FF;">Limited to summarising content within Microsoft Teams</td>
+        <td style="background-color:#DBF2FF;">Potential bias in summary as the training data is undisclosed</td>
       </tr>
       <tr>
         <td><strong>Test case</strong></td>
-        <td colspan="10">This test case originates from User Research Meeting 1, with Matthew Pullen presenting. He discussed the role of data in monitoring compliance and adhering to Section 106 agreements, highlighting the necessity for enhanced systems to manage complex data layers and assumptions. Additionally, Matthew pointed out existing gaps between planning policies and their practical implementation.</td>
+        <td colspan="10" style="background-color:#DBF2FF;">This test case originates from User Research Meeting 1, with Matthew Pullen presenting. He discussed the role of data in monitoring compliance and adhering to Section 106 agreements, highlighting the necessity for enhanced systems to manage complex data layers and assumptions. Additionally, Matthew pointed out existing gaps between planning policies and their practical implementation.</td>
       </tr>
       <tr>
         <td><strong>Model Selection</strong></td>
-        <td>&nbsp;</td>
-        <td>BART: its Rouge score is highest among the extractive summary</td>
-        <td colspan="5">&nbsp;</td>
-        <td>TF-IDF for one-word keywords, Copilot for bi-grams or mult-grams keywords. TF-IDF got highest score in Rouge test,while</td>
-        <td colspan="2">Both Copilot and Llama 3.2, cause they have different focus</td>
+        <td style="background-color:#D5DBDE;">&nbsp;</td>
+        <td style="background-color:#DBF2FF;">BART: its Rouge score is highest among the extractive summary</td>
+        <td colspan="5" style="background-color:#D5DBDE;">&nbsp;</td>
+        <td style="background-color:#DBF2FF;">TF-IDF for one-word keywords, Copilot for bi-grams or mult-grams keywords. TF-IDF got highest score in Rouge test,while</td>
+        <td colspan="2" style="background-color:#DBF2FF;">Both Copilot and Llama 3.2, cause they have different focus</td>
       </tr>
       <tr>
         <td><strong>ROUGE-1 (2 dp)</strong></td>
-        <td>22%</td>
-        <td>48%</td>
-        <td>24%</td>
-        <td>&nbsp;</td>
-        <td>33%</td>
-        <td>20%</td>
-        <td>10%</td>
-        <td>40%</td>
-        <td>20%</td>
-        <td>20%</td>
+        <td style="background-color:#DBF2FF;">22%</td>
+        <td style="background-color:#DBF2FF;">48%</td>
+        <td style="background-color:#DBF2FF;">24%</td>
+        <td style="background-color:#D5DBDE;">&nbsp;</td>
+        <td style="background-color:#DBF2FF;">33%</td>
+        <td style="background-color:#DBF2FF;">20%</td>
+        <td style="background-color:#DBF2FF;">10%</td>
+        <td style="background-color:#DBF2FF;">40%</td>
+        <td style="background-color:#DBF2FF;">20%</td>
+        <td style="background-color:#DBF2FF;">20%</td>
       </tr>
       <tr>
-        <td><strong>Inference2</strong></td>
-        <td>5% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
-        <td>25% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
-        <td>3% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td><strong>Inference1</strong></td>
+        <td style="background-color:#DBF2FF;">5% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td style="background-color:#DBF2FF;">25% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td style="background-color:#DBF2FF;">3% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
         <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
         <td><strong>ROUGE-L (2 dp)</strong></td>
@@ -194,6 +194,45 @@ This report is compiled after meeting with 12 members of council staff belonging
         <td>&nbsp;</td>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><strong>Inference2</strong></td>
+        <td style="background-color:#DBF2FF;">5% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td style="background-color:#DBF2FF;">25% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td style="background-color:#DBF2FF;">3% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>ROUGE-2 (2 dp)</strong></td>
+        <td>20%</td>
+        <td>42%</td>
+        <td>19%</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><strong>Inference3</strong></td>
+        <td style="background-color:#DBF2FF;">5% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td style="background-color:#DBF2FF;">25% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td style="background-color:#DBF2FF;">3% of the words from the refernce summary were also found in the generated summary when considering bia-grams</td>
+        <td>&nbsp;</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
       </tr>
       <tr>
         <td><strong>SemScore</strong></td>
