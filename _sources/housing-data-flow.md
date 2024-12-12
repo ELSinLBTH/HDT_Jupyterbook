@@ -623,9 +623,7 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 #### LLM Processing
 
 <details>
-<summary>Code Tab
-
-**Document Processing**
+<summary>Code Tab: Document Processing</summary>
 
 ```python
 def extract_text_from_docx(docx_file):
