@@ -48,28 +48,29 @@ This is Housing Data Flow page.
 
 This report is compiled after meeting with 12 members of council staff belonging to housing teams within the London Borough of Tower Hamlets. LLMs are employed to summarise content and keywords. This notebook primarily explores the use of artificial intelligence and automated processes as an intervention to our user research.
 
+
 <div style="overflow-x: auto;">
   <table style="border-collapse: collapse; border: 1px solid #ccc; width: 100%;">
-   <thead>
+    <thead>
       <tr>
-        <th>Type</th>
-        <th colspan="8" style="background-color:#DBF2FF;">Extractive</th>
-        <th colspan="2" style="background-color:#DBF2FF;">Abstractive</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Type</th>
+        <th colspan="8" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Extractive</th>
+        <th colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><strong>Name</strong></td>
-        <td style="background-color:#DBF2FF;">Pegasus</td>
-        <td style="background-color:#DBF2FF;">BART</td>
-        <td style="background-color:#DBF2FF;">T5</td>
-        <td style="background-color:#D5DBDE;">GPT-4</td>
-        <td style="background-color:#DBF2FF;">Yake</td>
-        <td style="background-color:#DBF2FF;">KeyBert</td>
-        <td style="background-color:#DBF2FF;">Summa (TextRank)</td>
-        <td style="background-color:#DBF2FF;">TF-IDF</td>
-        <td style="background-color:#DBF2FF;">Copilot</td>
-        <td style="background-color:#DBF2FF;">Llama3.2</td>
+        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Name</strong></td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Pegasus</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">BART</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">T5</td>
+        <td style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;">GPT-4</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Yake</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">KeyBert</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summa (TextRank)</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Copilot</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Llama3.2</td>
       </tr>
       <tr>
         <td><strong>Description</strong></td>
