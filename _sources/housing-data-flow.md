@@ -362,6 +362,12 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 
 ### Results overview - BAU process diagram 
 
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <image class="modal-content" id="./_static/FlowImages/BAU_Past.png">
+  <div id="BAU Past workflow"></div>
+</div>
+
 
 <p align="center">
   <a href="./_static/FlowImages/BAU_Past.png" target="_blank">
