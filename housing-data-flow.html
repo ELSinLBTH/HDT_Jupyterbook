@@ -1741,7 +1741,8 @@ commencement: 0.0831125290206423
 </table>
 </div>
 <p>Comparing the reference summary with the summaries produced by the six models.</p>
-<p><strong>Code Tab</strong></p>
+<details>
+<summary>Code Tab</summary>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the gold standard and models&#39; outputs</span>
 <span class="n">gold_standard_keywords</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;housing data&quot;</span><span class="p">,</span> <span class="s2">&quot;planning&quot;</span><span class="p">,</span> <span class="s2">&quot;section 106&quot;</span><span class="p">,</span> <span class="s2">&quot;commercial&quot;</span><span class="p">,</span> 
                           <span class="s2">&quot;tenure mix&quot;</span><span class="p">,</span> <span class="s2">&quot;permission&quot;</span><span class="p">,</span> <span class="s2">&quot;commencement&quot;</span><span class="p">,</span> <span class="s2">&quot;CIL&quot;</span><span class="p">,</span> <span class="s2">&quot;forecasting&quot;</span><span class="p">,</span> 
@@ -1791,9 +1792,8 @@ commencement: 0.0831125290206423
 <span class="n">results_df</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The results as following:
-</pre></div>
-</div>
+</details>
+<p>The results as following:</p>
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -1863,6 +1863,48 @@ commencement: 0.0831125290206423
       <td>0.200000</td>
     </tr>
   </tbody>
+</table>
+</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Model</strong></p></th>
+<th class="head"><p><strong>Precision</strong></p></th>
+<th class="head"><p><strong>Recall</strong></p></th>
+<th class="head"><p><strong>F1 Score</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Yake</p></td>
+<td><p>0.333333</p></td>
+<td><p>0.3</p></td>
+<td><p>0.315789</p></td>
+</tr>
+<tr class="row-odd"><td><p>KeyBERT</p></td>
+<td><p>0.200000</p></td>
+<td><p>0.2</p></td>
+<td><p>0.200000</p></td>
+</tr>
+<tr class="row-even"><td><p>Summa</p></td>
+<td><p>0.100000</p></td>
+<td><p>0.1</p></td>
+<td><p>0.100000</p></td>
+</tr>
+<tr class="row-odd"><td><p>TF-IDF</p></td>
+<td><p>0.400000</p></td>
+<td><p>0.4 0.400000</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p>Copilot</p></td>
+<td><p>0.200000</p></td>
+<td><p>0.2</p></td>
+<td><p>0.200000</p></td>
+</tr>
+<tr class="row-odd"><td><p>Llama3.2</p></td>
+<td><p>0.200000</p></td>
+<td><p>0.2</p></td>
+<td><p>0.200000</p></td>
+</tr>
+</tbody>
 </table>
 </div>
 <p>According to the results, the TF-IDF model achieved the highest score. The keyword extraction results by TF-IDF for the text content of the 12 participants are as follows:</p>

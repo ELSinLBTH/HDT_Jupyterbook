@@ -1097,7 +1097,9 @@ In order to evaluate the quality of each keyword model, we need to set a gold st
 
 Comparing the reference summary with the summaries produced by the six models.
 
-**Code Tab**
+
+<details>
+<summary>Code Tab</summary>
 
 
 ```python
@@ -1150,11 +1152,9 @@ print("The results as following:")
 results_df
 ```
 
-    The results as following:
-    
+</details>
 
-
-
+The results as following:
 
 <div>
 <style scoped>
@@ -1227,7 +1227,14 @@ results_df
 </table>
 </div>
 
-
+| **Model** | **Precision** | **Recall** | **F1 Score** | 
+| --------- | ------------- | ---------- | ------------ |
+| Yake | 0.333333 | 0.3 | 0.315789 | 
+| KeyBERT | 0.200000 | 0.2 | 0.200000 |
+| Summa | 0.100000 | 0.1 | 0.100000 | 
+| TF-IDF | 0.400000 | 0.4 0.400000 |
+| Copilot | 0.200000 | 0.2 | 0.200000 |
+| Llama3.2 | 0.200000 | 0.2 | 0.200000 |
 
 According to the results, the TF-IDF model achieved the highest score. The keyword extraction results by TF-IDF for the text content of the 12 participants are as follows:
 
