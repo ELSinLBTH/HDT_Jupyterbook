@@ -48,9 +48,8 @@ This is Housing Data Flow page.
 
 This report is compiled after meeting with 12 members of council staff belonging to housing teams within the London Borough of Tower Hamlets. LLMs are employed to summarise content and keywords. This notebook primarily explores the use of artificial intelligence and automated processes as an intervention to our user research.
 
-
-<div cellspacing=0 style="border:1px solid #ccc" overflow-x: "auto;">
-  <table border="1">
+<div style="overflow-x: auto;">
+  <table style="border-collapse: collapse; border: 1px solid #ccc; width: 100%;">
    <thead>
       <tr>
         <th>Type</th>
