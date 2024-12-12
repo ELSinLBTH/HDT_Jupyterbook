@@ -44,6 +44,8 @@ html:
   use_issues_button: true
   use_repository_button: true
 
+# Syntax highlighting theme 
+pygments_style: solarized-light
 
 # Remove download button
 sphinx: 
