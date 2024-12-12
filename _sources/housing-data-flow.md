@@ -796,7 +796,7 @@ The outputs of the ten keywords from Matthew Pullen's text by the six models are
 | applications      | development     | sectional      | metre           | Student housing        | London           |
 
 
-<detail>
+<details>
 <summary>Code Tab: Stop words setting</summary>
 
 ```python
