@@ -625,7 +625,8 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 <details>
 <summary>Code Tab
 
-##### Document Processing
+**Document Processing**
+
 ```python
 def extract_text_from_docx(docx_file):
     doc = Document(docx_file)
@@ -697,6 +698,7 @@ if __name__ == "__main__":
     megan_rourke_content = speaker_contents['Megan Rourke'].strip()
 ```
 </details>
+
 
 **speech text**
 
