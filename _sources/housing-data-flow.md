@@ -568,7 +568,7 @@ _______________
 
 
 The results indicate that **BART** performed exceptionally well across all metrics. Consequently, this paper will now use the BART model to perform Extractive Summarisation on the dialogue content of the 12 participants, highlighting the key five points for each members.
-```
+
 
 #### Extractive Summarisation Result - BART
 
