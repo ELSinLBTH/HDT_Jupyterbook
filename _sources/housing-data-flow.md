@@ -622,12 +622,10 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 
 #### LLM Processing
 
-**Code Tab**
-
-```{toggle}
+<details>
+<summary>Code Tab
 
 ##### Document Processing
-
 ```python
 def extract_text_from_docx(docx_file):
     doc = Document(docx_file)
@@ -698,7 +696,7 @@ if __name__ == "__main__":
     camelia_smith_content = speaker_contents['Camelia Smith'].strip()
     megan_rourke_content = speaker_contents['Megan Rourke'].strip()
 ```
-```
+</details>
 
 **speech text**
 
@@ -971,15 +969,6 @@ similarity2 = cosine_similarity(embeddings_ref, embeddings_2)
 print(f"Similarity between Reference and Summary C: {similarity1.item()}")
 print(f"Similarity between Reference and Summary L: {similarity2.item()}")
 ```
-
-tokenizer_config.json:   0%|          | 0.00/363 [00:00<?, ?B/s]
-vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]
-tokenizer.json:   0%|          | 0.00/466k [00:00<?, ?B/s]
-special_tokens_map.json:   0%|          | 0.00/239 [00:00<?, ?B/s]
-config.json:   0%|          | 0.00/571 [00:00<?, ?B/s]
-model.safetensors:   0%|          | 0.00/438M [00:00<?, ?B/s]
-Similarity between Reference and Summary C: 0.7885517477989197
-Similarity between Reference and Summary L: 0.7846035361289978
     
 
 |    Model Name    |    SemScore    |
@@ -1217,17 +1206,6 @@ for keyword, score in keywords:
 keybert_list = [keyword for keyword, score in keywords]
 ```
 
-modules.json:   0%|          | 0.00/349 [00:00<?, ?B/s]<br>
-config_sentence_transformers.json:   0%|          | 0.00/116 [00:00<?, ?B/s]<br>
-README.md:   0%|          | 0.00/10.7k [00:00<?, ?B/s]<br>
-sentence_bert_config.json:   0%|          | 0.00/53.0 [00:00<?, ?B/s]<br>
-config.json:   0%|          | 0.00/612 [00:00<?, ?B/s]<br>
-model.safetensors:   0%|          | 0.00/90.9M [00:00<?, ?B/s]<br>
-tokenizer_config.json:   0%|          | 0.00/350 [00:00<?, ?B/s]<br>
-vocab.txt:   0%|          | 0.00/232k [00:00<?, ?B/s]<br>
-tokenizer.json:   0%|          | 0.00/466k [00:00<?, ?B/s]<br>
-special_tokens_map.json:   0%|          | 0.00/112 [00:00<?, ?B/s]<br>
-1_Pooling/config.json:   0%|          | 0.00/190 [00:00<?, ?B/s]<br>
 
     commencement: 0.4556
     planning: 0.4397
