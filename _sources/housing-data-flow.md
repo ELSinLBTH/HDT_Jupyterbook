@@ -1151,81 +1151,9 @@ results_df = pd.DataFrame(metrics_results)
 print("The results as following:")
 results_df
 ```
-
 </details>
 
 The results as following:
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Model</th>
-      <th>Precision</th>
-      <th>Recall</th>
-      <th>F1 Score</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Yake</td>
-      <td>0.333333</td>
-      <td>0.3</td>
-      <td>0.315789</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>KeyBERT</td>
-      <td>0.200000</td>
-      <td>0.2</td>
-      <td>0.200000</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Summa</td>
-      <td>0.100000</td>
-      <td>0.1</td>
-      <td>0.100000</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>TF-IDF</td>
-      <td>0.400000</td>
-      <td>0.4</td>
-      <td>0.400000</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Copilot</td>
-      <td>0.200000</td>
-      <td>0.2</td>
-      <td>0.200000</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Llama 3.2</td>
-      <td>0.200000</td>
-      <td>0.2</td>
-      <td>0.200000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
 
 | **Model** | **Precision** | **Recall** | **F1 Score** | 
 | --------- | ------------- | ---------- | ------------ |
