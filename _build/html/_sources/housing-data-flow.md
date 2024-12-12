@@ -362,6 +362,37 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 
 ### Results overview - BAU process diagram 
 
+
+<p align="center">
+  <a href="./_static/FlowImages/BAU_Past.png" target="_blank">
+    <img src="./_static/FlowImages/BAU_Past.png" alt="BAU Past workflow " />
+  </a>
+</p>
+
+<p align="center">
+  <em>BAU Past workflow</em>
+</p>
+
+<p align="center">
+  <a href="./_static/FlowImages/BAU_Present.png" target="_blank">
+    <img src="./_static/FlowImages/BAU_Present.png" alt="BAU Present workflow " />
+  </a>
+</p>
+
+<p align="center">
+  <em>BAU Present workflow</em>
+</p>
+
+<p align="center">
+  <a href="./_static/FlowImages/BAU_Future.png" target="_blank">
+    <img src="./_static/FlowImages/BAU_Future.png" alt="BAU Future workflow " />
+  </a>
+</p>
+
+<p align="center">
+  <em>BAU Future workflow</em>
+</p>
+
 ### Results overview - BAU data diagram
 
 ### LLM result
