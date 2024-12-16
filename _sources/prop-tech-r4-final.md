@@ -231,10 +231,10 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 
 
 ## The result
-*Please provide a comprehensive summary of your project's achievements, drawing from your 'Round 4 M&E spreadsheet'. Highlight the "before and after" data to clearly demonstrate your project's impact.*<br>
+<small>*Please provide a comprehensive summary of your project's achievements, drawing from your 'Round 4 M&E spreadsheet'. Highlight the "before and after" data to clearly demonstrate your project's impact.*<br>
 *Include both quantitative and qualitative outcomes, emphasising positive impacts and improvements. Reflect on any lessons learned, new relationships formed, skills developed, or innovative approaches explored.*<br>
 *Additionally, take a moment to discuss any challenges faced or aspects that didn’t go as planned, and how these experiences contributed to your overall learning.*<br>
-*Consider unexpected positive outcomes and how your project has influenced your organisation and community. Your summary should showcase both measurable results and broader transformative effects, painting a holistic picture of your project's success and learning (min 500 words)*<br>
+*Consider unexpected positive outcomes and how your project has influenced your organisation and community. Your summary should showcase both measurable results and broader transformative effects, painting a holistic picture of your project's success and learning (min 500 words)*<br></small>
 
 Round 4 M&E spreadsheet- completed and attached at the end of this report. 
 
