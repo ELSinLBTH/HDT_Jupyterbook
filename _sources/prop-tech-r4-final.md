@@ -330,10 +330,10 @@ Teams and process overview then categorised the journey for development in mappe
 ## Next steps
 <small>*Outline any plans or strategies for further applications of these tools or broader adoption. Please offer your views on the scalability of your project or tools and share any plans for further integration in or outside of your council. What have you learned and how are you and your teams going to carry PropTech forward?*</small>
 
-#### Next steps:
+##### Next steps:
 Evolving the planning database to forecast development potential with the help of machine learning methodologies. 
 
-#### Objectives:
+##### Objectives:
 <ol>
     <li>Building a complete planning database</li>
         <ol type="a">
@@ -348,11 +348,11 @@ Evolving the planning database to forecast development potential with the help o
     <li>Using machine learning tools to forecast development potential</li><br>During the development of this MVP, a test planning database was created (subset to the planning database schema in 1a) that considered all developments in trajectory to examine effect of factors intrinsic and extrinsic to development that affected days taken to deliver development. The test case looked at factors influencing completed developments (using methods such multi-linear regression; principal component analysis) and built scenarios to test against approved and commenced developments. The future iterations for the project would take these forwards and keep experimenting with other machine learning methods as the planning database is expanded.</li>
 </ol>
 
-#### Key Outcomes:
+##### Key Outcomes:
 1. Producing a machine learning tool to predict housing development potential.  
 
 
-#### Further Outcomes:
+##### Further Outcomes:
 1.  Transforming data collection, cleansing, and transformation process using FME extraction tool- to automate and cleanse data at source. 
 
 <p align="center">
@@ -364,7 +364,7 @@ Evolving the planning database to forecast development potential with the help o
 2. Developing HDT website further to assimilate and share results of housing data flow diagram (in html format)- making available all housing processes, key definitions, triggers of information (data) for all teams in council.
 <br>
 
-#### Scalability and future integration:
+##### Scalability and future integration:
 
 1. Assessing development potential is a universal exercise. The methodology developed by LBTH to identify and implement forecasting tools could be replicated across most high-growth LPAs, particularly those in London.  
 
