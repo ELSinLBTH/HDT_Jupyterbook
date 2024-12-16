@@ -129,13 +129,14 @@ Accessing the LBTH Development Tracker: the tracker is linked to the council’s
     <img src="./_static/FlowImages/Picture8.png" />
   </a>
 </p>
+
 Once the link for *PBC Development Tracker* is clicked, it takes the user to the GIS Dashboard developed by PBC team.  
 
  
 ## Supplier onboarding
 *Summary of procurement / onboarding / training processes - how long did they take, were there any challenges and how did you overcome these?*
  
-| **Supplier** | **Framework** | **Timeframe** |
+| Supplier | Framework | Timeframe |
 | ------------ | ------------- | ------------- |
 | **Arup** | Architecture + Urbanism Framework | 8 months | 
 | **Avineon Tensing** | Direct award: council online tender procurement- Proactis | 6 months |
@@ -239,43 +240,10 @@ Round 4 M&E spreadsheet- completed and attached at the end of this report.
 
 | Description | Quantitative Outcome | Qualitative Outcome |
 | ----------- | -------------------- | ------------------- |
-| Access to information and time saving | After the completion of HDT all staff/members of the council who have access to the intranet (internal council website) were able to access and interact with the housing tracker.
-
-There is no additional product application access and IT approval required for immediate, cleansed reports.  
-
-
-Previously, access to PBC system would require a week (maximum) to approve and setup- longer if the product application had to be installed on council desktop by IT. Reports from the system required data cleanse exercise which could require another week (minimum) and further errors in these were plausible.  
-
- 
-All report requests made to PBC data team require a minimum of a week to share- depending on team’s workload. 
-
-
-The time reduced is from a minimum of a two-week exercise to a few minutes. The report extraction tool setup with FME webpage is also easy to interact with and able to provide a cleansed dataset within a few clicks. | Time saving for immediate reports have helped PBC team in charge of data reporting to reorient their work towards development related projects to improve data accuracy and PBC systems.  
-
- 
-The reduced time for reporting and access to information quickly has also given back more time to council teams to work on other parts of their work loads.  
-
- 
-There is a unanimous recognition for the project in the council as it has become a resolution to a commonly identified problem. |
-| Data Integrity | HDT aims to serve as a one-stop-shop for all development related data- presently focusing on housing.  
-
-
-Previously, different teams could request and have access to raw reports from the PBC data management systems that made room for considerable errors at data cleanse stage due to issues such as missed applications. 
-
- 
-The HDT reduces this greatly- if there is an error (such as a missed application) the error is managed at one point of data cleanse before sharing it with different teams. Removing from the workflow endless email loops requesting corrections to amend the data. | The HDT has improved trust on housing data- both among council teams and senior management.  
-
-There is a unified recognition among council teams for the improvement in their services. |
+| Access to information and time saving | After the completion of HDT all staff/members of the council who have access to the intranet (internal council website) were able to access and interact with the housing tracker. There is no additional product application access and IT approval required for immediate, cleansed reports.<br>Previously, access to PBC system would require a week (maximum) to approve and setup- longer if the product application had to be installed on council desktop by IT. Reports from the system required data cleanse exercise which could require another week (minimum) and further errors in these were plausible.<br>All report requests made to PBC data team require a minimum of a week to share- depending on team’s workload.<br>The time reduced is from a minimum of a two-week exercise to a few minutes. The report extraction tool setup with FME webpage is also easy to interact with and able to provide a cleansed dataset within a few clicks. | Time saving for immediate reports have helped PBC team in charge of data reporting to reorient their work towards development related projects to improve data accuracy and PBC systems.<br>The reduced time for reporting and access to information quickly has also given back more time to council teams to work on other parts of their work loads.<br>There is a unanimous recognition for the project in the council as it has become a resolution to a commonly identified problem. |
+| Data Integrity | HDT aims to serve as a one-stop-shop for all development related data- presently focusing on housing.<br>Previously, different teams could request and have access to raw reports from the PBC data management systems that made room for considerable errors at data cleanse stage due to issues such as missed applications.<br>The HDT reduces this greatly- if there is an error (such as a missed application) the error is managed at one point of data cleanse before sharing it with different teams. Removing from the workflow endless email loops requesting corrections to amend the data. | The HDT has improved trust on housing data- both among council teams and senior management.<br>There is a unified recognition among council teams for the improvement in their services. |
 | Dashboard design- innovative approaches | Both council teams as well as senior management appreciate the interactive dashboard experience and the simple report extraction tool. The data that is made available in this interactive manner is also impactful as a presentation as all housing figures and site updates are readily available to view. | Accessible dashboard design made housing data available in an impactful manner. The data that was previously stacked away in excel sheets, reports- has been replaced by an online dashboard that is shared as an improvement to previous processes of work. |
-| Team interactions- new relationships formed | As a part of the product development process, council teams were brought together for initial data discovery sessions, user research, and user testing. All sessions were carried out with the help of individual interviews and focused group discussions.  
-
- 
-Outside the direct scope of this project, this led to the Housing Discovery project that mapped all housing processes and data flows in the council and shared it with all teams.  
-
- 
-The end-to-end map shared with teams provided a whole picture of the housing process carried out by different teams from stages of pre-plan to completion and monitoring. It produced a comprehensive understanding of not only the team workflows, but also the triggers of data and key definitions, associations and work cycles among teams. | Big picture of housing process improved clarity withing team workflows. 
-
-From working in silos to coming together to understand housing development workflow as a whole helped teams to identify the different definitions, processes related to housing development that are worked on simultaneously in the council. |
+| Team interactions- new relationships formed | As a part of the product development process, council teams were brought together for initial data discovery sessions, user research, and user testing. All sessions were carried out with the help of individual interviews and focused group discussions.<br>Outside the direct scope of this project, this led to the Housing Discovery project that mapped all housing processes and data flows in the council and shared it with all teams.<br>The end-to-end map shared with teams provided a whole picture of the housing process carried out by different teams from stages of pre-plan to completion and monitoring. It produced a comprehensive understanding of not only the team workflows, but also the triggers of data and key definitions, associations and work cycles among teams. | Big picture of housing process improved clarity withing team workflows.<br>From working in silos to coming together to understand housing development workflow as a whole helped teams to identify the different definitions, processes related to housing development that are worked on simultaneously in the council. |
 | Skills learnt | LPA teams were able to learn new skills including FME training (basic) and improve on python coding skills. Further, new ways of working were developed- such as analysing user research transcripts using LLMs on python and MS-Copilot. | Learning new skills to add to business-as-usual work motivated staff and provided them greater job satisfaction. |
 
 
