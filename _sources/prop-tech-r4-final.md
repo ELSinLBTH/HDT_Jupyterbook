@@ -370,14 +370,15 @@ Evolving the planning database to forecast development potential with the help o
 
 
 ## Pilot related documents 
-*(optional)<br>Do you have any documents that you would like to share to supplement your final reports? For example, this could include assets that have been created in this round of funding, like process maps, Mural/Miro boards, job descriptions, scopes of work, internal reports, community feedback or blueprints and guidance for other councils to follow and copy your learnings & process.*
-<br>
-LBTH full documentation for HDT: https://elsinlbth.github.io/HDT_Jupyterbook/<br>
+<small>*(optional)<br>Do you have any documents that you would like to share to supplement your final reports? For example, this could include assets that have been created in this round of funding, like process maps, Mural/Miro boards, job descriptions, scopes of work, internal reports, community feedback or blueprints and guidance for other councils to follow and copy your learnings & process.*</small>
+
+
+LBTH full documentation for HDT: [GitHub Pages](https://elsinlbth.github.io/HDT_Jupyterbook/)<br>
 LBTH Mural Board Link: [LBTH Mural Board](https://app.mural.co/t/mhclghdt5335/m/mhclghdt5335/1730921590330/e03c9c20664ff99385715ce5798fc6c3fbdafaf0?sender=u08c3bbc8455f542a612a6207)
 
 
 ## Would you change anything 
-*(optional)<br>Retrospectively is there anything about this pilot that you would change? This could be utilising a different supplier, securing more internal by in, allowing more time for certain tasks etc.*
+<small>*(optional)<br>Retrospectively is there anything about this pilot that you would change? This could be utilising a different supplier, securing more internal by in, allowing more time for certain tasks etc.*</small>
 
 LBTH team appreciates the support received to envision, create, and deliver the HDT and would not like to change any part of the process experienced.  
 
