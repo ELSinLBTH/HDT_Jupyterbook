@@ -184,7 +184,7 @@ Onboarding and training: No onboarding and training exercises were required for 
 <small>*Describe the process of implementing the project, including any challenges faced or rationale for changes in scope from your initial application. What were the key features of the tools you developed and how did you work with your supplier to determine your user needs for these? (Min 200 words)*</small>
 
 
-The HDT project scope covered: 
+<b>The HDT project scope covered:</b> 
 <ol>
     <li>To deliver Minimum Viable Product (MVP) for Housing development Tracker (HDT)</li>
     <li>Build a housing trajectory that collates all housing development 2019 onwards</li>
@@ -282,7 +282,7 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 
 #### Housing Discovery Project 
  
-**Overview**
+**Overview**<br>
 As a part of the housing development tracker user research was conducted to identify and respond to the council’s business needs that helped scope the MVP for the housing development tracker. Teams interviewed helped identify the processes of housing in the council- information triggers, definitions, data flow. This led to the Housing Discovery Project that eventually helped map all housing processes in the council. 
 
 **Teams interviewed:**
