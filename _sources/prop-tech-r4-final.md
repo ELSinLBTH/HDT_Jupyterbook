@@ -1,12 +1,12 @@
 # PropTech Round 4 Final Report - MHCLG Report 
 
 
-## One line project title / Cohort:<br>**LBTH Housing Development Tracker**<br>Cohort 3 
+### One line project title / Cohort:<br>**LBTH Housing Development Tracker** Cohort 3 
 
-## Local Planning Authority/Authorities involved:<br>**London Borough of Tower Hamlets**
+### Local Planning Authority/Authorities involved:<br>**London Borough of Tower Hamlets**
 
-## Suppliers and Delivery partners involved in the project
-*Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*
+### Suppliers and Delivery partners involved in the project
+<small>*Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*</small>
 
 | **Partner** | **Description** | **Delivery Component** |
 | ----------- | --------------- | -------------------------------------------------- |
@@ -15,8 +15,8 @@
 | **UCL Graduates** | Best fit for project: assessed against coding skills, willingness to learn and develop new skills, evolve, and innovate | Data extraction, scripting code, Jupyterbook documentation |
 
 
-## Funding
-*Approximately how much of the MHCLG funding was spent internally and how much was spent on your suppliers?*
+### Funding
+<small>*Approximately how much of the MHCLG funding was spent internally and how much was spent on your suppliers?*</small>
 
 | **Type**           | **Spend** | **Notes** |
 | ------------------ | --------- | ------------------------------------------------------------------------------- |
@@ -25,15 +25,16 @@
 
 
 
-## A brief description of your project 
+### A brief description of your project 
 
-*Highlight the aim of your project and the solution you developed. Please provide some context as to your motivations for undertaking this pilot. (min 200 words)*
+<small>*Highlight the aim of your project and the solution you developed. Please provide some context as to your motivations for undertaking this pilot. (min 200 words)*</small>
  
 
 London Borough of Tower Hamlets has developed a Housing Development Tracker with the help of ESRI online dashboards. The tracker aimed to develop a web-based monitoring tool to keep a track of developments in London Borough of Tower Hamlets and employ ML (machine learning) to understand future development potential. This tool has brought together the housing trajectory for the borough from 2019 to 2030.   
 
 
-Objectives- To coalesce, summarise, and make available development information captured by LBTH teams in one place. Build on LBTH internal data repository to ensure robustness, integrity, and completeness of data. Develop a machine learning model to understand the scale of future development. 
+Objectives:<br>
+To coalesce, summarise, and make available development information captured by LBTH teams in one place. Build on LBTH internal data repository to ensure robustness, integrity, and completeness of data. Develop a machine learning model to understand the scale of future development. 
 
 
 **LBTH PropTech Round 4 delivery includes-**<br>
@@ -129,7 +130,7 @@ Accessing the LBTH Development Tracker: the tracker is linked to the council’s
 Once the link for *PBC Development Tracker* is clicked, it takes the user to the GIS Dashboard developed by PBC team.  
 
  
-## Supplier onboarding
+### Supplier onboarding
 <small>*Summary of procurement / onboarding / training processes - how long did they take, were there any challenges and how did you overcome these?*</small>
 
 | Supplier | Framework | Timeframe |
