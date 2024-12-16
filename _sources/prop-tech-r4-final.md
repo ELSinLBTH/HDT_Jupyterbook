@@ -56,8 +56,8 @@ To coalesce, summarise, and make available development information captured by L
     </ul>
 
 <p align="center">
-  <a href="./_static/FlowImages/Picture1.png" target="_blank">
-    <img src="./_static/FlowImages/Picture1.png" />
+  <a href="./_static/FlowImages/Picture1.bmp" target="_blank">
+    <img src="./_static/FlowImages/Picture1.bmp" />
   </a>
 </p>
 
