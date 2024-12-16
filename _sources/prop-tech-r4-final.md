@@ -195,10 +195,10 @@ The HDT project scope covered:
 ##### Approach
 
 <ul>
-    <li><b>Data Cleanse</b></li>
+    <li>Data Cleanse</li>
         <ol type="a">
             <li>Designed as week-long sprints with daily end of day huddle sessions. Managed and delivered by core team in planning and building control.</li>
-    <li><b>Product Specifications</b></li>
+    <li>Product Specifications</li>
             <li>User Research and User Testing:</li>
                 <ol type="i">
                     <li>User Research Sessions were run in two phases- initial data discovery that scoped the product data schema and deep delved with teams to understand housing development processes and data flows.
