@@ -375,7 +375,7 @@ Evolving the planning database to forecast development potential with the help o
 
  
 
-LBTH full documentation for HDT: https://elsinlbth.github.io/HDT_Jupyterbook/ 
+LBTH full documentation for HDT: https://elsinlbth.github.io/HDT_Jupyterbook/<br>
 LBTH Mural Board Link: [LBTH Mural Board](https://app.mural.co/t/mhclghdt5335/m/mhclghdt5335/1730921590330/e03c9c20664ff99385715ce5798fc6c3fbdafaf0?sender=u08c3bbc8455f542a612a6207)
 
 
