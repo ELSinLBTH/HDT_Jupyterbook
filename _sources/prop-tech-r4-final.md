@@ -212,11 +212,11 @@ The HDT project scope covered:
         </ol>
 </ul>
 
-
-6. Sessions with suppliers  
-<ol type="a">
-        <li>Workshops with Arup were designed to direct user research and user testing methodologies. Discussions shaped approach to user research, outlined open-ended questions that helped define deliverables for HDT.</li>
-        <li>Workshops were designed with Avineon Tensing to produce and deliver the FME report extraction tool and test with automated data extraction. Several meetings were held leading to the workshop that helped design the two-day sprint session to deliver the extraction tool. The final day was spent in understanding the ability of FME to automate data processing from the planning reports using Google Gemini Ai- this session helped guide the future scope for project future.</li>
+<ol start="6">
+    <li>Sessions with suppliers</li>
+        <ol type="a">
+            <li>Workshops with Arup were designed to direct user research and user testing methodologies. Discussions shaped approach to user research, outlined open-ended questions that helped define deliverables for HDT.</li>
+            <li>Workshops were designed with Avineon Tensing to produce and deliver the FME report extraction tool and test with automated data extraction. Several meetings were held leading to the workshop that helped design the two-day sprint session to deliver the extraction tool. The final day was spent in understanding the ability of FME to automate data processing from the planning reports using Google Gemini Ai- this session helped guide the future scope for project future.</li>
 </ol>
 
 Approach prior to HDT: Reports were regularly created by extracting data from planning and building control systems to be cleansed, manually checked and corrected, and circulated on a periodic basis and on request.  
@@ -242,7 +242,7 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 *Additionally, take a moment to discuss any challenges faced or aspects that didn’t go as planned, and how these experiences contributed to your overall learning.*<br>
 *Consider unexpected positive outcomes and how your project has influenced your organisation and community. Your summary should showcase both measurable results and broader transformative effects, painting a holistic picture of your project's success and learning (min 500 words)*<br></small>
 
-Round 4 M&E spreadsheet- completed and attached at the end of this report. 
+**Round 4 M&E spreadsheet- completed and attached at the end of this report.**
 
 | Description | Quantitative Outcome | Qualitative Outcome |
 | ----------- | -------------------- | ------------------- |
@@ -253,7 +253,7 @@ Round 4 M&E spreadsheet- completed and attached at the end of this report.
 | Skills learnt | LPA teams were able to learn new skills including FME training (basic) and improve on python coding skills. Further, new ways of working were developed- such as analysing user research transcripts using LLMs on python and MS-Copilot. | Learning new skills to add to business-as-usual work motivated staff and provided them greater job satisfaction. |
 
 
-**Key challenges and lessons learnt:**
+##### Key challenges and lessons learnt:
 
 1. Procurement processes posed a major challenge to project timeline- there were several project delays that were mitigated with supplier support. Although the delays were not welcome, they added to the overall understanding of the procurement process for PBC Digital and Data team that has been newly formed. The relatively smaller scale procurement for this project also helped to understand how larger projects should or could be navigated through. The work also helped identify key persons and teams to be contacted during procurement processes, delays, and issues. Lastly guiding team to understand procurement frameworks available in the PBC consultation processes for future references. 
 
@@ -262,7 +262,7 @@ Round 4 M&E spreadsheet- completed and attached at the end of this report.
 3. ML Scope: the HDT product had proposed in the funding BID complete machine learning model experimentation. Although, during the project as the planning schema was being identified and iterated on- there has been considerable effort to identify all key variables along with their associated units and appropriate indexing, to understand what a planning schema looks like beyond the application logging and site process. This approach rather than delaying the experimentation process has better defined the planning schema and the extraneous variables affecting housing delivery in the live environment (such as cost of living, interest rate, pandemic, etc). The delay has helped to create a clear and direct approach to experimentation and fed into further scope of the future of the product as well as the LBTH PBC digital and data strategies. 
 
 
-**Experience and overall learning:**
+##### Experience and overall learning:
 
 1. Council data requests require immediate results but resolving and reorienting the data to respond to all requests is a long-term project. The HDT product has helped to identify this common issue and highlight the need for it to be addressed. The project has also helped garner long term commitments towards data integrity and interoperability goals. 
 
