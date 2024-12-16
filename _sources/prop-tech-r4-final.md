@@ -12,7 +12,7 @@ Cohort 3
 *Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*
 
 | **Partner** | **Description** | **Delivery Component** |
-| ------------------------------------------------------ |
+| ----------- | --------------- | -------------------------------------------------- |
 | **Arup** | Best fit for project: assessed against | Product Guidance |
 | **Avineon Tensing** | Best fit for project: assessed against price, delivery, timeline requested for delivery, accuracy and innovation | FME workflow, FME report extraction page |
 | **UCL Graduates** | Best fit for project: assessed against coding skills, willingness to learn and develop new skills, evolve, and innovate | Data extraction, scripting code, Jupyterbook documentation |
@@ -21,8 +21,8 @@ Cohort 3
 ## Funding
 *Approximately how much of the MHCLG funding was spent internally and how much was spent on your suppliers?*
 
-| **Type** | **Spend** | **Notes** |
-| -------------------------------- |
+| **Type**           | **Spend** | **Notes** |
+| ------------------ | --------- | ------------------------------------------------------------------------------- |
 | **Internal Spend** | £40,000 | Adding internal resources and upskilling with the help of external suppliers/ project consultants. |
 | **External Spend** | £45,000 | Consultants aided to develop project direction, deliver key parts of product, and upskill council staff. |
 
