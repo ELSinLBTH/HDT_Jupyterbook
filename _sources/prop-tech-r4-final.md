@@ -358,8 +358,10 @@ Evolving the planning database to forecast development potential with the help o
     <img src="./_static/FlowImages/Picture15.png" />
   </a>
 </p> 
+
 2. Developing HDT website further to assimilate and share results of housing data flow diagram (in html format)- making available all housing processes, key definitions, triggers of information (data) for all teams in council.
 <br>
+
 **Scalability and future integration:**
 
 1. Assessing development potential is a universal exercise. The methodology developed by LBTH to identify and implement forecasting tools could be replicated across most high-growth LPAs, particularly those in London.  
