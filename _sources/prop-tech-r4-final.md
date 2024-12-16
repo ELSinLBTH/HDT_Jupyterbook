@@ -286,7 +286,7 @@ As a part of the housing development tracker user research was conducted to iden
     <li>(Affordable) Housing Supply</li>
 </ol>
 
-##### Methodologㅛ
+##### Methodology
 <ol>
     <li>Focus group discussions</li>
     <li>Team Interviews</li>
@@ -301,7 +301,7 @@ Members from teams in council that participate in housing related developments d
   </a>
 </p> 
  
-##### User Research Result<br>
+##### User Research Result
 Results overview- BAU process + data diagram<br>
 Development journey was mapped from phases of application submission on portal, initial assessment to delivery and monitoring in perpetuity. 
 
