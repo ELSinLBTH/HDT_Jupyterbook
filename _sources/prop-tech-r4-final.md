@@ -41,7 +41,7 @@ Objectives- To coalesce, summarise, and make available development information c
 
 LBTH PropTech Round 4 delivery includes- <br>
 
-1.\ <u>Housing Development Dashboard:</u> the tracker provides an overview of the borough housing trajectory from 2019 to 2030 (483 sites).
+1. <u>Housing Development Dashboard:</u> the tracker provides an overview of the borough housing trajectory from 2019 to 2030 (483 sites).
     <ul>
         <li>The tracker is designed and developed using ESRI GIS dashboards.<br>
             On this dashboard, the sites and units are classified by: </li>       
@@ -77,7 +77,7 @@ If the user wants to access a report to add to their own team workflow or proces
 </p>
 
 
-2.\ <u>FME extraction tool for automated reporting (user interface)</u>
+2. <u>FME extraction tool for automated reporting (user interface)</u>
 
 Once the user clicks on the link from above, they are led to the reporting tool that is setup- the user needs to request PBC team for login credentials. Once logged in the user can download all site related information from the site in excel format. The report is run according to site status- reports downloaded according to sites approved, commenced, completed, stalled, or all.<br> 
 The site has been set up using FME and supported by the same dataset that powers the housing development tracker interface. The report setup has been configured after user research to respond to council team requests and can be reconfigured in the future. 
@@ -89,7 +89,7 @@ The site has been set up using FME and supported by the same dataset that powers
 </p>
 
 
-3.\ <u>LBTH public facing project page on GitHub</u>
+3. <u>LBTH public facing project page on GitHub</u>
 
 This documentation for this project is developed using JupyterBook and python libraries. Hosted on GitHub, the book is open source and available for everyone to read- this includes all beyond the council. The dashboard hosts the link to the documentation on the right-hand slider as in the image below. Once the user clicks on the link, they will be redirected to the documentation book. 
 
@@ -108,7 +108,7 @@ LBTH full documentation for HDT: https://elsinlbth.github.io/HDT_Jupyterbook/
 </p>
 
 
-4.\ <u>FME test case for unstructured data extraction</u>
+4. <u>FME test case for unstructured data extraction</u>
 
 FME (Feature Manipulation Engine) tested an extraction case for one of 483 developments in the LBTH trajectory dataset using Gemini Ai to develop a rule-based extraction methodology. The tool helped to condition identification and extraction of accommodation schedule from the planner’s delegated report (a pdf document). For future iterations, this methodology will be developed to extract planning data from statutory documents to build and expand the database. 
 
@@ -118,10 +118,11 @@ FME (Feature Manipulation Engine) tested an extraction case for one of 483 devel
   </a>
 </p>
 
-5.\ <u>Machine Learning for future development potential</u>
+5. <u>Machine Learning for future development potential</u>
 
-In stages of discovery, the development tracker MVP has been able to bring together a consolidated housing schema for the London Borough of Tower Hamlets. The council team is building and expanding on this database to develop future scenarios of development.<b>  
+In stages of discovery, the development tracker MVP has been able to bring together a consolidated housing schema for the London Borough of Tower Hamlets. The council team is building and expanding on this database to develop future scenarios of development.<br>
 Accessing the LBTH Development Tracker: the tracker is linked to the council’s intranet server and can be accessed from the featured link section- as in the image below. 
+
 
 <p align="center">
   <a href="./_static/FlowImages/Picture8.png" target="_blank">
@@ -138,6 +139,7 @@ Once the link for *PBC Development Tracker* is clicked, it takes the user to the
 | ------------ | ------------- | ------------- |
 | **Arup** | Architecture + Urbanism Framework | 8 months | 
 | **Avineon Tensing** | Direct award: council online tender procurement- Proactis | 6 months |
+
 Onboarding and training: No onboarding and training exercises were required for the suppliers 
 
 Overall challenges: 

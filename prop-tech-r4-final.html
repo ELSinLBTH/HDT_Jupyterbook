@@ -382,17 +382,20 @@ Cohort 3</p>
 <p>London Borough of Tower Hamlets has developed a Housing Development Tracker with the help of ESRI online dashboards. The tracker aimed to develop a web-based monitoring tool to keep a track of developments in London Borough of Tower Hamlets and employ ML (machine learning) to understand future development potential. This tool has brought together the housing trajectory for the borough from 2019 to 2030.</p>
 <p>Objectives- To coalesce, summarise, and make available development information captured by LBTH teams in one place. Build on LBTH internal data repository to ensure robustness, integrity, and completeness of data. Develop a machine learning model to understand the scale of future development.</p>
 <p>LBTH PropTech Round 4 delivery includes- <br></p>
-<p>1.\ <u>Housing Development Dashboard:</u> the tracker provides an overview of the borough housing trajectory from 2019 to 2030 (483 sites).
-<ul>
-<li>The tracker is designed and developed using ESRI GIS dashboards.<br>
-On this dashboard, the sites and units are classified by: </li><br />
-<ul>
-<li>Tenure types: such as market, affordable rent, social rent, intermediate rent, student accommodation, and co-living units.</li>
-<li>Status of site: approved commenced,</li>
-<li>Date of completion, where sites coming forward do not have dates added.</li>
-</ul>
-<li>The database powering the dashboard took close to four months to complete and was brought together using manual system extraction processes from existing databases hosted by Idox as well as human checks of statutory reports.</li>
-</ul></p>
+<ol class="arabic">
+<li><p><u>Housing Development Dashboard:</u> the tracker provides an overview of the borough housing trajectory from 2019 to 2030 (483 sites).</p>
+ <ul>
+     <li>The tracker is designed and developed using ESRI GIS dashboards.<br>
+         On this dashboard, the sites and units are classified by: </li>       
+         <ul>
+             <li>Tenure types: such as market, affordable rent, social rent, intermediate rent, student accommodation, and co-living units.</li>
+             <li>Status of site: approved commenced,</li>
+             <li>Date of completion, where sites coming forward do not have dates added.</li>
+         </ul>
+     <li>The database powering the dashboard took close to four months to complete and was brought together using manual system extraction processes from existing databases hosted by Idox as well as human checks of statutory reports.</li>
+ </ul>
+</li>
+</ol>
 <p align="center">
   <a href="./_static/FlowImages/Picture1.png" target="_blank">
     <img src="./_static/FlowImages/Picture1.png" />
@@ -410,7 +413,9 @@ On this dashboard, the sites and units are classified by: </li><br />
     <img src="./_static/FlowImages/Picture3.png" />
   </a>
 </p>
-<p>2.\ <u>FME extraction tool for automated reporting (user interface)</u></p>
+<ol class="arabic simple" start="2">
+<li><p><u>FME extraction tool for automated reporting (user interface)</u></p></li>
+</ol>
 <p>Once the user clicks on the link from above, they are led to the reporting tool that is setup- the user needs to request PBC team for login credentials. Once logged in the user can download all site related information from the site in excel format. The report is run according to site status- reports downloaded according to sites approved, commenced, completed, stalled, or all.<br>
 The site has been set up using FME and supported by the same dataset that powers the housing development tracker interface. The report setup has been configured after user research to respond to council team requests and can be reconfigured in the future.</p>
 <p align="center">
@@ -418,7 +423,9 @@ The site has been set up using FME and supported by the same dataset that powers
     <img src="./_static/FlowImages/Picture4.png" />
   </a>
 </p>
-<p>3.\ <u>LBTH public facing project page on GitHub</u></p>
+<ol class="arabic simple" start="3">
+<li><p><u>LBTH public facing project page on GitHub</u></p></li>
+</ol>
 <p>This documentation for this project is developed using JupyterBook and python libraries. Hosted on GitHub, the book is open source and available for everyone to read- this includes all beyond the council. The dashboard hosts the link to the documentation on the right-hand slider as in the image below. Once the user clicks on the link, they will be redirected to the documentation book.</p>
 <p align="center">
   <a href="./_static/FlowImages/Picture5.png" target="_blank">
@@ -431,15 +438,19 @@ The site has been set up using FME and supported by the same dataset that powers
     <img src="./_static/FlowImages/Picture6.png" />
   </a>
 </p>
-<p>4.\ <u>FME test case for unstructured data extraction</u></p>
+<ol class="arabic simple" start="4">
+<li><p><u>FME test case for unstructured data extraction</u></p></li>
+</ol>
 <p>FME (Feature Manipulation Engine) tested an extraction case for one of 483 developments in the LBTH trajectory dataset using Gemini Ai to develop a rule-based extraction methodology. The tool helped to condition identification and extraction of accommodation schedule from the planner’s delegated report (a pdf document). For future iterations, this methodology will be developed to extract planning data from statutory documents to build and expand the database.</p>
 <p align="center">
   <a href="./_static/FlowImages/Picture7.png" target="_blank">
     <img src="./_static/FlowImages/Picture7.png" />
   </a>
 </p>
-<p>5.\ <u>Machine Learning for future development potential</u></p>
-<p>In stages of discovery, the development tracker MVP has been able to bring together a consolidated housing schema for the London Borough of Tower Hamlets. The council team is building and expanding on this database to develop future scenarios of development.<b><br />
+<ol class="arabic simple" start="5">
+<li><p><u>Machine Learning for future development potential</u></p></li>
+</ol>
+<p>In stages of discovery, the development tracker MVP has been able to bring together a consolidated housing schema for the London Borough of Tower Hamlets. The council team is building and expanding on this database to develop future scenarios of development.<br>
 Accessing the LBTH Development Tracker: the tracker is linked to the council’s intranet server and can be accessed from the featured link section- as in the image below.</p>
 <p align="center">
   <a href="./_static/FlowImages/Picture8.png" target="_blank">
@@ -467,13 +478,10 @@ Once the link for *PBC Development Tracker* is clicked, it takes the user to the
 <td><p>Direct award: council online tender procurement- Proactis</p></td>
 <td><p>6 months</p></td>
 </tr>
-<tr class="row-even"><td><p>Onboarding and training: No onboarding and training exercises were required for the suppliers</p></td>
-<td><p></p></td>
-<td><p></p></td>
-</tr>
 </tbody>
 </table>
 </div>
+<p>Onboarding and training: No onboarding and training exercises were required for the suppliers</p>
 <p>Overall challenges:</p>
 <ol>
     <li>Procurement timelines:</li>
