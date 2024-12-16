@@ -223,8 +223,8 @@ Onboarding and training: No onboarding and training exercises were required for 
 Approach prior to HDT: Reports were regularly created by extracting data from planning and building control systems to be cleansed, manually checked and corrected, and circulated on a periodic basis and on request.  
 
 <p align="center">
-  <a href="./_static/FlowImages/Picture9.png" target="_blank">
-    <img src="./_static/FlowImages/Picture9.png" />
+  <a href="./_static/FlowImages/BAU_Past.png" target="_blank">
+    <img src="./_static/FlowImages/BAU_Past.png" />
   </a>
 </p>
 
@@ -232,8 +232,8 @@ Approach prior to HDT: Reports were regularly created by extracting data from pl
 Methodology after implementation of HDT: Data is extracted from planning and build control systems to be added into the backend of HDT. Basic reports can be extracted by user using FME extraction tool and live housing development updates are available for all to see in the council. 
 
 <p align="center">
-  <a href="./_static/FlowImages/Picture10.png" target="_blank">
-    <img src="./_static/FlowImages/Picture10.png" />
+  <a href="./_static/FlowImages/BAU_Present.png" target="_blank">
+    <img src="./_static/FlowImages/BAU_Present.png" />
   </a>
 </p>
 
@@ -367,8 +367,8 @@ Evolving the planning database to forecast development potential with the help o
 1.  Transforming data collection, cleansing, and transformation process using FME extraction tool- to automate and cleanse data at source. 
 
 <p align="center">
-  <a href="./_static/FlowImages/Picture15.png" target="_blank">
-    <img src="./_static/FlowImages/Picture15.png" />
+  <a href="./_static/FlowImages/BAU_Future.png" target="_blank">
+    <img src="./_static/FlowImages/BAU_Future.png" />
   </a>
 </p> 
 
