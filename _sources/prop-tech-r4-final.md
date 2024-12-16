@@ -1,11 +1,14 @@
 # PropTech Round 4 Final Report - MHCLG Report 
 
 
+
 ### One line project title / Cohort:
 ##### **LBTH Housing Development Tracker** Cohort 3 
 
+
 ### Local Planning Authority/Authorities involved:
 ##### **London Borough of Tower Hamlets**
+
 
 ### Suppliers and Delivery partners involved in the project
 <small>*Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*</small>
@@ -142,7 +145,7 @@ Once the link for *PBC Development Tracker* is clicked, it takes the user to the
 
 Onboarding and training: No onboarding and training exercises were required for the suppliers 
 
-###### Overall challenges
+**Overall challenges**
 <ol>
     <li>Procurement timelines:</li>
         <ol type="a">
@@ -154,8 +157,7 @@ Onboarding and training: No onboarding and training exercises were required for 
 </ol>
 
 
-##### Overcoming challenges
-
+**Overcoming challenges**
 <ol>
     <li>Communication with supplier: both supplier teams were informed regarding the internal delays that affected the project timelines. Council teams met with the supplier teams regularly to convey the status of progress, understand the effects of the delay, and design possible next steps that would help to mitigate these delays and not affect the deliverables in any manner.</li>
     <li>Adjusted project timelines to meet delivery requirements: project timelines were adjusted to design sprint sessions that would deliver parts of the project.</li>
@@ -170,7 +172,7 @@ Onboarding and training: No onboarding and training exercises were required for 
 </ol>
 
 
-##### Overall experience
+**Overall experience**
 <ol>
     <li>Although there were significant delays in the procurement process and onboarding exercise teams were able to mitigate potential risks faced due to consistent, transparent communication with project partners.</li>
     <li>In retrospect, had there been a communication regarding the procurement delays being commonplace it would have been easier for LPA teams to accommodate timelines and project expectations.</li>
