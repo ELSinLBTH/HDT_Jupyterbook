@@ -1,11 +1,9 @@
 # PropTech Round 4 Final Report - MHCLG Report 
 
 
-## One line project title / Cohort: 
-**LBTH Housing Development Tracker**<br>
-Cohort 3 
+## One line project title / Cohort:<br>**LBTH Housing Development Tracker**<br>Cohort 3 
 
-## Local Planning Authority/Authorities involved:<br>London Borough of Tower Hamlets
+## Local Planning Authority/Authorities involved:<br>**London Borough of Tower Hamlets**
 
 ## Suppliers and Delivery partners involved in the project
 *Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*
