@@ -336,25 +336,23 @@ Teams and process overview then categorised the journey for development in mappe
 ## Next steps
 *Outline any plans or strategies for further applications of these tools or broader adoption. Please offer your views on the scalability of your project or tools and share any plans for further integration in or outside of your council. What have you learned and how are you and your teams going to carry PropTech forward?*
 
-Next steps:<br>
+**Next steps:<br>**
 Evolving the planning database to forecast development potential with the help of machine learning methodologies. 
 
-Objectives: 
+**Objectives:**
 <ol>
     <li>Building a complete planning database</li>
         <ol type="a">
-            <li>Develop a complete planning database schema<br>
-            At the end of this MVP, the planning data schema has been able to identify and assimilated key housing development variables including tenure, bedroom size, wheelchair accessibility, all application numbers (planning, building control, street naming and numbering), council tax band, EPC grade, key dates (approval, commencement, completion), days taken for development to complete, scale of development, live status of development, and other at unit level. The database conforms to all things within the development and is working on association with things around it that affect its life- including proximity transport, open spaces, amenities, as well as interest rates at time of completion. The aim of the schema is to identify factors intrinsic and extrinsic to a development that affect its life with maximum precision.</li>
-            <li>Automating unstructured data extraction process with FME (Feature Manipulation Engine)<br>
-            FME feature extraction tool was tested during the MVP stage to process an application’s documents (delegated report, section 106, deed of variation) to extract residential information. The results aided team to consider automation processes for future iterations to complete PBC business-as-usual residential data collection requirements as well as planning database development as stated above (a).</li>
-    <li>Using machine learning tools to forecast development potential</li><br>
-    During the development of this MVP, a test planning database was created (subset to the planning database schema in 1a) that considered all developments in trajectory to examine effect of factors intrinsic and extrinsic to development that affected days taken to deliver development. The test case looked at factors influencing completed developments (using methods such multi-linear regression; principal component analysis) and built scenarios to test against approved and commenced developments. The future iterations for the project would take these forwards and keep experimenting with other machine learning methods as the planning database is expanded.</li>
+            <li>Develop a complete planning database schema<br>At the end of this MVP, the planning data schema has been able to identify and assimilated key housing development variables including tenure, bedroom size, wheelchair accessibility, all application numbers (planning, building control, street naming and numbering), council tax band, EPC grade, key dates (approval, commencement, completion), days taken for development to complete, scale of development, live status of development, and other at unit level. The database conforms to all things within the development and is working on association with things around it that affect its life- including proximity transport, open spaces, amenities, as well as interest rates at time of completion. The aim of the schema is to identify factors intrinsic and extrinsic to a development that affect its life with maximum precision.</li>
+            <li>Automating unstructured data extraction process with FME (Feature Manipulation Engine)<br>FME feature extraction tool was tested during the MVP stage to process an application’s documents (delegated report, section 106, deed of variation) to extract residential information. The results aided team to consider automation processes for future iterations to complete PBC business-as-usual residential data collection requirements as well as planning database development as stated above (a).</li>
+    <li>Using machine learning tools to forecast development potential</li><br>During the development of this MVP, a test planning database was created (subset to the planning database schema in 1a) that considered all developments in trajectory to examine effect of factors intrinsic and extrinsic to development that affected days taken to deliver development. The test case looked at factors influencing completed developments (using methods such multi-linear regression; principal component analysis) and built scenarios to test against approved and commenced developments. The future iterations for the project would take these forwards and keep experimenting with other machine learning methods as the planning database is expanded.</li>
 </ol>
 
-Key Outcomes:
+**Key Outcomes:**
 1. Producing a machine learning tool to predict housing development potential.  
 
-Further Outcomes:
+
+**Further Outcomes:**
 1.  Transforming data collection, cleansing, and transformation process using FME extraction tool- to automate and cleanse data at source. 
 
 <p align="center">
@@ -363,11 +361,10 @@ Further Outcomes:
   </a>
 </p> 
 
-2. Developing HDT website further to assimilate and share results of housing data flow diagram (in html format)- making available all housing processes, key definitions, triggers of information (data) for all teams in council. 
+2. Developing HDT website further to assimilate and share results of housing data flow diagram (in html format)- making available all housing processes, key definitions, triggers of information (data) for all teams in council.
 
 
-Scalability and future integration:  
-
+**Scalability and future integration:**
 1. Assessing development potential is a universal exercise. The methodology developed by LBTH to identify and implement forecasting tools could be replicated across most high-growth LPAs, particularly those in London.  
 
 2. Additionally, several hours are spent by LPAs on compiling the yearly housing trajectory, starts and completion, and the AMR. Using text automation processes developed by LBTH teams could read through unstructured text to bring together key planning data in a database format. While the FME (feature manipulation extraction) process is not a copy/paste code, other LPAs willing to recreate this would not have to work through initial methodology phases to condition the tool. The council team would as a part of project output create and share basic steps required to implement automation processes for other councils to consider. 
