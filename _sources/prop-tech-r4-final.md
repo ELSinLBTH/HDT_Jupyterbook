@@ -197,15 +197,19 @@ Approach:
 <ul>
     <li>Data Cleanse</li>
         <ol type="a">
-            <li>Designed as week-long sprints with daily end of day huddle sessions. Managed and delivered by core team in planning and building control.<li>
+            <li>Designed as week-long sprints with daily end of day huddle sessions. Managed and delivered by core team in planning and building control.</li>
     <li>Product Specifications</li>
             <li>User Research and User Testing:</li>
                 <ol type="i">
                     <li>User Research Sessions were run in two phases- initial data discovery that scoped the product data schema and deep delved with teams to understand housing development processes and data flows.
                     The sessions were conducted as focused group discussions, team interviews, and individual interviews. All sessions helped to scope product data schema, map housing processes in the council, and design key requirements of housing tracker.</li>
                     <li>User Testing: from User Research sessions individuals in key teams were requested to review and comment on first dashboard iteration. The sessions were designed as individual interview sessions that keyed in questions on design and functionality, search options, navigation, and general comments. Reviews from user testing sessions were then discussed within core team and GIS analyst to implement into iteration 2 for HDT- the final MVP.</li>
-            <li>Dashboard Design: The HDT dashboard has been designed using ESRI GIS dashboard libraries. Delivered in two iterations- initial test version as a result of user research and data cleanse and final after user testing (MVP). Maps and widgets were designed to resonate council team requests to view key housing figures listed by tenure and bedroom size, planning application details, development status, size, and development location.</li>
+                </ol>
+            <li>Dashboard Design: The HDT dashboard has been designed using ESRI GIS dashboard libraries.Delivered in two iterations- initial test version as a result of user research and data cleanse and final after user testing (MVP). Maps and widgets were designed to resonate council team requests to view key housing figures listed by tenure and bedroom size, planning application details, development status, size, and development location.</li>
             <li>Integration into council webpage (implementation for council team view): this was carried out by the web team for LBTH who were requested to add a button leading to the GIS dashboard. The URL address for the same was shared with the team and was quick to setup. This last step made the dashboard available throughout the council for review and feedback.</li>
+        </ol>
+</ul>
+
 
 6. Sessions with suppliers  
 <ol type="a">
