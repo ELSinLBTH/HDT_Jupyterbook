@@ -1,7 +1,8 @@
 # PropTech Round 4 Final Report - MHCLG Report 
 
 
-### One line project title / Cohort:<br>**LBTH Housing Development Tracker** Cohort 3 
+### One line project title / Cohort:<br><sub>**LBTH Housing Development Tracker** Cohort 3 
+<sub>
 <br>
 <br>
 
