@@ -42,7 +42,7 @@ Objectives- To coalesce, summarise, and make available development information c
 LBTH PropTech Round 4 delivery includes- <br>
 
 <ol>
-    <li>Housing Development Dashboard: the tracker provides an overview of the borough housing trajectory from 2019 to 2030 (483 sites).</li>
+    <li><u>Housing Development Dashboard:</u> the tracker provides an overview of the borough housing trajectory from 2019 to 2030 (483 sites).</li>
         <ul>
             <li>The tracker is designed and developed using ESRI GIS dashboards.<br>
                 On this dashboard, the sites and units are classified by: </li>       
@@ -62,6 +62,24 @@ LBTH PropTech Round 4 delivery includes- <br>
 </p>
 
 The user can interact with the site by clicking on the site's directory on the left. Once a site has been clicked on the number of units that have been approved on the site appear in the top boxes (eg: here, Wood Wharf has 143 affordable units). The pop-up window provides the user with additional information including LBTH planning application reference, the site status (approved/ commenced/ completed/ stalled), approval date and financial year, completion date and financial year, number of days to complete. 
+
+<p align="center">
+  <a href="./_static/FlowImages/Picture2.png" target="_blank">
+    <img src="./_static/FlowImages/Picture2.png" />
+  </a>
+</p>
+
+If the user wants to access a report to add to their own team workflow or processes a page is setup for the user to login and download the report. The page can be accessed from the link on the right slider. 
+
+<p align="center">
+  <a href="./_static/FlowImages/Picture3.png" target="_blank">
+    <img src="./_static/FlowImages/Picture3.png" />
+  </a>
+</p>
+
+
+    <li><u>FME extraction tool for automated reporting (user interface)</u></li>
+
 
 ## Supplier onboarding
 
