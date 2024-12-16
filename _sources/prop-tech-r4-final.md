@@ -159,10 +159,10 @@ Overcoming challenges-
 <ol>
     <li>Communication with supplier: both supplier teams were informed regarding the internal delays that affected the project timelines. Council teams met with the supplier teams regularly to convey the status of progress, understand the effects of the delay, and design possible next steps that would help to mitigate these delays and not affect the deliverables in any manner.</li>
     <li>Adjusted project timelines to meet delivery requirements: project timelines were adjusted to design sprint sessions that would deliver parts of the project.</li>
-        <ol>
+        <ol type="a">
             <li>Sessions with Arup: A total of two sprint workshops and several meetings (between 30 mins and an hour) were held around the year to discuss project steps. The two sprint sessions focussed on user research and user testing for the housing development tracker dashboard built by council teams.</li>
             <li>Sessions with Avineon Tensing: a total of three sprint workshops (1 day sessions) and five meetings (an hour) were designed to deliver-</li>
-                <ol>
+                <ol type="i">
                     <li>FME extraction tool for reporting and</li>
                     <li>FME test case for unstructured data extraction</li>
                 </ol>
