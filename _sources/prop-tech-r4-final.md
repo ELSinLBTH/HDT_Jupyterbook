@@ -139,7 +139,7 @@ Once the link for *PBC Development Tracker* is clicked, it takes the user to the
 
 Onboarding and training: No onboarding and training exercises were required for the suppliers 
 
-##### Overall challenges
+###### Overall challenges
 <ol>
     <li>Procurement timelines:</li>
         <ol type="a">
