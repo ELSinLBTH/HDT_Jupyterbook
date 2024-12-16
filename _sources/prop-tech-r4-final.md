@@ -39,7 +39,7 @@
 London Borough of Tower Hamlets has developed a Housing Development Tracker with the help of ESRI online dashboards. The tracker aimed to develop a web-based monitoring tool to keep a track of developments in London Borough of Tower Hamlets and employ ML (machine learning) to understand future development potential. This tool has brought together the housing trajectory for the borough from 2019 to 2030.   
 
 
-Objectives:<br>
+**Objectives:**<br>
 To coalesce, summarise, and make available development information captured by LBTH teams in one place. Build on LBTH internal data repository to ensure robustness, integrity, and completeness of data. Develop a machine learning model to understand the scale of future development. 
 
 
@@ -257,7 +257,7 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 | Skills learnt | LPA teams were able to learn new skills including FME training (basic) and improve on python coding skills. Further, new ways of working were developed- such as analysing user research transcripts using LLMs on python and MS-Copilot. | Learning new skills to add to business-as-usual work motivated staff and provided them greater job satisfaction. |
 
 
-##### Key challenges and lessons learnt:
+**Key challenges and lessons learnt:**
 
 1. Procurement processes posed a major challenge to project timeline- there were several project delays that were mitigated with supplier support. Although the delays were not welcome, they added to the overall understanding of the procurement process for PBC Digital and Data team that has been newly formed. The relatively smaller scale procurement for this project also helped to understand how larger projects should or could be navigated through. The work also helped identify key persons and teams to be contacted during procurement processes, delays, and issues. Lastly guiding team to understand procurement frameworks available in the PBC consultation processes for future references. 
 <br>
@@ -268,7 +268,7 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 3. ML Scope: the HDT product had proposed in the funding BID complete machine learning model experimentation. Although, during the project as the planning schema was being identified and iterated on- there has been considerable effort to identify all key variables along with their associated units and appropriate indexing, to understand what a planning schema looks like beyond the application logging and site process. This approach rather than delaying the experimentation process has better defined the planning schema and the extraneous variables affecting housing delivery in the live environment (such as cost of living, interest rate, pandemic, etc). The delay has helped to create a clear and direct approach to experimentation and fed into further scope of the future of the product as well as the LBTH PBC digital and data strategies. 
 
 
-##### Experience and overall learning:
+**Experience and overall learning:**
 
 1. Council data requests require immediate results but resolving and reorienting the data to respond to all requests is a long-term project. The HDT product has helped to identify this common issue and highlight the need for it to be addressed. The project has also helped garner long term commitments towards data integrity and interoperability goals. 
 <br>
@@ -282,10 +282,10 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 
 #### Housing Discovery Project 
  
-##### Overview
+**Overview**
 As a part of the housing development tracker user research was conducted to identify and respond to the council’s business needs that helped scope the MVP for the housing development tracker. Teams interviewed helped identify the processes of housing in the council- information triggers, definitions, data flow. This led to the Housing Discovery Project that eventually helped map all housing processes in the council. 
 
-##### Teams interviewed: 
+**Teams interviewed:**
 <ol>
     <li>Development Management</li>
     <li>Building Control</li> 
@@ -299,7 +299,7 @@ As a part of the housing development tracker user research was conducted to iden
     <li>(Affordable) Housing Supply</li>
 </ol>
 
-##### Methodology
+**Methodology**
 <ol>
     <li>Focus group discussions</li>
     <li>Team Interviews</li>
@@ -314,7 +314,7 @@ Members from teams in council that participate in housing related developments d
   </a>
 </p> 
  
-##### User Research Result
+**User Research Result**
 Results overview- BAU process + data diagram<br>
 Development journey was mapped from phases of application submission on portal, initial assessment to delivery and monitoring in perpetuity. 
 
@@ -344,10 +344,10 @@ Teams and process overview then categorised the journey for development in mappe
 ### Next steps
 <small>*Outline any plans or strategies for further applications of these tools or broader adoption. Please offer your views on the scalability of your project or tools and share any plans for further integration in or outside of your council. What have you learned and how are you and your teams going to carry PropTech forward?*</small>
 
-##### Next steps:
+**Next steps:**
 Evolving the planning database to forecast development potential with the help of machine learning methodologies. 
 
-##### Objectives:
+**Objectives:**
 <ol>
     <li>Building a complete planning database</li>
         <ol type="a">
@@ -362,11 +362,10 @@ Evolving the planning database to forecast development potential with the help o
     <li>Using machine learning tools to forecast development potential</li><br>During the development of this MVP, a test planning database was created (subset to the planning database schema in 1a) that considered all developments in trajectory to examine effect of factors intrinsic and extrinsic to development that affected days taken to deliver development. The test case looked at factors influencing completed developments (using methods such multi-linear regression; principal component analysis) and built scenarios to test against approved and commenced developments. The future iterations for the project would take these forwards and keep experimenting with other machine learning methods as the planning database is expanded.</li>
 </ol>
 
-##### Key Outcomes:
+**Key Outcomes:**
 1. Producing a machine learning tool to predict housing development potential.  
 
-
-##### Further Outcomes:
+**Further Outcomes:**
 1.  Transforming data collection, cleansing, and transformation process using FME extraction tool- to automate and cleanse data at source. 
 
 <p align="center">
@@ -378,7 +377,7 @@ Evolving the planning database to forecast development potential with the help o
 2. Developing HDT website further to assimilate and share results of housing data flow diagram (in html format)- making available all housing processes, key definitions, triggers of information (data) for all teams in council.
 <br>
 
-##### Scalability and future integration:
+**Scalability and future integration:**
 
 1. Assessing development potential is a universal exercise. The methodology developed by LBTH to identify and implement forecasting tools could be replicated across most high-growth LPAs, particularly those in London.  
 
