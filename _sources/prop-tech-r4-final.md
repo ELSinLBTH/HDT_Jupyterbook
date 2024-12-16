@@ -5,8 +5,7 @@
 **LBTH Housing Development Tracker**<br>
 Cohort 3 
 
-## Local Planning Authority/Authorities involved:
-**London Borough of Tower Hamlets**
+## Local Planning Authority/Authorities involved:<br>London Borough of Tower Hamlets
 
 ## Suppliers and Delivery partners involved in the project
 *Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*
@@ -379,8 +378,7 @@ LBTH full documentation for HDT: https://elsinlbth.github.io/HDT_Jupyterbook/<br
 LBTH Mural Board Link: [LBTH Mural Board](https://app.mural.co/t/mhclghdt5335/m/mhclghdt5335/1730921590330/e03c9c20664ff99385715ce5798fc6c3fbdafaf0?sender=u08c3bbc8455f542a612a6207)
 
 
-## Would you change anything  
-
+## Would you change anything 
 *(optional)<br>Retrospectively is there anything about this pilot that you would change? This could be utilising a different supplier, securing more internal by in, allowing more time for certain tasks etc.*
 
 LBTH team appreciates the support received to envision, create, and deliver the HDT and would not like to change any part of the process experienced.  
