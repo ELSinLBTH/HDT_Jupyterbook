@@ -193,7 +193,7 @@ The HDT project scope covered:
     <li>And map next steps to scale and expand the HDT</li>
 </ol>
 
-###### Approach
+**Approach**
 
 <ul>
     <li><b>Data Cleanse</b></li>
