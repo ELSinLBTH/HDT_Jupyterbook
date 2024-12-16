@@ -217,7 +217,9 @@ The HDT project scope covered:
         <ol type="a">
             <li>Workshops with Arup were designed to direct user research and user testing methodologies. Discussions shaped approach to user research, outlined open-ended questions that helped define deliverables for HDT.</li>
             <li>Workshops were designed with Avineon Tensing to produce and deliver the FME report extraction tool and test with automated data extraction. Several meetings were held leading to the workshop that helped design the two-day sprint session to deliver the extraction tool. The final day was spent in understanding the ability of FME to automate data processing from the planning reports using Google Gemini Ai- this session helped guide the future scope for project future.</li>
+        </ol>
 </ol>
+
 
 Approach prior to HDT: Reports were regularly created by extracting data from planning and building control systems to be cleansed, manually checked and corrected, and circulated on a periodic basis and on request.  
 
@@ -226,6 +228,7 @@ Approach prior to HDT: Reports were regularly created by extracting data from pl
     <img src="./_static/FlowImages/Picture9.png" />
   </a>
 </p>
+
 
 Methodology after implementation of HDT: Data is extracted from planning and build control systems to be added into the backend of HDT. Basic reports can be extracted by user using FME extraction tool and live housing development updates are available for all to see in the council. 
 
