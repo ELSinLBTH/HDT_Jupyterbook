@@ -2,7 +2,7 @@
 
 
 <h3 style="margin-bottom: 0px;">One line project title / Cohort:</h1>
-<h4 style="margin=bottom: 0px;"><b>LBTH Housing Development Tracker</b > / Cohort 3<h4>
+<h4 style="margin=bottom: 0px;"><b>LBTH Housing Development Tracker</b> / Cohort 3</h4>
 
 
 ### One line project title / Cohort:
