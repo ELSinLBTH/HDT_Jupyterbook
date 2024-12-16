@@ -36,7 +36,7 @@ London Borough of Tower Hamlets has developed a Housing Development Tracker with
 Objectives- To coalesce, summarise, and make available development information captured by LBTH teams in one place. Build on LBTH internal data repository to ensure robustness, integrity, and completeness of data. Develop a machine learning model to understand the scale of future development. 
 
 
-LBTH PropTech Round 4 delivery includes- <br>
+**LBTH PropTech Round 4 delivery includes-**<br>
 
 1. <u>Housing Development Dashboard:</u> the tracker provides an overview of the borough housing trajectory from 2019 to 2030 (483 sites).
     <ul>
@@ -49,7 +49,6 @@ LBTH PropTech Round 4 delivery includes- <br>
             </ul>
         <li>The database powering the dashboard took close to four months to complete and was brought together using manual system extraction processes from existing databases hosted by Idox as well as human checks of statutory reports.</li>
     </ul>
-
 
 <p align="center">
   <a href="./_static/FlowImages/Picture1.png" target="_blank">
@@ -247,8 +246,8 @@ Round 4 M&E spreadsheet- completed and attached at the end of this report.
 | Team interactions- new relationships formed | As a part of the product development process, council teams were brought together for initial data discovery sessions, user research, and user testing. All sessions were carried out with the help of individual interviews and focused group discussions.<br>Outside the direct scope of this project, this led to the Housing Discovery project that mapped all housing processes and data flows in the council and shared it with all teams.<br>The end-to-end map shared with teams provided a whole picture of the housing process carried out by different teams from stages of pre-plan to completion and monitoring. It produced a comprehensive understanding of not only the team workflows, but also the triggers of data and key definitions, associations and work cycles among teams. | Big picture of housing process improved clarity withing team workflows.<br>From working in silos to coming together to understand housing development workflow as a whole helped teams to identify the different definitions, processes related to housing development that are worked on simultaneously in the council. |
 | Skills learnt | LPA teams were able to learn new skills including FME training (basic) and improve on python coding skills. Further, new ways of working were developed- such as analysing user research transcripts using LLMs on python and MS-Copilot. | Learning new skills to add to business-as-usual work motivated staff and provided them greater job satisfaction. |
 
-
-Key challenges and lessons learnt: 
+<br>
+**Key challenges and lessons learnt:**
 
 1. Procurement processes posed a major challenge to project timeline- there were several project delays that were mitigated with supplier support. Although the delays were not welcome, they added to the overall understanding of the procurement process for PBC Digital and Data team that has been newly formed. The relatively smaller scale procurement for this project also helped to understand how larger projects should or could be navigated through. The work also helped identify key persons and teams to be contacted during procurement processes, delays, and issues. Lastly guiding team to understand procurement frameworks available in the PBC consultation processes for future references. 
 
@@ -257,7 +256,7 @@ Key challenges and lessons learnt:
 3. ML Scope: the HDT product had proposed in the funding BID complete machine learning model experimentation. Although, during the project as the planning schema was being identified and iterated on- there has been considerable effort to identify all key variables along with their associated units and appropriate indexing, to understand what a planning schema looks like beyond the application logging and site process. This approach rather than delaying the experimentation process has better defined the planning schema and the extraneous variables affecting housing delivery in the live environment (such as cost of living, interest rate, pandemic, etc). The delay has helped to create a clear and direct approach to experimentation and fed into further scope of the future of the product as well as the LBTH PBC digital and data strategies. 
 
 
-Experience and overall learning: 
+**Experience and overall learning:**
 
 1. Council data requests require immediate results but resolving and reorienting the data to respond to all requests is a long-term project. The HDT product has helped to identify this common issue and highlight the need for it to be addressed. The project has also helped garner long term commitments towards data integrity and interoperability goals. 
 
@@ -268,13 +267,12 @@ Experience and overall learning:
 
 *(optional) Have there been any by-products or unexpected results of this funding (this could be connections with other LPAs, universities etc, other teams within your authority interested in the pilot or newfound interests in other parts of digital planning)*
 
-Housing Discovery Project 
+#### Housing Discovery Project 
  
-Overview 
-
+**Overview**
 As a part of the housing development tracker user research was conducted to identify and respond to the council’s business needs that helped scope the MVP for the housing development tracker. Teams interviewed helped identify the processes of housing in the council- information triggers, definitions, data flow. This led to the Housing Discovery Project that eventually helped map all housing processes in the council. 
 
-Teams interviewed: 
+**Teams interviewed:**
 <ol>
     <li>Development Management</li>
     <li>Building Control</li> 
@@ -288,7 +286,7 @@ Teams interviewed:
     <li>(Affordable) Housing Supply</li>
 </ol>
 
-Methodology  
+**Methodology**
 <ol>
     <li>Focus group discussions</li>
     <li>Team Interviews</li>
@@ -303,7 +301,7 @@ Members from teams in council that participate in housing related developments d
   </a>
 </p> 
  
-User Research Result<br>
+**User Research Result**<br>
 Results overview- BAU process + data diagram<br>
 Development journey was mapped from phases of application submission on portal, initial assessment to delivery and monitoring in perpetuity. 
 
@@ -340,8 +338,11 @@ Evolving the planning database to forecast development potential with the help o
 <ol>
     <li>Building a complete planning database</li>
         <ol type="a">
-            <li>Develop a complete planning database schema<br>At the end of this MVP, the planning data schema has been able to identify and assimilated key housing development variables including tenure, bedroom size, wheelchair accessibility, all application numbers (planning, building control, street naming and numbering), council tax band, EPC grade, key dates (approval, commencement, completion), days taken for development to complete, scale of development, live status of development, and other at unit level. The database conforms to all things within the development and is working on association with things around it that affect its life- including proximity transport, open spaces, amenities, as well as interest rates at time of completion. The aim of the schema is to identify factors intrinsic and extrinsic to a development that affect its life with maximum precision.</li>
-            <li>Automating unstructured data extraction process with FME (Feature Manipulation Engine)<br>FME feature extraction tool was tested during the MVP stage to process an application’s documents (delegated report, section 106, deed of variation) to extract residential information. The results aided team to consider automation processes for future iterations to complete PBC business-as-usual residential data collection requirements as well as planning database development as stated above (a).</li>
+            <li>Develop a complete planning database schema</li><br>
+            At the end of this MVP, the planning data schema has been able to identify and assimilated key housing development variables including tenure, bedroom size, wheelchair accessibility, all application numbers (planning, building control, street naming and numbering), council tax band, EPC grade, key dates (approval, commencement, completion), days taken for development to complete, scale of development, live status of development, and other at unit level. The database conforms to all things within the development and is working on association with things around it that affect its life- including proximity transport, open spaces, amenities, as well as interest rates at time of completion. The aim of the schema is to identify factors intrinsic and extrinsic to a development that affect its life with maximum precision.</li>
+            <li>Automating unstructured data extraction process with FME (Feature Manipulation Engine)</li><br>
+            FME feature extraction tool was tested during the MVP stage to process an application’s documents (delegated report, section 106, deed of variation) to extract residential information. The results aided team to consider automation processes for future iterations to complete PBC business-as-usual residential data collection requirements as well as planning database development as stated above (a).</li>
+        </ol>
     <li>Using machine learning tools to forecast development potential</li><br>During the development of this MVP, a test planning database was created (subset to the planning database schema in 1a) that considered all developments in trajectory to examine effect of factors intrinsic and extrinsic to development that affected days taken to deliver development. The test case looked at factors influencing completed developments (using methods such multi-linear regression; principal component analysis) and built scenarios to test against approved and commenced developments. The future iterations for the project would take these forwards and keep experimenting with other machine learning methods as the planning database is expanded.</li>
 </ol>
 
