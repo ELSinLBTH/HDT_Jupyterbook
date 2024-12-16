@@ -259,10 +259,10 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 ##### Key challenges and lessons learnt:
 
 1. Procurement processes posed a major challenge to project timeline- there were several project delays that were mitigated with supplier support. Although the delays were not welcome, they added to the overall understanding of the procurement process for PBC Digital and Data team that has been newly formed. The relatively smaller scale procurement for this project also helped to understand how larger projects should or could be navigated through. The work also helped identify key persons and teams to be contacted during procurement processes, delays, and issues. Lastly guiding team to understand procurement frameworks available in the PBC consultation processes for future references. 
-<b>
+<br>
 
 2. Data cleanse process: Although LBTH data management systems and planning applications are accurate, the data collected is immense and required much manual checking. For example, a site Wood Wharf has over 3000 approved units in its residential mix that is spread over 500 applications. Several human hours were spent in collating and reorienting this data to match applications to sites for close to 500 sites in the trajectory of LBTH as delivered in the HDT. The extended processes were a result of the way in which the data was captured as opposed to the way in which data is requested. This initial manual cleanse helped to understand and strategize how data added to the system needs to be reoriented and directed the need to build a planning data schema. Additionally, the processes in the manual cleanse also helped to outline the rules and conditions for automating extractions using FME- which is scoped to be explored further in the next stages of the product. 
-<b>
+<br>
 
 3. ML Scope: the HDT product had proposed in the funding BID complete machine learning model experimentation. Although, during the project as the planning schema was being identified and iterated on- there has been considerable effort to identify all key variables along with their associated units and appropriate indexing, to understand what a planning schema looks like beyond the application logging and site process. This approach rather than delaying the experimentation process has better defined the planning schema and the extraneous variables affecting housing delivery in the live environment (such as cost of living, interest rate, pandemic, etc). The delay has helped to create a clear and direct approach to experimentation and fed into further scope of the future of the product as well as the LBTH PBC digital and data strategies. 
 
@@ -270,7 +270,7 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 ##### Experience and overall learning:
 
 1. Council data requests require immediate results but resolving and reorienting the data to respond to all requests is a long-term project. The HDT product has helped to identify this common issue and highlight the need for it to be addressed. The project has also helped garner long term commitments towards data integrity and interoperability goals. 
-<b>
+<br>
 
 2. Newly formed, the PBC Data Management Team has been able to define the trajectory and strategies for future of LBTH planning data during the implementation of the project. The team has also been able to acquire and train staff on diverse skills in procurement, market analysis, consultation scope, coding that helped to extend the ambit of their business-as-usual work.  
 
