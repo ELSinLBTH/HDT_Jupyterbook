@@ -314,7 +314,7 @@ Members from teams in council that participate in housing related developments d
   </a>
 </p> 
  
-**User Research Result**
+**User Research Result**<br>
 Results overview- BAU process + data diagram<br>
 Development journey was mapped from phases of application submission on portal, initial assessment to delivery and monitoring in perpetuity. 
 
@@ -349,7 +349,7 @@ Evolving the planning database to forecast development potential with the help o
 
 **Objectives:**
 <ol>
-    <li>Building a complete planning database</li>
+    <li><u>Building a complete planning database</u></li>
         <ol type="a">
             <li>Develop a complete planning database schema</li><br>
             <p>At the end of this MVP, the planning data schema has been able to identify and assimilated key housing development variables including tenure, bedroom size, wheelchair accessibility, all application numbers (planning, building control, street naming and numbering), council tax band, EPC grade, key dates (approval, commencement, completion), days taken for development to complete, scale of development, live status of development, and other at unit level. The database conforms to all things within the development and is working on association with things around it that affect its life- including proximity transport, open spaces, amenities, as well as interest rates at time of completion. The aim of the schema is to identify factors intrinsic and extrinsic to a development that affect its life with maximum precision.</p></li>
@@ -359,11 +359,11 @@ Evolving the planning database to forecast development potential with the help o
             <br>
         </ol>
         <br>
-    <li>Using machine learning tools to forecast development potential</li><br>During the development of this MVP, a test planning database was created (subset to the planning database schema in 1a) that considered all developments in trajectory to examine effect of factors intrinsic and extrinsic to development that affected days taken to deliver development. The test case looked at factors influencing completed developments (using methods such multi-linear regression; principal component analysis) and built scenarios to test against approved and commenced developments. The future iterations for the project would take these forwards and keep experimenting with other machine learning methods as the planning database is expanded.</li>
+    <li><u>Using machine learning tools to forecast development potential</u></li><br>During the development of this MVP, a test planning database was created (subset to the planning database schema in 1a) that considered all developments in trajectory to examine effect of factors intrinsic and extrinsic to development that affected days taken to deliver development. The test case looked at factors influencing completed developments (using methods such multi-linear regression; principal component analysis) and built scenarios to test against approved and commenced developments. The future iterations for the project would take these forwards and keep experimenting with other machine learning methods as the planning database is expanded.</li>
 </ol>
 
 **Key Outcomes:**
-1. Producing a machine learning tool to predict housing development potential.  
+- Producing a machine learning tool to predict housing development potential.  
 
 **Further Outcomes:**
 1.  Transforming data collection, cleansing, and transformation process using FME extraction tool- to automate and cleanse data at source. 
