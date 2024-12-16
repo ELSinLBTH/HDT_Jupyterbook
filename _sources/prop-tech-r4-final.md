@@ -358,11 +358,10 @@ Evolving the planning database to forecast development potential with the help o
     <img src="./_static/FlowImages/Picture15.png" />
   </a>
 </p> 
-
 2. Developing HDT website further to assimilate and share results of housing data flow diagram (in html format)- making available all housing processes, key definitions, triggers of information (data) for all teams in council.
-
-
+<br>
 **Scalability and future integration:**
+
 1. Assessing development potential is a universal exercise. The methodology developed by LBTH to identify and implement forecasting tools could be replicated across most high-growth LPAs, particularly those in London.  
 
 2. Additionally, several hours are spent by LPAs on compiling the yearly housing trajectory, starts and completion, and the AMR. Using text automation processes developed by LBTH teams could read through unstructured text to bring together key planning data in a database format. While the FME (feature manipulation extraction) process is not a copy/paste code, other LPAs willing to recreate this would not have to work through initial methodology phases to condition the tool. The council team would as a part of project output create and share basic steps required to implement automation processes for other councils to consider. 
@@ -370,9 +369,7 @@ Evolving the planning database to forecast development potential with the help o
 
 ## Pilot related documents 
 *(optional)<br>Do you have any documents that you would like to share to supplement your final reports? For example, this could include assets that have been created in this round of funding, like process maps, Mural/Miro boards, job descriptions, scopes of work, internal reports, community feedback or blueprints and guidance for other councils to follow and copy your learnings & process.*
-
- 
-
+<br>
 LBTH full documentation for HDT: https://elsinlbth.github.io/HDT_Jupyterbook/<br>
 LBTH Mural Board Link: [LBTH Mural Board](https://app.mural.co/t/mhclghdt5335/m/mhclghdt5335/1730921590330/e03c9c20664ff99385715ce5798fc6c3fbdafaf0?sender=u08c3bbc8455f542a612a6207)
 
