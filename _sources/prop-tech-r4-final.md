@@ -2,14 +2,12 @@
 
 
 ### One line project title / Cohort:<br>**LBTH Housing Development Tracker** Cohort 3 
-
-
-
+<br>
+<br>
 
 ### Local Planning Authority/Authorities involved:<br> **London Borough of Tower Hamlets**
-
-
-
+<br>
+<br>
 
 ### Suppliers and Delivery partners involved in the project
 <small>*Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*</small>
