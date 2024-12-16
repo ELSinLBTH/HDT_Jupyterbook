@@ -264,7 +264,7 @@ Round 4 M&E spreadsheet- completed and attached at the end of this report.
 
 ## Other Outputs
 
-*(optional) Have there been any by-products or unexpected results of this funding (this could be connections with other LPAs, universities etc, other teams within your authority interested in the pilot or newfound interests in other parts of digital planning)*
+<small>*(optional) Have there been any by-products or unexpected results of this funding (this could be connections with other LPAs, universities etc, other teams within your authority interested in the pilot or newfound interests in other parts of digital planning)*</small>
 
 #### Housing Discovery Project 
  
