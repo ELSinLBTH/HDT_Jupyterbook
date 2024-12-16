@@ -269,10 +269,10 @@ Round 4 M&E spreadsheet- completed and attached at the end of this report.
 
 #### Housing Discovery Project 
  
-**Overview**
+##### Overview
 As a part of the housing development tracker user research was conducted to identify and respond to the council’s business needs that helped scope the MVP for the housing development tracker. Teams interviewed helped identify the processes of housing in the council- information triggers, definitions, data flow. This led to the Housing Discovery Project that eventually helped map all housing processes in the council. 
 
-**Teams interviewed:**
+##### Teams interviewed: 
 <ol>
     <li>Development Management</li>
     <li>Building Control</li> 
