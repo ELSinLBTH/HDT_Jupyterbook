@@ -338,8 +338,9 @@ Evolving the planning database to forecast development potential with the help o
 <ol>
     <li>Building a complete planning database</li>
         <ol type="a">
-            <li>Develop a complete planning database schema
+            <li>Develop a complete planning database schema</li><br>
             <p>At the end of this MVP, the planning data schema has been able to identify and assimilated key housing development variables including tenure, bedroom size, wheelchair accessibility, all application numbers (planning, building control, street naming and numbering), council tax band, EPC grade, key dates (approval, commencement, completion), days taken for development to complete, scale of development, live status of development, and other at unit level. The database conforms to all things within the development and is working on association with things around it that affect its life- including proximity transport, open spaces, amenities, as well as interest rates at time of completion. The aim of the schema is to identify factors intrinsic and extrinsic to a development that affect its life with maximum precision.</p></li>
+            <br>
             <li>Automating unstructured data extraction process with FME (Feature Manipulation Engine)</li><br>
             FME feature extraction tool was tested during the MVP stage to process an application’s documents (delegated report, section 106, deed of variation) to extract residential information. The results aided team to consider automation processes for future iterations to complete PBC business-as-usual residential data collection requirements as well as planning database development as stated above (a).</li>
             <br>
