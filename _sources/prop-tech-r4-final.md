@@ -11,7 +11,7 @@
 <br>
 
 ### Suppliers and Delivery partners involved in the project
-<sub>*Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*</sub>
+<small>*Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*</small>
 
 | **Partner** | **Description** | **Delivery Component** |
 | ----------- | --------------- | -------------------------------------------------- |
@@ -102,7 +102,7 @@ This documentation for this project is developed using JupyterBook and python li
 </p>
 
 
-LBTH full documentation for HDT: https://elsinlbth.github.io/HDT_Jupyterbook/
+LBTH full documentation for HDT: [Report Page](https://elsinlbth.github.io/HDT_Jupyterbook/)
 <p align="center">
   <a href="./_static/FlowImages/Picture6.png" target="_blank">
     <img src="./_static/FlowImages/Picture6.png" />
