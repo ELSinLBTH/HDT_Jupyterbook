@@ -130,8 +130,8 @@ Once the link for *PBC Development Tracker* is clicked, it takes the user to the
 
  
 ## Supplier onboarding
-*Summary of procurement / onboarding / training processes - how long did they take, were there any challenges and how did you overcome these?*
- 
+<small>*Summary of procurement / onboarding / training processes - how long did they take, were there any challenges and how did you overcome these?*</small>
+
 | Supplier | Framework | Timeframe |
 | ------------ | ------------- | ------------- |
 | **Arup** | Architecture + Urbanism Framework | 8 months | 
@@ -139,7 +139,7 @@ Once the link for *PBC Development Tracker* is clicked, it takes the user to the
 
 Onboarding and training: No onboarding and training exercises were required for the suppliers 
 
-Overall challenges: 
+##### Overall challenges
 <ol>
     <li>Procurement timelines:</li>
         <ol type="a">
@@ -151,7 +151,7 @@ Overall challenges:
 </ol>
 
 
-Overcoming challenges- 
+##### Overcoming challenges
 
 <ol>
     <li>Communication with supplier: both supplier teams were informed regarding the internal delays that affected the project timelines. Council teams met with the supplier teams regularly to convey the status of progress, understand the effects of the delay, and design possible next steps that would help to mitigate these delays and not affect the deliverables in any manner.</li>
@@ -167,7 +167,7 @@ Overcoming challenges-
 </ol>
 
 
-Overall experience: 
+##### Overall experience
 <ol>
     <li>Although there were significant delays in the procurement process and onboarding exercise teams were able to mitigate potential risks faced due to consistent, transparent communication with project partners.</li>
     <li>In retrospect, had there been a communication regarding the procurement delays being commonplace it would have been easier for LPA teams to accommodate timelines and project expectations.</li>
@@ -175,9 +175,8 @@ Overall experience:
 
 
 ## The approach
-*Describe the process of implementing the project, including any challenges faced or rationale for changes in scope from your initial application. What were the key features of the tools you developed and how did you work with your supplier to determine your user needs for these? (Min 200 words)*
+<small>*Describe the process of implementing the project, including any challenges faced or rationale for changes in scope from your initial application. What were the key features of the tools you developed and how did you work with your supplier to determine your user needs for these? (Min 200 words)*</small>
 
- 
 
 The HDT project scope covered: 
 <ol>
@@ -188,13 +187,13 @@ The HDT project scope covered:
     <li>And map next steps to scale and expand the HDT</li>
 </ol>
 
-Approach:  
+##### Approach
 
 <ul>
-    <li>Data Cleanse</li>
+    <li>**Data Cleanse**</li>
         <ol type="a">
             <li>Designed as week-long sprints with daily end of day huddle sessions. Managed and delivered by core team in planning and building control.</li>
-    <li>Product Specifications</li>
+    <li>**Product Specifications**</li>
             <li>User Research and User Testing:</li>
                 <ol type="i">
                     <li>User Research Sessions were run in two phases- initial data discovery that scoped the product data schema and deep delved with teams to understand housing development processes and data flows.
@@ -209,9 +208,9 @@ Approach:
 
 6. Sessions with suppliers  
 <ol type="a">
-    <li>Workshops with Arup were designed to direct user research and user testing methodologies. Discussions shaped approach to user research, outlined open-ended questions that helped define deliverables for HDT.</li>
-    <li>Workshops were designed with Avineon Tensing to produce and deliver the FME report extraction tool and test with automated data extraction. Several meetings were held leading to the workshop that helped design the two-day sprint session to deliver the extraction tool. The final day was spent in understanding the ability of FME to automate data processing from the planning reports using Google Gemini Ai- this session helped guide the future scope for project future.</li>
-
+        <li>Workshops with Arup were designed to direct user research and user testing methodologies. Discussions shaped approach to user research, outlined open-ended questions that helped define deliverables for HDT.</li>
+        <li>Workshops were designed with Avineon Tensing to produce and deliver the FME report extraction tool and test with automated data extraction. Several meetings were held leading to the workshop that helped design the two-day sprint session to deliver the extraction tool. The final day was spent in understanding the ability of FME to automate data processing from the planning reports using Google Gemini Ai- this session helped guide the future scope for project future.</li>
+</ol>
 
 Approach prior to HDT: Reports were regularly created by extracting data from planning and building control systems to be cleansed, manually checked and corrected, and circulated on a periodic basis and on request.  
 
