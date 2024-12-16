@@ -1,9 +1,11 @@
 # PropTech Round 4 Final Report - MHCLG Report 
 
 
-### One line project title / Cohort:<br>**LBTH Housing Development Tracker** Cohort 3 
+### One line project title / Cohort:
+##### **LBTH Housing Development Tracker** Cohort 3 
 
-### Local Planning Authority/Authorities involved:<br>**London Borough of Tower Hamlets**
+### Local Planning Authority/Authorities involved:
+##### **London Borough of Tower Hamlets**
 
 ### Suppliers and Delivery partners involved in the project
 <small>*Who was the supplier and why were they selected? Were they the cheapest / best fit / recommended etc. Did you work with other partners such as universities / charities/local groups?*</small>
@@ -175,7 +177,7 @@ Onboarding and training: No onboarding and training exercises were required for 
 </ol>
 
 
-## The approach
+### The approach
 <small>*Describe the process of implementing the project, including any challenges faced or rationale for changes in scope from your initial application. What were the key features of the tools you developed and how did you work with your supplier to determine your user needs for these? (Min 200 words)*</small>
 
 
@@ -191,10 +193,10 @@ The HDT project scope covered:
 ##### Approach
 
 <ul>
-    <li>**Data Cleanse**</li>
+    <li><b>Data Cleanse</b></li>
         <ol type="a">
             <li>Designed as week-long sprints with daily end of day huddle sessions. Managed and delivered by core team in planning and building control.</li>
-    <li>**Product Specifications**</li>
+    <li><b>Product Specifications</b></li>
             <li>User Research and User Testing:</li>
                 <ol type="i">
                     <li>User Research Sessions were run in two phases- initial data discovery that scoped the product data schema and deep delved with teams to understand housing development processes and data flows.
@@ -230,7 +232,7 @@ Methodology after implementation of HDT: Data is extracted from planning and bui
 </p>
 
 
-## The result
+### The result
 <small>*Please provide a comprehensive summary of your project's achievements, drawing from your 'Round 4 M&E spreadsheet'. Highlight the "before and after" data to clearly demonstrate your project's impact.*<br>
 *Include both quantitative and qualitative outcomes, emphasising positive impacts and improvements. Reflect on any lessons learned, new relationships formed, skills developed, or innovative approaches explored.*<br>
 *Additionally, take a moment to discuss any challenges faced or aspects that didn’t go as planned, and how these experiences contributed to your overall learning.*<br>
@@ -263,7 +265,7 @@ Round 4 M&E spreadsheet- completed and attached at the end of this report.
 2. Newly formed, the PBC Data Management Team has been able to define the trajectory and strategies for future of LBTH planning data during the implementation of the project. The team has also been able to acquire and train staff on diverse skills in procurement, market analysis, consultation scope, coding that helped to extend the ambit of their business-as-usual work.  
 
 
-## Other Outputs
+### Other Outputs
 
 <small>*(optional) Have there been any by-products or unexpected results of this funding (this could be connections with other LPAs, universities etc, other teams within your authority interested in the pilot or newfound interests in other parts of digital planning)*</small>
 
@@ -328,7 +330,7 @@ Teams and process overview then categorised the journey for development in mappe
 </p> 
 
 
-## Next steps
+### Next steps
 <small>*Outline any plans or strategies for further applications of these tools or broader adoption. Please offer your views on the scalability of your project or tools and share any plans for further integration in or outside of your council. What have you learned and how are you and your teams going to carry PropTech forward?*</small>
 
 ##### Next steps:
@@ -372,7 +374,7 @@ Evolving the planning database to forecast development potential with the help o
 2. Additionally, several hours are spent by LPAs on compiling the yearly housing trajectory, starts and completion, and the AMR. Using text automation processes developed by LBTH teams could read through unstructured text to bring together key planning data in a database format. While the FME (feature manipulation extraction) process is not a copy/paste code, other LPAs willing to recreate this would not have to work through initial methodology phases to condition the tool. The council team would as a part of project output create and share basic steps required to implement automation processes for other councils to consider. 
 
 
-## Pilot related documents 
+### Pilot related documents 
 <small>*(optional)<br>Do you have any documents that you would like to share to supplement your final reports? For example, this could include assets that have been created in this round of funding, like process maps, Mural/Miro boards, job descriptions, scopes of work, internal reports, community feedback or blueprints and guidance for other councils to follow and copy your learnings & process.*</small>
 
 
@@ -380,7 +382,7 @@ LBTH full documentation for HDT: [GitHub Pages](https://elsinlbth.github.io/HDT_
 LBTH Mural Board Link: [LBTH Mural Board](https://app.mural.co/t/mhclghdt5335/m/mhclghdt5335/1730921590330/e03c9c20664ff99385715ce5798fc6c3fbdafaf0?sender=u08c3bbc8455f542a612a6207)
 
 
-## Would you change anything 
+### Would you change anything 
 <small>*(optional)<br>Retrospectively is there anything about this pilot that you would change? This could be utilising a different supplier, securing more internal by in, allowing more time for certain tasks etc.*</small>
 
 LBTH team appreciates the support received to envision, create, and deliver the HDT and would not like to change any part of the process experienced.  
