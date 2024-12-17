@@ -68,7 +68,7 @@ A detailed overview of the models used in the project.
     </thead>
     <tbody>
       <tr> 
-        <td style="border: 1px solid #ccc; padding: 8px;">Types of task</td>
+        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Type of task</strong></td>
         <td colspan="8" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Extractive</td>
         <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive</td>
       </tr>
@@ -340,8 +340,6 @@ This case tests both these listsed types. Considering the variety of popular LLM
 
 ##### Extractive Summarisation
 
-**Model Comparison**
-
 There are four main models for LLM: Pegasus, BART, T5 and GPT-4.
 
 | **Model**      | **Underlying Principle**                                                                                                                                                                                                                                                                           | **Advantages for Summarisation**                                                                                                                                                                                                                                                                              | **Disadvantages for Summarisation**                                                                                                                                                                                                                       |
@@ -359,7 +357,7 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 
 
 
-#### Abstractive Summarisation
+##### Abstractive Summarisation
 
 Models for abstractive summarisation are diverse. This report experiments with and compares Llama 3.2 and Copilot which are the two most popular LLM model. Brief introductions to the two models are as follows:
 
