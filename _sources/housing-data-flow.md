@@ -44,11 +44,10 @@ This is Housing Data Flow page.
 
 ### LLM methodology 
 
-#### Large Langurage Model Task
-
 Large Language Models (LLMs) are used to summarise the content and keywords from user research meetings held with 12 council members in the housing teams of LBTH. This effort primarily focuses on exploring how artificial intelligence and automated processes can assist in our user research.
 
 ##### Model Comparison Table
+A detailed overview of the models used in the project.
 
 <div style="overflow-x: auto;">
   <table style="border-collapse: collapse; border: 1px solid #ccc; width: 100%;">
@@ -337,11 +336,11 @@ There are two type of summarisations in LLM:
 
 This case tests both these listsed types. Considering the variety of popular LLM models available, this report first compares various models to determine which is the most suitable for the tasks. Then the most suitable model is used to conduct relevant summaries to derive insights. The testing process for both types of summaries is as follows:
 
-##### Summarisation
+#### Summarisation
 
-###### Extractive Summarisation
+##### Extractive Summarisation
 
-###### **Model Comparison**
+**Model Comparison**
 
 There are four main models for LLM: Pegasus, BART, T5 and GPT-4.
 
@@ -357,6 +356,25 @@ There are four main models for LLM: Pegasus, BART, T5 and GPT-4.
 As GPT-4 is an online model with data privacy risks, this study selects models **Pegasus, BART and T5** for LLM.
 
 To test the performance of Pegasus, BART, and T5 models on Extractive Summarisation, this study uses content from a randomly selected speaker, Matthew Pullen, as a test sample.  
+
+
+
+#### Abstractive Summarisation
+
+Models for abstractive summarisation are diverse. This report experiments with and compares Llama 3.2 and Copilot which are the two most popular LLM model. Brief introductions to the two models are as follows:
+
+| Aspect                        | Llama 3 (Meta)                                      | Microsoft Copilot (Microsoft Teams)                 |
+|-------------------------------|-----------------------------------------------------|-----------------------------------------------------|
+| **Underlying Principle**      | LLM: Uses transformer models trained on diverse texts for deep natural language processing, capable of running locally to ensure data security. | Integration of LLM and NLP: Utilizes AI tailored for Teams, focusing on extracting actionable insights from communications, operates online using Microsoft's cloud security protocols. |
+| **Advantages**                | - Generates detailed, context-aware summaries adaptable to various styles.<br>- "A multimodal large language model (LLM) capable of visual reasoning, image captioning, and answering questions about images." | - Seamless integration with Teams enhances productivity.<br>- Summaries include explicit citations to original texts, improving traceability. |
+| **Disadvantages**             | - High computational costs.<br>- Potential bias in summaries due to training data.<br>- Summaries lack specific citations to sources, which might affect transparency. | - Limited to summarizing content within Microsoft Teams.<br>- May overlook complex nuances in discussions.<br>- Slower response times due to reliance on internet connectivity and cloud processing. |
+| **Security**                  | - Can be operated locally, providing control over data security and faster response times. | - Relies on Microsoft's robust online security measures:"Copilot searches, processes and uses organisations’ data to provide the responses, which are specific to your organisation and user based on what they can access." |
+
+https://www.fordway.com/chat-gpt-bard-llama-and-microsoft-copilot
+
+https://medium.com/@rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685
+
+The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.
 
 
 ## User Research Results 1
@@ -658,24 +676,7 @@ The results indicate that **BART** performed exceptionally well across all metri
 | **Paul Buckenham**  | - My name's Paul Buckenham and I'm head of development management.<br>- This is quite interesting to me because I think traditionally my service wouldn't necessarily get involved so much with the housing data side of things.<br>- So, we know what's completed now, how do we work out on the sites where there's still under construction?<br>- So I think I think actually there's probably a whole host of different development department management kind of activities that it would that it could potentially feed into probably like one of those ones that we don't necessarily quite understand all the implications until you actually see it work and start to use it and then you pick up on ideas for how you could you know.<br>- And the enforcement side of things as well, compliance to ensure that what's actually been built is what should have been built so. |
 
 
-#### Abstractive Summarisation
-
-Models for abstractive summarisation are diverse. This report experiments with and compares Llama 3.2 and Copilot which are the two most popular LLM model. Brief introductions to the two models are as follows:
-
-| Aspect                        | Llama 3 (Meta)                                      | Microsoft Copilot (Microsoft Teams)                 |
-|-------------------------------|-----------------------------------------------------|-----------------------------------------------------|
-| **Underlying Principle**      | LLM: Uses transformer models trained on diverse texts for deep natural language processing, capable of running locally to ensure data security. | Integration of LLM and NLP: Utilizes AI tailored for Teams, focusing on extracting actionable insights from communications, operates online using Microsoft's cloud security protocols. |
-| **Advantages**                | - Generates detailed, context-aware summaries adaptable to various styles.<br>- "A multimodal large language model (LLM) capable of visual reasoning, image captioning, and answering questions about images." | - Seamless integration with Teams enhances productivity.<br>- Summaries include explicit citations to original texts, improving traceability. |
-| **Disadvantages**             | - High computational costs.<br>- Potential bias in summaries due to training data.<br>- Summaries lack specific citations to sources, which might affect transparency. | - Limited to summarizing content within Microsoft Teams.<br>- May overlook complex nuances in discussions.<br>- Slower response times due to reliance on internet connectivity and cloud processing. |
-| **Security**                  | - Can be operated locally, providing control over data security and faster response times. | - Relies on Microsoft's robust online security measures:"Copilot searches, processes and uses organisations’ data to provide the responses, which are specific to your organisation and user based on what they can access." |
-
-https://www.fordway.com/chat-gpt-bard-llama-and-microsoft-copilot
-
-https://medium.com/@rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685
-
-The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.
-
-##### Model Comparison
+##### Output Comparison
 
 This paper continues to use Matthew Pullen's dialogue to test the two models. The prompt used for testing is *"Summarise the following content into a five-sentence paragraph: ..."*. The output results are as follows:
 
