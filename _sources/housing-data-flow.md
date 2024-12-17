@@ -654,7 +654,7 @@ _______________
 The results indicate that **BART** performed exceptionally well across all metrics. Consequently, this paper will now use the BART model to perform Extractive Summarisation on the dialogue content of the 12 participants, highlighting the key five points for each members.
 
 
-#### Final Extractive Summarisation Result using BART
+##### Entire Extractive Summarisation Result using BART
 
 | Speaker            | Contribution |
 |---------------------|--------------|
@@ -672,7 +672,7 @@ The results indicate that **BART** performed exceptionally well across all metri
 | **Paul Buckenham**  | - My name's Paul Buckenham and I'm head of development management.<br>- This is quite interesting to me because I think traditionally my service wouldn't necessarily get involved so much with the housing data side of things.<br>- So, we know what's completed now, how do we work out on the sites where there's still under construction?<br>- So I think I think actually there's probably a whole host of different development department management kind of activities that it would that it could potentially feed into probably like one of those ones that we don't necessarily quite understand all the implications until you actually see it work and start to use it and then you pick up on ideas for how you could you know.<br>- And the enforcement side of things as well, compliance to ensure that what's actually been built is what should have been built so. |
 
 
-##### Output Comparison
+#### Abstractive Summarisation Results
 
 This paper continues to use Matthew Pullen's dialogue to test the two models. The prompt used for testing is *"Summarise the following content into a five-sentence paragraph: ..."*. The output results are as follows:
 
@@ -782,7 +782,7 @@ Additionally, Matthew emphasized the importance of having a comprehensive system
 
 Besides producing more text due to the absence of a sentence count limitation, it can also be observed that the two models focus on different summary points once the 'Paragraph' prompt restriction is removed. Copilot emphasizes a macro-level summary, attempting to cover broad topics extensively, while Llama 3.2 focuses on the micro-elements of the text, striving to delve into the categorization and significance of key content. This variation may relate to the differences in their training corpora and the fundamental principles of the models. In future work, either Copilot or Llama 3.2 can be chosen for Abstractive Summarisation based on specific job requirements.
 
-##### Abstractive Summarisation Result
+##### Entire Abstractive Summarisation Results
 
 Below are the output results from both models when the prompt used is 'Summarise the following content into a five-sentence paragraph: ...' for all speakers:
 

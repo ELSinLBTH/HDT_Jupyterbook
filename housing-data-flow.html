@@ -331,12 +331,12 @@
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-results">Extractive Summarisation Results</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-rouge">Evaluation with Rouge</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#entire-extractive-summarisation-result-using-bart">Entire Extractive Summarisation Result using BART</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#final-extractive-summarisation-result-using-bart">Final Extractive Summarisation Result using BART</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#output-comparison">Output Comparison</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-results">Abstractive Summarisation Results</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-semscore">Evaluation with SemScore</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-result">Abstractive Summarisation Result</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#entire-abstractive-summarisation-results">Entire Abstractive Summarisation Results</a></li>
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-vs-abstractive-summarisation">Extractive Summarisation VS Abstractive Summarisation</a></li>
@@ -1095,9 +1095,8 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 </ul>
 <p>The results indicate that <strong>BART</strong> performed exceptionally well across all metrics. Consequently, this paper will now use the BART model to perform Extractive Summarisation on the dialogue content of the 12 participants, highlighting the key five points for each members.</p>
 </section>
-</section>
-<section id="final-extractive-summarisation-result-using-bart">
-<h4>Final Extractive Summarisation Result using BART<a class="headerlink" href="#final-extractive-summarisation-result-using-bart" title="Link to this heading">#</a></h4>
+<section id="entire-extractive-summarisation-result-using-bart">
+<h5>Entire Extractive Summarisation Result using BART<a class="headerlink" href="#entire-extractive-summarisation-result-using-bart" title="Link to this heading">#</a></h5>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Speaker</p></th>
@@ -1144,14 +1143,15 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 </tbody>
 </table>
 </div>
-<section id="output-comparison">
-<h5>Output Comparison<a class="headerlink" href="#output-comparison" title="Link to this heading">#</a></h5>
+</section>
+</section>
+<section id="abstractive-summarisation-results">
+<h4>Abstractive Summarisation Results<a class="headerlink" href="#abstractive-summarisation-results" title="Link to this heading">#</a></h4>
 <p>This paper continues to use Matthew Pullen’s dialogue to test the two models. The prompt used for testing is <em>“Summarise the following content into a five-sentence paragraph: …”</em>. The output results are as follows:</p>
 <p><strong>Llama 3.2 output</strong></p>
 <p><em>“Matthew Pullen expressed concerns about the usefulness of population projections for urban planning and development. They questioned the accuracy and reliability of existing models, citing a lack of consideration for overcrowding and assumptions based solely on policy. The speaker suggested that incorporating solid housing forecast data into these models could improve their accuracy. However, they noted that developing new systems to support population projections can be complex and time-consuming, requiring significant resources and effort. Despite the challenges, the speaker believes that having digital versions of planning documents and data, such as those provided by Exocom’s system for section 106 agreements, can help streamline urban planning processes and improve decision-making.”</em></p>
 <p><strong>Copilot output</strong></p>
 <p><em>“Matthew Pullen discussed the various ways housing data is used at different stages in the development process, from the pre-application stage to the final decision, including planning committee resolutions and section 106 agreements. He highlighted the importance of different commencement points, which vary depending on the context, such as building control, planning, CIL, and section 106. Matthew also explained that housing data is crucial for forecasting housing completions, CIL income, and section 106 income, which supports various teams’ jobs. Additionally, he emphasized the need for a comprehensive system that includes both residential and non-residential data, and considers different types of housing, such as student housing and co-living. Finally, he discussed the challenges of identifying site boundaries and capturing data for sites not yet in the planning system.”</em></p>
-</section>
 <section id="evaluation-with-semscore">
 <h5>Evaluation with SemScore<a class="headerlink" href="#evaluation-with-semscore" title="Link to this heading">#</a></h5>
 <p>Considering that abstractive summarisation reconstructs sentences and generates entirely new text for summaries, the previously used ROUGE metric, which only detects identical words, is not suitable for evaluating abstractive summaries. In contrast, <strong>SemScore</strong> is more appropriate for scenarios involving abstractive summaries.</p>
@@ -1246,8 +1246,8 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 <p>Additionally, Matthew emphasized the importance of having a comprehensive system that includes both residential and non-residential data, as well as the need to consider different types of housing, such as student housing and co-living. He also discussed the challenges of identifying site boundaries and capturing data for sites that are not yet in the planning system.</p>
 <p>Besides producing more text due to the absence of a sentence count limitation, it can also be observed that the two models focus on different summary points once the ‘Paragraph’ prompt restriction is removed. Copilot emphasizes a macro-level summary, attempting to cover broad topics extensively, while Llama 3.2 focuses on the micro-elements of the text, striving to delve into the categorization and significance of key content. This variation may relate to the differences in their training corpora and the fundamental principles of the models. In future work, either Copilot or Llama 3.2 can be chosen for Abstractive Summarisation based on specific job requirements.</p>
 </section>
-<section id="abstractive-summarisation-result">
-<h5>Abstractive Summarisation Result<a class="headerlink" href="#abstractive-summarisation-result" title="Link to this heading">#</a></h5>
+<section id="entire-abstractive-summarisation-results">
+<h5>Entire Abstractive Summarisation Results<a class="headerlink" href="#entire-abstractive-summarisation-results" title="Link to this heading">#</a></h5>
 <p>Below are the output results from both models when the prompt used is ‘Summarise the following content into a five-sentence paragraph: …’ for all speakers:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -2654,12 +2654,12 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-results">Extractive Summarisation Results</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-rouge">Evaluation with Rouge</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#entire-extractive-summarisation-result-using-bart">Entire Extractive Summarisation Result using BART</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#final-extractive-summarisation-result-using-bart">Final Extractive Summarisation Result using BART</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#output-comparison">Output Comparison</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-results">Abstractive Summarisation Results</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-semscore">Evaluation with SemScore</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-result">Abstractive Summarisation Result</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#entire-abstractive-summarisation-results">Entire Abstractive Summarisation Results</a></li>
 </ul>
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-vs-abstractive-summarisation">Extractive Summarisation VS Abstractive Summarisation</a></li>
