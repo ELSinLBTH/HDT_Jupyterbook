@@ -351,8 +351,7 @@ There are four main models for LLM: Pegasus, BART, T5 and GPT-4.
 
 
 
-As GPT-4 is an online model with data privacy risks, this study selects models **Pegasus, BART and T5** for LLM.
-
+As GPT-4 is an online model with data privacy risks, this study selects models **Pegasus, BART and T5** for LLM.<br>
 To test the performance of Pegasus, BART, and T5 models on Extractive Summarisation, this study uses content from a randomly selected speaker, Matthew Pullen, as a test sample.  
 
 
@@ -368,10 +367,9 @@ Models for abstractive summarisation are diverse. This report experiments with a
 | **Disadvantages**             | - High computational costs.<br>- Potential bias in summaries due to training data.<br>- Summaries lack specific citations to sources, which might affect transparency. | - Limited to summarizing content within Microsoft Teams.<br>- May overlook complex nuances in discussions.<br>- Slower response times due to reliance on internet connectivity and cloud processing. |
 | **Security**                  | - Can be operated locally, providing control over data security and faster response times. | - Relies on Microsoft's robust online security measures:"Copilot searches, processes and uses organisations’ data to provide the responses, which are specific to your organisation and user based on what they can access." |
 
-https://www.fordway.com/chat-gpt-bard-llama-and-microsoft-copilot
-
-https://medium.com/@rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685
-
+Reference:
+https://www.fordway.com/chat-gpt-bard-llama-and-microsoft-copilot<br>
+https://medium.com/@rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685<br>
 The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.
 
 
