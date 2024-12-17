@@ -345,10 +345,7 @@ There are four main models for LLM: Pegasus, BART, T5 and GPT-4.
 | **GPT-4**      | - **Large language model** based on a **transformer architecture**.<br>- Pre-trained with **unsupervised learning** on vast amounts of diverse text data.<br>                         | - Handles **open-domain** and **complex texts** well.  | - Requires **API** access and is computationally demanding, but delivers excellent thematic analysis. GPT-4 cannot run in local.                |
 
 
-
 As GPT-4 is an online model with data privacy risks, this study selects models **Pegasus, BART and T5** for LLM.<br>
-To test the performance of Pegasus, BART, and T5 models on Extractive Summarisation, this study uses content from a randomly selected speaker, Matthew Pullen, as a test sample.  
-
 
 
 ##### Abstractive Summarisation
@@ -435,6 +432,9 @@ Excluding Copilot and Llama 3.2, whose operating principles are not disclosed du
 ### LLM result
 
 #### LLM Processing
+
+To test the performance of models, this study uses content from a randomly selected speaker, Participant 1, as a test sample.  
+
 
 <details>
 <summary><b>Code Tab: Document Processing</b></summary>
