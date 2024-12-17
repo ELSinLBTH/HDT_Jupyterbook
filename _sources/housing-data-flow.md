@@ -566,7 +566,7 @@ We use housing data at different trigger points, maybe it's the place to start .
 
 Ref: https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouTube-Channel/blob/master/NLP/Text_Summarization_%20BART%20_T5_Pegasus.ipynb
 
-#### Results
+#### Extractive Summarisation Results
 
 **BART identified the following as the five most important sentences from Matthew's speech:**
 
@@ -580,7 +580,7 @@ Ref: https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouT
 
 *"We use housing data at different trigger points, maybe it's the place to start .<n>We layer in assumptions about when things might get permission .<n>We tend to layer in assumptions on how long it would take to build something that's under 200 units .<n>There's definitely a hole in our data for our CIL forecasting when it comes to commercial .<n>But we haven't got anything anywhere near as sophisticated as we've got for this holes in our housing approach."*
 
-#### Evaluation with Rouge
+##### Evaluation with Rouge
 
 To verify the quality of the results, this report employs the **Rouge** metric for evaluation. Rouge is used to assess text summarisation tasks. The scores obtained through Rouge range from 0 to 1, with a score of 1 indicating high quality, representing a high degree of similarity between the model-generated summary and the reference summary (manually generated).
 
@@ -654,7 +654,7 @@ _______________
 The results indicate that **BART** performed exceptionally well across all metrics. Consequently, this paper will now use the BART model to perform Extractive Summarisation on the dialogue content of the 12 participants, highlighting the key five points for each members.
 
 
-#### Extractive Summarisation Result - BART
+#### Final Extractive Summarisation Result using BART
 
 | Speaker            | Contribution |
 |---------------------|--------------|
