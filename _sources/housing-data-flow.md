@@ -53,24 +53,24 @@ A detailed overview of the models used in the project.
   <table style="border-collapse: collapse; border: 1px solid #ccc; width: 100%;">
     <thead>
       <tr>
-        <th style="border: 1px solid #ccc; padding: 8px;">Type</th>
-        <th colspan="8" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Extractive</th>
-        <th colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive</th>
+        <th style="border: 1px solid #ccc; padding: 8px;"><strong>Name</strong></th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Pegasus</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">BART</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">T5</th>
+        <th style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;">GPT-4</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Yake</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">KeyBert</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summa (TextRank)</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Copilot</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Llama3.2</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Name</strong></td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Pegasus</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">BART</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">T5</td>
-        <td style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;">GPT-4</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Yake</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">KeyBert</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summa (TextRank)</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Copilot</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Llama3.2</td>
+      <tr> 
+        <td style="border: 1px solid #ccc; padding: 8px;">Types of task</td>
+        <td colspan="8" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Extractive</td>
+        <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive</td>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;"><strong>Description</strong></td>
