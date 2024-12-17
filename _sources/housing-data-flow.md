@@ -46,7 +46,7 @@ This is Housing Data Flow page.
 
 #### Large Langurage Model Task
 
-This report is compiled after meeting with 12 members of council staff belonging to housing teams within the London Borough of Tower Hamlets. LLMs are employed to summarise content and keywords. This notebook primarily explores the use of artificial intelligence and automated processes as an intervention to our user research.
+Large Language Models (LLMs) are used to summarise the content and keywords from user research meetings held with 12 council members in the housing teams of LBTH. This effort primarily focuses on exploring how artificial intelligence and automated processes can assist in our user research.
 
 ##### Model Comparison Table
 
@@ -154,7 +154,7 @@ This report is compiled after meeting with 12 members of council staff belonging
         <td style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;"></td>
         <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">BART: its Rouge score is highest among the extractive summary</td>
         <td colspan="5" style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;"></td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF for one-word keywords, Copilot for bi-grams or mult-grams keywords. TF-IDF got highest score in Rouge test,while</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF for one-word keywords, Copilot for bi-grams or mult-grams keywords. TF-IDF got highest score in Rouge test, while Copilot is more sensitive to bi-gram keywords then TF-IDF</td>
         <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Both Copilot and Llama 3.2, cause they have different focus</td>
       </tr>
       <tr>
