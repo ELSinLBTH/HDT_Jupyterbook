@@ -48,6 +48,7 @@ This is Housing Data Flow page.
 
 This report is compiled after meeting with 12 members of council staff belonging to housing teams within the London Borough of Tower Hamlets. LLMs are employed to summarise content and keywords. This notebook primarily explores the use of artificial intelligence and automated processes as an intervention to our user research.
 
+##### Model Comparison Table
 
 <div style="overflow-x: auto;">
   <table style="border-collapse: collapse; border: 1px solid #ccc; width: 100%;">
@@ -90,7 +91,7 @@ This report is compiled after meeting with 12 members of council staff belonging
         <td colspan="3" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summary in 5 points</td>
         <td style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;">Cancel (Data Security)</td>
         <td colspan="4" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Keywords</td>
-        <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive and Keywords</td>
+        <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summary in 5 points and Keywords</td>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;"><strong>Pre-training with</strong></td>
@@ -686,7 +687,7 @@ This paper continues to use Matthew Pullen's dialogue to test the two models. Th
 
 *"Matthew Pullen discussed the various ways housing data is used at different stages in the development process, from the pre-application stage to the final decision, including planning committee resolutions and section 106 agreements. He highlighted the importance of different commencement points, which vary depending on the context, such as building control, planning, CIL, and section 106. Matthew also explained that housing data is crucial for forecasting housing completions, CIL income, and section 106 income, which supports various teams' jobs. Additionally, he emphasized the need for a comprehensive system that includes both residential and non-residential data, and considers different types of housing, such as student housing and co-living. Finally, he discussed the challenges of identifying site boundaries and capturing data for sites not yet in the planning system."*
 
-**Evaluation with SemScore**
+##### Evaluation with SemScore
 
 Considering that abstractive summarisation reconstructs sentences and generates entirely new text for summaries, the previously used ROUGE metric, which only detects identical words, is not suitable for evaluating abstractive summaries. In contrast, **SemScore** is more appropriate for scenarios involving abstractive summaries.
 

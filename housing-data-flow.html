@@ -307,6 +307,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#output-structure">Output Structure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llm-methodology">LLM methodology</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#large-langurage-model-task">Large Langurage Model Task</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#model-comparison-table">Model Comparison Table</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#software">Software</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation">Preparation</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#key-definition">Key Definition</a></li>
@@ -336,6 +337,7 @@
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-result-bart">Extractive Summarisation Result - BART</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation">Abstractive Summarisation</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Model Comparison</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-semscore">Evaluation with SemScore</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-result">Abstractive Summarisation Result</a></li>
 </ul>
 </li>
@@ -434,6 +436,8 @@
 <section id="large-langurage-model-task">
 <h4>Large Langurage Model Task<a class="headerlink" href="#large-langurage-model-task" title="Link to this heading">#</a></h4>
 <p>This report is compiled after meeting with 12 members of council staff belonging to housing teams within the London Borough of Tower Hamlets. LLMs are employed to summarise content and keywords. This notebook primarily explores the use of artificial intelligence and automated processes as an intervention to our user research.</p>
+<section id="model-comparison-table">
+<h5>Model Comparison Table<a class="headerlink" href="#model-comparison-table" title="Link to this heading">#</a></h5>
 <div style="overflow-x: auto;">
   <table style="border-collapse: collapse; border: 1px solid #ccc; width: 100%;">
     <thead>
@@ -475,7 +479,7 @@
         <td colspan="3" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summary in 5 points</td>
         <td style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;">Cancel (Data Security)</td>
         <td colspan="4" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Keywords</td>
-        <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive and Keywords</td>
+        <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summary in 5 points and Keywords</td>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;"><strong>Pre-training with</strong></td>
@@ -648,6 +652,7 @@
     </tbody>
   </table>
 </div>
+</section>
 <section id="software">
 <h5>Software<a class="headerlink" href="#software" title="Link to this heading">#</a></h5>
 <p>In order to run various models, <strong>Python</strong> is the computer language used in this report. Python’s built-in features and packages developed by contributors permit us to run the LLM models with simple lines of code. Before using the code and modules, we prepare initial steps such as download all the required packages and import them onto the Python platform.</p>
@@ -1152,7 +1157,9 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 <p><em>“Matthew Pullen expressed concerns about the usefulness of population projections for urban planning and development. They questioned the accuracy and reliability of existing models, citing a lack of consideration for overcrowding and assumptions based solely on policy. The speaker suggested that incorporating solid housing forecast data into these models could improve their accuracy. However, they noted that developing new systems to support population projections can be complex and time-consuming, requiring significant resources and effort. Despite the challenges, the speaker believes that having digital versions of planning documents and data, such as those provided by Exocom’s system for section 106 agreements, can help streamline urban planning processes and improve decision-making.”</em></p>
 <p><strong>Copilot output</strong></p>
 <p><em>“Matthew Pullen discussed the various ways housing data is used at different stages in the development process, from the pre-application stage to the final decision, including planning committee resolutions and section 106 agreements. He highlighted the importance of different commencement points, which vary depending on the context, such as building control, planning, CIL, and section 106. Matthew also explained that housing data is crucial for forecasting housing completions, CIL income, and section 106 income, which supports various teams’ jobs. Additionally, he emphasized the need for a comprehensive system that includes both residential and non-residential data, and considers different types of housing, such as student housing and co-living. Finally, he discussed the challenges of identifying site boundaries and capturing data for sites not yet in the planning system.”</em></p>
-<p><strong>Evaluation with SemScore</strong></p>
+</section>
+<section id="evaluation-with-semscore">
+<h5>Evaluation with SemScore<a class="headerlink" href="#evaluation-with-semscore" title="Link to this heading">#</a></h5>
 <p>Considering that abstractive summarisation reconstructs sentences and generates entirely new text for summaries, the previously used ROUGE metric, which only detects identical words, is not suitable for evaluating abstractive summaries. In contrast, <strong>SemScore</strong> is more appropriate for scenarios involving abstractive summaries.</p>
 <p>SemScore is a method used to measure the similarity between a model-generated summary and a reference summary. It focuses on the semantic content of a model’s output using embeddings. This approach <u>converts text into mathematical vectors to represent its semantics</u>. Then, by comparing the similarity between these embedding vectors—typically using cosine similarity—SemScore can assess how closely the semantic content of the model’s output aligns with the reference content. The results range from 0 to 1, with scores closer to 1 indicating greater similarity to the reference summary. This paper employs SemScore to test and compare the summaries produced by Copilot and Llama 3.2.</p>
 <p><a class="reference external" href="https://medium.com/&#64;geronimo7/semscore-evaluating-llms-with-semantic-similarity-2abf5c2fadb9">https://medium.com/&#64;geronimo7/semscore-evaluating-llms-with-semantic-similarity-2abf5c2fadb9</a></p>
@@ -2629,6 +2636,7 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#output-structure">Output Structure</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#llm-methodology">LLM methodology</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#large-langurage-model-task">Large Langurage Model Task</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#model-comparison-table">Model Comparison Table</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#software">Software</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#preparation">Preparation</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#key-definition">Key Definition</a></li>
@@ -2658,6 +2666,7 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-result-bart">Extractive Summarisation Result - BART</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation">Abstractive Summarisation</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Model Comparison</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-with-semscore">Evaluation with SemScore</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation-result">Abstractive Summarisation Result</a></li>
 </ul>
 </li>
