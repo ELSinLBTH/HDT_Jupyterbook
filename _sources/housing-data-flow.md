@@ -425,6 +425,18 @@ Excluding Copilot and Llama 3.2, whose operating principles are not disclosed du
 
 ### Results overview - BAU data diagram
 
+
+<p align="center">
+  <a href="./_static/FlowImages/Picture14.png" target="_blank">
+    <img src="./_static/FlowImages/Picture14.png" alt="BAU Data diagram"/>
+  </a>
+</p> 
+
+<p align="center">
+  <em>BAU Data diagram</em>
+</p>
+
+
 ### LLM result
 
 #### LLM Processing
