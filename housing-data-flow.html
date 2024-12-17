@@ -315,6 +315,7 @@
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation">Abstractive Summarisation</a></li>
 </ul>
 </li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keyword">Keyword</a></li>
 </ul>
 </li>
 </ul>
@@ -341,15 +342,15 @@
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-vs-abstractive-summarisation">Extractive Summarisation VS Abstractive Summarisation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#insight">Insight</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-comparison">Model Comparison</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#yake"><strong>Yake</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#keybert"><strong>KeyBERT</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#summa"><strong>Summa</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf"><strong>TF-IDF</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#model-comparison">Model Comparison</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#yake">Yake</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#keybert">KeyBERT</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#summa">Summa</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Evaluation with Rouge</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Evaluation with Rouge</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#achievement">Achievement</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehensive-insights">Comprehensive insights</a></li>
@@ -790,6 +791,44 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 <a class="reference external" href="https://medium.com/&#64;rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685">https://medium.com/&#64;rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685</a><br>
 The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.</p>
 </section>
+</section>
+<section id="keyword">
+<h4>Keyword<a class="headerlink" href="#keyword" title="Link to this heading">#</a></h4>
+<p>In addition to summarisation, this paper also compares different models for extracting keywords for meetings. Keywords help people know the essential themes. Particularly for User Research Meetings, extracting keywords enables quick understand people’s areas of interest and expected improvements in their work. This information can guide the future digital produces. Meanwhile, using familiar keywords as titles or focal points on websites can enhance content accessibility, allowing individuals with reading disabilities to more easily find and use information.</p>
+<p>This paper considers experimenting with six language processing models for keyword extraction: <strong>YAKE, KeyBERT, Summa, TF-IDF, Copilot, and Llama 3.2</strong>. YAKE, KeyBERT, Summa, and TF-IDF are tools specifically designed for keyword extraction, employing methods tailored for this purpose, usually <u>based on rule-based, statistical, or embedding-driven techniques</u>. In contrast, Copilot and Llama 3.2 perform keyword extraction within <u>a broader range of language processing tasks using their general language understanding capabilities</u>, benefiting from their ability to integrate multiple data sources and user-specific contexts.</p>
+<p>Excluding Copilot and Llama 3.2, whose operating principles are not disclosed due to intellectual property and trade secrets, the principles, features, and unique aspects of the other four LLM models are as follows:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Method</strong></p></th>
+<th class="head"><p><strong>Theory</strong></p></th>
+<th class="head"><p><strong>Features the Model Considers</strong></p></th>
+<th class="head"><p><strong>Unique Aspects</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>YAKE</strong></p></td>
+<td><p>Statistical, unsupervised. Relies on <strong>local document properties</strong>.</p></td>
+<td><p>- Word frequency within the document<br>- Word position<br>- Word co-occurrence<br>- Dispersion across the text</p></td>
+<td><p>Does not require external corpus or training. Fast and lightweight.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>KeyBERT</strong></p></td>
+<td><p>Semantic, based on BERT embeddings. Measures <strong>contextual similarity</strong> between document and words.</p></td>
+<td><p>- Deep contextual embeddings (BERT)<br>- Cosine similarity between document and keyword embeddings</p></td>
+<td><p>Contextual understanding of text. Captures the meaning behind words and phrases.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Summa</strong></p></td>
+<td><p>Graph-based ranking algorithm (TextRank), inspired by Google’s PageRank.</p></td>
+<td><p>- Word co-occurrence<br>- Graph-based ranking of words by importance in the document</p></td>
+<td><p>Captures relationships between words (<strong>connection between words</strong>), ideal for key phrase extraction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>TF-IDF</strong></p></td>
+<td><p>Statistical, unsupervised. Combines <strong>term frequency</strong> and <strong>inverse document frequency</strong>.</p></td>
+<td><p>- Word frequency in the document<br>- Rarity of words across the corpus</p></td>
+<td><p>Simple and efficient. Weighs document-specific importance vs. rarity across a corpus.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 </section>
 </section>
@@ -1358,44 +1397,8 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 </section>
 <section id="keywords">
 <h4>Keywords<a class="headerlink" href="#keywords" title="Link to this heading">#</a></h4>
-<p>In addition to summarisation, this paper also compares different models for extracting keywords for meetings. Keywords help people know the essential themes. Particularly for User Research Meetings, extracting keywords enables quick understand people’s areas of interest and expected improvements in their work. This information can guide the future digital produces. Meanwhile, using familiar keywords as titles or focal points on websites can enhance content accessibility, allowing individuals with reading disabilities to more easily find and use information.</p>
-<p>This paper considers experimenting with six language processing models for keyword extraction: <strong>YAKE, KeyBERT, Summa, TF-IDF, Copilot, and Llama 3.2</strong>. YAKE, KeyBERT, Summa, and TF-IDF are tools specifically designed for keyword extraction, employing methods tailored for this purpose, usually <u>based on rule-based, statistical, or embedding-driven techniques</u>. In contrast, Copilot and Llama 3.2 perform keyword extraction within <u>a broader range of language processing tasks using their general language understanding capabilities</u>, benefiting from their ability to integrate multiple data sources and user-specific contexts.</p>
-<p>Excluding Copilot and Llama 3.2, whose operating principles are not disclosed due to intellectual property and trade secrets, the principles, features, and unique aspects of the other four LLM models are as follows:</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><strong>Method</strong></p></th>
-<th class="head"><p><strong>Theory</strong></p></th>
-<th class="head"><p><strong>Features the Model Considers</strong></p></th>
-<th class="head"><p><strong>Unique Aspects</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>YAKE</strong></p></td>
-<td><p>Statistical, unsupervised. Relies on <strong>local document properties</strong>.</p></td>
-<td><p>- Word frequency within the document<br>- Word position<br>- Word co-occurrence<br>- Dispersion across the text</p></td>
-<td><p>Does not require external corpus or training. Fast and lightweight.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>KeyBERT</strong></p></td>
-<td><p>Semantic, based on BERT embeddings. Measures <strong>contextual similarity</strong> between document and words.</p></td>
-<td><p>- Deep contextual embeddings (BERT)<br>- Cosine similarity between document and keyword embeddings</p></td>
-<td><p>Contextual understanding of text. Captures the meaning behind words and phrases.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Summa</strong></p></td>
-<td><p>Graph-based ranking algorithm (TextRank), inspired by Google’s PageRank.</p></td>
-<td><p>- Word co-occurrence<br>- Graph-based ranking of words by importance in the document</p></td>
-<td><p>Captures relationships between words (<strong>connection between words</strong>), ideal for key phrase extraction.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>TF-IDF</strong></p></td>
-<td><p>Statistical, unsupervised. Combines <strong>term frequency</strong> and <strong>inverse document frequency</strong>.</p></td>
-<td><p>- Word frequency in the document<br>- Rarity of words across the corpus</p></td>
-<td><p>Simple and efficient. Weighs document-specific importance vs. rarity across a corpus.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
 <section id="model-comparison">
-<h4>Model Comparison<a class="headerlink" href="#model-comparison" title="Link to this heading">#</a></h4>
+<h5>Model Comparison<a class="headerlink" href="#model-comparison" title="Link to this heading">#</a></h5>
 <p>The outputs of the ten keywords from Matthew Pullen’s text by the six models are as follows:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1507,8 +1510,9 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 <p>NLTK’s list of english stopwords: <a class="reference external" href="https://gist.github.com/sebleier/554280">https://gist.github.com/sebleier/554280</a> <br>
 75 Stop Words That Are Common: <a class="reference external" href="https://blog.hubspot.com/marketing/stop-words-seo">https://blog.hubspot.com/marketing/stop-words-seo</a></p>
 </details>
+</section>
 <section id="yake">
-<h5><strong>Yake</strong><a class="headerlink" href="#yake" title="Link to this heading">#</a></h5>
+<h5>Yake<a class="headerlink" href="#yake" title="Link to this heading">#</a></h5>
 <p>Yake not rely on external data, corpus or pre-trained models, but based on the document its self (<strong>Local Statistical Features</strong>). Following are the features when Yake looking for a document or content:</p>
 <ol class="arabic simple">
 <li><p><strong>Term Frequency</strong>: how many time the words appear in the doc (except those stop words).</p></li>
@@ -1559,7 +1563,7 @@ applications: 0.09507326540820295
 </div>
 </section>
 <section id="keybert">
-<h5><strong>KeyBERT</strong><a class="headerlink" href="#keybert" title="Link to this heading">#</a></h5>
+<h5>KeyBERT<a class="headerlink" href="#keybert" title="Link to this heading">#</a></h5>
 <p>This KeyBERT library built based on BERT model for extract the keywoords. The features are following:</p>
 <ol class="arabic simple">
 <li><p><strong>Semantic Similarity</strong>: the similarity between document embedding anf keyword embedding. The cosine similarity between two vectors ( A ) and ( B ) is calculated as:</p></li>
@@ -1609,7 +1613,7 @@ development: 0.2906
 <p>Ref: <a class="github reference external" href="https://github.com/MaartenGr/KeyBERT">MaartenGr/KeyBERT</a></p>
 </section>
 <section id="summa">
-<h5><strong>Summa</strong><a class="headerlink" href="#summa" title="Link to this heading">#</a></h5>
+<h5>Summa<a class="headerlink" href="#summa" title="Link to this heading">#</a></h5>
 <p>Summa relies on graph-based ranking and co-occurrence relationships within the document (based on the TextRank algorithm). The features are following:</p>
 <ol class="arabic simple">
 <li><p><strong>Graph-based Ranking</strong>: Each word in this graph is considered as a node. The <u>connection</u> between nodes is considered as one of the criteria of their importance.</p></li>
@@ -1684,7 +1688,7 @@ sectional: 0.1094423366358233
 </div>
 </section>
 <section id="tf-idf">
-<h5><strong>TF-IDF</strong><a class="headerlink" href="#tf-idf" title="Link to this heading">#</a></h5>
+<h5>TF-IDF<a class="headerlink" href="#tf-idf" title="Link to this heading">#</a></h5>
 <p>TF-IDF（Term Frequency - Inverse Document Frequency)</p>
 <p>The features are following:</p>
 <ol class="arabic simple">
@@ -1760,14 +1764,13 @@ commencement: 0.0831125290206423
 </pre></div>
 </div>
 </section>
-</section>
 <section id="id1">
-<h4>Evaluation with Rouge<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<h5>Evaluation with Rouge<a class="headerlink" href="#id1" title="Link to this heading">#</a></h5>
 <p>In order to evaluate the quality of each keyword model, we need to set a gold standard mamually. They are:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p><strong>Keyword</strong></p></th>
-<th class="head"><p><strong>Reason</strong></p></th>
+<tr class="row-odd"><th class="head"><p>Keyword</p></th>
+<th class="head"><p>Reason</p></th>
 </tr>
 </thead>
 <tbody>
@@ -2003,6 +2006,7 @@ commencement: 0.0831125290206423
 <li><p><strong>Discussion on Current and Future Workflows</strong>: Both sets of keywords reflect a focus on the current practices of managing authority, planning, and project initiation. Additionally, there is a discussion on how to optimize these processes or adapt them to meet future needs.</p></li>
 </ol>
 <p>These results are helpful in determining the direction of future work to address the areas of concern identified by participants.</p>
+</section>
 </section>
 <section id="conclusion">
 <h4>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h4>
@@ -2638,6 +2642,7 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#abstractive-summarisation">Abstractive Summarisation</a></li>
 </ul>
 </li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keyword">Keyword</a></li>
 </ul>
 </li>
 </ul>
@@ -2664,15 +2669,15 @@ The Housing Supply Team plays a key role in the early-stage development of housi
 </li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#extractive-summarisation-vs-abstractive-summarisation">Extractive Summarisation VS Abstractive Summarisation</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#insight">Insight</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#model-comparison">Model Comparison</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#yake"><strong>Yake</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#keybert"><strong>KeyBERT</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#summa"><strong>Summa</strong></a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf"><strong>TF-IDF</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#keywords">Keywords</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#model-comparison">Model Comparison</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#yake">Yake</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#keybert">KeyBERT</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#summa">Summa</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#tf-idf">TF-IDF</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Evaluation with Rouge</a></li>
 </ul>
 </li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Evaluation with Rouge</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#achievement">Achievement</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#comprehensive-insights">Comprehensive insights</a></li>

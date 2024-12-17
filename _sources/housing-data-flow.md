@@ -373,6 +373,22 @@ https://medium.com/@rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-com
 The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.
 
 
+#### Keyword
+
+In addition to summarisation, this paper also compares different models for extracting keywords for meetings. Keywords help people know the essential themes. Particularly for User Research Meetings, extracting keywords enables quick understand people's areas of interest and expected improvements in their work. This information can guide the future digital produces. Meanwhile, using familiar keywords as titles or focal points on websites can enhance content accessibility, allowing individuals with reading disabilities to more easily find and use information.
+
+This paper considers experimenting with six language processing models for keyword extraction: **YAKE, KeyBERT, Summa, TF-IDF, Copilot, and Llama 3.2**. YAKE, KeyBERT, Summa, and TF-IDF are tools specifically designed for keyword extraction, employing methods tailored for this purpose, usually <u>based on rule-based, statistical, or embedding-driven techniques</u>. In contrast, Copilot and Llama 3.2 perform keyword extraction within <u>a broader range of language processing tasks using their general language understanding capabilities</u>, benefiting from their ability to integrate multiple data sources and user-specific contexts.
+
+Excluding Copilot and Llama 3.2, whose operating principles are not disclosed due to intellectual property and trade secrets, the principles, features, and unique aspects of the other four LLM models are as follows:
+
+| **Method**   | **Theory**                                                                 | **Features the Model Considers**                                           | **Unique Aspects**                                     |
+|--------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------|
+| **YAKE**     | Statistical, unsupervised. Relies on **local document properties**.            | - Word frequency within the document<br>- Word position<br>- Word co-occurrence<br>- Dispersion across the text | Does not require external corpus or training. Fast and lightweight. |
+| **KeyBERT**  | Semantic, based on BERT embeddings. Measures **contextual similarity** between document and words. | - Deep contextual embeddings (BERT)<br>- Cosine similarity between document and keyword embeddings | Contextual understanding of text. Captures the meaning behind words and phrases. |
+| **Summa**    | Graph-based ranking algorithm (TextRank), inspired by Google's PageRank.   | - Word co-occurrence<br>- Graph-based ranking of words by importance in the document | Captures relationships between words (**connection between words**), ideal for key phrase extraction. |
+| **TF-IDF**   | Statistical, unsupervised. Combines **term frequency** and **inverse document frequency**. | - Word frequency in the document<br>- Rarity of words across the corpus | Simple and efficient. Weighs document-specific importance vs. rarity across a corpus. |
+
+
 ## User Research Results 1
 
 ### Results overview - BAU process diagram 
@@ -830,22 +846,10 @@ Whether in the results of extractive summarisation or abstractive summarisation,
 3. Data Requirements: Some participants mentioned what the data should include, such as <u>types of housing, stages of construction, and affordable housing</u>.
 4. Data Updates: There are currently inconsistencies in data due to a <u>lack of synchronised updates</u> between different departments or teams. Member suggested the necessity of establishing a centralised and reliable data source.
 
+
 #### Keywords
 
-In addition to summarisation, this paper also compares different models for extracting keywords for meetings. Keywords help people know the essential themes. Particularly for User Research Meetings, extracting keywords enables quick understand people's areas of interest and expected improvements in their work. This information can guide the future digital produces. Meanwhile, using familiar keywords as titles or focal points on websites can enhance content accessibility, allowing individuals with reading disabilities to more easily find and use information.
-
-This paper considers experimenting with six language processing models for keyword extraction: **YAKE, KeyBERT, Summa, TF-IDF, Copilot, and Llama 3.2**. YAKE, KeyBERT, Summa, and TF-IDF are tools specifically designed for keyword extraction, employing methods tailored for this purpose, usually <u>based on rule-based, statistical, or embedding-driven techniques</u>. In contrast, Copilot and Llama 3.2 perform keyword extraction within <u>a broader range of language processing tasks using their general language understanding capabilities</u>, benefiting from their ability to integrate multiple data sources and user-specific contexts.
-
-Excluding Copilot and Llama 3.2, whose operating principles are not disclosed due to intellectual property and trade secrets, the principles, features, and unique aspects of the other four LLM models are as follows:
-
-| **Method**   | **Theory**                                                                 | **Features the Model Considers**                                           | **Unique Aspects**                                     |
-|--------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------|
-| **YAKE**     | Statistical, unsupervised. Relies on **local document properties**.            | - Word frequency within the document<br>- Word position<br>- Word co-occurrence<br>- Dispersion across the text | Does not require external corpus or training. Fast and lightweight. |
-| **KeyBERT**  | Semantic, based on BERT embeddings. Measures **contextual similarity** between document and words. | - Deep contextual embeddings (BERT)<br>- Cosine similarity between document and keyword embeddings | Contextual understanding of text. Captures the meaning behind words and phrases. |
-| **Summa**    | Graph-based ranking algorithm (TextRank), inspired by Google's PageRank.   | - Word co-occurrence<br>- Graph-based ranking of words by importance in the document | Captures relationships between words (**connection between words**), ideal for key phrase extraction. |
-| **TF-IDF**   | Statistical, unsupervised. Combines **term frequency** and **inverse document frequency**. | - Word frequency in the document<br>- Rarity of words across the corpus | Simple and efficient. Weighs document-specific importance vs. rarity across a corpus. |
-
-#### Model Comparison
+##### Model Comparison
 
 The outputs of the ten keywords from Matthew Pullen's text by the six models are as follows:
 
@@ -892,7 +896,7 @@ NLTK's list of english stopwords: https://gist.github.com/sebleier/554280 <br>
 
 </details>
 
-##### **Yake**
+##### Yake
 
 Yake not rely on external data, corpus or pre-trained models, but based on the document its self (**Local Statistical Features**). Following are the features when Yake looking for a document or content:
 1. **Term Frequency**: how many time the words appear in the doc (except those stop words).
@@ -943,7 +947,7 @@ yake_list = [kw for kw, score in keywords]
     applications: 0.09507326540820295
     
 
-##### **KeyBERT**
+##### KeyBERT
 
 This KeyBERT library built based on BERT model for extract the keywoords. The features are following:
 1. **Semantic Similarity**: the similarity between document embedding anf keyword embedding. The cosine similarity between two vectors \( A \) and \( B \) is calculated as:
@@ -993,7 +997,7 @@ keybert_list = [keyword for keyword, score in keywords]
 
 Ref: https://github.com/MaartenGr/KeyBERT
 
-##### **Summa**
+##### Summa
 
 Summa relies on graph-based ranking and co-occurrence relationships within the document (based on the TextRank algorithm). The features are following:
 1. **Graph-based Ranking**: Each word in this graph is considered as a node. The <u>connection</u> between nodes is considered as one of the criteria of their importance.
@@ -1070,7 +1074,7 @@ summa_list = [kw for kw, score in filtered_keywords]
     sectional: 0.1094423366358233
     
 
-##### **TF-IDF**
+##### TF-IDF
 
 TF-IDF（Term Frequency - Inverse Document Frequency) 
 
@@ -1145,11 +1149,11 @@ tfidf_list = [word for word, score in sorted_word_scores[:10]]
     commencement: 0.0831125290206423
     
 
-#### Evaluation with Rouge
+##### Evaluation with Rouge
 
 In order to evaluate the quality of each keyword model, we need to set a gold standard mamually. They are:
 
-| **Keyword**           | **Reason**                                                                                                 |
+| Keyword          | Reason                                                                                                 |
 |-----------------------|------------------------------------------------------------------------------------------------------------|
 | **housing data**       | Central of the discussion. Housing data is used for planning, forecasting, and decision-making processes.   |
 | **planning**           | Refers to the housing planning process, including applications, approvals, and development stages.          |
