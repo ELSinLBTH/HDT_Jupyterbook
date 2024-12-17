@@ -1,11 +1,7 @@
 # Housing Data Flow
 
-This is Housing Data Flow page.
-
-
 ## User Research
 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-
 
 
 ### Overview
@@ -14,7 +10,6 @@ This is Housing Data Flow page.
 
 ### Aimns and Objectives
 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”
-
 
 
 ### Expected Impact
@@ -44,33 +39,33 @@ This is Housing Data Flow page.
 
 ### LLM methodology 
 
-#### Large Langurage Model Task
+Large Language Models (LLMs) are used to summarise the content and keywords from user research meetings held with 12 council members in the housing teams of LBTH. This effort primarily focuses on exploring how artificial intelligence and automated processes can assist in our user research.
 
-This report is compiled after meeting with 12 members of council staff belonging to housing teams within the London Borough of Tower Hamlets. LLMs are employed to summarise content and keywords. This notebook primarily explores the use of artificial intelligence and automated processes as an intervention to our user research.
-
+##### Model Comparison Table
+A detailed overview of the models used in the project.
 
 <div style="overflow-x: auto;">
   <table style="border-collapse: collapse; border: 1px solid #ccc; width: 100%;">
     <thead>
       <tr>
-        <th style="border: 1px solid #ccc; padding: 8px;">Type</th>
-        <th colspan="8" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Extractive</th>
-        <th colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive</th>
+        <th style="border: 1px solid #ccc; padding: 8px;"><strong>Name</strong></th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Pegasus</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">BART</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">T5</th>
+        <th style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;">GPT-4</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Yake</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">KeyBert</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summa (TextRank)</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Copilot</th>
+        <th style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Llama3.2</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Name</strong></td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Pegasus</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">BART</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">T5</td>
-        <td style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;">GPT-4</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Yake</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">KeyBert</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summa (TextRank)</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Copilot</td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Llama3.2</td>
+      <tr> 
+        <td style="border: 1px solid #ccc; padding: 8px;"><strong>Type of task</strong></td>
+        <td colspan="8" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Extractive</td>
+        <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive</td>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;"><strong>Description</strong></td>
@@ -90,7 +85,7 @@ This report is compiled after meeting with 12 members of council staff belonging
         <td colspan="3" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summary in 5 points</td>
         <td style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;">Cancel (Data Security)</td>
         <td colspan="4" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Keywords</td>
-        <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Abstractive and Keywords</td>
+        <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Summary in 5 points and Keywords</td>
       </tr>
       <tr>
         <td style="border: 1px solid #ccc; padding: 8px;"><strong>Pre-training with</strong></td>
@@ -153,7 +148,7 @@ This report is compiled after meeting with 12 members of council staff belonging
         <td style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;"></td>
         <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">BART: its Rouge score is highest among the extractive summary</td>
         <td colspan="5" style="background-color:#D5DBDE; border: 1px solid #ccc; padding: 8px;"></td>
-        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF for one-word keywords, Copilot for bi-grams or mult-grams keywords. TF-IDF got highest score in Rouge test,while</td>
+        <td style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">TF-IDF for one-word keywords, Copilot for bi-grams or mult-grams keywords. TF-IDF got highest score in Rouge test, while Copilot is more sensitive to bi-gram keywords then TF-IDF</td>
         <td colspan="2" style="background-color:#DBF2FF; border: 1px solid #ccc; padding: 8px;">Both Copilot and Llama 3.2, cause they have different focus</td>
       </tr>
       <tr>
@@ -336,15 +331,13 @@ There are two type of summarisations in LLM:
 
 This case tests both these listsed types. Considering the variety of popular LLM models available, this report first compares various models to determine which is the most suitable for the tasks. Then the most suitable model is used to conduct relevant summaries to derive insights. The testing process for both types of summaries is as follows:
 
-##### Summarisation
+#### Summarisation
 
-###### Extractive Summarisation
-
-###### **Model Comparison**
+##### Extractive Summarisation
 
 There are four main models for LLM: Pegasus, BART, T5 and GPT-4.
 
-| **Model**      | **Underlying Principle**                                                                                                                                                                                                                                                                           | **Advantages for Summarisation**                                                                                                                                                                                                                                                                              | **Disadvantages for Summarisation**                                                                                                                                                                                                                       |
+| Model      | Underlying Principle                                                                                                                                                                                                                                                                           | Advantages                                                                                                                                                                                                                                                                              | Disadvantages                                                                                                                                                                                                                       |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Pegasus**    | - Pre-training with **Gap-Sentence Generation (GSG)**: Sentences are masked, and the model learns to generate missing sentences, which simulates summarisation tasks.                                                                       | - **Specifically designed** for summarisation, with pre-training objective closely aligned to the task.<br>- **Handles long documents** well.                                             | - **Specialised** for summarisation, so less flexible for other tasks.                                 |
 | **BART**       | - **Denoising autoencoder** trained to recover original text from corrupted input.                                                                                              | - Pre-trained on **large datasets**, providing a strong base for extractive summarisation tasks.              | - Summaries might occasionally lack **coherence** or **factual accuracy** due to the free-form generation style.                                                          |
@@ -353,9 +346,42 @@ There are four main models for LLM: Pegasus, BART, T5 and GPT-4.
 
 
 
-As GPT-4 is an online model with data privacy risks, this study selects models **Pegasus, BART and T5** for LLM.
-
+As GPT-4 is an online model with data privacy risks, this study selects models **Pegasus, BART and T5** for LLM.<br>
 To test the performance of Pegasus, BART, and T5 models on Extractive Summarisation, this study uses content from a randomly selected speaker, Matthew Pullen, as a test sample.  
+
+
+
+##### Abstractive Summarisation
+
+Models for abstractive summarisation are diverse. This report experiments with and compares Llama 3.2 and Copilot which are the two most popular LLM model. Brief introductions to the two models are as follows:
+
+| Aspect                        | Llama 3 (Meta)                                      | Microsoft Copilot (Microsoft Teams)                 |
+|-------------------------------|-----------------------------------------------------|-----------------------------------------------------|
+| **Underlying Principle**      | LLM: Uses transformer models trained on diverse texts for deep natural language processing, capable of running locally to ensure data security. | Integration of LLM and NLP: Utilizes AI tailored for Teams, focusing on extracting actionable insights from communications, operates online using Microsoft's cloud security protocols. |
+| **Advantages**                | - Generates detailed, context-aware summaries adaptable to various styles.<br>- "A multimodal large language model (LLM) capable of visual reasoning, image captioning, and answering questions about images." | - Seamless integration with Teams enhances productivity.<br>- Summaries include explicit citations to original texts, improving traceability. |
+| **Disadvantages**             | - High computational costs.<br>- Potential bias in summaries due to training data.<br>- Summaries lack specific citations to sources, which might affect transparency. | - Limited to summarizing content within Microsoft Teams.<br>- May overlook complex nuances in discussions.<br>- Slower response times due to reliance on internet connectivity and cloud processing. |
+| **Security**                  | - Can be operated locally, providing control over data security and faster response times. | - Relies on Microsoft's robust online security measures:"Copilot searches, processes and uses organisations’ data to provide the responses, which are specific to your organisation and user based on what they can access." |
+
+Reference:
+https://www.fordway.com/chat-gpt-bard-llama-and-microsoft-copilot<br>
+https://medium.com/@rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685<br>
+The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.
+
+
+#### Keyword
+
+In addition to summarisation, this paper also compares different models for extracting keywords for meetings. Keywords help people know the essential themes. Particularly for User Research Meetings, extracting keywords enables quick understand people's areas of interest and expected improvements in their work. This information can guide the future digital produces. Meanwhile, using familiar keywords as titles or focal points on websites can enhance content accessibility, allowing individuals with reading disabilities to more easily find and use information.
+
+This paper considers experimenting with six language processing models for keyword extraction: **YAKE, KeyBERT, Summa, TF-IDF, Copilot, and Llama 3.2**. YAKE, KeyBERT, Summa, and TF-IDF are tools specifically designed for keyword extraction, employing methods tailored for this purpose, usually <u>based on rule-based, statistical, or embedding-driven techniques</u>. In contrast, Copilot and Llama 3.2 perform keyword extraction within <u>a broader range of language processing tasks using their general language understanding capabilities</u>, benefiting from their ability to integrate multiple data sources and user-specific contexts.
+
+Excluding Copilot and Llama 3.2, whose operating principles are not disclosed due to intellectual property and trade secrets, the principles, features, and unique aspects of the other four LLM models are as follows:
+
+| **Method**   | **Theory**                                                                 | **Features the Model Considers**                                           | **Unique Aspects**                                     |
+|--------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------|
+| **YAKE**     | Statistical, unsupervised. Relies on **local document properties**.            | - Word frequency within the document<br>- Word position<br>- Word co-occurrence<br>- Dispersion across the text | Does not require external corpus or training. Fast and lightweight. |
+| **KeyBERT**  | Semantic, based on BERT embeddings. Measures **contextual similarity** between document and words. | - Deep contextual embeddings (BERT)<br>- Cosine similarity between document and keyword embeddings | Contextual understanding of text. Captures the meaning behind words and phrases. |
+| **Summa**    | Graph-based ranking algorithm (TextRank), inspired by Google's PageRank.   | - Word co-occurrence<br>- Graph-based ranking of words by importance in the document | Captures relationships between words (**connection between words**), ideal for key phrase extraction. |
+| **TF-IDF**   | Statistical, unsupervised. Combines **term frequency** and **inverse document frequency**. | - Word frequency in the document<br>- Rarity of words across the corpus | Simple and efficient. Weighs document-specific importance vs. rarity across a corpus. |
 
 
 ## User Research Results 1
@@ -393,6 +419,18 @@ To test the performance of Pegasus, BART, and T5 models on Extractive Summarisat
 </p>
 
 ### Results overview - BAU data diagram
+
+
+<p align="center">
+  <a href="./_static/FlowImages/Picture14.png" target="_blank">
+    <img src="./_static/FlowImages/Picture14.png" alt="BAU Data diagram"/>
+  </a>
+</p> 
+
+<p align="center">
+  <em>BAU Data diagram</em>
+</p>
+
 
 ### LLM result
 
@@ -551,7 +589,7 @@ We use housing data at different trigger points, maybe it's the place to start .
 
 Ref: https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouTube-Channel/blob/master/NLP/Text_Summarization_%20BART%20_T5_Pegasus.ipynb
 
-#### Results
+#### Extractive Summarisation Results
 
 **BART identified the following as the five most important sentences from Matthew's speech:**
 
@@ -565,7 +603,7 @@ Ref: https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouT
 
 *"We use housing data at different trigger points, maybe it's the place to start .<n>We layer in assumptions about when things might get permission .<n>We tend to layer in assumptions on how long it would take to build something that's under 200 units .<n>There's definitely a hole in our data for our CIL forecasting when it comes to commercial .<n>But we haven't got anything anywhere near as sophisticated as we've got for this holes in our housing approach."*
 
-#### Evaluation with Rouge
+##### Evaluation with Rouge
 
 To verify the quality of the results, this report employs the **Rouge** metric for evaluation. Rouge is used to assess text summarisation tasks. The scores obtained through Rouge range from 0 to 1, with a score of 1 indicating high quality, representing a high degree of similarity between the model-generated summary and the reference summary (manually generated).
 
@@ -639,7 +677,7 @@ _______________
 The results indicate that **BART** performed exceptionally well across all metrics. Consequently, this paper will now use the BART model to perform Extractive Summarisation on the dialogue content of the 12 participants, highlighting the key five points for each members.
 
 
-#### Extractive Summarisation Result - BART
+##### Entire Extractive Summarisation Result using BART
 
 | Speaker            | Contribution |
 |---------------------|--------------|
@@ -657,24 +695,7 @@ The results indicate that **BART** performed exceptionally well across all metri
 | **Paul Buckenham**  | - My name's Paul Buckenham and I'm head of development management.<br>- This is quite interesting to me because I think traditionally my service wouldn't necessarily get involved so much with the housing data side of things.<br>- So, we know what's completed now, how do we work out on the sites where there's still under construction?<br>- So I think I think actually there's probably a whole host of different development department management kind of activities that it would that it could potentially feed into probably like one of those ones that we don't necessarily quite understand all the implications until you actually see it work and start to use it and then you pick up on ideas for how you could you know.<br>- And the enforcement side of things as well, compliance to ensure that what's actually been built is what should have been built so. |
 
 
-#### Abstractive Summarisation
-
-Models for abstractive summarisation are diverse. This report experiments with and compares Llama 3.2 and Copilot which are the two most popular LLM model. Brief introductions to the two models are as follows:
-
-| Aspect                        | Llama 3 (Meta)                                      | Microsoft Copilot (Microsoft Teams)                 |
-|-------------------------------|-----------------------------------------------------|-----------------------------------------------------|
-| **Underlying Principle**      | LLM: Uses transformer models trained on diverse texts for deep natural language processing, capable of running locally to ensure data security. | Integration of LLM and NLP: Utilizes AI tailored for Teams, focusing on extracting actionable insights from communications, operates online using Microsoft's cloud security protocols. |
-| **Advantages**                | - Generates detailed, context-aware summaries adaptable to various styles.<br>- "A multimodal large language model (LLM) capable of visual reasoning, image captioning, and answering questions about images." | - Seamless integration with Teams enhances productivity.<br>- Summaries include explicit citations to original texts, improving traceability. |
-| **Disadvantages**             | - High computational costs.<br>- Potential bias in summaries due to training data.<br>- Summaries lack specific citations to sources, which might affect transparency. | - Limited to summarizing content within Microsoft Teams.<br>- May overlook complex nuances in discussions.<br>- Slower response times due to reliance on internet connectivity and cloud processing. |
-| **Security**                  | - Can be operated locally, providing control over data security and faster response times. | - Relies on Microsoft's robust online security measures:"Copilot searches, processes and uses organisations’ data to provide the responses, which are specific to your organisation and user based on what they can access." |
-
-https://www.fordway.com/chat-gpt-bard-llama-and-microsoft-copilot
-
-https://medium.com/@rahultiwari065/unlocking-the-power-of-llama-3-2-vision-a-comprehensive-guide-to-metas-multimodal-ai-b200da72b685
-
-The two models differ in their advantages and principles. To determine which model is more suitable for the User Research Meeting text, this report will test both models.
-
-##### Model Comparison
+#### Abstractive Summarisation Results
 
 This paper continues to use Matthew Pullen's dialogue to test the two models. The prompt used for testing is *"Summarise the following content into a five-sentence paragraph: ..."*. The output results are as follows:
 
@@ -686,7 +707,7 @@ This paper continues to use Matthew Pullen's dialogue to test the two models. Th
 
 *"Matthew Pullen discussed the various ways housing data is used at different stages in the development process, from the pre-application stage to the final decision, including planning committee resolutions and section 106 agreements. He highlighted the importance of different commencement points, which vary depending on the context, such as building control, planning, CIL, and section 106. Matthew also explained that housing data is crucial for forecasting housing completions, CIL income, and section 106 income, which supports various teams' jobs. Additionally, he emphasized the need for a comprehensive system that includes both residential and non-residential data, and considers different types of housing, such as student housing and co-living. Finally, he discussed the challenges of identifying site boundaries and capturing data for sites not yet in the planning system."*
 
-**Evaluation with SemScore**
+##### Evaluation with SemScore
 
 Considering that abstractive summarisation reconstructs sentences and generates entirely new text for summaries, the previously used ROUGE metric, which only detects identical words, is not suitable for evaluating abstractive summaries. In contrast, **SemScore** is more appropriate for scenarios involving abstractive summaries.
 
@@ -784,7 +805,7 @@ Additionally, Matthew emphasized the importance of having a comprehensive system
 
 Besides producing more text due to the absence of a sentence count limitation, it can also be observed that the two models focus on different summary points once the 'Paragraph' prompt restriction is removed. Copilot emphasizes a macro-level summary, attempting to cover broad topics extensively, while Llama 3.2 focuses on the micro-elements of the text, striving to delve into the categorization and significance of key content. This variation may relate to the differences in their training corpora and the fundamental principles of the models. In future work, either Copilot or Llama 3.2 can be chosen for Abstractive Summarisation based on specific job requirements.
 
-##### Abstractive Summarisation Result
+##### Entire Abstractive Summarisation Results
 
 Below are the output results from both models when the prompt used is 'Summarise the following content into a five-sentence paragraph: ...' for all speakers:
 
@@ -832,22 +853,10 @@ Whether in the results of extractive summarisation or abstractive summarisation,
 3. Data Requirements: Some participants mentioned what the data should include, such as <u>types of housing, stages of construction, and affordable housing</u>.
 4. Data Updates: There are currently inconsistencies in data due to a <u>lack of synchronised updates</u> between different departments or teams. Member suggested the necessity of establishing a centralised and reliable data source.
 
+
 #### Keywords
 
-In addition to summarisation, this paper also compares different models for extracting keywords for meetings. Keywords help people know the essential themes. Particularly for User Research Meetings, extracting keywords enables quick understand people's areas of interest and expected improvements in their work. This information can guide the future digital produces. Meanwhile, using familiar keywords as titles or focal points on websites can enhance content accessibility, allowing individuals with reading disabilities to more easily find and use information.
-
-This paper considers experimenting with six language processing models for keyword extraction: **YAKE, KeyBERT, Summa, TF-IDF, Copilot, and Llama 3.2**. YAKE, KeyBERT, Summa, and TF-IDF are tools specifically designed for keyword extraction, employing methods tailored for this purpose, usually <u>based on rule-based, statistical, or embedding-driven techniques</u>. In contrast, Copilot and Llama 3.2 perform keyword extraction within <u>a broader range of language processing tasks using their general language understanding capabilities</u>, benefiting from their ability to integrate multiple data sources and user-specific contexts.
-
-Excluding Copilot and Llama 3.2, whose operating principles are not disclosed due to intellectual property and trade secrets, the principles, features, and unique aspects of the other four LLM models are as follows:
-
-| **Method**   | **Theory**                                                                 | **Features the Model Considers**                                           | **Unique Aspects**                                     |
-|--------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------|
-| **YAKE**     | Statistical, unsupervised. Relies on **local document properties**.            | - Word frequency within the document<br>- Word position<br>- Word co-occurrence<br>- Dispersion across the text | Does not require external corpus or training. Fast and lightweight. |
-| **KeyBERT**  | Semantic, based on BERT embeddings. Measures **contextual similarity** between document and words. | - Deep contextual embeddings (BERT)<br>- Cosine similarity between document and keyword embeddings | Contextual understanding of text. Captures the meaning behind words and phrases. |
-| **Summa**    | Graph-based ranking algorithm (TextRank), inspired by Google's PageRank.   | - Word co-occurrence<br>- Graph-based ranking of words by importance in the document | Captures relationships between words (**connection between words**), ideal for key phrase extraction. |
-| **TF-IDF**   | Statistical, unsupervised. Combines **term frequency** and **inverse document frequency**. | - Word frequency in the document<br>- Rarity of words across the corpus | Simple and efficient. Weighs document-specific importance vs. rarity across a corpus. |
-
-#### Model Comparison
+##### Model Comparison
 
 The outputs of the ten keywords from Matthew Pullen's text by the six models are as follows:
 
@@ -894,7 +903,7 @@ NLTK's list of english stopwords: https://gist.github.com/sebleier/554280 <br>
 
 </details>
 
-##### **Yake**
+##### Yake
 
 Yake not rely on external data, corpus or pre-trained models, but based on the document its self (**Local Statistical Features**). Following are the features when Yake looking for a document or content:
 1. **Term Frequency**: how many time the words appear in the doc (except those stop words).
@@ -945,7 +954,7 @@ yake_list = [kw for kw, score in keywords]
     applications: 0.09507326540820295
     
 
-##### **KeyBERT**
+##### KeyBERT
 
 This KeyBERT library built based on BERT model for extract the keywoords. The features are following:
 1. **Semantic Similarity**: the similarity between document embedding anf keyword embedding. The cosine similarity between two vectors \( A \) and \( B \) is calculated as:
@@ -995,7 +1004,7 @@ keybert_list = [keyword for keyword, score in keywords]
 
 Ref: https://github.com/MaartenGr/KeyBERT
 
-##### **Summa**
+##### Summa
 
 Summa relies on graph-based ranking and co-occurrence relationships within the document (based on the TextRank algorithm). The features are following:
 1. **Graph-based Ranking**: Each word in this graph is considered as a node. The <u>connection</u> between nodes is considered as one of the criteria of their importance.
@@ -1072,7 +1081,7 @@ summa_list = [kw for kw, score in filtered_keywords]
     sectional: 0.1094423366358233
     
 
-##### **TF-IDF**
+##### TF-IDF
 
 TF-IDF（Term Frequency - Inverse Document Frequency) 
 
@@ -1147,11 +1156,11 @@ tfidf_list = [word for word, score in sorted_word_scores[:10]]
     commencement: 0.0831125290206423
     
 
-#### Evaluation with Rouge
+##### Evaluation with Rouge
 
 In order to evaluate the quality of each keyword model, we need to set a gold standard mamually. They are:
 
-| **Keyword**           | **Reason**                                                                                                 |
+| Keyword          | Reason                                                                                                 |
 |-----------------------|------------------------------------------------------------------------------------------------------------|
 | **housing data**       | Central of the discussion. Housing data is used for planning, forecasting, and decision-making processes.   |
 | **planning**           | Refers to the housing planning process, including applications, approvals, and development stages.          |
