@@ -65,16 +65,16 @@ To coalesce, summarise, and make available development information captured by L
 The user can interact with the site by clicking on the site's directory on the left. Once a site has been clicked on the number of units that have been approved on the site appear in the top boxes (eg: here, Wood Wharf has 143 affordable units). The pop-up window provides the user with additional information including LBTH planning application reference, the site status (approved/ commenced/ completed/ stalled), approval date and financial year, completion date and financial year, number of days to complete. 
 
 <p align="center">
-  <a href="./_static/FlowImages/Picture2.png" target="_blank">
-    <img src="./_static/FlowImages/Picture2.png" />
+  <a href="./_static/FlowImages/Picture2.bmp" target="_blank">
+    <img src="./_static/FlowImages/Picture2.bmp" />
   </a>
 </p>
 
 If the user wants to access a report to add to their own team workflow or processes a page is setup for the user to login and download the report. The page can be accessed from the link on the right slider. 
 
 <p align="center">
-  <a href="./_static/FlowImages/Picture3.png" target="_blank">
-    <img src="./_static/FlowImages/Picture3.png" />
+  <a href="./_static/FlowImages/Picture3.bmp" target="_blank">
+    <img src="./_static/FlowImages/Picture3.bmp" />
   </a>
 </p>
 
@@ -85,8 +85,8 @@ Once the user clicks on the link from above, they are led to the reporting tool 
 The site has been set up using FME and supported by the same dataset that powers the housing development tracker interface. The report setup has been configured after user research to respond to council team requests and can be reconfigured in the future. 
 
 <p align="center">
-  <a href="./_static/FlowImages/Picture4.png" target="_blank">
-    <img src="./_static/FlowImages/Picture4.png" />
+  <a href="./_static/FlowImages/Picture4.bmp" target="_blank">
+    <img src="./_static/FlowImages/Picture4.bmp" />
   </a>
 </p>
 
@@ -96,8 +96,8 @@ The site has been set up using FME and supported by the same dataset that powers
 This documentation for this project is developed using JupyterBook and python libraries. Hosted on GitHub, the book is open source and available for everyone to read- this includes all beyond the council. The dashboard hosts the link to the documentation on the right-hand slider as in the image below. Once the user clicks on the link, they will be redirected to the documentation book. 
 
 <p align="center">
-  <a href="./_static/FlowImages/Picture5.png" target="_blank">
-    <img src="./_static/FlowImages/Picture5.png" />
+  <a href="./_static/FlowImages/Picture5.bmp" target="_blank">
+    <img src="./_static/FlowImages/Picture5.bmp" />
   </a>
 </p>
 
