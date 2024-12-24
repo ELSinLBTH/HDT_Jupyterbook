@@ -493,7 +493,7 @@ if __name__ == "__main__":
     meeting_text = extract_text_from_docx('Group_1.docx')  # Path to the file provided
     
     # Identify speakers who need attention
-    target_speakers = ['Matthew Pullen', 'Matt Newby', 'Camelia Smith', 'Megan Rourke']
+    target_speakers = ['Participant 1', 'Participant 2', 'Participant 3', 'Participant 4']
     
     # Extract the speech content of each speaker and store it in a string field
     speaker_contents = extract_speaker_content(meeting_text, target_speakers)
@@ -504,10 +504,10 @@ if __name__ == "__main__":
         print("-" * 50)
     
     # Store the speeches as strings
-    matthew_pullen_content = speaker_contents['Matthew Pullen'].strip()
-    matt_newby_content = speaker_contents['Matt Newby'].strip()
-    camelia_smith_content = speaker_contents['Camelia Smith'].strip()
-    megan_rourke_content = speaker_contents['Megan Rourke'].strip()
+    participant_1_content = speaker_contents['Participant 1'].strip()
+    participant_2_content = speaker_contents['Participant 2'].strip()
+    participant_3_content = speaker_contents['Participant 3'].strip()
+    participant_4_content = speaker_contents['Participant 4'].strip()
 ```
 </details>
 
@@ -540,7 +540,7 @@ Hello. Yeah. So, we're coming from, I guess like a housing and regional client-s
 
 ```python
 model = Summarizer()
-result = model(matthew_pullen_content, min_length=60, num_sentences=5)
+result = model(participant_1_content, min_length=60, num_sentences=5)
 BART = ''.join(result)
 print(BART)
 ```
@@ -555,7 +555,7 @@ Ref:https://github.com/dmmiller612/bert-extractive-summarizer
 
 ```python
 pipe = pipeline('summarization', model = 't5-large', min_length=100)
-T5 = pipe(matthew_pullen_content)
+T5 = pipe(participant_1_content)
 t5 = ', '.join(str(item) for item in T5)
 T5
 ```
@@ -572,7 +572,7 @@ tokenizer = PegasusTokenizer.from_pretrained("google/pegasus-cnn_dailymail")
 model = PegasusForConditionalGeneration.from_pretrained("google/pegasus-cnn_dailymail")
 
 # Tokenize the text
-tokens = tokenizer(matthew_pullen_content, truncation=True, padding="longest", return_tensors="pt")
+tokens = tokenizer(participant_1_content, truncation=True, padding="longest", return_tensors="pt")
 
 # Generate summary
 summary_ids = model.generate(tokens["input_ids"], max_length=1024, min_length=100, num_beams=4, early_stopping=True)
@@ -916,7 +916,7 @@ Yake not rely on external data, corpus or pre-trained models, but based on the d
 
 ```python
 # set the content for analysis
-text = matthew_pullen_content
+text = participant_1_content
 
 kw_extractor = yake.KeywordExtractor(
     #language=english
@@ -972,7 +972,7 @@ $$
 
 
 ```python
-doc = matthew_pullen_content
+doc = participant_1_content
 
 kw_model = KeyBERT()
 keywords = kw_model.extract_keywords(
@@ -1042,7 +1042,7 @@ print(custom_stop_words[:100])
 
 
 ```python
-text = matthew_pullen_content
+text = participant_1_content
 
 # Use TextRank to extract the keywords
 extracted_keywords = keywords.keywords(text, 
@@ -1110,10 +1110,10 @@ Where:
 ```python
 # Add a collection of documents (corpus)
 documents = [
-    matthew_pullen_content,
-    matt_newby_content,
-    camelia_smith_content,
-    megan_rourke_content
+    participant_1_content,
+    participant_2_content,
+    participant_3_content,
+    participant_4_content
 ]
 
 # Create a TF-IDF Vectorizer and use the custom stopwords list
@@ -1126,7 +1126,7 @@ tfidf_matrix = tfidf_vectorizer.fit_transform(documents)
 words = tfidf_vectorizer.get_feature_names_out()
 
 # Get the TF-IDF values for each word in the specific document (first document in the list)
-tfidf_scores = tfidf_matrix[0].toarray().flatten()  # This retrieves the TF-IDF values for matthew_pullen_content
+tfidf_scores = tfidf_matrix[0].toarray().flatten()  # This retrieves the TF-IDF values for participant_1_content
 
 # Combine the words with their corresponding TF-IDF scores
 word_scores = dict(zip(words, tfidf_scores))

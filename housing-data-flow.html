@@ -930,7 +930,7 @@ The two models differ in their advantages and principles. To determine which mod
     <span class="n">meeting_text</span> <span class="o">=</span> <span class="n">extract_text_from_docx</span><span class="p">(</span><span class="s1">&#39;Group_1.docx&#39;</span><span class="p">)</span>  <span class="c1"># Path to the file provided</span>
     
     <span class="c1"># Identify speakers who need attention</span>
-    <span class="n">target_speakers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Matthew Pullen&#39;</span><span class="p">,</span> <span class="s1">&#39;Matt Newby&#39;</span><span class="p">,</span> <span class="s1">&#39;Camelia Smith&#39;</span><span class="p">,</span> <span class="s1">&#39;Megan Rourke&#39;</span><span class="p">]</span>
+    <span class="n">target_speakers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Participant 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Participant 4&#39;</span><span class="p">]</span>
     
     <span class="c1"># Extract the speech content of each speaker and store it in a string field</span>
     <span class="n">speaker_contents</span> <span class="o">=</span> <span class="n">extract_speaker_content</span><span class="p">(</span><span class="n">meeting_text</span><span class="p">,</span> <span class="n">target_speakers</span><span class="p">)</span>
@@ -941,10 +941,10 @@ The two models differ in their advantages and principles. To determine which mod
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
     
     <span class="c1"># Store the speeches as strings</span>
-    <span class="n">matthew_pullen_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Matthew Pullen&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    <span class="n">matt_newby_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Matt Newby&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    <span class="n">camelia_smith_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Camelia Smith&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
-    <span class="n">megan_rourke_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Megan Rourke&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">participant_1_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Participant 1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">participant_2_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Participant 2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">participant_3_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Participant 3&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">participant_4_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Participant 4&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 </pre></div>
 </div>
 </details>
@@ -972,7 +972,7 @@ Hello. Yeah. So, we&#39;re coming from, I guess like a housing and regional clie
 <section id="bart">
 <h5>BART<a class="headerlink" href="#bart" title="Link to this heading">#</a></h5>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Summarizer</span><span class="p">()</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">matthew_pullen_content</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">num_sentences</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">participant_1_content</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">num_sentences</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">BART</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">BART</span><span class="p">)</span>
 </pre></div>
@@ -983,7 +983,7 @@ Hello. Yeah. So, we&#39;re coming from, I guess like a housing and regional clie
 <section id="t5">
 <h5>T5<a class="headerlink" href="#t5" title="Link to this heading">#</a></h5>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pipe</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span><span class="s1">&#39;summarization&#39;</span><span class="p">,</span> <span class="n">model</span> <span class="o">=</span> <span class="s1">&#39;t5-large&#39;</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">T5</span> <span class="o">=</span> <span class="n">pipe</span><span class="p">(</span><span class="n">matthew_pullen_content</span><span class="p">)</span>
+<span class="n">T5</span> <span class="o">=</span> <span class="n">pipe</span><span class="p">(</span><span class="n">participant_1_content</span><span class="p">)</span>
 <span class="n">t5</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">T5</span><span class="p">)</span>
 <span class="n">T5</span>
 </pre></div>
@@ -997,7 +997,7 @@ Hello. Yeah. So, we&#39;re coming from, I guess like a housing and regional clie
 <span class="n">model</span> <span class="o">=</span> <span class="n">PegasusForConditionalGeneration</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;google/pegasus-cnn_dailymail&quot;</span><span class="p">)</span>
 
 <span class="c1"># Tokenize the text</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">matthew_pullen_content</span><span class="p">,</span> <span class="n">truncation</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;longest&quot;</span><span class="p">,</span> <span class="n">return_tensors</span><span class="o">=</span><span class="s2">&quot;pt&quot;</span><span class="p">)</span>
+<span class="n">tokens</span> <span class="o">=</span> <span class="n">tokenizer</span><span class="p">(</span><span class="n">participant_1_content</span><span class="p">,</span> <span class="n">truncation</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">padding</span><span class="o">=</span><span class="s2">&quot;longest&quot;</span><span class="p">,</span> <span class="n">return_tensors</span><span class="o">=</span><span class="s2">&quot;pt&quot;</span><span class="p">)</span>
 
 <span class="c1"># Generate summary</span>
 <span class="n">summary_ids</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="n">tokens</span><span class="p">[</span><span class="s2">&quot;input_ids&quot;</span><span class="p">],</span> <span class="n">max_length</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">num_beams</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">early_stopping</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1530,7 +1530,7 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 <li><p><strong>Contextual Relationship</strong>: This can be measured by how close they appear to each other or how they influence one another in their surrounding context.</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># set the content for analysis</span>
-<span class="n">text</span> <span class="o">=</span> <span class="n">matthew_pullen_content</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">participant_1_content</span>
 
 <span class="n">kw_extractor</span> <span class="o">=</span> <span class="n">yake</span><span class="o">.</span><span class="n">KeywordExtractor</span><span class="p">(</span>
     <span class="c1">#language=english</span>
@@ -1588,7 +1588,7 @@ applications: 0.09507326540820295
 <li><p><strong>BERT Embeddings</strong>: KeyBERT compares these embeddings to rank candidate keywords. The embeddings are based on pre-trained knowledge from large corpora (e.g., Wikipedia), so they include a deep understanding of language structure and meaning.</p></li>
 <li><p><strong>No Dependence on Frequency</strong>: KeyBERT focuses solely on semantic relevance. Even if a word appears only a few times in the document, it can still be identified as a key concept if its meaning aligns closely with the document.</p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">doc</span> <span class="o">=</span> <span class="n">matthew_pullen_content</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">doc</span> <span class="o">=</span> <span class="n">participant_1_content</span>
 
 <span class="n">kw_model</span> <span class="o">=</span> <span class="n">KeyBERT</span><span class="p">()</span>
 <span class="n">keywords</span> <span class="o">=</span> <span class="n">kw_model</span><span class="o">.</span><span class="n">extract_keywords</span><span class="p">(</span>
@@ -1654,7 +1654,7 @@ development: 0.2906
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;about&#39;, &#39;actually&#39;, &#39;almost&#39;, &#39;also&#39;, &#39;although&#39;, &#39;always&#39;, &#39;am&#39;, &#39;an&#39;, &#39;and&#39;, &#39;any&#39;, &#39;are&#39;, &#39;as&#39;, &#39;at&#39;, &#39;be&#39;, &#39;became&#39;, &#39;become&#39;, &#39;but&#39;, &#39;by&#39;, &#39;can&#39;, &#39;could&#39;, &#39;did&#39;, &#39;do&#39;, &#39;does&#39;, &#39;each&#39;, &#39;either&#39;, &#39;else&#39;, &#39;for&#39;, &#39;from&#39;, &#39;had&#39;, &#39;has&#39;, &#39;have&#39;, &#39;hence&#39;, &#39;how&#39;, &#39;i&#39;, &#39;if&#39;, &#39;in&#39;, &#39;is&#39;, &#39;it&#39;, &#39;its&#39;, &#39;just&#39;, &#39;may&#39;, &#39;maybe&#39;, &#39;me&#39;, &#39;might&#39;, &#39;mine&#39;, &#39;must&#39;, &#39;my&#39;, &#39;neither&#39;, &#39;nor&#39;, &#39;not&#39;, &#39;of&#39;, &#39;oh&#39;, &#39;ok&#39;, &#39;on&#39;, &#39;once&#39;, &#39;one&#39;, &#39;only&#39;, &#39;or&#39;, &#39;other&#39;, &#39;our&#39;, &#39;ours&#39;, &#39;out&#39;, &#39;own&#39;, &#39;people&#39;, &#39;put&#39;, &#39;re&#39;, &#39;really&#39;, &#39;s&#39;, &#39;same&#39;, &#39;she&#39;, &#39;should&#39;, &#39;so&#39;, &#39;some&#39;, &#39;such&#39;, &#39;t&#39;, &#39;than&#39;, &#39;that&#39;, &#39;the&#39;, &#39;their&#39;, &#39;theirs&#39;, &#39;them&#39;, &#39;then&#39;, &#39;there&#39;, &#39;these&#39;, &#39;they&#39;, &#39;this&#39;, &#39;those&#39;, &#39;through&#39;, &#39;to&#39;, &#39;too&#39;, &#39;under&#39;, &#39;until&#39;, &#39;up&#39;, &#39;very&#39;, &#39;was&#39;, &#39;we&#39;, &#39;were&#39;, &#39;what&#39;, &#39;when&#39;]
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">matthew_pullen_content</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">participant_1_content</span>
 
 <span class="c1"># Use TextRank to extract the keywords</span>
 <span class="n">extracted_keywords</span> <span class="o">=</span> <span class="n">keywords</span><span class="o">.</span><span class="n">keywords</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> 
@@ -1724,10 +1724,10 @@ Inverse Document Frequency (IDF) is calculated as:</p></li>
 </ol>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add a collection of documents (corpus)</span>
 <span class="n">documents</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">matthew_pullen_content</span><span class="p">,</span>
-    <span class="n">matt_newby_content</span><span class="p">,</span>
-    <span class="n">camelia_smith_content</span><span class="p">,</span>
-    <span class="n">megan_rourke_content</span>
+    <span class="n">participant_1_content</span><span class="p">,</span>
+    <span class="n">participant_2_content</span><span class="p">,</span>
+    <span class="n">participant_3_content</span><span class="p">,</span>
+    <span class="n">participant_4_content</span>
 <span class="p">]</span>
 
 <span class="c1"># Create a TF-IDF Vectorizer and use the custom stopwords list</span>
@@ -1740,7 +1740,7 @@ Inverse Document Frequency (IDF) is calculated as:</p></li>
 <span class="n">words</span> <span class="o">=</span> <span class="n">tfidf_vectorizer</span><span class="o">.</span><span class="n">get_feature_names_out</span><span class="p">()</span>
 
 <span class="c1"># Get the TF-IDF values for each word in the specific document (first document in the list)</span>
-<span class="n">tfidf_scores</span> <span class="o">=</span> <span class="n">tfidf_matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>  <span class="c1"># This retrieves the TF-IDF values for matthew_pullen_content</span>
+<span class="n">tfidf_scores</span> <span class="o">=</span> <span class="n">tfidf_matrix</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>  <span class="c1"># This retrieves the TF-IDF values for participant_1_content</span>
 
 <span class="c1"># Combine the words with their corresponding TF-IDF scores</span>
 <span class="n">word_scores</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">tfidf_scores</span><span class="p">))</span>
