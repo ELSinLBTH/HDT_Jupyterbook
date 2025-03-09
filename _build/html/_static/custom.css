@@ -3,7 +3,12 @@ div.bd-sidebar a {
     color: black !important;
 }
 
-/* Ensure table of contents links (main content area) are blue */
+/* Ensure the right-side Table of Contents (ToC) links are black */
+div.bd-toc a {
+    color: black !important;
+}
+
+/* Ensure table of contents links in the main content area stay blue */
 div.bd-content a {
     color: #0000FF !important; /* Blue for unvisited links */
 }
@@ -12,7 +17,7 @@ div.bd-content a:visited {
     color: #0000FF !important; /* Force blue for visited links */
 }
 
-/* Optional: Keep hover state consistent */
+/* Optional: Keep hover state consistent for content area links */
 div.bd-content a:hover {
     color: #0000FF !important; /* Blue on hover */
 }

@@ -5,17 +5,31 @@ format: jb-book
 root: index
 chapters:
 - file: introduction
+  title: Introduction
 - file: background
+  title: Background
 - file: product-overview
+  title: Prodjct Overview
 - file: project-aims
+  title: Project Aims
 - file: scope
+  title: Scope
 - file: metrics-of-success
+  title: Metrics of Success
 - file: funding-bid
+  title: Funding Bid
 - file: project-timeline
+  title: Project Timeline
 - file: housing-data-flow
+  title: Housing Data Flow
 - file: lbth-hdt-mvp
+  title: LBTH HDT MVP
 - file: user-testing
+  title: User Testing
 - file: forecasting
+  title: Forecasting
 - file: future-scope
+  title: Future Scope
 - file: prop-tech-r4-final
+  title: Prop Tect R4 Final
 
