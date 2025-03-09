@@ -10,11 +10,11 @@ It does not go in-depth into any particular topic - check out [the Jupyter Book 
     
 Check out the content pages bundled with this sample book to see more.
 
-## Table of Content
+## Table of Contents
 
 - [Introduction](introduction.md)
 - [Background](background.md)
-- [Product overview](product-overview.md)
+- [Product overview](product-overview.md)   
 - [Project aims](project-aims.md)
 - [Scope](scope.md)
 - [Metrics of Success](metrics-of-success.md)
