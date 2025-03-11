@@ -370,317 +370,772 @@
 <h2>Preparation<a class="headerlink" href="#preparation" title="Link to this heading">#</a></h2>
 <section id="download-libraries">
 <h3>Download Libraries<a class="headerlink" href="#download-libraries" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">bert</span><span class="o">-</span><span class="n">extractive</span><span class="o">-</span><span class="n">summarizer</span>
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">python</span><span class="o">-</span><span class="n">docx</span>
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">datasets</span>
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">sentencepiece</span>
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">Rouge</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>bert-extractive-summarizer
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>python-docx
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>datasets
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>sentencepiece
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>Rouge
 
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">sentence</span><span class="o">-</span><span class="n">transformers</span>
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">typing</span><span class="o">-</span><span class="n">extensions</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>sentence-transformers
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>typing-extensions
 
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">yake</span>
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">rake</span><span class="o">-</span><span class="n">nltk</span>
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">keybert</span>
-<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">summa</span>
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>yake
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>rake-nltk
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>keybert
+<span class="o">!</span>pip<span class="w"> </span>install<span class="w"> </span>summa
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Collecting bert-extractive-summarizer
-  Downloading bert_extractive_summarizer-0.10.1-py3-none-any.whl (25 kB)
-Collecting transformers
-  Downloading transformers-4.46.3-py3-none-any.whl (10.0 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m10.0/10.0 MB[0m [31m2.1 MB/s[0m eta [36m0:00:00[0m00:01[0m0:01[0m0m
-[?25hRequirement already satisfied: scikit-learn in /opt/conda/lib/python3.10/site-packages (from bert-extractive-summarizer) (1.1.1)
-Requirement already satisfied: spacy in /opt/conda/lib/python3.10/site-packages (from bert-extractive-summarizer) (3.4.1)
-Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.1.0)
-Requirement already satisfied: numpy&gt;=1.17.3 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.23.3)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (3.1.0)
-Requirement already satisfied: scipy&gt;=1.3.2 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;bert-extractive-summarizer) (1.9.1)
-Requirement already satisfied: pydantic!=1.8,!=1.8.1,&lt;1.10.0,&gt;=1.7.4 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.9.2)
-Requirement already satisfied: preshed&lt;3.1.0,&gt;=3.0.2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.0.8)
-Requirement already satisfied: requests&lt;3.0.0,&gt;=2.13.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.28.1)
-Requirement already satisfied: srsly&lt;3.0.0,&gt;=2.4.3 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.4.4)
-Requirement already satisfied: langcodes&lt;4.0.0,&gt;=3.2.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.3.0)
-Requirement already satisfied: setuptools in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (63.2.0)
-Requirement already satisfied: packaging&gt;=20.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (21.3)
-Requirement already satisfied: cymem&lt;2.1.0,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.0.7)
-Requirement already satisfied: pathy&gt;=0.3.5 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.6.2)
-Requirement already satisfied: spacy-legacy&lt;3.1.0,&gt;=3.0.9 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.0.10)
-Requirement already satisfied: jinja2 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (3.1.2)
-Requirement already satisfied: typer&lt;0.5.0,&gt;=0.3.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.4.2)
-Requirement already satisfied: wasabi&lt;1.1.0,&gt;=0.9.1 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (0.10.0)
-Requirement already satisfied: tqdm&lt;5.0.0,&gt;=4.38.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (4.64.0)
-Requirement already satisfied: spacy-loggers&lt;2.0.0,&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.0.3)
-Requirement already satisfied: murmurhash&lt;1.1.0,&gt;=0.28.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (1.0.9)
-Requirement already satisfied: thinc&lt;8.2.0,&gt;=8.1.0 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (8.1.3)
-Requirement already satisfied: catalogue&lt;2.1.0,&gt;=2.0.6 in /opt/conda/lib/python3.10/site-packages (from spacy-&gt;bert-extractive-summarizer) (2.0.8)
-Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers-&gt;bert-extractive-summarizer) (2022.9.13)
-Collecting tokenizers&lt;0.21,&gt;=0.20
-  Downloading tokenizers-0.20.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.0/3.0 MB[0m [31m5.8 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from transformers-&gt;bert-extractive-summarizer) (6.0)
-Collecting safetensors&gt;=0.4.1
-  Downloading safetensors-0.4.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (435 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m435.0/435.0 kB[0m [31m7.1 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hCollecting filelock
-  Downloading filelock-3.16.1-py3-none-any.whl (16 kB)
-Collecting huggingface-hub&lt;1.0,&gt;=0.23.2
-  Downloading huggingface_hub-0.26.2-py3-none-any.whl (447 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m447.5/447.5 kB[0m [31m6.5 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&lt;1.0,&gt;=0.23.2-&gt;transformers-&gt;bert-extractive-summarizer) (3.10.0.2)
-Collecting fsspec&gt;=2023.5.0
-  Downloading fsspec-2024.10.0-py3-none-any.whl (179 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m179.6/179.6 kB[0m [31m10.4 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.0-&gt;spacy-&gt;bert-extractive-summarizer) (3.0.9)
-Requirement already satisfied: smart-open&lt;6.0.0,&gt;=5.2.1 in /opt/conda/lib/python3.10/site-packages (from pathy&gt;=0.3.5-&gt;spacy-&gt;bert-extractive-summarizer) (5.2.1)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (3.3)
-Requirement already satisfied: charset-normalizer&lt;3,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (2.1.0)
-Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (1.26.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer) (2022.6.15)
-Requirement already satisfied: blis&lt;0.8.0,&gt;=0.7.8 in /opt/conda/lib/python3.10/site-packages (from thinc&lt;8.2.0,&gt;=8.1.0-&gt;spacy-&gt;bert-extractive-summarizer) (0.7.8)
-Requirement already satisfied: confection&lt;1.0.0,&gt;=0.0.1 in /opt/conda/lib/python3.10/site-packages (from thinc&lt;8.2.0,&gt;=8.1.0-&gt;spacy-&gt;bert-extractive-summarizer) (0.0.3)
-Requirement already satisfied: click&lt;9.0.0,&gt;=7.1.1 in /opt/conda/lib/python3.10/site-packages (from typer&lt;0.5.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer) (8.1.3)
-Requirement already satisfied: MarkupSafe&gt;=2.0 in /opt/conda/lib/python3.10/site-packages (from jinja2-&gt;spacy-&gt;bert-extractive-summarizer) (2.1.1)
-Installing collected packages: safetensors, fsspec, filelock, huggingface-hub, tokenizers, transformers, bert-extractive-summarizer
-  Attempting uninstall: fsspec
-    Found existing installation: fsspec 2022.5.0
-    Uninstalling fsspec-2022.5.0:
-      Successfully uninstalled fsspec-2022.5.0
-Successfully installed bert-extractive-summarizer-0.10.1 filelock-3.16.1 fsspec-2024.10.0 huggingface-hub-0.26.2 safetensors-0.4.5 tokenizers-0.20.3 transformers-4.46.3
-Collecting python-docx
-  Downloading python_docx-1.1.2-py3-none-any.whl (244 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m244.3/244.3 kB[0m [31m8.2 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting typing-extensions&gt;=4.9.0
-  Downloading typing_extensions-4.12.2-py3-none-any.whl (37 kB)
-Requirement already satisfied: lxml&gt;=3.1.0 in /opt/conda/lib/python3.10/site-packages (from python-docx) (4.9.1)
-Installing collected packages: typing-extensions, python-docx
-  Attempting uninstall: typing-extensions
-    Found existing installation: typing-extensions 3.10.0.2
-    Uninstalling typing-extensions-3.10.0.2:
-      Successfully uninstalled typing-extensions-3.10.0.2
-[31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-arviz 0.11.1 requires typing-extensions&lt;4,&gt;=3.7.4.3, but you have typing-extensions 4.12.2 which is incompatible.[0m[31m
-[0mSuccessfully installed python-docx-1.1.2 typing-extensions-4.12.2
-Collecting datasets
-  Downloading datasets-3.1.0-py3-none-any.whl (480 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m480.6/480.6 kB[0m [31m7.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: dill&lt;0.3.9,&gt;=0.3.0 in /opt/conda/lib/python3.10/site-packages (from datasets) (0.3.5.1)
-Collecting multiprocess&lt;0.70.17
-  Downloading multiprocess-0.70.16-py310-none-any.whl (134 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m134.8/134.8 kB[0m [31m9.7 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: pandas in /opt/conda/lib/python3.10/site-packages (from datasets) (1.4.3)
-Collecting tqdm&gt;=4.66.3
-  Downloading tqdm-4.67.0-py3-none-any.whl (78 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m78.6/78.6 kB[0m [31m11.4 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from datasets) (6.0)
-Collecting aiohttp
-  Downloading aiohttp-3.11.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.6/1.6 MB[0m [31m6.0 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: packaging in /opt/conda/lib/python3.10/site-packages (from datasets) (21.3)
-Collecting xxhash
-  Downloading xxhash-3.5.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (194 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m194.1/194.1 kB[0m [31m4.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hCollecting fsspec[http]&lt;=2024.9.0,&gt;=2023.1.0
-  Downloading fsspec-2024.9.0-py3-none-any.whl (179 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m179.3/179.3 kB[0m [31m5.7 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from datasets) (3.16.1)
-Requirement already satisfied: numpy&gt;=1.17 in /opt/conda/lib/python3.10/site-packages (from datasets) (1.23.3)
-Collecting requests&gt;=2.32.2
-  Downloading requests-2.32.3-py3-none-any.whl (64 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m64.9/64.9 kB[0m [31m9.8 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: huggingface-hub&gt;=0.23.0 in /opt/conda/lib/python3.10/site-packages (from datasets) (0.26.2)
-Collecting pyarrow&gt;=15.0.0
-  Downloading pyarrow-18.0.0-cp310-cp310-manylinux_2_28_x86_64.whl (40.0 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m40.0/40.0 MB[0m [31m6.8 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
-[?25hRequirement already satisfied: attrs&gt;=17.3.0 in /opt/conda/lib/python3.10/site-packages (from aiohttp-&gt;datasets) (21.4.0)
-Collecting frozenlist&gt;=1.1.1
-  Downloading frozenlist-1.5.0-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (241 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m241.9/241.9 kB[0m [31m8.6 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting async-timeout&lt;6.0,&gt;=4.0
-  Downloading async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
-Collecting aiosignal&gt;=1.1.2
-  Downloading aiosignal-1.3.1-py3-none-any.whl (7.6 kB)
-Collecting aiohappyeyeballs&gt;=2.3.0
-  Downloading aiohappyeyeballs-2.4.3-py3-none-any.whl (14 kB)
-Collecting multidict&lt;7.0,&gt;=4.5
-  Downloading multidict-6.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (124 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m124.6/124.6 kB[0m [31m12.4 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting propcache&gt;=0.2.0
-  Downloading propcache-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (208 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m208.9/208.9 kB[0m [31m8.7 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting yarl&lt;2.0,&gt;=1.17.0
-  Downloading yarl-1.17.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (319 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m319.2/319.2 kB[0m [31m6.4 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.23.0-&gt;datasets) (4.12.2)
-Collecting dill&lt;0.3.9,&gt;=0.3.0
-  Downloading dill-0.3.8-py3-none-any.whl (116 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m116.3/116.3 kB[0m [31m9.2 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging-&gt;datasets) (3.0.9)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (3.3)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (2022.6.15)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (2.1.0)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests&gt;=2.32.2-&gt;datasets) (1.26.10)
-Requirement already satisfied: python-dateutil&gt;=2.8.1 in /opt/conda/lib/python3.10/site-packages (from pandas-&gt;datasets) (2.8.2)
-Requirement already satisfied: pytz&gt;=2020.1 in /opt/conda/lib/python3.10/site-packages (from pandas-&gt;datasets) (2022.1)
-Requirement already satisfied: six&gt;=1.5 in /opt/conda/lib/python3.10/site-packages (from python-dateutil&gt;=2.8.1-&gt;pandas-&gt;datasets) (1.16.0)
-Installing collected packages: xxhash, tqdm, requests, pyarrow, propcache, multidict, fsspec, frozenlist, dill, async-timeout, aiohappyeyeballs, yarl, multiprocess, aiosignal, aiohttp, datasets
-  Attempting uninstall: tqdm
-    Found existing installation: tqdm 4.64.0
-    Uninstalling tqdm-4.64.0:
-      Successfully uninstalled tqdm-4.64.0
-  Attempting uninstall: requests
-    Found existing installation: requests 2.28.1
-    Uninstalling requests-2.28.1:
-      Successfully uninstalled requests-2.28.1
-  Attempting uninstall: pyarrow
-    Found existing installation: pyarrow 9.0.0
-    Uninstalling pyarrow-9.0.0:
-      Successfully uninstalled pyarrow-9.0.0
-  Attempting uninstall: fsspec
-    Found existing installation: fsspec 2024.10.0
-    Uninstalling fsspec-2024.10.0:
-      Successfully uninstalled fsspec-2024.10.0
-  Attempting uninstall: dill
-    Found existing installation: dill 0.3.5.1
-    Uninstalling dill-0.3.5.1:
-      Successfully uninstalled dill-0.3.5.1
-[31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-pandas-profiling 3.3.0 requires requests&lt;2.29,&gt;=2.24.0, but you have requests 2.32.3 which is incompatible.
-pandas-profiling 3.3.0 requires tqdm&lt;4.65,&gt;=4.48.2, but you have tqdm 4.67.0 which is incompatible.[0m[31m
-[0mSuccessfully installed aiohappyeyeballs-2.4.3 aiohttp-3.11.4 aiosignal-1.3.1 async-timeout-5.0.1 datasets-3.1.0 dill-0.3.8 frozenlist-1.5.0 fsspec-2024.9.0 multidict-6.1.0 multiprocess-0.70.16 propcache-0.2.0 pyarrow-18.0.0 requests-2.32.3 tqdm-4.67.0 xxhash-3.5.0 yarl-1.17.2
-Collecting sentencepiece
-  Downloading sentencepiece-0.2.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.3 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.3/1.3 MB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
-[?25hInstalling collected packages: sentencepiece
-Successfully installed sentencepiece-0.2.0
-Collecting Rouge
-  Downloading rouge-1.0.1-py3-none-any.whl (13 kB)
-Requirement already satisfied: six in /opt/conda/lib/python3.10/site-packages (from Rouge) (1.16.0)
-Installing collected packages: Rouge
-Successfully installed Rouge-1.0.1
-Collecting sentence-transformers
-  Downloading sentence_transformers-3.3.1-py3-none-any.whl (268 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m268.8/268.8 kB[0m [31m6.6 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: huggingface-hub&gt;=0.20.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (0.26.2)
-Requirement already satisfied: torch&gt;=1.11.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.12.1)
-Requirement already satisfied: scipy in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.9.1)
-Requirement already satisfied: Pillow in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (9.2.0)
-Requirement already satisfied: scikit-learn in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (1.1.1)
-Requirement already satisfied: transformers&lt;5.0.0,&gt;=4.41.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (4.46.3)
-Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from sentence-transformers) (4.67.0)
-Requirement already satisfied: requests in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2.32.3)
-Requirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (6.0)
-Requirement already satisfied: packaging&gt;=20.9 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (21.3)
-Requirement already satisfied: typing-extensions&gt;=3.7.4.3 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (4.12.2)
-Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.16.1)
-Requirement already satisfied: fsspec&gt;=2023.5.0 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2024.9.0)
-Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (2022.9.13)
-Requirement already satisfied: numpy&gt;=1.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (1.23.3)
-Requirement already satisfied: tokenizers&lt;0.21,&gt;=0.20 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (0.20.3)
-Requirement already satisfied: safetensors&gt;=0.4.1 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers) (0.4.5)
-Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;sentence-transformers) (1.1.0)
-Requirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn-&gt;sentence-transformers) (3.1.0)
-Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.9-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.0.9)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (1.26.10)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2022.6.15)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (2.1.0)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers) (3.3)
-Installing collected packages: sentence-transformers
-Successfully installed sentence-transformers-3.3.1
-Requirement already satisfied: typing-extensions in /opt/conda/lib/python3.10/site-packages (4.12.2)
-Collecting yake
-  Downloading yake-0.4.8-py2.py3-none-any.whl (60 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m60.2/60.2 kB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0m
-[?25hRequirement already satisfied: networkx in /opt/conda/lib/python3.10/site-packages (from yake) (2.8.7)
-Requirement already satisfied: numpy in /opt/conda/lib/python3.10/site-packages (from yake) (1.23.3)
-Requirement already satisfied: click&gt;=6.0 in /opt/conda/lib/python3.10/site-packages (from yake) (8.1.3)
-Requirement already satisfied: tabulate in /opt/conda/lib/python3.10/site-packages (from yake) (0.9.0)
-Collecting jellyfish
-  Downloading jellyfish-1.1.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (335 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m336.0/336.0 kB[0m [31m6.7 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hCollecting segtok
-  Downloading segtok-1.5.11-py3-none-any.whl (24 kB)
-Requirement already satisfied: regex in /opt/conda/lib/python3.10/site-packages (from segtok-&gt;yake) (2022.9.13)
-Installing collected packages: segtok, jellyfish, yake
-Successfully installed jellyfish-1.1.0 segtok-1.5.11 yake-0.4.8
-Collecting rake-nltk
-  Downloading rake_nltk-1.0.6-py3-none-any.whl (9.1 kB)
-Requirement already satisfied: nltk&lt;4.0.0,&gt;=3.6.2 in /opt/conda/lib/python3.10/site-packages (from rake-nltk) (3.6.7)
-Requirement already satisfied: click in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (8.1.3)
-Requirement already satisfied: regex&gt;=2021.8.3 in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (2022.9.13)
-Requirement already satisfied: joblib in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (1.1.0)
-Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from nltk&lt;4.0.0,&gt;=3.6.2-&gt;rake-nltk) (4.67.0)
-Installing collected packages: rake-nltk
-Successfully installed rake-nltk-1.0.6
-Collecting keybert
-  Downloading keybert-0.8.5-py3-none-any.whl (37 kB)
-Collecting rich&gt;=10.4.0
-  Downloading rich-13.9.4-py3-none-any.whl (242 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m242.4/242.4 kB[0m [31m3.2 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: numpy&gt;=1.18.5 in /opt/conda/lib/python3.10/site-packages (from keybert) (1.23.3)
-Requirement already satisfied: scikit-learn&gt;=0.22.2 in /opt/conda/lib/python3.10/site-packages (from keybert) (1.1.1)
-Requirement already satisfied: sentence-transformers&gt;=0.3.8 in /opt/conda/lib/python3.10/site-packages (from keybert) (3.3.1)
-Requirement already satisfied: typing-extensions&lt;5.0,&gt;=4.0.0 in /opt/conda/lib/python3.10/site-packages (from rich&gt;=10.4.0-&gt;keybert) (4.12.2)
-Collecting markdown-it-py&gt;=2.2.0
-  Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m87.5/87.5 kB[0m [31m16.9 MB/s[0m eta [36m0:00:00[0m
-[?25hCollecting pygments&lt;3.0.0,&gt;=2.13.0
-  Downloading pygments-2.18.0-py3-none-any.whl (1.2 MB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.2/1.2 MB[0m [31m5.3 MB/s[0m eta [36m0:00:00[0ma [36m0:00:01[0m
-[?25hRequirement already satisfied: threadpoolctl&gt;=2.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (3.1.0)
-Requirement already satisfied: joblib&gt;=1.0.0 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (1.1.0)
-Requirement already satisfied: scipy&gt;=1.3.2 in /opt/conda/lib/python3.10/site-packages (from scikit-learn&gt;=0.22.2-&gt;keybert) (1.9.1)
-Requirement already satisfied: transformers&lt;5.0.0,&gt;=4.41.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (4.46.3)
-Requirement already satisfied: tqdm in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (4.67.0)
-Requirement already satisfied: Pillow in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (9.2.0)
-Requirement already satisfied: torch&gt;=1.11.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (1.12.1)
-Requirement already satisfied: huggingface-hub&gt;=0.20.0 in /opt/conda/lib/python3.10/site-packages (from sentence-transformers&gt;=0.3.8-&gt;keybert) (0.26.2)
-Requirement already satisfied: pyyaml&gt;=5.1 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (6.0)
-Requirement already satisfied: filelock in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.16.1)
-Requirement already satisfied: packaging&gt;=20.9 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (21.3)
-Requirement already satisfied: fsspec&gt;=2023.5.0 in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2024.9.0)
-Requirement already satisfied: requests in /opt/conda/lib/python3.10/site-packages (from huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2.32.3)
-Requirement already satisfied: mdurl~=0.1 in /opt/conda/lib/python3.10/site-packages (from markdown-it-py&gt;=2.2.0-&gt;rich&gt;=10.4.0-&gt;keybert) (0.1.2)
-Requirement already satisfied: tokenizers&lt;0.21,&gt;=0.20 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (0.20.3)
-Requirement already satisfied: safetensors&gt;=0.4.1 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (0.4.5)
-Requirement already satisfied: regex!=2019.12.17 in /opt/conda/lib/python3.10/site-packages (from transformers&lt;5.0.0,&gt;=4.41.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2022.9.13)
-Requirement already satisfied: pyparsing!=3.0.5,&gt;=2.0.2 in /opt/conda/lib/python3.10/site-packages (from packaging&gt;=20.9-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.0.9)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (1.26.10)
-Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (3.3)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2022.6.15)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/conda/lib/python3.10/site-packages (from requests-&gt;huggingface-hub&gt;=0.20.0-&gt;sentence-transformers&gt;=0.3.8-&gt;keybert) (2.1.0)
-Installing collected packages: pygments, markdown-it-py, rich, keybert
-  Attempting uninstall: pygments
-    Found existing installation: Pygments 2.12.0
-    Uninstalling Pygments-2.12.0:
-      Successfully uninstalled Pygments-2.12.0
-  Attempting uninstall: markdown-it-py
-    Found existing installation: markdown-it-py 2.1.0
-    Uninstalling markdown-it-py-2.1.0:
-      Successfully uninstalled markdown-it-py-2.1.0
-[31mERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-mdit-py-plugins 0.3.1 requires markdown-it-py&lt;3.0.0,&gt;=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.
-jupytext 1.14.1 requires markdown-it-py&lt;3.0.0,&gt;=1.0.0, but you have markdown-it-py 3.0.0 which is incompatible.[0m[31m
-[0mSuccessfully installed keybert-0.8.5 markdown-it-py-3.0.0 pygments-2.18.0 rich-13.9.4
-Collecting summa
-  Downloading summa-1.2.0.tar.gz (54 kB)
-[2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m54.9/54.9 kB[0m [31m9.2 MB/s[0m eta [36m0:00:00[0m
-[?25h  Preparing metadata (setup.py) ... [?25ldone
-[?25hRequirement already satisfied: scipy&gt;=0.19 in /opt/conda/lib/python3.10/site-packages (from summa) (1.9.1)
-Requirement already satisfied: numpy&lt;1.25.0,&gt;=1.18.5 in /opt/conda/lib/python3.10/site-packages (from scipy&gt;=0.19-&gt;summa) (1.23.3)
-Building wheels for collected packages: summa
-  Building wheel for summa (setup.py) ... [?25ldone
-[?25h  Created wheel for summa: filename=summa-1.2.0-py3-none-any.whl size=54390 sha256=fbcd1f4b1f9449389b57337c40923340aadd4171993a0ec3468d31b5e2eb11df
-  Stored in directory: /home/jovyan/.cache/pip/wheels/98/76/c7/9bba0baff81fee6694bf15e71d0323d37231c9cf811cd1ade7
-Successfully built summa
-Installing collected packages: summa
-Successfully installed summa-1.2.0
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting bert-extractive-summarizer
 </pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading bert_extractive_summarizer-0.10.1-py3-none-any.whl.metadata (15 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting transformers (from bert-extractive-summarizer)
+  Downloading transformers-4.49.0-py3-none-any.whl.metadata (44 kB)
+?25l
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/44.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+     <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">44.0/44.0 kB</span> <span class=" -Color -Color-Red">1.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting scikit-learn (from bert-extractive-summarizer)
+  Downloading scikit_learn-1.6.1-cp311-cp311-macosx_12_0_arm64.whl.metadata (31 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting spacy (from bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading spacy-3.8.4-cp311-cp311-macosx_11_0_arm64.whl.metadata (27 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting numpy&gt;=1.19.5 (from scikit-learn-&gt;bert-extractive-summarizer)
+  Downloading numpy-2.2.3-cp311-cp311-macosx_14_0_arm64.whl.metadata (62 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25l     <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/62.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+     <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">62.0/62.0 kB</span> <span class=" -Color -Color-Red">3.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting scipy&gt;=1.6.0 (from scikit-learn-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading scipy-1.15.2-cp311-cp311-macosx_14_0_arm64.whl.metadata (61 kB)
+?25l     <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/62.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">62.0/62.0 kB</span> <span class=" -Color -Color-Red">5.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting joblib&gt;=1.2.0 (from scikit-learn-&gt;bert-extractive-summarizer)
+  Using cached joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting threadpoolctl&gt;=3.1.0 (from scikit-learn-&gt;bert-extractive-summarizer)
+  Using cached threadpoolctl-3.5.0-py3-none-any.whl.metadata (13 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting spacy-legacy&lt;3.1.0,&gt;=3.0.11 (from spacy-&gt;bert-extractive-summarizer)
+  Downloading spacy_legacy-3.0.12-py2.py3-none-any.whl.metadata (2.8 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting spacy-loggers&lt;2.0.0,&gt;=1.0.0 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading spacy_loggers-1.0.5-py3-none-any.whl.metadata (23 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting murmurhash&lt;1.1.0,&gt;=0.28.0 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading murmurhash-1.0.12-cp311-cp311-macosx_11_0_arm64.whl.metadata (2.1 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting cymem&lt;2.1.0,&gt;=2.0.2 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading cymem-2.0.11-cp311-cp311-macosx_11_0_arm64.whl.metadata (8.5 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting preshed&lt;3.1.0,&gt;=3.0.2 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading preshed-3.0.9-cp311-cp311-macosx_11_0_arm64.whl.metadata (2.2 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting thinc&lt;8.4.0,&gt;=8.3.4 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading thinc-8.3.4-cp311-cp311-macosx_11_0_arm64.whl.metadata (15 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting wasabi&lt;1.2.0,&gt;=0.9.1 (from spacy-&gt;bert-extractive-summarizer)
+  Downloading wasabi-1.1.3-py3-none-any.whl.metadata (28 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting srsly&lt;3.0.0,&gt;=2.4.3 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading srsly-2.5.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (19 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting catalogue&lt;2.1.0,&gt;=2.0.6 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading catalogue-2.0.10-py3-none-any.whl.metadata (14 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting weasel&lt;0.5.0,&gt;=0.1.0 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading weasel-0.4.1-py3-none-any.whl.metadata (4.6 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting typer&lt;1.0.0,&gt;=0.3.0 (from spacy-&gt;bert-extractive-summarizer)
+  Downloading typer-0.15.2-py3-none-any.whl.metadata (15 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting tqdm&lt;5.0.0,&gt;=4.38.0 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+?25l     <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/57.7 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+     <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">57.7/57.7 kB</span> <span class=" -Color -Color-Red">4.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting requests&lt;3.0.0,&gt;=2.13.0 (from spacy-&gt;bert-extractive-summarizer)
+  Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pydantic!=1.8,!=1.8.1,&lt;3.0.0,&gt;=1.7.4 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading pydantic-2.10.6-py3-none-any.whl.metadata (30 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting jinja2 (from spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Requirement already satisfied: setuptools in /Users/areumhan/.pyenv/versions/3.11.8/lib/python3.11/site-packages (from spacy-&gt;bert-extractive-summarizer) (65.5.0)
+Requirement already satisfied: packaging&gt;=20.0 in /Users/areumhan/.pyenv/versions/3.11.8/lib/python3.11/site-packages (from spacy-&gt;bert-extractive-summarizer) (24.2)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting langcodes&lt;4.0.0,&gt;=3.2.0 (from spacy-&gt;bert-extractive-summarizer)
+  Downloading langcodes-3.5.0-py3-none-any.whl.metadata (29 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting filelock (from transformers-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading filelock-3.17.0-py3-none-any.whl.metadata (2.9 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting huggingface-hub&lt;1.0,&gt;=0.26.0 (from transformers-&gt;bert-extractive-summarizer)
+  Downloading huggingface_hub-0.29.3-py3-none-any.whl.metadata (13 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pyyaml&gt;=5.1 (from transformers-&gt;bert-extractive-summarizer)
+  Downloading PyYAML-6.0.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (2.1 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting regex!=2019.12.17 (from transformers-&gt;bert-extractive-summarizer)
+  Downloading regex-2024.11.6-cp311-cp311-macosx_11_0_arm64.whl.metadata (40 kB)
+?25l     <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/40.5 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>     <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">40.5/40.5 kB</span> <span class=" -Color -Color-Red">3.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting tokenizers&lt;0.22,&gt;=0.21 (from transformers-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading tokenizers-0.21.0-cp39-abi3-macosx_11_0_arm64.whl.metadata (6.7 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting safetensors&gt;=0.4.1 (from transformers-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading safetensors-0.5.3-cp38-abi3-macosx_11_0_arm64.whl.metadata (3.8 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting fsspec&gt;=2023.5.0 (from huggingface-hub&lt;1.0,&gt;=0.26.0-&gt;transformers-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading fsspec-2025.3.0-py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: typing-extensions&gt;=3.7.4.3 in /Users/areumhan/.pyenv/versions/3.11.8/lib/python3.11/site-packages (from huggingface-hub&lt;1.0,&gt;=0.26.0-&gt;transformers-&gt;bert-extractive-summarizer) (4.12.2)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting language-data&gt;=1.2 (from langcodes&lt;4.0.0,&gt;=3.2.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Downloading language_data-1.3.0-py3-none-any.whl.metadata (4.3 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting annotated-types&gt;=0.6.0 (from pydantic!=1.8,!=1.8.1,&lt;3.0.0,&gt;=1.7.4-&gt;spacy-&gt;bert-extractive-summarizer)
+  Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pydantic-core==2.27.2 (from pydantic!=1.8,!=1.8.1,&lt;3.0.0,&gt;=1.7.4-&gt;spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading pydantic_core-2.27.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.6 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting charset-normalizer&lt;4,&gt;=2 (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading charset_normalizer-3.4.1-cp311-cp311-macosx_10_9_universal2.whl.metadata (35 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting idna&lt;4,&gt;=2.5 (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting urllib3&lt;3,&gt;=1.21.1 (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Downloading urllib3-2.3.0-py3-none-any.whl.metadata (6.5 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting certifi&gt;=2017.4.17 (from requests&lt;3.0.0,&gt;=2.13.0-&gt;spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading certifi-2025.1.31-py3-none-any.whl.metadata (2.5 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting blis&lt;1.3.0,&gt;=1.2.0 (from thinc&lt;8.4.0,&gt;=8.3.4-&gt;spacy-&gt;bert-extractive-summarizer)
+  Downloading blis-1.2.0-cp311-cp311-macosx_11_0_arm64.whl.metadata (7.7 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting confection&lt;1.0.0,&gt;=0.0.1 (from thinc&lt;8.4.0,&gt;=8.3.4-&gt;spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading confection-0.1.5-py3-none-any.whl.metadata (19 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting click&gt;=8.0.0 (from typer&lt;1.0.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting shellingham&gt;=1.3.0 (from typer&lt;1.0.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting rich&gt;=10.11.0 (from typer&lt;1.0.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading rich-13.9.4-py3-none-any.whl.metadata (18 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting cloudpathlib&lt;1.0.0,&gt;=0.7.0 (from weasel&lt;0.5.0,&gt;=0.1.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Downloading cloudpathlib-0.21.0-py3-none-any.whl.metadata (14 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting smart-open&lt;8.0.0,&gt;=5.2.1 (from weasel&lt;0.5.0,&gt;=0.1.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Downloading smart_open-7.1.0-py3-none-any.whl.metadata (24 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting MarkupSafe&gt;=2.0 (from jinja2-&gt;spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading MarkupSafe-3.0.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (4.0 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting marisa-trie&gt;=1.1.0 (from language-data&gt;=1.2-&gt;langcodes&lt;4.0.0,&gt;=3.2.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Downloading marisa_trie-1.2.1-cp311-cp311-macosx_11_0_arm64.whl.metadata (9.0 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting markdown-it-py&gt;=2.2.0 (from rich&gt;=10.11.0-&gt;typer&lt;1.0.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: pygments&lt;3.0.0,&gt;=2.13.0 in /Users/areumhan/.pyenv/versions/3.11.8/lib/python3.11/site-packages (from rich&gt;=10.11.0-&gt;typer&lt;1.0.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer) (2.18.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting wrapt (from smart-open&lt;8.0.0,&gt;=5.2.1-&gt;weasel&lt;0.5.0,&gt;=0.1.0-&gt;spacy-&gt;bert-extractive-summarizer)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading wrapt-1.17.2-cp311-cp311-macosx_11_0_arm64.whl.metadata (6.4 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting mdurl~=0.1 (from markdown-it-py&gt;=2.2.0-&gt;rich&gt;=10.11.0-&gt;typer&lt;1.0.0,&gt;=0.3.0-&gt;spacy-&gt;bert-extractive-summarizer)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading bert_extractive_summarizer-0.10.1-py3-none-any.whl (25 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading scikit_learn-1.6.1-cp311-cp311-macosx_12_0_arm64.whl (11.1 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/11.1 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   ╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.2/11.1 MB</span> <span class=" -Color -Color-Red">4.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:03</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.4/11.1 MB</span> <span class=" -Color -Color-Red">5.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.0/11.1 MB</span> <span class=" -Color -Color-Red">8.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:02</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.6/11.1 MB</span> <span class=" -Color -Color-Red">10.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">2.4/11.1 MB</span> <span class=" -Color -Color-Red">12.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.1/11.1 MB</span> <span class=" -Color -Color-Red">13.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">4.0/11.1 MB</span> <span class=" -Color -Color-Red">14.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">4.6/11.1 MB</span> <span class=" -Color -Color-Red">14.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">5.4/11.1 MB</span> <span class=" -Color -Color-Red">15.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">6.2/11.1 MB</span> <span class=" -Color -Color-Red">16.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">7.1/11.1 MB</span> <span class=" -Color -Color-Red">16.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━</span> <span class=" -Color -Color-Green">8.0/11.1 MB</span> <span class=" -Color -Color-Red">16.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━</span> <span class=" -Color -Color-Green">8.7/11.1 MB</span> <span class=" -Color -Color-Red">17.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━</span> <span class=" -Color -Color-Green">9.9/11.1 MB</span> <span class=" -Color -Color-Red">17.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━</span> <span class=" -Color -Color-Green">10.7/11.1 MB</span> <span class=" -Color -Color-Red">20.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">11.1/11.1 MB</span> <span class=" -Color -Color-Red">19.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading spacy-3.8.4-cp311-cp311-macosx_11_0_arm64.whl (6.3 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/6.3 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.2/6.3 MB</span> <span class=" -Color -Color-Red">32.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">2.3/6.3 MB</span> <span class=" -Color -Color-Red">30.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.3/6.3 MB</span> <span class=" -Color -Color-Red">27.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━</span> <span class=" -Color -Color-Green">4.6/6.3 MB</span> <span class=" -Color -Color-Red">29.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━</span> <span class=" -Color -Color-Green">5.8/6.3 MB</span> <span class=" -Color -Color-Red">28.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">6.3/6.3 MB</span> <span class=" -Color -Color-Red">26.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading transformers-4.49.0-py3-none-any.whl (10.0 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/10.0 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.2/10.0 MB</span> <span class=" -Color -Color-Red">30.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">2.5/10.0 MB</span> <span class=" -Color -Color-Red">32.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.4/10.0 MB</span> <span class=" -Color -Color-Red">29.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">4.6/10.0 MB</span> <span class=" -Color -Color-Red">29.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">5.0/10.0 MB</span> <span class=" -Color -Color-Red">25.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">6.1/10.0 MB</span> <span class=" -Color -Color-Red">26.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━</span> <span class=" -Color -Color-Green">7.4/10.0 MB</span> <span class=" -Color -Color-Red">27.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━</span> <span class=" -Color -Color-Green">8.4/10.0 MB</span> <span class=" -Color -Color-Red">27.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺</span> <span class=" -Color -Color-Green">9.8/10.0 MB</span> <span class=" -Color -Color-Red">27.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">10.0/10.0 MB</span> <span class=" -Color -Color-Red">26.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading catalogue-2.0.10-py3-none-any.whl (17 kB)
+Downloading cymem-2.0.11-cp311-cp311-macosx_11_0_arm64.whl (41 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/41.7 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">41.7/41.7 kB</span> <span class=" -Color -Color-Red">3.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading huggingface_hub-0.29.3-py3-none-any.whl (468 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/469.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">469.0/469.0 kB</span> <span class=" -Color -Color-Red">19.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hUsing cached joblib-1.4.2-py3-none-any.whl (301 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading langcodes-3.5.0-py3-none-any.whl (182 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/183.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">183.0/183.0 kB</span> <span class=" -Color -Color-Red">15.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading murmurhash-1.0.12-cp311-cp311-macosx_11_0_arm64.whl (26 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading numpy-2.2.3-cp311-cp311-macosx_14_0_arm64.whl (5.4 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/5.4 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.2/5.4 MB</span> <span class=" -Color -Color-Red">33.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.5/5.4 MB</span> <span class=" -Color -Color-Red">32.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.3/5.4 MB</span> <span class=" -Color -Color-Red">29.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.7/5.4 MB</span> <span class=" -Color -Color-Red">29.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━</span> <span class=" -Color -Color-Green">4.5/5.4 MB</span> <span class=" -Color -Color-Red">23.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">5.4/5.4 MB</span> <span class=" -Color -Color-Red">23.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">5.4/5.4 MB</span> <span class=" -Color -Color-Red">22.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading preshed-3.0.9-cp311-cp311-macosx_11_0_arm64.whl (128 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/128.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">128.8/128.8 kB</span> <span class=" -Color -Color-Red">16.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading pydantic-2.10.6-py3-none-any.whl (431 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/431.7 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">431.7/431.7 kB</span> <span class=" -Color -Color-Red">18.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading pydantic_core-2.27.2-cp311-cp311-macosx_11_0_arm64.whl (1.8 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/1.8 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.8/1.8 MB</span> <span class=" -Color -Color-Red">23.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━</span> <span class=" -Color -Color-Green">1.4/1.8 MB</span> <span class=" -Color -Color-Red">26.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.8/1.8 MB</span> <span class=" -Color -Color-Red">16.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading PyYAML-6.0.2-cp311-cp311-macosx_11_0_arm64.whl (172 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/172.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">172.0/172.0 kB</span> <span class=" -Color -Color-Red">11.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading regex-2024.11.6-cp311-cp311-macosx_11_0_arm64.whl (284 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/284.6 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">284.6/284.6 kB</span> <span class=" -Color -Color-Red">14.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hUsing cached requests-2.32.3-py3-none-any.whl (64 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading safetensors-0.5.3-cp38-abi3-macosx_11_0_arm64.whl (418 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/418.4 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">418.4/418.4 kB</span> <span class=" -Color -Color-Red">17.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading scipy-1.15.2-cp311-cp311-macosx_14_0_arm64.whl (22.4 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/22.4 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.0/22.4 MB</span> <span class=" -Color -Color-Red">28.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">2.2/22.4 MB</span> <span class=" -Color -Color-Red">28.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">2.6/22.4 MB</span> <span class=" -Color -Color-Red">22.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.6/22.4 MB</span> <span class=" -Color -Color-Red">23.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">4.7/22.4 MB</span> <span class=" -Color -Color-Red">24.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">5.9/22.4 MB</span> <span class=" -Color -Color-Red">25.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">6.9/22.4 MB</span> <span class=" -Color -Color-Red">25.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">7.7/22.4 MB</span> <span class=" -Color -Color-Red">24.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">8.1/22.4 MB</span> <span class=" -Color -Color-Red">23.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">8.6/22.4 MB</span> <span class=" -Color -Color-Red">23.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">9.2/22.4 MB</span> <span class=" -Color -Color-Red">21.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">10.3/22.4 MB</span> <span class=" -Color -Color-Red">21.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">10.9/22.4 MB</span> <span class=" -Color -Color-Red">21.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">11.8/22.4 MB</span> <span class=" -Color -Color-Red">20.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">12.6/22.4 MB</span> <span class=" -Color -Color-Red">20.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">13.6/22.4 MB</span> <span class=" -Color -Color-Red">21.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">14.3/22.4 MB</span> <span class=" -Color -Color-Red">20.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">14.6/22.4 MB</span> <span class=" -Color -Color-Red">19.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">15.3/22.4 MB</span> <span class=" -Color -Color-Red">18.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━</span> <span class=" -Color -Color-Green">16.0/22.4 MB</span> <span class=" -Color -Color-Red">18.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━</span> <span class=" -Color -Color-Green">16.8/22.4 MB</span> <span class=" -Color -Color-Red">17.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━</span> <span class=" -Color -Color-Green">17.6/22.4 MB</span> <span class=" -Color -Color-Red">17.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━</span> <span class=" -Color -Color-Green">17.9/22.4 MB</span> <span class=" -Color -Color-Red">17.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━</span> <span class=" -Color -Color-Green">18.7/22.4 MB</span> <span class=" -Color -Color-Red">17.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━</span> <span class=" -Color -Color-Green">19.7/22.4 MB</span> <span class=" -Color -Color-Red">18.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━</span> <span class=" -Color -Color-Green">20.7/22.4 MB</span> <span class=" -Color -Color-Red">18.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━</span> <span class=" -Color -Color-Green">21.7/22.4 MB</span> <span class=" -Color -Color-Red">19.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">22.2/22.4 MB</span> <span class=" -Color -Color-Red">18.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">22.4/22.4 MB</span> <span class=" -Color -Color-Red">18.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">22.4/22.4 MB</span> <span class=" -Color -Color-Red">17.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading spacy_legacy-3.0.12-py2.py3-none-any.whl (29 kB)
+Downloading spacy_loggers-1.0.5-py3-none-any.whl (22 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading srsly-2.5.1-cp311-cp311-macosx_11_0_arm64.whl (634 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/634.4 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">634.4/634.4 kB</span> <span class=" -Color -Color-Red">18.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading thinc-8.3.4-cp311-cp311-macosx_11_0_arm64.whl (774 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/774.2 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">774.2/774.2 kB</span> <span class=" -Color -Color-Red">21.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Using cached threadpoolctl-3.5.0-py3-none-any.whl (18 kB)
+Downloading tokenizers-0.21.0-cp39-abi3-macosx_11_0_arm64.whl (2.6 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/2.6 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.1/2.6 MB</span> <span class=" -Color -Color-Red">28.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━</span> <span class=" -Color -Color-Green">2.1/2.6 MB</span> <span class=" -Color -Color-Red">27.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">2.6/2.6 MB</span> <span class=" -Color -Color-Red">24.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading tqdm-4.67.1-py3-none-any.whl (78 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/78.5 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">78.5/78.5 kB</span> <span class=" -Color -Color-Red">6.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading typer-0.15.2-py3-none-any.whl (45 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/45.1 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">45.1/45.1 kB</span> <span class=" -Color -Color-Red">4.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading wasabi-1.1.3-py3-none-any.whl (27 kB)
+Downloading weasel-0.4.1-py3-none-any.whl (50 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/50.3 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">50.3/50.3 kB</span> <span class=" -Color -Color-Red">4.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading filelock-3.17.0-py3-none-any.whl (16 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/134.9 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">134.9/134.9 kB</span> <span class=" -Color -Color-Red">11.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+Downloading blis-1.2.0-cp311-cp311-macosx_11_0_arm64.whl (1.3 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/1.3 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.7/1.3 MB</span> <span class=" -Color -Color-Red">22.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.3/1.3 MB</span> <span class=" -Color -Color-Red">19.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading certifi-2025.1.31-py3-none-any.whl (166 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/166.4 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">166.4/166.4 kB</span> <span class=" -Color -Color-Red">12.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading charset_normalizer-3.4.1-cp311-cp311-macosx_10_9_universal2.whl (194 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/195.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">195.0/195.0 kB</span> <span class=" -Color -Color-Red">17.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading click-8.1.8-py3-none-any.whl (98 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/98.2 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">98.2/98.2 kB</span> <span class=" -Color -Color-Red">9.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading cloudpathlib-0.21.0-py3-none-any.whl (52 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/52.7 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">52.7/52.7 kB</span> <span class=" -Color -Color-Red">3.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading confection-0.1.5-py3-none-any.whl (35 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading fsspec-2025.3.0-py3-none-any.whl (193 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/193.6 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">193.6/193.6 kB</span> <span class=" -Color -Color-Red">9.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hUsing cached idna-3.10-py3-none-any.whl (70 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading language_data-1.3.0-py3-none-any.whl (5.4 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/5.4 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.5/5.4 MB</span> <span class=" -Color -Color-Red">19.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.6/5.4 MB</span> <span class=" -Color -Color-Red">21.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.6/5.4 MB</span> <span class=" -Color -Color-Red">21.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.5/5.4 MB</span> <span class=" -Color -Color-Red">22.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━</span> <span class=" -Color -Color-Green">4.5/5.4 MB</span> <span class=" -Color -Color-Red">23.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━</span> <span class=" -Color -Color-Green">5.0/5.4 MB</span> <span class=" -Color -Color-Red">23.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">5.4/5.4 MB</span> <span class=" -Color -Color-Red">20.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading MarkupSafe-3.0.2-cp311-cp311-macosx_11_0_arm64.whl (12 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading rich-13.9.4-py3-none-any.whl (242 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/242.4 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">242.4/242.4 kB</span> <span class=" -Color -Color-Red">17.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading smart_open-7.1.0-py3-none-any.whl (61 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/61.7 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">61.7/61.7 kB</span> <span class=" -Color -Color-Red">6.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading urllib3-2.3.0-py3-none-any.whl (128 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/128.4 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">128.4/128.4 kB</span> <span class=" -Color -Color-Red">12.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading marisa_trie-1.2.1-cp311-cp311-macosx_11_0_arm64.whl (174 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/175.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">175.0/175.0 kB</span> <span class=" -Color -Color-Red">14.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hUsing cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading wrapt-1.17.2-cp311-cp311-macosx_11_0_arm64.whl (38 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Installing collected packages: cymem, wrapt, wasabi, urllib3, tqdm, threadpoolctl, spacy-loggers, spacy-legacy, shellingham, safetensors, regex, pyyaml, pydantic-core, numpy, murmurhash, mdurl, MarkupSafe, marisa-trie, joblib, idna, fsspec, filelock, cloudpathlib, click, charset-normalizer, certifi, catalogue, annotated-types, srsly, smart-open, scipy, requests, pydantic, preshed, markdown-it-py, language-data, jinja2, blis, scikit-learn, rich, langcodes, huggingface-hub, confection, typer, tokenizers, thinc, weasel, transformers, spacy, bert-extractive-summarizer
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>^C
+<span class=" -Color -Color-Red">ERROR: Operation cancelled by user</span>
+
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting python-docx
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading python_docx-1.1.2-py3-none-any.whl.metadata (2.0 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting lxml&gt;=3.1.0 (from python-docx)
+  Downloading lxml-5.3.1-cp311-cp311-macosx_10_9_universal2.whl.metadata (3.7 kB)
+Requirement already satisfied: typing-extensions&gt;=4.9.0 in /Users/areumhan/.pyenv/versions/3.11.8/lib/python3.11/site-packages (from python-docx) (4.12.2)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading python_docx-1.1.2-py3-none-any.whl (244 kB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/244.3 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">81.9/244.3 kB</span> <span class=" -Color -Color-Red">2.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━</span> <span class=" -Color -Color-Green">235.5/244.3 kB</span> <span class=" -Color -Color-Red">3.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">244.3/244.3 kB</span> <span class=" -Color -Color-Red">2.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading lxml-5.3.1-cp311-cp311-macosx_10_9_universal2.whl (8.2 MB)
+?25l   <span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.0/8.2 MB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">0.3/8.2 MB</span> <span class=" -Color -Color-Red">11.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">1.2/8.2 MB</span> <span class=" -Color -Color-Red">17.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">2.4/8.2 MB</span> <span class=" -Color -Color-Red">22.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.5/8.2 MB</span> <span class=" -Color -Color-Red">25.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">3.6/8.2 MB</span> <span class=" -Color -Color-Red">19.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━<span class=" -Color -Color-C237">╺━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">5.5/8.2 MB</span> <span class=" -Color -Color-Red">24.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸<span class=" -Color -Color-C237">━━━━━</span> <span class=" -Color -Color-Green">7.1/8.2 MB</span> <span class=" -Color -Color-Red">26.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸ <span class=" -Color -Color-Green">8.2/8.2 MB</span> <span class=" -Color -Color-Red">26.8 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:01</span>
+   <span class=" -Color -Color-Red">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span> <span class=" -Color -Color-Green">8.2/8.2 MB</span> <span class=" -Color -Color-Red">25.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25h
+</pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="import-libraries">
 <h3>Import Libraries<a class="headerlink" href="#import-libraries" title="Link to this heading">#</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#Basic</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Basic</span>
 <span class="kn">from</span> <span class="nn">docx</span> <span class="kn">import</span> <span class="n">Document</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -710,6 +1165,8 @@ Successfully installed summa-1.2.0
 <span class="kn">from</span> <span class="nn">summa</span> <span class="kn">import</span> <span class="n">keywords</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -774,7 +1231,9 @@ Successfully installed summa-1.2.0
 <h3><strong>Code Tab</strong><a class="headerlink" href="#code-tab" title="Link to this heading">#</a></h3>
 <section id="doc-processing">
 <h4><strong>Doc Processing</strong><a class="headerlink" href="#doc-processing" title="Link to this heading">#</a></h4>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_text_from_docx</span><span class="p">(</span><span class="n">docx_file</span><span class="p">):</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_text_from_docx</span><span class="p">(</span><span class="n">docx_file</span><span class="p">):</span>
     <span class="n">doc</span> <span class="o">=</span> <span class="n">Document</span><span class="p">(</span><span class="n">docx_file</span><span class="p">)</span>
     <span class="n">full_text</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">para</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">paragraphs</span><span class="p">:</span>
@@ -844,7 +1303,9 @@ Successfully installed summa-1.2.0
     <span class="n">megan_rourke_content</span> <span class="o">=</span> <span class="n">speaker_contents</span><span class="p">[</span><span class="s1">&#39;Megan Rourke&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Matthew Pullen&#39;s content:
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matthew Pullen&#39;s content:
 Shall I start? I guess there&#39;s different ways of looking at it. We use housing data at different trigger points, maybe it&#39;s the place to start so all the way from maybe we want to know when something is in pre-app, in an application, it&#39;s got a decision, so both if it&#39;s got a resolution to grant through planning committee and if it&#39;s got a final decision with the section 106. And then moving further through the process, bigger points at when they&#39;re when they&#39;re starting to look at conditions when they&#39;re having conditions signed off, including specific conditions within permission then commencement on site, commencement can mean a different thing depending on. We we&#39;ve got plenty. But yeah, we&#39;d be happy to share with you and take you through. I mean, look, we do stuff using Excel spreadsheets because we haven&#39;t had anything more sophisticated than. I don&#39;t think it hopefully this can be of help to you and it can fit into the project rather than being awkward or clash, but yeah, we try and. We layer in assumptions. Can&#39;t remember all of the assumptions but we layer in assumptions that we I think it&#39;s generally we assume commencement two years after the date of permission but then we layer in assumptions about when things might get permission. For schemes that aren&#39;t in the planning process yet, we just sort of layer in some assumptions of when we think it might come ahead and then at two years on from the point of permission and then in terms of other funding that doesn&#39;t come in at the point of commencement, can we? We tend to layer in assumptions on how long it would take to build something that&#39;s under 200 units, 2 to 500, 500 to 1000. So yeah, we&#39;ve got layers of assumptions in there, not necessarily based on huge amounts of data, research to come up with them and so there&#39;s definitely some work to do there as well about how we can. There&#39;s other assumptions we have done some research to back up about the split of tenure housing mix and the floor space associated with. With different size, different types of units as well and we&#39;ve done that off of reality rather than using planning policies because planning policy doesn&#39;t always get adhered to. So we have got some research that we could probably feed in as well, but we probably could do with an update, something a bit more comprehensive. Really, the ones that I&#39;ve just mentioned, we, depending on what it is, sometimes we need to look at this by unit. Sometimes we need to look at it by square metre. Just gets more confusing, doesn&#39;t it? The more you talk about it, kind of like, oh, there&#39;s a lot in. I guess from my point of view, there&#39;s definitely a hole in our data for our CIL forecasting when it comes to commercial, but we haven&#39;t got anything anywhere near as sophisticated as we&#39;ve got for this holes in our housing approach as well, but the commercial was far less sophisticated that we basically take any big commercial sites that we know like North Quay that that&#39;s going to have lots of commercial artefact and then we ignore really the mixed-use sites and on the most part, the commercial stuff is, One to two floors and then you&#39;ve got 44 floors of residential on top. And so, we&#39;ve kind of had to prioritise where we put our time and energy. Really. But it would be fantastic to be able to have. Or complete picture of it, because I mean, at the moment we&#39;re seeing office space not particularly isn&#39;t particularly popular, but things change over time and who knows what the future is going to look like and emerging life science you have uses and all sorts of other things. It would be. It would be good to be able to eventually one day have something that&#39;s comprehensive. I think absolutely. If you if you just think in terms of when developments are going to complete and be occupied, that then impacts on really every service in the Council. Obviously from you know when do we need to have new bin routes and when? When are people going to be suddenly occupying these flats and producing rubbish to? When will council tax kick in? When will all sorts of all sorts of? I think I do think that, for everyone here, something that is going to be quite complicated is because those sites that are in the system even in a pre-app stage, we&#39;re going to know what the applications are saying? And that can feed in both sites that aren&#39;t in the planning system at all. They are going to be tricky, but I think. Good question. Because we they get, it depends where you want to go with this. This tool really if you&#39;re if you&#39;re trying to forecast housing completions over the next three years, well, you only need stuff that&#39;s in the planning system. Yeah, I mean, you can do it through the schlot. Even then, some of those are complete pie in the sky. They&#39;re never going to happen, and the schlot ages quite quickly. And if you start to move in with a schlot and then by the time the local planning gets adopted, the shelves pretty outward, and then you get a couple of years later, it&#39;s it all feels a bit out of date. So, we tend to sort of scrape through anything we know and stuff comes in through pre app and then applications that we just that wasn&#39;t expected. So, like I mean the call for site allocation for that. It&#39;s very, it&#39;s another difficulty that you&#39;re going to have, I think, is that what makes it into the planning policy document? As a site location, it&#39;s one thing what the planning and reality are two very different worlds. So, stuff can happen but not necessarily being planned. I get that&#39;s what you&#39;re doing here, but you might have to make some decisions at some point of saying, well, I don&#39;t think we can make this data in the 1st place work for every single person for in the Council. You might have to talk to him on certain things, because otherwise the number of columns you&#39;ve got in your spreadsheet is going to end up at, you know, just beyond unmanageable, because there&#39;s 15 different definitions of each metric. It might get awkward. I think the complication is that in that instance is, does anyone want to see the gross or does everyone want to see the net? Because if people want to see both of that, we should then go to run that through the rest of the data as well. So, you&#39;ll need to have the tenure in the mix breakdown all of that based on gross and net the whole way through. That&#39;s got a lot of many to many relationships haven&#39;t used to do. I was going to say certainly on some things we&#39;ve done, we&#39;ve had to kind of do something that works for most and then like I said, we&#39;ve taken off the little ones and just put them in one windfall like, similarly, we&#39;ve had to be a bit bespoke for some of the really big ones as well, and so something as complex as Lemon road or Wood Wharf. You know, an outline permission. All of these deserved matters. And then section 73 applications layered all over it before you know it for one site you could have, don&#39;t know 15 or 20, but who&#39;s in your database and just making sure that, that all works and makes sense and you&#39;re not double counting anywhere and when you know this this point where Section 73 is given permission, but you don&#39;t know whether they&#39;re going to commence the section 73 or whether they&#39;re going to stick with the offer permission and so you&#39;ll need some way of making sure that we&#39;re we know when switch one off and switch on. I mean that is. The idea of changes is another key aspect of it, isn&#39;t it? I’m struggling to follow. Do you do you mean if you&#39;ve got sort of a section 106 for a whole development, it&#39;s then broken down into phases? Or what do you mean? Well, I guess you&#39;d never have to be putting money in there. You could divide it by 100, I guess or you could just put it in once. I mean, What does a section 106 secure? We want to know about really. It&#39;s money and the breakdown of the housing units you could do row by row anyway, so that&#39;s not a problem. Other than that, it&#39;s money or big bits of infrastructure. We&#39;ll probably want to know about that. It&#39;s not that you ignore the big bits of infrastructure, there&#39;s not that many of them, and we&#39;ve got a separate excel sheet with them in. You don&#39;t need to replace every Excel sheet. Why? Can I ask why you&#39;re going down to one row for each unit? What&#39;s the requiring that as opposed to having one row for the 100 units? That, that, that makes sense, yeah. It&#39;s not necessarily. As I said earlier, those assumptions we use because this stuff we do that goes down to square metre. To forecast it all, we have to be looking at square metre each, but we have an assumption that assumptions again based on some data we&#39;ve looked at actual applications that we&#39;ve measured plans we&#39;ve seen to say that. The assumptions I guess are based on average. We don’t, I mean. I guess what you can. Where we use the assumptions is for the future stuff. So we can get stuff that&#39;s in the system will have done. My sell team will measured the plans and have come up with the actual sale amount, so we don&#39;t. We just put that in, we don&#39;t. I&#39;m not saying we do need to but, it would feel useful information if we could convert homes into people at some point. Obviously, there is Census data and there&#39;s assumptions from ONS or the GLA or various sources of as to how many people you would expect to live in each type of home. Quite a local thing as well. That could be useful, but you could also probably sit down and have this session about just that aspect of it about whether those people are new residents to the borough or not, or whether they come out of overcrowded homes, what type of people are living in there? What age they are, child yields all of these kinds of things. So, it could get very complicated. Maybe that&#39;s for again for a further phase, but that would be really interesting information because while some people might go off. The data they might want is homes or square metres. Some people are going to be interested in the number of people in that. A lot of our infrastructure planning it&#39;s based on people. How many kids are they going to be for schools? How many people for doctors and parks? Yeah, I think so. I mean that there is population projection because when you get into population projection, it&#39;s not just new development, as well, it&#39;s birth death and migration and all sorts of things and so. It&#39;s kind of why I raised it as a question about whether it would be, how useful it would be. I think it could be useful to then feed into other models because the GLA do a model and I don&#39;t know what their assumptions are to go into that model about our development. Presumably they take what our local plan says and what our policies say, they&#39;ve run some assumptions through it and say this is how many people are going to be in that those developments. But I don&#39;t know whether they take into account overcrowding. So people not new people just moving around in the borough if they do, how they do. But if we feel we’ve got. I also worry a bit that they go just on a policy basis. If we&#39;ve got a better idea of, I said planning and reality aren&#39;t. We&#39;ve got really solid housing forecast data. It would be good to get that fed into the right places. I suspect people are using different population projections all over the place. I don&#39;t really want to repeat what I&#39;ve already said and taken up more of the meeting, but everything we do at the moment, some of it quite reasonably comprehensively, some of it based on a lot of assumptions, some of it taking a long time, some of it that we only do once a year because it takes such a long time. I think there&#39;s plenty of opportunities to just hopefully over a lot of those issues and mesh may make it quicker, make it more efficient, make it more accurate, make it more available. I suspect so. I think it’s what we&#39;ve been talking about is that this is hard. This is complex and. We get requests coming in saying we want to know how much into infrastructure levy, how much section 106 we&#39;re going to have to spend in the future and we&#39;ve got to do so. We&#39;ve got to find those answers and can&#39;t say right, well, we&#39;re going to get some government funding pulled together, a team and do a massive project to do that. We&#39;ll tell you in however long this is going to take. You just have to you&#39;ve got to do something. So you put something together, you&#39;ve put an Excel spreadsheet together and you, you do what you can and you get to a point where you think, well, this is this is strong enough that we can, we can use it and even if it&#39;s not perfect. Might be a question for Ambrey. I don&#39;t know, but I can tell you that that one of the reasons that we want to be Exocom system for section 106 is that it does that section 106 is a signed legal agreement that are scanned and so therefore being put through the reader to be able to extract all the paragraphs into a readable format. So well, so first of all, the document is now searchable which is really helpful when you&#39;ve got 227-page document and secondly it extracts all the key points and triggers and obligations and puts it into ex-con as a system so that we can then workflow in. We&#39;ve got some control over it as opposed to having a pile of 2000 legal agreements to kind of back your way through. But I&#39;m sure you&#39;ll find examples where it&#39;s happened, but I think it will be in little bespoke systems. Ballistic, I think, I mean, 10 years ago all the planning applications were in paper files, so. But this, to have digital versions, even if they&#39;re not readable, to have digital versions of everything, that&#39;s been a monumental effort. It&#39;s a system for administering CIL and sectional assets. We can give you access. There&#39;ll be, yeah, there&#39;ll be. I don&#39;t know what level of metadata there is underneath it, but there&#39;s some metadata under there and it will include the basics of the site name and the PA number probably be PR and I recommend. It will definitely include the affordable housing breakdown and I would think and it would include data about financial contributions as well on the Section 106 side, on CIL side, it include all the data about square metre, for example, net space, that will be broken down by different use types as well, so into residential, commercial, etc, etc. Quite chunk of information in there, but it will only be cases that have been through the civil process. I always refer to the Lewisham one as well, because they had a really good one when I was working there 10 years ago, so it does feel as if we&#39;re at, we&#39;re at least 10 years behind on that one.
 
 --------------------------------------------------
@@ -862,76 +1323,51 @@ Hello. Yeah. So, we&#39;re coming from, I guess like a housing and regional clie
 --------------------------------------------------
 </pre></div>
 </div>
+</div>
+</div>
 </section>
 <section id="bart">
 <h4><strong>BART</strong><a class="headerlink" href="#bart" title="Link to this heading">#</a></h4>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Summarizer</span><span class="p">()</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Summarizer</span><span class="p">()</span>
 <span class="n">result</span> <span class="o">=</span> <span class="n">model</span><span class="p">(</span><span class="n">matthew_pullen_content</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">num_sentences</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">BART</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">BART</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>config.json:   0%|          | 0.00/571 [00:00&lt;?, ?B/s]
-
-
-
-model.safetensors:   0%|          | 0.00/1.34G [00:00&lt;?, ?B/s]
-
-
-
-tokenizer_config.json:   0%|          | 0.00/48.0 [00:00&lt;?, ?B/s]
-
-
-
-vocab.txt:   0%|          | 0.00/232k [00:00&lt;?, ?B/s]
-
-
-
-tokenizer.json:   0%|          | 0.00/466k [00:00&lt;?, ?B/s]
-
-
-We use housing data at different trigger points, maybe it&#39;s the place to start so all the way from maybe we want to know when something is in pre-app, in an application, it&#39;s got a decision, so both if it&#39;s got a resolution to grant through planning committee and if it&#39;s got a final decision with the section 106. With different size, different types of units as well and we&#39;ve done that off of reality rather than using planning policies because planning policy doesn&#39;t always get adhered to. And so, we&#39;ve kind of had to prioritise where we put our time and energy. This tool really if you&#39;re if you&#39;re trying to forecast housing completions over the next three years, well, you only need stuff that&#39;s in the planning system. I was going to say certainly on some things we&#39;ve done, we&#39;ve had to kind of do something that works for most and then like I said, we&#39;ve taken off the little ones and just put them in one windfall like, similarly, we&#39;ve had to be a bit bespoke for some of the really big ones as well, and so something as complex as Lemon road or Wood Wharf.
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "bd3865e2a351431b9c55242c9229e186", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "b3b792a07b3845829b07ce183709647a", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "2d493c2a0e584d5db27fd7eb2141ebad", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "76f30c5e168340c09f732a902144d6e2", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "24a39ec3ae864372ba4d9fd79497dc47", "version_major": 2, "version_minor": 0}</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We use housing data at different trigger points, maybe it&#39;s the place to start so all the way from maybe we want to know when something is in pre-app, in an application, it&#39;s got a decision, so both if it&#39;s got a resolution to grant through planning committee and if it&#39;s got a final decision with the section 106. With different size, different types of units as well and we&#39;ve done that off of reality rather than using planning policies because planning policy doesn&#39;t always get adhered to. And so, we&#39;ve kind of had to prioritise where we put our time and energy. This tool really if you&#39;re if you&#39;re trying to forecast housing completions over the next three years, well, you only need stuff that&#39;s in the planning system. I was going to say certainly on some things we&#39;ve done, we&#39;ve had to kind of do something that works for most and then like I said, we&#39;ve taken off the little ones and just put them in one windfall like, similarly, we&#39;ve had to be a bit bespoke for some of the really big ones as well, and so something as complex as Lemon road or Wood Wharf.
 </pre></div>
+</div>
+</div>
 </div>
 <p>Ref:<a class="github reference external" href="https://github.com/dmmiller612/bert-extractive-summarizer">dmmiller612/bert-extractive-summarizer</a></p>
 </section>
 <section id="t5">
 <h4><strong>T5</strong><a class="headerlink" href="#t5" title="Link to this heading">#</a></h4>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pipe</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span><span class="s1">&#39;summarization&#39;</span><span class="p">,</span> <span class="n">model</span> <span class="o">=</span> <span class="s1">&#39;t5-large&#39;</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pipe</span> <span class="o">=</span> <span class="n">pipeline</span><span class="p">(</span><span class="s1">&#39;summarization&#39;</span><span class="p">,</span> <span class="n">model</span> <span class="o">=</span> <span class="s1">&#39;t5-large&#39;</span><span class="p">,</span> <span class="n">min_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">T5</span> <span class="o">=</span> <span class="n">pipe</span><span class="p">(</span><span class="n">matthew_pullen_content</span><span class="p">)</span>
 <span class="n">t5</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">T5</span><span class="p">)</span>
 <span class="n">T5</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>config.json:   0%|          | 0.00/1.21k [00:00&lt;?, ?B/s]
-
-
-
-model.safetensors:   0%|          | 0.00/2.95G [00:00&lt;?, ?B/s]
-
-
-
-generation_config.json:   0%|          | 0.00/147 [00:00&lt;?, ?B/s]
-
-
-
-spiece.model:   0%|          | 0.00/792k [00:00&lt;?, ?B/s]
-
-
-
-tokenizer.json:   0%|          | 0.00/1.39M [00:00&lt;?, ?B/s]
-
-
-
-
-
-[{&#39;summary_text&#39;: &quot;if you&#39;re trying to forecast housing completions over the next three years, it&#39;s going to be a bit more complicated . we&#39;ve got a lot of assumptions that we use, but they&#39;re not necessarily based on huge amounts of data . it would be useful to have that information in a system that&#39;s searchable and can be fed into other models . if we can do that, then we&#39;ll be able to do a better job of forecasting. I think we&#39;re&quot;}]
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "cdd527f8993f4b9faad18847ffe94c08", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "719a920615ee42069eb29bc2b1a2139a", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "ba65f672de3244e0aa91e125f39b2ea8", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "e93284e77581410e880dac4b4efd3f6a", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "65c73f6b24ed4d84bf16168dfed6cbcb", "version_major": 2, "version_minor": 0}</script><div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;summary_text&#39;: &quot;if you&#39;re trying to forecast housing completions over the next three years, it&#39;s going to be a bit more complicated . we&#39;ve got a lot of assumptions that we use, but they&#39;re not necessarily based on huge amounts of data . it would be useful to have that information in a system that&#39;s searchable and can be fed into other models . if we can do that, then we&#39;ll be able to do a better job of forecasting. I think we&#39;re&quot;}]
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="pegasus">
 <h4><strong>Pegasus</strong><a class="headerlink" href="#pegasus" title="Link to this heading">#</a></h4>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pegasus model and SentencePiece tokenizer</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Pegasus model and SentencePiece tokenizer</span>
 <span class="n">tokenizer</span> <span class="o">=</span> <span class="n">PegasusTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;google/pegasus-cnn_dailymail&quot;</span><span class="p">)</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">PegasusForConditionalGeneration</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s2">&quot;google/pegasus-cnn_dailymail&quot;</span><span class="p">)</span>
 
@@ -946,35 +1382,16 @@ tokenizer.json:   0%|          | 0.00/1.39M [00:00&lt;?, ?B/s]
 <span class="nb">print</span><span class="p">(</span><span class="n">PEGASUS</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>tokenizer_config.json:   0%|          | 0.00/88.0 [00:00&lt;?, ?B/s]
-
-
-
-spiece.model:   0%|          | 0.00/1.91M [00:00&lt;?, ?B/s]
-
-
-
-special_tokens_map.json:   0%|          | 0.00/65.0 [00:00&lt;?, ?B/s]
-
-
-
-config.json:   0%|          | 0.00/1.12k [00:00&lt;?, ?B/s]
-
-
-
-pytorch_model.bin:   0%|          | 0.00/2.28G [00:00&lt;?, ?B/s]
-
-
-Some weights of PegasusForConditionalGeneration were not initialized from the model checkpoint at google/pegasus-cnn_dailymail and are newly initialized: [&#39;model.decoder.embed_positions.weight&#39;, &#39;model.encoder.embed_positions.weight&#39;]
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "da1d54e39bc84ef4a0fe5c7e367c470f", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "fbd214ff6fb2497486b62b494ff87db0", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "0a3340e59c3c4da1ac668b04235d504e", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "757d36be65a64877b4ebdcc13271cc44", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "f0ceb8d1b47447559f2a04a75cf85fdf", "version_major": 2, "version_minor": 0}</script><div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Some weights of PegasusForConditionalGeneration were not initialized from the model checkpoint at google/pegasus-cnn_dailymail and are newly initialized: [&#39;model.decoder.embed_positions.weight&#39;, &#39;model.encoder.embed_positions.weight&#39;]
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-
-
-
-generation_config.json:   0%|          | 0.00/280 [00:00&lt;?, ?B/s]
-
-
-We use housing data at different trigger points, maybe it&#39;s the place to start .&lt;n&gt;We layer in assumptions about when things might get permission .&lt;n&gt;We tend to layer in assumptions on how long it would take to build something that&#39;s under 200 units .&lt;n&gt;There&#39;s definitely a hole in our data for our CIL forecasting when it comes to commercial .&lt;n&gt;But we haven&#39;t got anything anywhere near as sophisticated as we&#39;ve got for this holes in our housing approach .
 </pre></div>
+</div>
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "be7b830ab15148219e81b4ef5ad47485", "version_major": 2, "version_minor": 0}</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>We use housing data at different trigger points, maybe it&#39;s the place to start .&lt;n&gt;We layer in assumptions about when things might get permission .&lt;n&gt;We tend to layer in assumptions on how long it would take to build something that&#39;s under 200 units .&lt;n&gt;There&#39;s definitely a hole in our data for our CIL forecasting when it comes to commercial .&lt;n&gt;But we haven&#39;t got anything anywhere near as sophisticated as we&#39;ve got for this holes in our housing approach .
+</pre></div>
+</div>
+</div>
 </div>
 <p>Ref: <a class="reference external" href="https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouTube-Channel/blob/master/NLP/Text_Summarization_%20BART%20_T5_Pegasus.ipynb">https://github.com/rohan-paul/MachineLearning-DeepLearning-Code-for-my-YouTube-Channel/blob/master/NLP/Text_Summarization_ BART _T5_Pegasus.ipynb</a></p>
 </section>
@@ -1001,10 +1418,16 @@ We use housing data at different trigger points, maybe it&#39;s the place to sta
 </ol>
 <section id="id1">
 <h4><strong>Code Tab</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">refer</span> <span class="o">=</span> <span class="s2">&quot;We use housing data at different trigger points maybe it&#39;s the place to start so all the way from maybe we want to know when something is in pre-app in an application it&#39;s got a decision so both if it&#39;s got a resolution to grant through planning committee and if it&#39;s got a final decision with the section 106. And through the build process as they&#39;re making progress with building and occupation, we then use the points through Section 106 monitoring which go on forever but possibly there&#39;s not a need to pick them up in here because we have a section 106 monitoring system that might do that. In the future we&#39;ll also use it to forecast workload as well and as we&#39;re expecting developments to move through the process we know when workload is going to be coming in too. We&#39;ve got plenty of spreadsheets for forecasting development moving through the system at the moment so we can do what I was mentioning before. Really the ones that I&#39;ve just mentioned depending on what it is sometimes we need to look at this by unit, sometimes we need to look at it by square metre, and there is variation depending on the type of home it is as well that&#39;s both by affordable and market but also by the number of bedrooms as well.&quot;</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">refer</span> <span class="o">=</span> <span class="s2">&quot;We use housing data at different trigger points maybe it&#39;s the place to start so all the way from maybe we want to know when something is in pre-app in an application it&#39;s got a decision so both if it&#39;s got a resolution to grant through planning committee and if it&#39;s got a final decision with the section 106. And through the build process as they&#39;re making progress with building and occupation, we then use the points through Section 106 monitoring which go on forever but possibly there&#39;s not a need to pick them up in here because we have a section 106 monitoring system that might do that. In the future we&#39;ll also use it to forecast workload as well and as we&#39;re expecting developments to move through the process we know when workload is going to be coming in too. We&#39;ve got plenty of spreadsheets for forecasting development moving through the system at the moment so we can do what I was mentioning before. Really the ones that I&#39;ve just mentioned depending on what it is sometimes we need to look at this by unit, sometimes we need to look at it by square metre, and there is variation depending on the type of home it is as well that&#39;s both by affordable and market but also by the number of bedrooms as well.&quot;</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">rouge</span> <span class="o">=</span> <span class="n">Rouge</span><span class="p">()</span>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rouge</span> <span class="o">=</span> <span class="n">Rouge</span><span class="p">()</span>
 
 <span class="c1"># Compute ROUGE scores</span>
 <span class="n">t5_scores</span> <span class="o">=</span> <span class="n">rouge</span><span class="o">.</span><span class="n">get_scores</span><span class="p">(</span><span class="n">t5</span><span class="p">,</span> <span class="n">refer</span><span class="p">,</span> <span class="n">avg</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1017,10 +1440,14 @@ We use housing data at different trigger points, maybe it&#39;s the place to sta
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;PEGASUS ROUGE Scores:&quot;</span><span class="p">,</span> <span class="n">pegasus_scores</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>T5 ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.23622047244094488, &#39;p&#39;: 0.46875, &#39;f&#39;: 0.3141361211984321}, &#39;rouge-2&#39;: {&#39;r&#39;: 0.02926829268292683, &#39;p&#39;: 0.07692307692307693, &#39;f&#39;: 0.042402822862066335}, &#39;rouge-l&#39;: {&#39;r&#39;: 0.1889763779527559, &#39;p&#39;: 0.375, &#39;f&#39;: 0.2513088960675421}}
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>T5 ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.23622047244094488, &#39;p&#39;: 0.46875, &#39;f&#39;: 0.3141361211984321}, &#39;rouge-2&#39;: {&#39;r&#39;: 0.02926829268292683, &#39;p&#39;: 0.07692307692307693, &#39;f&#39;: 0.042402822862066335}, &#39;rouge-l&#39;: {&#39;r&#39;: 0.1889763779527559, &#39;p&#39;: 0.375, &#39;f&#39;: 0.2513088960675421}}
 BART ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.48031496062992124, &#39;p&#39;: 0.4728682170542636, &#39;f&#39;: 0.4765624950003052}, &#39;rouge-2&#39;: {&#39;r&#39;: 0.24878048780487805, &#39;p&#39;: 0.2712765957446808, &#39;f&#39;: 0.25954197974218035}, &#39;rouge-l&#39;: {&#39;r&#39;: 0.41732283464566927, &#39;p&#39;: 0.4108527131782946, &#39;f&#39;: 0.4140624950003052}}
 PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39;p&#39;: 0.4666666666666667, &#39;f&#39;: 0.29946523628356553}, &#39;rouge-2&#39;: {&#39;r&#39;: 0.05365853658536585, &#39;p&#39;: 0.14864864864864866, &#39;f&#39;: 0.07885304269729339}, &#39;rouge-l&#39;: {&#39;r&#39;: 0.1968503937007874, &#39;p&#39;: 0.4166666666666667, &#39;f&#39;: 0.26737967478623925}}
 </pre></div>
+</div>
+</div>
 </div>
 <p>The Rouge scores for each models are as follows:</p>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -1211,7 +1638,9 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 <p>Comparing the reference summary with those generated by Copilot and Llama 3.2, both scores are very close.</p>
 <section id="id3">
 <h5><strong>Code Tab</strong><a class="headerlink" href="#id3" title="Link to this heading">#</a></h5>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the tokenizer and model</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the tokenizer and model</span>
 <span class="n">tokenizer</span> <span class="o">=</span> <span class="n">AutoTokenizer</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s1">&#39;sentence-transformers/all-mpnet-base-v2&#39;</span><span class="p">)</span>
 <span class="n">model</span> <span class="o">=</span> <span class="n">AutoModel</span><span class="o">.</span><span class="n">from_pretrained</span><span class="p">(</span><span class="s1">&#39;sentence-transformers/all-mpnet-base-v2&#39;</span><span class="p">)</span>
 
@@ -1253,32 +1682,13 @@ PEGASUS ROUGE Scores: {&#39;rouge-1&#39;: {&#39;r&#39;: 0.2204724409448819, &#39
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Similarity between Reference and Summary L: </span><span class="si">{</span><span class="n">similarity2</span><span class="o">.</span><span class="n">item</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>tokenizer_config.json:   0%|          | 0.00/363 [00:00&lt;?, ?B/s]
-
-
-
-vocab.txt:   0%|          | 0.00/232k [00:00&lt;?, ?B/s]
-
-
-
-tokenizer.json:   0%|          | 0.00/466k [00:00&lt;?, ?B/s]
-
-
-
-special_tokens_map.json:   0%|          | 0.00/239 [00:00&lt;?, ?B/s]
-
-
-
-config.json:   0%|          | 0.00/571 [00:00&lt;?, ?B/s]
-
-
-
-model.safetensors:   0%|          | 0.00/438M [00:00&lt;?, ?B/s]
-
-
-Similarity between Reference and Summary C: 0.7885517477989197
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "fb083a65c12547049c21da24b559b449", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "16194e502e4649b4a2e9454a89b93a0b", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "b1fa8263157446488b704b42a5916f5f", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "694aeb3f7f5049bcbc4f318b8202130b", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "68ce068d64ac4a0ab7a56f273e6d0f60", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "20b378b57b6b4ab089f20b51f78bdd43", "version_major": 2, "version_minor": 0}</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Similarity between Reference and Summary C: 0.7885517477989197
 Similarity between Reference and Summary L: 0.7846035361289978
 </pre></div>
+</div>
+</div>
 </div>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -1564,7 +1974,9 @@ Similarity between Reference and Summary L: 0.7846035361289978
 <h4><strong>Code Tab</strong><a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
 <section id="set-stop-words">
 <h5><strong>Set Stop Words</strong><a class="headerlink" href="#set-stop-words" title="Link to this heading">#</a></h5>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">custom_stop_words</span> <span class="o">=</span> <span class="p">[</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">custom_stop_words</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;about&quot;</span><span class="p">,</span> <span class="s2">&quot;actually&quot;</span><span class="p">,</span> <span class="s2">&quot;almost&quot;</span><span class="p">,</span> <span class="s2">&quot;also&quot;</span><span class="p">,</span> <span class="s2">&quot;although&quot;</span><span class="p">,</span> <span class="s2">&quot;always&quot;</span><span class="p">,</span> <span class="s2">&quot;am&quot;</span><span class="p">,</span> <span class="s2">&quot;an&quot;</span><span class="p">,</span> <span class="s2">&quot;and&quot;</span><span class="p">,</span>
     <span class="s2">&quot;any&quot;</span><span class="p">,</span> <span class="s2">&quot;are&quot;</span><span class="p">,</span> <span class="s2">&quot;as&quot;</span><span class="p">,</span> <span class="s2">&quot;at&quot;</span><span class="p">,</span> <span class="s2">&quot;be&quot;</span><span class="p">,</span> <span class="s2">&quot;became&quot;</span><span class="p">,</span> <span class="s2">&quot;become&quot;</span><span class="p">,</span> <span class="s2">&quot;but&quot;</span><span class="p">,</span> <span class="s2">&quot;by&quot;</span><span class="p">,</span> <span class="s2">&quot;can&quot;</span><span class="p">,</span> <span class="s2">&quot;could&quot;</span><span class="p">,</span>
     <span class="s2">&quot;did&quot;</span><span class="p">,</span> <span class="s2">&quot;do&quot;</span><span class="p">,</span> <span class="s2">&quot;does&quot;</span><span class="p">,</span> <span class="s2">&quot;each&quot;</span><span class="p">,</span> <span class="s2">&quot;either&quot;</span><span class="p">,</span> <span class="s2">&quot;else&quot;</span><span class="p">,</span> <span class="s2">&quot;for&quot;</span><span class="p">,</span> <span class="s2">&quot;from&quot;</span><span class="p">,</span> <span class="s2">&quot;had&quot;</span><span class="p">,</span> <span class="s2">&quot;has&quot;</span><span class="p">,</span> <span class="s2">&quot;have&quot;</span><span class="p">,</span>
@@ -1585,6 +1997,8 @@ Similarity between Reference and Summary L: 0.7846035361289978
 <span class="p">]</span>
 </pre></div>
 </div>
+</div>
+</div>
 <p>NLTK’s list of english stopwords: <a class="reference external" href="https://gist.github.com/sebleier/554280">https://gist.github.com/sebleier/554280</a></p>
 <p>75 Stop Words That Are Common: <a class="reference external" href="https://blog.hubspot.com/marketing/stop-words-seo">https://blog.hubspot.com/marketing/stop-words-seo</a></p>
 </section>
@@ -1599,7 +2013,9 @@ Similarity between Reference and Summary L: 0.7846035361289978
 <li><p><strong>Uniqueness</strong>: In order to avoid over-representing words, words that are distinct or rare within the document (but not necessarily rare in the entire language) can be considered more important.</p></li>
 <li><p><strong>Contextual Relationship</strong>: This can be measured by how close they appear to each other or how they influence one another in their surrounding context.</p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># set the content for analysis</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># set the content for analysis</span>
 <span class="n">text</span> <span class="o">=</span> <span class="n">matthew_pullen_content</span>
 
 <span class="n">kw_extractor</span> <span class="o">=</span> <span class="n">yake</span><span class="o">.</span><span class="n">KeywordExtractor</span><span class="p">(</span>
@@ -1625,7 +2041,9 @@ Similarity between Reference and Summary L: 0.7846035361289978
 <span class="n">yake_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">kw</span> <span class="k">for</span> <span class="n">kw</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">keywords</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Top keywords and their scores:
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top keywords and their scores:
 assumptions: 0.01910470469030072
 planning: 0.02714639930086541
 section: 0.030576054957495272
@@ -1637,6 +2055,8 @@ planning system: 0.08258617466765696
 commercial: 0.08264724501909056
 applications: 0.09507326540820295
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="keybert">
@@ -1658,7 +2078,9 @@ applications: 0.09507326540820295
 <li><p><strong>BERT Embeddings</strong>: KeyBERT compares these embeddings to rank candidate keywords. The embeddings are based on pre-trained knowledge from large corpora (e.g., Wikipedia), so they include a deep understanding of language structure and meaning.</p></li>
 <li><p><strong>No Dependence on Frequency</strong>: KeyBERT focuses solely on semantic relevance. Even if a word appears only a few times in the document, it can still be identified as a key concept if its meaning aligns closely with the document.</p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">doc</span> <span class="o">=</span> <span class="n">matthew_pullen_content</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">doc</span> <span class="o">=</span> <span class="n">matthew_pullen_content</span>
 
 <span class="n">kw_model</span> <span class="o">=</span> <span class="n">KeyBERT</span><span class="p">()</span>
 <span class="n">keywords</span> <span class="o">=</span> <span class="n">kw_model</span><span class="o">.</span><span class="n">extract_keywords</span><span class="p">(</span>
@@ -1675,50 +2097,9 @@ applications: 0.09507326540820295
 <span class="n">keybert_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">keyword</span> <span class="k">for</span> <span class="n">keyword</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">keywords</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>modules.json:   0%|          | 0.00/349 [00:00&lt;?, ?B/s]
-
-
-
-config_sentence_transformers.json:   0%|          | 0.00/116 [00:00&lt;?, ?B/s]
-
-
-
-README.md:   0%|          | 0.00/10.7k [00:00&lt;?, ?B/s]
-
-
-
-sentence_bert_config.json:   0%|          | 0.00/53.0 [00:00&lt;?, ?B/s]
-
-
-
-config.json:   0%|          | 0.00/612 [00:00&lt;?, ?B/s]
-
-
-
-model.safetensors:   0%|          | 0.00/90.9M [00:00&lt;?, ?B/s]
-
-
-
-tokenizer_config.json:   0%|          | 0.00/350 [00:00&lt;?, ?B/s]
-
-
-
-vocab.txt:   0%|          | 0.00/232k [00:00&lt;?, ?B/s]
-
-
-
-tokenizer.json:   0%|          | 0.00/466k [00:00&lt;?, ?B/s]
-
-
-
-special_tokens_map.json:   0%|          | 0.00/112 [00:00&lt;?, ?B/s]
-
-
-
-1_Pooling/config.json:   0%|          | 0.00/190 [00:00&lt;?, ?B/s]
-
-
-commencement: 0.4556
+</div>
+<div class="cell_output docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"model_id": "1c0e74b973b943ae84a4dcadcc8ed0c5", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "b2bdd7d6775a47d7a333edd3ed126606", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "93d3cae734104498919dc25794ae5d0f", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "8ee4afec55cd4b898ea452b91a76da6f", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "191a87d19df3461c9e3c41db51416e6a", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "07b841b725bc477890f2eba31261024f", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "c17f65299bb547d8a2fdfd4a006ddeef", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "5fd278473f1b489298df2c69691682c3", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "12326a77933f4ad5a324b1527a1e5eeb", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "5c59f18163ee493c9ac1d012eedd1f20", "version_major": 2, "version_minor": 0}</script><script type="application/vnd.jupyter.widget-view+json">{"model_id": "851b33bfbf254cec921e9006184185d0", "version_major": 2, "version_minor": 0}</script><div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>commencement: 0.4556
 planning: 0.4397
 plans: 0.3788
 commence: 0.3247
@@ -1729,6 +2110,8 @@ assumptions: 0.3038
 agreements: 0.2909
 development: 0.2906
 </pre></div>
+</div>
+</div>
 </div>
 <p>Ref: <a class="github reference external" href="https://github.com/MaartenGr/KeyBERT">MaartenGr/KeyBERT</a></p>
 </section>
@@ -1742,7 +2125,9 @@ development: 0.2906
 <li><p><strong>PageRank-style Voting</strong>:Summa uses a variation of Google’s PageRank algorithm, which is commonly used to rank web pages. In this case, instead of ranking web pages, words in the document vote for each other based on their relationships (co-occurrence).</p></li>
 <li><p><strong>No Dependence on Frequency</strong></p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># considering the &quot;-s&quot; words in content</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># considering the &quot;-s&quot; words in content</span>
 <span class="k">def</span> <span class="nf">add_plural_words</span><span class="p">(</span><span class="n">word_list</span><span class="p">):</span>
     <span class="n">pluralized_words</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">word_list</span><span class="p">:</span>
@@ -1764,10 +2149,16 @@ development: 0.2906
 <span class="nb">print</span><span class="p">(</span><span class="n">custom_stop_words</span><span class="p">[:</span><span class="mi">100</span><span class="p">])</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;about&#39;, &#39;actually&#39;, &#39;almost&#39;, &#39;also&#39;, &#39;although&#39;, &#39;always&#39;, &#39;am&#39;, &#39;an&#39;, &#39;and&#39;, &#39;any&#39;, &#39;are&#39;, &#39;as&#39;, &#39;at&#39;, &#39;be&#39;, &#39;became&#39;, &#39;become&#39;, &#39;but&#39;, &#39;by&#39;, &#39;can&#39;, &#39;could&#39;, &#39;did&#39;, &#39;do&#39;, &#39;does&#39;, &#39;each&#39;, &#39;either&#39;, &#39;else&#39;, &#39;for&#39;, &#39;from&#39;, &#39;had&#39;, &#39;has&#39;, &#39;have&#39;, &#39;hence&#39;, &#39;how&#39;, &#39;i&#39;, &#39;if&#39;, &#39;in&#39;, &#39;is&#39;, &#39;it&#39;, &#39;its&#39;, &#39;just&#39;, &#39;may&#39;, &#39;maybe&#39;, &#39;me&#39;, &#39;might&#39;, &#39;mine&#39;, &#39;must&#39;, &#39;my&#39;, &#39;neither&#39;, &#39;nor&#39;, &#39;not&#39;, &#39;of&#39;, &#39;oh&#39;, &#39;ok&#39;, &#39;on&#39;, &#39;once&#39;, &#39;one&#39;, &#39;only&#39;, &#39;or&#39;, &#39;other&#39;, &#39;our&#39;, &#39;ours&#39;, &#39;out&#39;, &#39;own&#39;, &#39;people&#39;, &#39;put&#39;, &#39;re&#39;, &#39;really&#39;, &#39;s&#39;, &#39;same&#39;, &#39;she&#39;, &#39;should&#39;, &#39;so&#39;, &#39;some&#39;, &#39;such&#39;, &#39;t&#39;, &#39;than&#39;, &#39;that&#39;, &#39;the&#39;, &#39;their&#39;, &#39;theirs&#39;, &#39;them&#39;, &#39;then&#39;, &#39;there&#39;, &#39;these&#39;, &#39;they&#39;, &#39;this&#39;, &#39;those&#39;, &#39;through&#39;, &#39;to&#39;, &#39;too&#39;, &#39;under&#39;, &#39;until&#39;, &#39;up&#39;, &#39;very&#39;, &#39;was&#39;, &#39;we&#39;, &#39;were&#39;, &#39;what&#39;, &#39;when&#39;]
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;a&#39;, &#39;about&#39;, &#39;actually&#39;, &#39;almost&#39;, &#39;also&#39;, &#39;although&#39;, &#39;always&#39;, &#39;am&#39;, &#39;an&#39;, &#39;and&#39;, &#39;any&#39;, &#39;are&#39;, &#39;as&#39;, &#39;at&#39;, &#39;be&#39;, &#39;became&#39;, &#39;become&#39;, &#39;but&#39;, &#39;by&#39;, &#39;can&#39;, &#39;could&#39;, &#39;did&#39;, &#39;do&#39;, &#39;does&#39;, &#39;each&#39;, &#39;either&#39;, &#39;else&#39;, &#39;for&#39;, &#39;from&#39;, &#39;had&#39;, &#39;has&#39;, &#39;have&#39;, &#39;hence&#39;, &#39;how&#39;, &#39;i&#39;, &#39;if&#39;, &#39;in&#39;, &#39;is&#39;, &#39;it&#39;, &#39;its&#39;, &#39;just&#39;, &#39;may&#39;, &#39;maybe&#39;, &#39;me&#39;, &#39;might&#39;, &#39;mine&#39;, &#39;must&#39;, &#39;my&#39;, &#39;neither&#39;, &#39;nor&#39;, &#39;not&#39;, &#39;of&#39;, &#39;oh&#39;, &#39;ok&#39;, &#39;on&#39;, &#39;once&#39;, &#39;one&#39;, &#39;only&#39;, &#39;or&#39;, &#39;other&#39;, &#39;our&#39;, &#39;ours&#39;, &#39;out&#39;, &#39;own&#39;, &#39;people&#39;, &#39;put&#39;, &#39;re&#39;, &#39;really&#39;, &#39;s&#39;, &#39;same&#39;, &#39;she&#39;, &#39;should&#39;, &#39;so&#39;, &#39;some&#39;, &#39;such&#39;, &#39;t&#39;, &#39;than&#39;, &#39;that&#39;, &#39;the&#39;, &#39;their&#39;, &#39;theirs&#39;, &#39;them&#39;, &#39;then&#39;, &#39;there&#39;, &#39;these&#39;, &#39;they&#39;, &#39;this&#39;, &#39;those&#39;, &#39;through&#39;, &#39;to&#39;, &#39;too&#39;, &#39;under&#39;, &#39;until&#39;, &#39;up&#39;, &#39;very&#39;, &#39;was&#39;, &#39;we&#39;, &#39;were&#39;, &#39;what&#39;, &#39;when&#39;]
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">matthew_pullen_content</span>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="n">matthew_pullen_content</span>
 
 <span class="c1"># Use TextRank to extract the keywords</span>
 <span class="n">extracted_keywords</span> <span class="o">=</span> <span class="n">keywords</span><span class="o">.</span><span class="n">keywords</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> 
@@ -1793,7 +2184,9 @@ development: 0.2906
 <span class="n">summa_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">kw</span> <span class="k">for</span> <span class="n">kw</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">filtered_keywords</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Filtered Extracted Keywords (Top 10):
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Filtered Extracted Keywords (Top 10):
 planned: 0.2899959537626859
 plan: 0.2899959537626859
 housing data: 0.22222526545957466
@@ -1805,6 +2198,8 @@ application: 0.13376710876071438
 section: 0.1094423366358233
 sectional: 0.1094423366358233
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 <section id="tf-idf">
@@ -1835,7 +2230,9 @@ Inverse Document Frequency (IDF) is calculated as:</p></li>
 <ol class="arabic simple" start="3">
 <li><p>The combination of TF and IDF makes those words that appear frequently in documents but are relatively rare in the entire document collection considered as important keywords.</p></li>
 </ol>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add a collection of documents (corpus)</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add a collection of documents (corpus)</span>
 <span class="n">documents</span> <span class="o">=</span> <span class="p">[</span>
     <span class="n">matthew_pullen_content</span><span class="p">,</span>
     <span class="n">matt_newby_content</span><span class="p">,</span>
@@ -1870,7 +2267,9 @@ Inverse Document Frequency (IDF) is calculated as:</p></li>
 <span class="n">tfidf_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span><span class="p">,</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">sorted_word_scores</span><span class="p">[:</span><span class="mi">10</span><span class="p">]]</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Top 10 keywords:
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top 10 keywords:
 assumptions: 0.3324501160825692
 section: 0.16381718130209472
 permission: 0.145446925786124
@@ -1882,6 +2281,8 @@ system: 0.1146720269114663
 commercial: 0.09829030878125683
 commencement: 0.0831125290206423
 </pre></div>
+</div>
+</div>
 </div>
 </section>
 </section>
@@ -1932,7 +2333,9 @@ commencement: 0.0831125290206423
 <p>Comparing the reference summary with the summaries produced by the six models.</p>
 <section id="id7">
 <h4><strong>Code Tab</strong><a class="headerlink" href="#id7" title="Link to this heading">#</a></h4>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the gold standard and models&#39; outputs</span>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the gold standard and models&#39; outputs</span>
 <span class="n">gold_standard_keywords</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;housing data&quot;</span><span class="p">,</span> <span class="s2">&quot;planning&quot;</span><span class="p">,</span> <span class="s2">&quot;section 106&quot;</span><span class="p">,</span> <span class="s2">&quot;commercial&quot;</span><span class="p">,</span> 
                           <span class="s2">&quot;tenure mix&quot;</span><span class="p">,</span> <span class="s2">&quot;permission&quot;</span><span class="p">,</span> <span class="s2">&quot;commencement&quot;</span><span class="p">,</span> <span class="s2">&quot;CIL&quot;</span><span class="p">,</span> <span class="s2">&quot;forecasting&quot;</span><span class="p">,</span> 
                           <span class="s2">&quot;infrastructure&quot;</span><span class="p">}</span>
@@ -1981,23 +2384,24 @@ commencement: 0.0831125290206423
 <span class="n">results_df</span>
 </pre></div>
 </div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>The results as following:
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The results as following:
 </pre></div>
 </div>
-<div>
+<div class="output text_html"><div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.dataframe tbody tr th {
-    vertical-align: top;
-}
 
-.dataframe thead th {
-    text-align: right;
-}
-</pre></div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
 </style>
 <table border="1" class="dataframe">
   <thead>
@@ -2054,6 +2458,7 @@ commencement: 0.0831125290206423
     </tr>
   </tbody>
 </table>
+</div></div></div>
 </div>
 <p>According to the results, the TF-IDF model achieved the highest score. The keyword extraction results by TF-IDF for the text content of the 12 participants are as follows:</p>
 <div class="pst-scrollable-table-container"><table class="table">
